@@ -34,7 +34,7 @@ Front/etc Armor | Modules.Damage.Default.CommonDamageDescriptor.BlindageProperti
 
 AP     | Modules.WeaponManager.Default.TurretDescriptorList[m].MountedWeaponDescriptorList[n].Ammunition.Arme | if between 5 and 34, subtract 4; if above 34, subtract 34, if equal to 3, return '-' (arme 3 => HE)
 
-Tags | Composite of TAmmunition.Guidance and WeaponDescriptor.TirEnMouvement | [STAT] intentionally omitted, [ARTY] comes from TirIndirect, look at the code for the rest
+Tags | Composite of TAmmunition.Guidance and WeaponDescriptor.TirEnMouvement | [STAT] intentionally omitted, [INDIR] comes from TirIndirect, look at the code for the rest
 
 All weapon ranges and dispersions | Modules.WeaponManager.Default.TurretDescriptorList[0].MountedWeaponDescriptorList[0].Ammunition.PorteeMaximale | multiplied by 175, divided by 13000
 

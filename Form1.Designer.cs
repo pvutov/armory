@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -105,6 +106,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groundOpticsLabel2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.missileMaxAccelField = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
             this.weaponPictureField = new System.Windows.Forms.PictureBox();
             this.weaponDropdown = new System.Windows.Forms.ComboBox();
             this.turretField = new System.Windows.Forms.Label();
@@ -285,8 +288,9 @@
             this.priceFieldSurvivability = new System.Windows.Forms.Label();
             this.prototypeLabelSurvivability = new System.Windows.Forms.Label();
             this.nameFieldSurvivability = new System.Windows.Forms.Label();
-            this.missileMaxAccelField = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
+            this.lockWeaponCheckbox = new System.Windows.Forms.CheckBox();
+            this.lockWeaponTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.lockWeaponCheckboxSimple = new System.Windows.Forms.CheckBox();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldMobility)).BeginInit();
             this.tabPage4.SuspendLayout();
@@ -1295,6 +1299,7 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
+            this.tabPage3.Controls.Add(this.lockWeaponCheckbox);
             this.tabPage3.Controls.Add(this.missileMaxAccelField);
             this.tabPage3.Controls.Add(this.label78);
             this.tabPage3.Controls.Add(this.weaponPictureField);
@@ -1369,6 +1374,32 @@
             this.tabPage3.Size = new System.Drawing.Size(381, 462);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Firepower";
+            // 
+            // missileMaxAccelField
+            // 
+            this.missileMaxAccelField.AutoSize = true;
+            this.missileMaxAccelField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.missileMaxAccelField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.missileMaxAccelField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.missileMaxAccelField.Location = new System.Drawing.Point(127, 416);
+            this.missileMaxAccelField.MinimumSize = new System.Drawing.Size(40, 0);
+            this.missileMaxAccelField.Name = "missileMaxAccelField";
+            this.missileMaxAccelField.Size = new System.Drawing.Size(40, 17);
+            this.missileMaxAccelField.TabIndex = 158;
+            this.missileMaxAccelField.Text = "bar";
+            this.missileMaxAccelField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label78.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label78.Location = new System.Drawing.Point(13, 416);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(120, 17);
+            this.label78.TabIndex = 157;
+            this.label78.Text = "Missile max accel:";
             // 
             // weaponPictureField
             // 
@@ -1895,6 +1926,7 @@
             this.tagsLabel.TabIndex = 55;
             this.tagsLabel.Text = "tags will be here";
             this.tagsLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.tagsLabel, "[INDIR] = indirect");
             // 
             // apField
             // 
@@ -2079,6 +2111,7 @@
             this.rofField.TabIndex = 70;
             this.rofField.Text = "bar";
             this.rofField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.rofField, "This is real rof, aka how many actual hitrolls are made per minute.");
             // 
             // label77
             // 
@@ -2145,6 +2178,7 @@
             this.supplyCostField.TabIndex = 54;
             this.supplyCostField.Text = "bar";
             this.supplyCostField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.supplyCostField, "per shot");
             // 
             // label56
             // 
@@ -2158,6 +2192,7 @@
             this.label56.Size = new System.Drawing.Size(85, 17);
             this.label56.TabIndex = 53;
             this.label56.Text = "Supply cost:";
+            this.lockWeaponTooltip.SetToolTip(this.label56, "per shot");
             // 
             // apLabel
             // 
@@ -2185,6 +2220,7 @@
             this.ammoField.TabIndex = 38;
             this.ammoField.Text = "bar";
             this.ammoField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.ammoField, "This is real ammo, aka how many hitrolls can be made.");
             // 
             // label41
             // 
@@ -2252,6 +2288,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
+            this.tabPage1.Controls.Add(this.lockWeaponCheckboxSimple);
             this.tabPage1.Controls.Add(this.aimTimeFieldSimple);
             this.tabPage1.Controls.Add(this.label84);
             this.tabPage1.Controls.Add(this.missileSpeedFieldSimple);
@@ -2665,6 +2702,7 @@
             this.rofFieldSimple.TabIndex = 171;
             this.rofFieldSimple.Text = "bar";
             this.rofFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.rofFieldSimple, "This is real rof, aka how many actual hitrolls are made per minute.");
             // 
             // label114
             // 
@@ -2705,6 +2743,7 @@
             this.supplyCostFieldSimple.TabIndex = 168;
             this.supplyCostFieldSimple.Text = "bar";
             this.supplyCostFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.supplyCostFieldSimple, "per shot");
             // 
             // label117
             // 
@@ -2745,6 +2784,7 @@
             this.ammoFieldSimple.TabIndex = 165;
             this.ammoFieldSimple.Text = "bar";
             this.ammoFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.ammoFieldSimple, "his is real ammo, aka how many hitrolls can be made.");
             // 
             // label120
             // 
@@ -2854,6 +2894,7 @@
             this.tagsLabelSimple.TabIndex = 155;
             this.tagsLabelSimple.Text = "tags will be here";
             this.tagsLabelSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.tagsLabelSimple, "[INDIR] = indirect");
             // 
             // label80
             // 
@@ -3817,31 +3858,33 @@
             this.nameFieldSurvivability.TabIndex = 28;
             this.nameFieldSurvivability.Text = "Unit name will be here";
             // 
-            // missileMaxAccelField
+            // lockWeaponCheckbox
             // 
-            this.missileMaxAccelField.AutoSize = true;
-            this.missileMaxAccelField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.missileMaxAccelField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.missileMaxAccelField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.missileMaxAccelField.Location = new System.Drawing.Point(127, 416);
-            this.missileMaxAccelField.MinimumSize = new System.Drawing.Size(40, 0);
-            this.missileMaxAccelField.Name = "missileMaxAccelField";
-            this.missileMaxAccelField.Size = new System.Drawing.Size(40, 17);
-            this.missileMaxAccelField.TabIndex = 158;
-            this.missileMaxAccelField.Text = "bar";
-            this.missileMaxAccelField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponCheckbox.AutoSize = true;
+            this.lockWeaponCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lockWeaponCheckbox.Location = new System.Drawing.Point(299, 77);
+            this.lockWeaponCheckbox.Name = "lockWeaponCheckbox";
+            this.lockWeaponCheckbox.Size = new System.Drawing.Size(65, 17);
+            this.lockWeaponCheckbox.TabIndex = 159;
+            this.lockWeaponCheckbox.Text = "lock slot";
+            this.lockWeaponTooltip.SetToolTip(this.lockWeaponCheckbox, "Attempt to open the weapon in the same slot when unit selection is changed, inste" +
+        "ad of the first weapon.");
+            this.lockWeaponCheckbox.UseVisualStyleBackColor = true;
+            this.lockWeaponCheckbox.CheckedChanged += new System.EventHandler(this.lockWeaponCheckbox_CheckedChanged);
             // 
-            // label78
+            // lockWeaponCheckboxSimple
             // 
-            this.label78.AutoSize = true;
-            this.label78.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label78.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label78.Location = new System.Drawing.Point(13, 416);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(120, 17);
-            this.label78.TabIndex = 157;
-            this.label78.Text = "Missile max accel:";
+            this.lockWeaponCheckboxSimple.AutoSize = true;
+            this.lockWeaponCheckboxSimple.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lockWeaponCheckboxSimple.Location = new System.Drawing.Point(299, 77);
+            this.lockWeaponCheckboxSimple.Name = "lockWeaponCheckboxSimple";
+            this.lockWeaponCheckboxSimple.Size = new System.Drawing.Size(65, 17);
+            this.lockWeaponCheckboxSimple.TabIndex = 196;
+            this.lockWeaponCheckboxSimple.Text = "lock slot";
+            this.lockWeaponTooltip.SetToolTip(this.lockWeaponCheckboxSimple, "Attempt to open the weapon in the same slot when unit selection is changed, inste" +
+        "ad of the first weapon.");
+            this.lockWeaponCheckboxSimple.UseVisualStyleBackColor = true;
+            this.lockWeaponCheckboxSimple.CheckedChanged += new System.EventHandler(this.lockWeaponCheckboxSimple_CheckedChanged);
             // 
             // Form1
             // 
@@ -4141,6 +4184,9 @@
         private System.Windows.Forms.Label timeBetweenEachIdentifyRollField;
         private System.Windows.Forms.Label missileMaxAccelField;
         private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.CheckBox lockWeaponCheckbox;
+        private System.Windows.Forms.ToolTip lockWeaponTooltip;
+        private System.Windows.Forms.CheckBox lockWeaponCheckboxSimple;
     }
 }
 

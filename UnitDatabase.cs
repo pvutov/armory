@@ -41,6 +41,8 @@ namespace Armory {
         private List<Weapon> weapons;
         private Weapon currentWeapon;
         private NdfObject currentWeaponHandle;
+        private Weapon lockedWeapon;
+
         private const int HE_VALUE_ARME = 3;
         private const int KE_THRESHOLD_ARME = 4;
         private const int HEAT_THRESHOLD_ARME = 34;
@@ -208,6 +210,42 @@ namespace Armory {
             else {
                 currentWeaponHandle = null;
             }
+        }
+
+        /// <summary>
+        /// Try to get the weapon in the position indexed by the lock slot checkbox.
+        /// </summary>
+        public Weapon tryGetLockIndexedWeapon() {
+            if (lockedWeapon != null) {
+                int turret = lockedWeapon.getTurretIndex();
+                int slot = lockedWeapon.getWeaponIndex();
+
+                foreach (Weapon w in getWeapons()) {
+                    if (w.getTurretIndex() == turret
+                        && w.getWeaponIndex() == slot) {
+
+                        return w;
+                    }
+                }
+            }
+
+            return lockedWeapon;
+        }
+
+        /// <summary>
+        /// The database will remember the weapon's position and
+        /// try to default to it when unit selection changes.
+        /// </summary>
+        /// <returns>A string characterizing the weapon's position.</returns>
+        public string lockWeapon() {
+            lockedWeapon = currentWeapon;
+
+            return lockedWeapon.getTurretIndex().ToString() 
+                + ":" + lockedWeapon.getWeaponIndex().ToString();
+        }
+
+        public void unlockWeapon() {
+            lockedWeapon = null;
         }
 
         // Non-modules --------------------
@@ -637,9 +675,9 @@ namespace Armory {
                 result += "[CQC] ";
             }
 
-            // ARTY
+            // INDIR
             if (getTirIndirect() == "True") {
-                result += "[ARTY]";
+                result += "[INDIR]";
             }
 
             return result;

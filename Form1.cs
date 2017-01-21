@@ -17,6 +17,7 @@ namespace Armory
         private UnitDatabase unitDatabase;
         private List<String> currentUnits;
 
+
         public Form1(UnitDatabase unitDatabase) {
             this.unitDatabase = unitDatabase;
             InitializeComponent();
@@ -30,7 +31,12 @@ namespace Armory
 
         private void textBox1_TextChanged(object sender, EventArgs e) {
             List<String> filteredUnits = currentUnits.FindAll(delegate (string s) {
-                return Regex.IsMatch(s, textBox1.Text, RegexOptions.IgnoreCase);
+                try {
+                    return Regex.IsMatch(s, textBox1.Text, RegexOptions.IgnoreCase);
+                }
+                catch (System.ArgumentException) {
+                   return Regex.IsMatch(s, Regex.Escape(textBox1.Text), RegexOptions.IgnoreCase);
+                }
             });
             listBox2.DataSource = filteredUnits;
         }
@@ -50,6 +56,11 @@ namespace Armory
                 
                 weaponDropdown.DataSource = unitDatabase.getWeapons();
                 weaponDropdownSimple.DataSource = weaponDropdown.DataSource;
+
+                Weapon lockedWeapon = unitDatabase.tryGetLockIndexedWeapon();
+                if (lockedWeapon != null) {
+                    weaponDropdown.SelectedItem = lockedWeapon;
+                }
 
                 // Controls common to all tabs ---
                 #region
@@ -171,7 +182,7 @@ namespace Armory
             }
 
             else {
-                Program.warning("Query target not found. This should never happen.");
+                Program.warning("The unit you selected was not found. This should never happen.");
             }
         }
 
@@ -255,6 +266,33 @@ namespace Armory
 
         private void weaponDropdownSimple_SelectedIndexChanged(object sender, EventArgs e) {
             weaponDropdown.SelectedItem = weaponDropdownSimple.SelectedItem;
+        }
+
+        private void lockWeaponCheckbox_CheckedChanged(object sender, EventArgs e) {
+            if (lockWeaponCheckbox.Checked) {
+                string weaponPosition = unitDatabase.lockWeapon();
+                lockWeaponCheckbox.Text = "locked " + weaponPosition;
+                lockWeaponCheckboxSimple.Text = lockWeaponCheckbox.Text;
+                
+                // avoid callback                        
+                lockWeaponCheckboxSimple.CheckedChanged -= lockWeaponCheckboxSimple_CheckedChanged;
+                lockWeaponCheckboxSimple.Checked = true;
+                lockWeaponCheckboxSimple.CheckedChanged += lockWeaponCheckboxSimple_CheckedChanged;
+            }
+            else {
+                lockWeaponCheckbox.Text = "lock slot";
+                lockWeaponCheckboxSimple.Text = lockWeaponCheckbox.Text;
+                unitDatabase.unlockWeapon();
+
+                // avoid callback                        
+                lockWeaponCheckboxSimple.CheckedChanged -= lockWeaponCheckboxSimple_CheckedChanged;
+                lockWeaponCheckboxSimple.Checked = false;
+                lockWeaponCheckboxSimple.CheckedChanged += lockWeaponCheckboxSimple_CheckedChanged;
+            }
+        }
+
+        private void lockWeaponCheckboxSimple_CheckedChanged(object sender, EventArgs e) {
+            lockWeaponCheckbox.Checked = lockWeaponCheckboxSimple.Checked;
         }
     }
 }
