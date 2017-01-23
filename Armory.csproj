@@ -77,19 +77,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="src\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="src\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="PathFinder.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="src\PathFinder.cs" />
+    <Compile Include="src\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitDatabase.cs" />
-    <Compile Include="Utility.cs" />
-    <Compile Include="Weapon.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <Compile Include="src\UnitDatabase.cs" />
+    <Compile Include="src\Utility.cs" />
+    <Compile Include="src\Weapon.cs" />
+    <EmbeddedResource Include="src\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -114,7 +114,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="src\App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\IrisZoomDataAPI-master\IrisZoomDataApi\IrisZoomDataApi.csproj">
