@@ -712,18 +712,18 @@ namespace Armory {
             NdfValueWrapper val;
             if (currentWeaponHandle != null) if (currentWeaponHandle.TryGetValueFromQuery<NdfValueWrapper>("PorteeMaximaleTBA", out val)) {
                     String result = val.ToString();
-                    int resultInt;
-                    if (int.TryParse(result, out resultInt)) {
-                        resultInt = (resultInt * 175) / 13000;
-                        result = resultInt.ToString();
+                    int maxRange, minRange;
+                    if (int.TryParse(result, out maxRange)) {
+                        maxRange = (maxRange * 175) / 13000;
+                        result = maxRange.ToString();
                     }
 
                     // prepend min range
                     if (currentWeaponHandle != null) if (currentWeaponHandle.TryGetValueFromQuery<NdfValueWrapper>("PorteeMinimaleTBA", out val)) {
 
-                            if (int.TryParse(val.ToString(), out resultInt)) {
-                                resultInt = (resultInt * 175) / 13000;
-                                result = resultInt.ToString() + "m" + " to " + resultInt;
+                            if (int.TryParse(val.ToString(), out minRange)) {
+                                minRange = (minRange * 175) / 13000;
+                                result = minRange.ToString() + "m" + " to " + maxRange.ToString();
                             }
 
                         }
@@ -737,18 +737,18 @@ namespace Armory {
             NdfValueWrapper val;
             if (currentWeaponHandle != null) if (currentWeaponHandle.TryGetValueFromQuery<NdfValueWrapper>("PorteeMaximaleHA", out val)) {
                     String result = val.ToString();
-                    int resultInt;
-                    if (int.TryParse(result, out resultInt)) {
-                        resultInt = (resultInt * 175) / 13000;
-                        result = resultInt.ToString();
+                    int maxRange, minRange;
+                    if (int.TryParse(result, out maxRange)) {
+                        maxRange = (maxRange * 175) / 13000;
+                        result = maxRange.ToString();
                     }
 
                     // prepend min range
                     if (currentWeaponHandle != null) if (currentWeaponHandle.TryGetValueFromQuery<NdfValueWrapper>("PorteeMinimaleHA", out val)) {
 
-                            if (int.TryParse(val.ToString(), out resultInt)) {
-                                resultInt = (resultInt * 175) / 13000;
-                                result = resultInt.ToString() + "m" + " to " + resultInt;
+                            if (int.TryParse(val.ToString(), out minRange)) {
+                                minRange = (minRange * 175) / 13000;
+                                result = minRange.ToString() + "m" + " to " + maxRange.ToString();
                             }
 
                         }
