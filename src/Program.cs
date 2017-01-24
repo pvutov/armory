@@ -17,17 +17,21 @@ namespace Armory {
 
         const string PACT_ICONS_DIRPREFIX = @"pc\texture\assets\2d\interface\common\unitsicons\pact\";
         const string NATO_ICONS_DIRPREFIX = @"pc\texture\assets\2d\interface\common\unitsicons\otan\";
-        
-        
+
+        private const string APPCAST_DIR = @"https://raw.githubusercontent.com/pvutov/armory/master/appcast.xml";
+
         [STAThread]
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            WinSparkleWrapper.win_sparkle_set_appcast_url(APPCAST_DIR);
+            WinSparkleWrapper.win_sparkle_init();
+
             PathFinder paths = new PathFinder();
 
             // setup everything.ndfbin reader
-            //EdataManager dataManager = new EdataManager(AppDomain.CurrentDomain.BaseDirectory + "NDF_Win.dat");
+            // EdataManager dataManager = new EdataManager(AppDomain.CurrentDomain.BaseDirectory + "NDF_Win.dat");
             EdataManager dataManager = new EdataManager(paths.getNdfPath());
             dataManager.ParseEdataFile();
             NdfbinManager everything = dataManager.ReadNdfbin(EVERYTHING_NDFBIN);
@@ -47,6 +51,8 @@ namespace Armory {
             UnitDatabase unitDatabase = new UnitDatabase(unitInstances, dict, iconPackage, PACT_ICONS_DIRPREFIX, NATO_ICONS_DIRPREFIX);
             
             Application.Run(new Form1(unitDatabase));
+
+            cleanup();
         }
 
         /// <summary>
@@ -57,6 +63,13 @@ namespace Armory {
                 warningsSuppressed = MessageBox.Show(warningText + Program.CONTACT_STRING + "\nSuppress further warnings?", "Warning",
                         MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             }
+        }
+
+        /// <summary>
+        /// Call before Application.Exit()
+        /// </summary>
+        public static void cleanup() {
+            WinSparkleWrapper.win_sparkle_cleanup();
         }
     }
 }

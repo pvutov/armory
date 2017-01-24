@@ -106,6 +106,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groundOpticsLabel2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.lockWeaponCheckbox = new System.Windows.Forms.CheckBox();
             this.missileMaxAccelField = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
             this.weaponPictureField = new System.Windows.Forms.PictureBox();
@@ -176,6 +177,7 @@
             this.prototypeLabelFirepower = new System.Windows.Forms.Label();
             this.nameFieldFirepower = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lockWeaponCheckboxSimple = new System.Windows.Forms.CheckBox();
             this.aimTimeFieldSimple = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
             this.missileSpeedFieldSimple = new System.Windows.Forms.Label();
@@ -288,9 +290,8 @@
             this.priceFieldSurvivability = new System.Windows.Forms.Label();
             this.prototypeLabelSurvivability = new System.Windows.Forms.Label();
             this.nameFieldSurvivability = new System.Windows.Forms.Label();
-            this.lockWeaponCheckbox = new System.Windows.Forms.CheckBox();
             this.lockWeaponTooltip = new System.Windows.Forms.ToolTip(this.components);
-            this.lockWeaponCheckboxSimple = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldMobility)).BeginInit();
             this.tabPage4.SuspendLayout();
@@ -1375,6 +1376,20 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Firepower";
             // 
+            // lockWeaponCheckbox
+            // 
+            this.lockWeaponCheckbox.AutoSize = true;
+            this.lockWeaponCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lockWeaponCheckbox.Location = new System.Drawing.Point(299, 77);
+            this.lockWeaponCheckbox.Name = "lockWeaponCheckbox";
+            this.lockWeaponCheckbox.Size = new System.Drawing.Size(65, 17);
+            this.lockWeaponCheckbox.TabIndex = 159;
+            this.lockWeaponCheckbox.Text = "lock slot";
+            this.lockWeaponTooltip.SetToolTip(this.lockWeaponCheckbox, "Attempt to open the weapon in the same slot when unit selection is changed, inste" +
+        "ad of the first weapon.");
+            this.lockWeaponCheckbox.UseVisualStyleBackColor = true;
+            this.lockWeaponCheckbox.CheckedChanged += new System.EventHandler(this.lockWeaponCheckbox_CheckedChanged);
+            // 
             // missileMaxAccelField
             // 
             this.missileMaxAccelField.AutoSize = true;
@@ -2369,6 +2384,20 @@
             this.tabPage1.Size = new System.Drawing.Size(381, 462);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Simple";
+            // 
+            // lockWeaponCheckboxSimple
+            // 
+            this.lockWeaponCheckboxSimple.AutoSize = true;
+            this.lockWeaponCheckboxSimple.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lockWeaponCheckboxSimple.Location = new System.Drawing.Point(299, 77);
+            this.lockWeaponCheckboxSimple.Name = "lockWeaponCheckboxSimple";
+            this.lockWeaponCheckboxSimple.Size = new System.Drawing.Size(65, 17);
+            this.lockWeaponCheckboxSimple.TabIndex = 196;
+            this.lockWeaponCheckboxSimple.Text = "lock slot";
+            this.lockWeaponTooltip.SetToolTip(this.lockWeaponCheckboxSimple, "Attempt to open the weapon in the same slot when unit selection is changed, inste" +
+        "ad of the first weapon.");
+            this.lockWeaponCheckboxSimple.UseVisualStyleBackColor = true;
+            this.lockWeaponCheckboxSimple.CheckedChanged += new System.EventHandler(this.lockWeaponCheckboxSimple_CheckedChanged);
             // 
             // aimTimeFieldSimple
             // 
@@ -3858,39 +3887,22 @@
             this.nameFieldSurvivability.TabIndex = 28;
             this.nameFieldSurvivability.Text = "Unit name will be here";
             // 
-            // lockWeaponCheckbox
+            // button1
             // 
-            this.lockWeaponCheckbox.AutoSize = true;
-            this.lockWeaponCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lockWeaponCheckbox.Location = new System.Drawing.Point(299, 77);
-            this.lockWeaponCheckbox.Name = "lockWeaponCheckbox";
-            this.lockWeaponCheckbox.Size = new System.Drawing.Size(65, 17);
-            this.lockWeaponCheckbox.TabIndex = 159;
-            this.lockWeaponCheckbox.Text = "lock slot";
-            this.lockWeaponTooltip.SetToolTip(this.lockWeaponCheckbox, "Attempt to open the weapon in the same slot when unit selection is changed, inste" +
-        "ad of the first weapon.");
-            this.lockWeaponCheckbox.UseVisualStyleBackColor = true;
-            this.lockWeaponCheckbox.CheckedChanged += new System.EventHandler(this.lockWeaponCheckbox_CheckedChanged);
-            // 
-            // lockWeaponCheckboxSimple
-            // 
-            this.lockWeaponCheckboxSimple.AutoSize = true;
-            this.lockWeaponCheckboxSimple.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lockWeaponCheckboxSimple.Location = new System.Drawing.Point(299, 77);
-            this.lockWeaponCheckboxSimple.Name = "lockWeaponCheckboxSimple";
-            this.lockWeaponCheckboxSimple.Size = new System.Drawing.Size(65, 17);
-            this.lockWeaponCheckboxSimple.TabIndex = 196;
-            this.lockWeaponCheckboxSimple.Text = "lock slot";
-            this.lockWeaponTooltip.SetToolTip(this.lockWeaponCheckboxSimple, "Attempt to open the weapon in the same slot when unit selection is changed, inste" +
-        "ad of the first weapon.");
-            this.lockWeaponCheckboxSimple.UseVisualStyleBackColor = true;
-            this.lockWeaponCheckboxSimple.CheckedChanged += new System.EventHandler(this.lockWeaponCheckboxSimple_CheckedChanged);
+            this.button1.Location = new System.Drawing.Point(540, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "update";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 620);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox2);
@@ -4187,6 +4199,7 @@
         private System.Windows.Forms.CheckBox lockWeaponCheckbox;
         private System.Windows.Forms.ToolTip lockWeaponTooltip;
         private System.Windows.Forms.CheckBox lockWeaponCheckboxSimple;
+        private System.Windows.Forms.Button button1;
     }
 }
 

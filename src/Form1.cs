@@ -294,5 +294,9 @@ namespace Armory
         private void lockWeaponCheckboxSimple_CheckedChanged(object sender, EventArgs e) {
             lockWeaponCheckbox.Checked = lockWeaponCheckboxSimple.Checked;
         }
+
+        private void button1_Click(object sender, EventArgs e) {
+            WinSparkleWrapper.win_sparkle_check_update_with_ui();
+        }
     }
 }

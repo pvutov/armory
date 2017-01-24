@@ -113,6 +113,7 @@ namespace Armory {
             }
 
             if (res != DialogResult.OK) {
+                Program.cleanup();
                 Application.Exit();
             }
             else {
@@ -131,6 +132,7 @@ namespace Armory {
                             return;
                         }
 
+                        Program.cleanup();
                         Application.Exit();
 
                         // Files not found, try again..
@@ -138,6 +140,7 @@ namespace Armory {
                         return;
                     }
 
+                    Program.cleanup();
                     Application.Exit();
 
                     // Files not found, try again..
@@ -145,6 +148,7 @@ namespace Armory {
                     return;
                 }
 
+                Program.cleanup();
                 Application.Restart();
 
                 // Files not found, try again..

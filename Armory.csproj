@@ -64,6 +64,13 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ionic.Zlib">
+      <HintPath>libs\Ionic.Zlib.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisZoomDataApi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\IrisZoomDataApi.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -90,6 +97,7 @@
     <Compile Include="src\UnitDatabase.cs" />
     <Compile Include="src\Utility.cs" />
     <Compile Include="src\Weapon.cs" />
+    <Compile Include="src\WinSparkleWrapper.cs" />
     <Compile Include="test\UnitDatabaseTests.cs" />
     <EmbeddedResource Include="src\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -119,12 +127,6 @@
     <None Include="src\App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\IrisZoomDataAPI-master\IrisZoomDataApi\IrisZoomDataApi.csproj">
-      <Project>{f5773d02-6856-4637-be68-daf99c78a672}</Project>
-      <Name>IrisZoomDataApi</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
@@ -137,12 +139,16 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="appcast.xml" />
     <Content Include="README.txt" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /y /d "$(ProjectDir)libs\WinSparkle.dll" "$(ProjectDir)$(OutDir)"</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
