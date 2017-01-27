@@ -74,6 +74,8 @@
             this.prototypeLabelMobility = new System.Windows.Forms.Label();
             this.nameFieldMobility = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.specializedDetection4Field = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.timeBetweenEachIdentifyRollField = new System.Windows.Forms.Label();
             this.killExperienceBonusField = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -291,7 +293,7 @@
             this.prototypeLabelSurvivability = new System.Windows.Forms.Label();
             this.nameFieldSurvivability = new System.Windows.Forms.Label();
             this.lockWeaponTooltip = new System.Windows.Forms.ToolTip(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.checkForUpdatesButton = new System.Windows.Forms.Button();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldMobility)).BeginInit();
             this.tabPage4.SuspendLayout();
@@ -870,6 +872,8 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
+            this.tabPage4.Controls.Add(this.specializedDetection4Field);
+            this.tabPage4.Controls.Add(this.label17);
             this.tabPage4.Controls.Add(this.timeBetweenEachIdentifyRollField);
             this.tabPage4.Controls.Add(this.killExperienceBonusField);
             this.tabPage4.Controls.Add(this.label39);
@@ -906,6 +910,32 @@
             this.tabPage4.Size = new System.Drawing.Size(381, 462);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Recon";
+            // 
+            // specializedDetection4Field
+            // 
+            this.specializedDetection4Field.AutoSize = true;
+            this.specializedDetection4Field.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.specializedDetection4Field.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.specializedDetection4Field.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.specializedDetection4Field.Location = new System.Drawing.Point(167, 197);
+            this.specializedDetection4Field.Name = "specializedDetection4Field";
+            this.specializedDetection4Field.Size = new System.Drawing.Size(29, 17);
+            this.specializedDetection4Field.TabIndex = 63;
+            this.specializedDetection4Field.Text = "bar";
+            this.specializedDetection4Field.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label17.Location = new System.Drawing.Point(15, 197);
+            this.label17.MinimumSize = new System.Drawing.Size(100, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(155, 17);
+            this.label17.TabIndex = 62;
+            this.label17.Text = "Spotting cap vs planes:";
             // 
             // timeBetweenEachIdentifyRollField
             // 
@@ -1036,7 +1066,7 @@
             this.opticalStrengthAntiRadarField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.opticalStrengthAntiRadarField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.opticalStrengthAntiRadarField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.opticalStrengthAntiRadarField.Location = new System.Drawing.Point(183, 197);
+            this.opticalStrengthAntiRadarField.Location = new System.Drawing.Point(182, 216);
             this.opticalStrengthAntiRadarField.Name = "opticalStrengthAntiRadarField";
             this.opticalStrengthAntiRadarField.Size = new System.Drawing.Size(29, 17);
             this.opticalStrengthAntiRadarField.TabIndex = 51;
@@ -1049,7 +1079,7 @@
             this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label27.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label27.Location = new System.Drawing.Point(16, 197);
+            this.label27.Location = new System.Drawing.Point(15, 216);
             this.label27.MinimumSize = new System.Drawing.Size(100, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(168, 17);
@@ -3887,22 +3917,22 @@
             this.nameFieldSurvivability.TabIndex = 28;
             this.nameFieldSurvivability.Text = "Unit name will be here";
             // 
-            // button1
+            // checkForUpdatesButton
             // 
-            this.button1.Location = new System.Drawing.Point(540, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "update";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.checkForUpdatesButton.Location = new System.Drawing.Point(540, 12);
+            this.checkForUpdatesButton.Name = "checkForUpdatesButton";
+            this.checkForUpdatesButton.Size = new System.Drawing.Size(75, 23);
+            this.checkForUpdatesButton.TabIndex = 6;
+            this.checkForUpdatesButton.Text = "update";
+            this.checkForUpdatesButton.UseVisualStyleBackColor = true;
+            this.checkForUpdatesButton.Click += new System.EventHandler(this.checkForUpdatesButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 620);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.checkForUpdatesButton);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox2);
@@ -4199,7 +4229,9 @@
         private System.Windows.Forms.CheckBox lockWeaponCheckbox;
         private System.Windows.Forms.ToolTip lockWeaponTooltip;
         private System.Windows.Forms.CheckBox lockWeaponCheckboxSimple;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button checkForUpdatesButton;
+        private System.Windows.Forms.Label specializedDetection4Field;
+        private System.Windows.Forms.Label label17;
     }
 }
 

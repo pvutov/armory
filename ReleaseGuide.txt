@@ -1,0 +1,13 @@
+﻿For the update code to correctly handle a release, it must follow a format:
+-Tag in the form of Major.Minor.Revision.Build
+ Revision and build are optional, there is NO "v." prefix
+ Valid Examples: 1.0.2.0, 0.2, 3.3.0.0
+ Invalid examples: v.1.1.0.0, v1.0.0.0, 1.e.3.0
+
+-The tag should match the AssemblyVersion in AssemblyInfo.cs.
+
+-Release binaries should be zipped and the zip should contain no folders.
+
+-Updater.exe should be included in the zip (take it from an existing release if you can't/don't want to build Updater.exe yourself).
+
+-The description of the release will be displayed to the user as patch notes, and should be written with this in mind.

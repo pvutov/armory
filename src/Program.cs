@@ -8,7 +8,7 @@ namespace Armory {
     static class Program {
 
         // Where to report bugs?
-        public const string CONTACT_STRING = " To report, PM throwaway on forums.eugensystems.com";
+        public const string CONTACT_STRING = "\nTo report, PM throwaway on forums.eugensystems.com";
         private static DialogResult warningsSuppressed = DialogResult.No;
         
         const string EVERYTHING_NDFBIN = @"pc\ndf\patchable\gfx\everything.ndfbin";
@@ -22,12 +22,11 @@ namespace Armory {
 
         [STAThread]
         static void Main() {
+            AppDomain.CurrentDomain.ProcessExit += new EventHandler(cleanup);
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            WinSparkleWrapper.win_sparkle_set_appcast_url(APPCAST_DIR);
-            WinSparkleWrapper.win_sparkle_init();
-
+            
             PathFinder paths = new PathFinder();
 
             // setup everything.ndfbin reader
@@ -51,8 +50,6 @@ namespace Armory {
             UnitDatabase unitDatabase = new UnitDatabase(unitInstances, dict, iconPackage, PACT_ICONS_DIRPREFIX, NATO_ICONS_DIRPREFIX);
             
             Application.Run(new Form1(unitDatabase));
-
-            cleanup();
         }
 
         /// <summary>
@@ -66,10 +63,11 @@ namespace Armory {
         }
 
         /// <summary>
-        /// Call before Application.Exit()
+        /// On process exit.
         /// </summary>
-        public static void cleanup() {
-            WinSparkleWrapper.win_sparkle_cleanup();
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public static void cleanup(object sender, EventArgs e) {
         }
     }
 }

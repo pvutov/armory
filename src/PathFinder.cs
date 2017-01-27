@@ -113,7 +113,6 @@ namespace Armory {
             }
 
             if (res != DialogResult.OK) {
-                Program.cleanup();
                 Application.Exit();
             }
             else {
@@ -131,24 +130,21 @@ namespace Armory {
                             System.IO.File.WriteAllLines(ini_path, lines);
                             return;
                         }
-
-                        Program.cleanup();
+                        
                         Application.Exit();
 
                         // Files not found, try again..
                         askUserForWargameDir(zz4 + " not found. \n");
                         return;
                     }
-
-                    Program.cleanup();
+                    
                     Application.Exit();
 
                     // Files not found, try again..
                     askUserForWargameDir(zz + " not found. \n");
                     return;
                 }
-
-                Program.cleanup();
+                
                 Application.Restart();
 
                 // Files not found, try again..

@@ -1,14 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using IrisZoomDataApi;
-using IrisZoomDataApi.Model.Ndfbin;
 using System.Text.RegularExpressions;
 
 namespace Armory
@@ -46,7 +39,6 @@ namespace Armory
 
             currentUnits = unitDatabase.getUnitList(selectedFaction);
             listBox2.DataSource = currentUnits;
-
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e) {
@@ -135,6 +127,7 @@ namespace Armory
                 opticalStrengthAntiRadarField.Text = unitDatabase.getOpticalStrengthAntiRadar();
                 unitTypeField.Text = unitDatabase.getUnitType();
                 killExperienceBonusField.Text = unitDatabase.getKillExperienceBonus();
+                specializedDetection4Field.Text = unitDatabase.getAntiplaneSpottingCap();
                 // END recon controls ---------------
                 #endregion
 
@@ -295,8 +288,59 @@ namespace Armory
             lockWeaponCheckbox.Checked = lockWeaponCheckboxSimple.Checked;
         }
 
-        private void button1_Click(object sender, EventArgs e) {
-            WinSparkleWrapper.win_sparkle_check_update_with_ui();
+        private void checkForUpdatesButton_Click(object sender, EventArgs e) {
+            Updater updater = new Armory.Updater();
+
+            if (updater.checkForUpdates()) {
+                // update
+                ProgressBar progressBar = new ProgressBar();
+                progressBar.Name = "downloadProgressBar";
+                progressBar.Maximum = 100;
+                progressBar.Scale(new SizeF(0.7f, 1f));
+
+                Panel container = new Panel();
+                container.Location = checkForUpdatesButton.Location;
+                container.Controls.Add(progressBar);
+
+                this.Controls.Remove(checkForUpdatesButton);
+                this.Controls.Add(container);
+
+                updater.applyUpdate((int val) => { progressBar.Value = val; });
+
+                // remove progress bar when it is done
+                var t = new Timer();
+                t.Interval = 10000;
+                t.Tick += (s, _) => {
+                    if (progressBar.Value == progressBar.Maximum) {
+                        this.Controls.Remove(container);
+                        this.Controls.Add(checkForUpdatesButton);
+                        t.Stop();
+                    }
+                };
+                t.Start();
+            }
+            else {
+                // remove button, show and disappear text
+                Label updateMessageLabel = new Label();
+                updateMessageLabel.Name = "updateMessageLabel";
+                updateMessageLabel.Text = "at newest version";
+                updateMessageLabel.Location = checkForUpdatesButton.Location;
+                updateMessageLabel.MaximumSize = new Size(checkForUpdatesButton.Size.Width, 0);
+                updateMessageLabel.AutoSize = true;
+
+                this.Controls.Remove(checkForUpdatesButton);
+                this.Controls.Add(updateMessageLabel);
+
+                var t = new Timer();
+                t.Interval = 4000; 
+                t.Tick += (s, _) => {
+                    this.Controls.Remove(updateMessageLabel);
+                    t.Stop();
+                };
+                t.Start();
+            }
+
+
         }
     }
 }
