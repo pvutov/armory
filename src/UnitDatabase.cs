@@ -1037,9 +1037,6 @@ namespace Armory {
                 NdfMap w;
                 foreach (CollectionItemValueHolder h in val.InnerList) {
                     w = (NdfMap) h.Value;
-                    Console.WriteLine(w.ToString());
-                    Console.WriteLine("k"+w.Key.Value.ToString());
-                    Console.WriteLine("v" + ((MapValueHolder)w.Value).Value.ToString());
                     if (w.Key.Value.ToString() == "4") {
                         result = ((MapValueHolder)w.Value).Value.ToString();
                     }
