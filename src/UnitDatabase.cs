@@ -1029,10 +1029,39 @@ namespace Armory {
             return "idk";
         }
 
+        public String getAntiplaneSpottingCap() {
+
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.ScannerConfiguration.Default.SpecializedDetections", out val)) {
+                String result = val.ToString();
+                NdfMap w;
+                foreach (CollectionItemValueHolder h in val.InnerList) {
+                    w = (NdfMap) h.Value;
+                    Console.WriteLine(w.ToString());
+                    Console.WriteLine("k"+w.Key.Value.ToString());
+                    Console.WriteLine("v" + ((MapValueHolder)w.Value).Value.ToString());
+                    if (w.Key.Value.ToString() == "4") {
+                        result = ((MapValueHolder)w.Value).Value.ToString();
+                    }
+                }
+
+                int resultInt;
+                if (int.TryParse(result, out resultInt)) {
+                    resultInt = (resultInt * 175) / 13000;
+                    result = resultInt.ToString() + "m";
+                }
+
+                return result;
+            }
+
+            return "idk";
+        }
+
         public String getAntigroundSpottingCapWhileFlying() {
 
-            NdfValueWrapper val;
-            if (queryTarget.TryGetValueFromQuery<NdfValueWrapper>("Modules.ScannerConfiguration.Default.PorteeVisionTBA", out val)) {
+            NdfMapList val;
+            if (queryTarget.TryGetValueFromQuery<NdfMapList>("Modules.ScannerConfiguration.Default.PorteeVisionTBA", out val)) {
+                //val.GetMap("4")
                 String result = val.ToString();
                 int resultInt;
                 if (int.TryParse(result, out resultInt)) {
