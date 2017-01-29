@@ -11,6 +11,7 @@ the entirety of the NDF binary. If you catch any of these errors or omissions, p
 
 Many of the data transformations I'm doing are described in NDF_Documentation.txt. If curious about the source of a field not mentioned in the documentation, look in UnitDatabase.cs. 
 
+------------------------------------------------
 
 If you're aware of important variables that I'm not exposing, please point them out: When it comes to writing this tool, merely identifying the gameplay-relevant parts of the NDF is half the battle.
 
