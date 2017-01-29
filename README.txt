@@ -11,7 +11,9 @@ the entirety of the NDF binary. If you catch any of these errors or omissions, p
 
 Many of the data transformations I'm doing are described in NDF_Documentation.txt. If curious about the source of a field not mentioned in the documentation, look in UnitDatabase.cs. 
 
+
 If you're aware of important variables that I'm not exposing, please point them out: When it comes to writing this tool, merely identifying the gameplay-relevant parts of the NDF is half the battle.
+
 If you're aware of good presentation changes to existing fields, point them out too. A trivial example of a conversion that is already in the tool is the addition of "m" to some variables that are provably in meters. A less trivial and even more useful conversion is that the weapon range stats are multiplied by 175/13000 to convert them from internal units to the meters that players are familiar with.
 
 
