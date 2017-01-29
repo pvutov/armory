@@ -9,49 +9,10 @@ the parts that are relevant to the player. There are bound to be errors. I may f
 an important stat. I may present an NDF variable as something it is not, because I do not understand
 the entirety of the NDF binary. If you catch any of these errors or omissions, please inform me.
 
+Many of the data transformations I'm doing are described in NDF_Documentation.txt. If curious about the source of a field not mentioned in the documentation, look in UnitDatabase.cs. 
 
-The following is a list of fields that the program modifies instead of displaying verbatim:
-
-Field | NDF Variable name                              | Transformations
------------------------------------------------------------------------------
-Prototype | IsPrototype                                | True => Yes, Null => No
-
-Speed | Modules.MouvementHandler.Default.Maxspeed      | divided by 52, see http://eightgold.com/RedDragon/GameScales.pdf
-
-FlyingAltitude | Modules.MouvementHandler.Default.FlyingAltitude | divided by 52
-
-MinimalAltitude | Modules.MouvementHandler.Default.MinimalAltitude | divided by 52
-
-MaxAcceleration | Modules.MouvementHandler.Default.MaxAcceleration | divided by 52
-
-MaxDeceleration | Modules.MouvementHandler.Default.MaxDeceleration | divided by 52
-
-LowAltitudeFlyingAltitude | Modules.Position.Default.LowAltitudeFlyingAltitude | divided by 52
-
-NearGroundFlyingAltitude | Modules.Position.Default.NearGroundFlyingAltitude | divided by 52
-
-Front/etc Armor | Modules.Damage.Default.CommonDamageDescriptor.BlindageProperties.ArmorDescriptorFront.BaseBlindage| all values subtracted by 4 with minimum 0; for values formerly in the 1-4 range, appended "splash resist type " + value before subtraction
-
-AP     | Modules.WeaponManager.Default.TurretDescriptorList[m].MountedWeaponDescriptorList[n].Ammunition.Arme | if between 5 and 34, subtract 4; if above 34, subtract 34, if equal to 3, return '-' (arme 3 => HE)
-
-Tags | Composite of TAmmunition.Guidance and WeaponDescriptor.TirEnMouvement | [STAT] intentionally omitted, [INDIR] comes from TirIndirect, look at the code for the rest
-
-All weapon ranges and dispersions | Modules.WeaponManager.Default.TurretDescriptorList[0].MountedWeaponDescriptorList[0].Ammunition.PorteeMaximale | multiplied by 175, divided by 13000
-
-Physical/suppression splash | Modules.WeaponManager.Default.TurretDescriptorList[0].MountedWeaponDescriptorList[0].Ammunition.RadiusSplashSuppressDamages | divided by 52
-
-spotting caps aka DetectionTBA, PorteeVisionTBA, PorteeVision | Modules.ScannerConfiguration.Default.DetectionTBA | multiplied by 175 and divided by 13000
-
-missile speed | Modules.WeaponManager.Default.TurretDescriptorList[0].MountedWeaponDescriptorList[0].Ammunition.MissileDescriptor.Modules.MouvementHandler.Maxspeed | divided by 52 
-
-stabilizer | ...HitRollRule.MinimalHitProbability | if TirEnMouvement is not True, then ignore stabilizer and output "-"
-
-accuracies | --------------------- | converted from fractionals to percentages (0.1 -> 10% and so on)
-
-shot reload | ...TempsEntreDeuxTirs | if salvo length = 1, output '-' instead of real value
-
-
-If curious about the source of any other field, look in UnitDatabase.cs.
+If you're aware of important variables that I'm not exposing, please point them out: When it comes to writing this tool, merely identifying the gameplay-relevant parts of the NDF is half the battle.
+If you're aware of good presentation changes to existing fields, point them out too. A trivial example of a conversion that is already in the tool is the addition of "m" to some variables that are provably in meters. A less trivial and even more useful conversion is that the weapon range stats are multiplied by 175/13000 to convert them from internal units to the meters that players are familiar with.
 
 
 -------------------
