@@ -130,22 +130,16 @@ namespace Armory {
                             System.IO.File.WriteAllLines(ini_path, lines);
                             return;
                         }
-                        
-                        Application.Exit();
 
                         // Files not found, try again..
                         askUserForWargameDir(zz4 + " not found. \n");
                         return;
                     }
-                    
-                    Application.Exit();
 
                     // Files not found, try again..
                     askUserForWargameDir(zz + " not found. \n");
                     return;
                 }
-                
-                Application.Restart();
 
                 // Files not found, try again..
                 askUserForWargameDir(ndf + " not found. \n");
