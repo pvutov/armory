@@ -1,0 +1,3 @@
+This project consists of two programs:
+Armory is the core app.
+ArmoryUpdater is a bootstrap that allows armory.exe to be replaced when updating.
