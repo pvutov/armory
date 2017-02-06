@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,11 +12,11 @@ namespace Armory {
     /// </summary>
     class PathFinder {
         private const bool DEBUG = false;
-        private const String NDF_PATH = @"E:\workspaceC\Armory\wrd_data\510061340\NDF_Win.dat";
-        private const String ZZ_PATH = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\510060540\510061340\ZZ_Win.dat";
-        private const String ZZ4_PATH = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\510060540\510061340\ZZ_4.dat";
+        private const String NDF_PATH_DEBUG = @"E:\workspaceC\Armory\wrd_data\510061340\NDF_Win.dat";
+        private const String ZZ_PATH_DEBUG = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\510060540\510061340\ZZ_Win.dat";
+        private const String ZZ4_PATH_DEBUG = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\510060540\510061340\ZZ_4.dat";
 
-        private String ini_path = AppDomain.CurrentDomain.BaseDirectory + "settings.ini";
+        private String ini_path = AppDomain.CurrentDomain.BaseDirectory + "settings.ini";        
         private String ndf;
         private String zz;
         private String zz4;
@@ -23,12 +24,12 @@ namespace Armory {
         public PathFinder() {
             //AppDomain.CurrentDomain.BaseDirectory
             if (DEBUG) {
-                ndf = NDF_PATH;
-                zz = ZZ_PATH;
-                zz4 = ZZ4_PATH;
+                ndf = NDF_PATH_DEBUG;
+                zz = ZZ_PATH_DEBUG;
+                zz4 = ZZ4_PATH_DEBUG;
             }
             else {
-                if (System.IO.File.Exists(ini_path)) {
+                if (File.Exists(ini_path)) {
                     if (!tryReadIni()) {
                         askUserForWargameDir();
                     }
@@ -45,7 +46,7 @@ namespace Armory {
             bool zzRead = false;
             bool zz4Read = false;
 
-            string[] lines = System.IO.File.ReadAllLines(ini_path);
+            string[] lines = File.ReadAllLines(ini_path);
             foreach (string line in lines) {
                 if (line.StartsWith("ndf:")) {
                     ndf = line.Substring("ndf:".Length);
@@ -65,7 +66,7 @@ namespace Armory {
                     zz = line.Substring("zz:".Length);
 
                     if (!zzRead) {
-                        if (System.IO.File.Exists(zz)) {
+                        if (File.Exists(zz)) {
                             zzRead = true;
                         }
                     }
@@ -79,7 +80,7 @@ namespace Armory {
                     zz4 = line.Substring("zz4:".Length);
 
                     if (!zz4Read) {
-                        if (System.IO.File.Exists(zz4)) {
+                        if (File.Exists(zz4)) {
                             zz4Read = true;
                         }
                     }
@@ -103,31 +104,39 @@ namespace Armory {
 
         private void askUserForWargameDir(string error) {
             DialogResult res;
-            string folderPath;
+            string wargameDir;
             using (FolderBrowserDialog fbd = new FolderBrowserDialog()) { 
                 fbd.Description = error + "Where is your wargame folder?"
                     + " The path will be something like \n"
                     + @"C:\SteamLibrary\SteamApps\common\Wargame Red Dragon";
                 res = fbd.ShowDialog();
-                folderPath = fbd.SelectedPath;
+                wargameDir = fbd.SelectedPath;
             }
 
             if (res != DialogResult.OK) {
                 Application.Exit();
+                Environment.Exit(0);
             }
             else {
-                ndf = folderPath + @"\Data\WARGAME\PC\510061340\NDF_Win.dat";
-                zz = folderPath + @"\Data\WARGAME\PC\510060540\510061340\ZZ_Win.dat";
-                zz4 = folderPath + @"\Data\WARGAME\PC\510060540\510061340\ZZ_4.dat";
+                // sanity check: was the provided dir correct?
+                String exe = Path.Combine(wargameDir, "Wargame3.exe");
+                if (!File.Exists(exe)) {
+                    askUserForWargameDir(exe + " not found. \n");
+                    return;
+                }
 
-                //fbd.Dispose();
+                // Find newest .dat files
+                string searchDir = Path.Combine(wargameDir, "Data", "WARGAME", "PC");
+                ndf = findNewest("NDF_Win.dat", searchDir);
+                zz = findNewest("ZZ_Win.dat", searchDir);
+                zz4 = findNewest("ZZ_4.dat", searchDir);
 
                 // Save dirs for next time
-                if (System.IO.File.Exists(ndf)) {
-                    if (System.IO.File.Exists(zz)) {
-                        if (System.IO.File.Exists(zz4)) {
+                if (File.Exists(ndf)) {
+                    if (File.Exists(zz)) {
+                        if (File.Exists(zz4)) {
                             string[] lines = { "ndf:" + ndf, "zz:" + zz, "zz4:" + zz4 };
-                            System.IO.File.WriteAllLines(ini_path, lines);
+                            File.WriteAllLines(ini_path, lines);
                             return;
                         }
 
@@ -145,6 +154,52 @@ namespace Armory {
                 askUserForWargameDir(ndf + " not found. \n");
                 return;
             }
+        }
+
+        /// <summary>
+        /// Heuristic: We do a descending alphabetic depth-first search and assume that the first file encountered is correct.
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <param name="searchDir"></param>
+        /// <returns></returns>
+        private String findNewest(String filename, String searchDir) {
+            // TODO
+            string result = null;
+            DirectoryInfo di = new DirectoryInfo(searchDir);
+
+            // Order from biggest number, which usually means most recent patch
+            var ordered = di.GetDirectories().OrderByDescending(x => x.Name);
+            foreach (DirectoryInfo innerDi in ordered) {
+                if (tryFindNewestRecursive(filename, innerDi, out result)) {
+                    return result;
+                }
+            }
+
+            if (result == null) {
+                Program.warning("File not found: " + filename);
+            }
+            return result;
+        }
+
+        private bool tryFindNewestRecursive(String filename, DirectoryInfo di, out string result) {
+            result = null;
+            string possibleFilePath = Path.Combine(di.FullName, filename);
+
+            // If a file is found, we're done.
+            if (File.Exists(possibleFilePath)) {
+                result = possibleFilePath;
+                return true;
+            }
+
+            // If a file doesn't exist in this directory, recurse on subdirs:
+            var ordered = di.GetDirectories().OrderByDescending(x => x.Name);
+            foreach (DirectoryInfo innerDi in ordered) {
+                if (tryFindNewestRecursive(filename, innerDi, out result)) {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         public String getNdfPath() {
