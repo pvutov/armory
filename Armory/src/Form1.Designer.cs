@@ -35,6 +35,21 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.eliteFieldMobility = new System.Windows.Forms.Label();
+            this.veteranFieldMobility = new System.Windows.Forms.Label();
+            this.hardenedFieldMobility = new System.Windows.Forms.Label();
+            this.trainedFieldMobility = new System.Windows.Forms.Label();
+            this.rookieFieldMobility = new System.Windows.Forms.Label();
+            this.yesEliteImageMobility = new System.Windows.Forms.PictureBox();
+            this.yesVeteranImageMobility = new System.Windows.Forms.PictureBox();
+            this.yesHardenedImageMobility = new System.Windows.Forms.PictureBox();
+            this.yesTrainedImageMobility = new System.Windows.Forms.PictureBox();
+            this.yesRookieImageMobility = new System.Windows.Forms.PictureBox();
+            this.noEliteImageMobility = new System.Windows.Forms.PictureBox();
+            this.noVeteranImageMobility = new System.Windows.Forms.PictureBox();
+            this.noHardenedImageMobility = new System.Windows.Forms.PictureBox();
+            this.noTrainedImageMobility = new System.Windows.Forms.PictureBox();
+            this.noRookieImageMobility = new System.Windows.Forms.PictureBox();
             this.nearGroundFlyingAltitudeField = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.lowAltitudeFlyingAltitudeField = new System.Windows.Forms.Label();
@@ -74,6 +89,21 @@
             this.prototypeLabelMobility = new System.Windows.Forms.Label();
             this.nameFieldMobility = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.eliteFieldRecon = new System.Windows.Forms.Label();
+            this.veteranFieldRecon = new System.Windows.Forms.Label();
+            this.hardenedFieldRecon = new System.Windows.Forms.Label();
+            this.trainedFieldRecon = new System.Windows.Forms.Label();
+            this.rookieFieldRecon = new System.Windows.Forms.Label();
+            this.yesEliteImageRecon = new System.Windows.Forms.PictureBox();
+            this.yesVeteranImageRecon = new System.Windows.Forms.PictureBox();
+            this.yesHardenedImageRecon = new System.Windows.Forms.PictureBox();
+            this.yesTrainedImageRecon = new System.Windows.Forms.PictureBox();
+            this.yesRookieImageRecon = new System.Windows.Forms.PictureBox();
+            this.noEliteImageRecon = new System.Windows.Forms.PictureBox();
+            this.noVeteranImageRecon = new System.Windows.Forms.PictureBox();
+            this.noHardenedImageRecon = new System.Windows.Forms.PictureBox();
+            this.noTrainedImageRecon = new System.Windows.Forms.PictureBox();
+            this.noRookieImageRecon = new System.Windows.Forms.PictureBox();
             this.specializedDetection4Field = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.timeBetweenEachIdentifyRollField = new System.Windows.Forms.Label();
@@ -108,6 +138,21 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groundOpticsLabel2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.eliteFieldFirepower = new System.Windows.Forms.Label();
+            this.veteranFieldFirepower = new System.Windows.Forms.Label();
+            this.hardenedFieldFirepower = new System.Windows.Forms.Label();
+            this.trainedFieldFirepower = new System.Windows.Forms.Label();
+            this.rookieFieldFirepower = new System.Windows.Forms.Label();
+            this.yesEliteImageFirepower = new System.Windows.Forms.PictureBox();
+            this.yesVeteranImageFirepower = new System.Windows.Forms.PictureBox();
+            this.yesHardenedImageFirepower = new System.Windows.Forms.PictureBox();
+            this.yesTrainedImageFirepower = new System.Windows.Forms.PictureBox();
+            this.yesRookieImageFirepower = new System.Windows.Forms.PictureBox();
+            this.noEliteImageFirepower = new System.Windows.Forms.PictureBox();
+            this.noVeteranImageFirepower = new System.Windows.Forms.PictureBox();
+            this.noHardenedImageFirepower = new System.Windows.Forms.PictureBox();
+            this.noTrainedImageFirepower = new System.Windows.Forms.PictureBox();
+            this.noRookieImageFirepower = new System.Windows.Forms.PictureBox();
             this.lockWeaponCheckbox = new System.Windows.Forms.CheckBox();
             this.missileMaxAccelField = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
@@ -179,6 +224,28 @@
             this.prototypeLabelFirepower = new System.Windows.Forms.Label();
             this.nameFieldFirepower = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label104 = new System.Windows.Forms.Label();
+            this.groundRangeFieldSimple = new System.Windows.Forms.Label();
+            this.heloRangeFieldSimple = new System.Windows.Forms.Label();
+            this.label102 = new System.Windows.Forms.Label();
+            this.planeRangeFieldSimple = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
+            this.eliteFieldSimple = new System.Windows.Forms.Label();
+            this.veteranFieldSimple = new System.Windows.Forms.Label();
+            this.hardenedFieldSimple = new System.Windows.Forms.Label();
+            this.trainedFieldSimple = new System.Windows.Forms.Label();
+            this.rookieFieldSimple = new System.Windows.Forms.Label();
+            this.yesEliteImageSimple = new System.Windows.Forms.PictureBox();
+            this.yesVeteranImageSimple = new System.Windows.Forms.PictureBox();
+            this.yesHardenedImageSimple = new System.Windows.Forms.PictureBox();
+            this.yesTrainedImageSimple = new System.Windows.Forms.PictureBox();
+            this.yesRookieImageSimple = new System.Windows.Forms.PictureBox();
+            this.noEliteImageSimple = new System.Windows.Forms.PictureBox();
+            this.noVeteranImageSimple = new System.Windows.Forms.PictureBox();
+            this.noHardenedImageSimple = new System.Windows.Forms.PictureBox();
+            this.noTrainedImageSimple = new System.Windows.Forms.PictureBox();
+            this.noRookieImageSimple = new System.Windows.Forms.PictureBox();
             this.lockWeaponCheckboxSimple = new System.Windows.Forms.CheckBox();
             this.aimTimeFieldSimple = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
@@ -193,11 +260,6 @@
             this.label96 = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
             this.label98 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.planeRangeFieldSimple = new System.Windows.Forms.Label();
-            this.label102 = new System.Windows.Forms.Label();
-            this.heloRangeFieldSimple = new System.Windows.Forms.Label();
-            this.label104 = new System.Windows.Forms.Label();
             this.apFieldSimple = new System.Windows.Forms.Label();
             this.suppressionFieldSimple = new System.Windows.Forms.Label();
             this.label109 = new System.Windows.Forms.Label();
@@ -206,7 +268,6 @@
             this.heFieldSimple = new System.Windows.Forms.Label();
             this.rofFieldSimple = new System.Windows.Forms.Label();
             this.label114 = new System.Windows.Forms.Label();
-            this.groundRangeFieldSimple = new System.Windows.Forms.Label();
             this.supplyCostFieldSimple = new System.Windows.Forms.Label();
             this.label117 = new System.Windows.Forms.Label();
             this.label118 = new System.Windows.Forms.Label();
@@ -256,14 +317,46 @@
             this.nameFieldSimple = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.suppressDamagesEffectsField = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.physicalDamagesEffectsField = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.paliersPhysicalDamagesField = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.infAndCanonDispersionModifierLabel = new System.Windows.Forms.Label();
+            this.infAndCanonDispersionModifierField = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.paliersSuppressDamagesField = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
+            this.infDamagesMultiplierField = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.infAndCanonSpeedModifierField = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label94 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.turretRotationSpeedField = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.chassisRotationSpeedField = new System.Windows.Forms.Label();
+            this.paliersPhysicalDamagesField = new System.Windows.Forms.Label();
+            this.vehiculeSpeedField = new System.Windows.Forms.Label();
+            this.vehiculeFiringRateField = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cannonFiringRateMultiplierField = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.eliteFieldSurvivability = new System.Windows.Forms.Label();
+            this.veteranFieldSurvivability = new System.Windows.Forms.Label();
+            this.hardenedFieldSurvivability = new System.Windows.Forms.Label();
+            this.trainedFieldSurvivability = new System.Windows.Forms.Label();
+            this.rookieFieldSurvivability = new System.Windows.Forms.Label();
+            this.yesEliteImageSurvivability = new System.Windows.Forms.PictureBox();
+            this.yesVeteranImageSurvivability = new System.Windows.Forms.PictureBox();
+            this.yesHardenedImageSurvivability = new System.Windows.Forms.PictureBox();
+            this.yesTrainedImageSurvivability = new System.Windows.Forms.PictureBox();
+            this.yesRookieImageSurvivability = new System.Windows.Forms.PictureBox();
+            this.noEliteImageSurvivability = new System.Windows.Forms.PictureBox();
+            this.noVeteranImageSurvivability = new System.Windows.Forms.PictureBox();
+            this.noHardenedImageSurvivability = new System.Windows.Forms.PictureBox();
+            this.noTrainedImageSurvivability = new System.Windows.Forms.PictureBox();
+            this.noRookieImageSurvivability = new System.Windows.Forms.PictureBox();
             this.stunDamagesToGetStunnedField = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.stunDamagesRegenField = new System.Windows.Forms.Label();
@@ -294,128 +387,16 @@
             this.nameFieldSurvivability = new System.Windows.Forms.Label();
             this.lockWeaponTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.checkForUpdatesButton = new System.Windows.Forms.Button();
-            this.noRookieImageSimple = new System.Windows.Forms.PictureBox();
-            this.noTrainedImageSimple = new System.Windows.Forms.PictureBox();
-            this.noHardenedImageSimple = new System.Windows.Forms.PictureBox();
-            this.noVeteranImageSimple = new System.Windows.Forms.PictureBox();
-            this.noEliteImageSimple = new System.Windows.Forms.PictureBox();
-            this.yesEliteImageSimple = new System.Windows.Forms.PictureBox();
-            this.yesVeteranImageSimple = new System.Windows.Forms.PictureBox();
-            this.yesHardenedImageSimple = new System.Windows.Forms.PictureBox();
-            this.yesTrainedImageSimple = new System.Windows.Forms.PictureBox();
-            this.yesRookieImageSimple = new System.Windows.Forms.PictureBox();
-            this.rookieFieldSimple = new System.Windows.Forms.Label();
-            this.trainedFieldSimple = new System.Windows.Forms.Label();
-            this.hardenedFieldSimple = new System.Windows.Forms.Label();
-            this.veteranFieldSimple = new System.Windows.Forms.Label();
-            this.eliteFieldSimple = new System.Windows.Forms.Label();
-            this.noRookieImageFirepower = new System.Windows.Forms.PictureBox();
-            this.noRookieImageRecon = new System.Windows.Forms.PictureBox();
-            this.noRookieImageMobility = new System.Windows.Forms.PictureBox();
-            this.noRookieImageSurvivability = new System.Windows.Forms.PictureBox();
-            this.eliteFieldFirepower = new System.Windows.Forms.Label();
-            this.veteranFieldFirepower = new System.Windows.Forms.Label();
-            this.hardenedFieldFirepower = new System.Windows.Forms.Label();
-            this.trainedFieldFirepower = new System.Windows.Forms.Label();
-            this.rookieFieldFirepower = new System.Windows.Forms.Label();
-            this.yesEliteImageFirepower = new System.Windows.Forms.PictureBox();
-            this.yesVeteranImageFirepower = new System.Windows.Forms.PictureBox();
-            this.yesHardenedImageFirepower = new System.Windows.Forms.PictureBox();
-            this.yesTrainedImageFirepower = new System.Windows.Forms.PictureBox();
-            this.yesRookieImageFirepower = new System.Windows.Forms.PictureBox();
-            this.noEliteImageFirepower = new System.Windows.Forms.PictureBox();
-            this.noVeteranImageFirepower = new System.Windows.Forms.PictureBox();
-            this.noHardenedImageFirepower = new System.Windows.Forms.PictureBox();
-            this.noTrainedImageFirepower = new System.Windows.Forms.PictureBox();
-            this.eliteFieldRecon = new System.Windows.Forms.Label();
-            this.veteranFieldRecon = new System.Windows.Forms.Label();
-            this.hardenedFieldRecon = new System.Windows.Forms.Label();
-            this.trainedFieldRecon = new System.Windows.Forms.Label();
-            this.rookieFieldRecon = new System.Windows.Forms.Label();
-            this.yesEliteImageRecon = new System.Windows.Forms.PictureBox();
-            this.yesVeteranImageRecon = new System.Windows.Forms.PictureBox();
-            this.yesHardenedImageRecon = new System.Windows.Forms.PictureBox();
-            this.yesTrainedImageRecon = new System.Windows.Forms.PictureBox();
-            this.yesRookieImageRecon = new System.Windows.Forms.PictureBox();
-            this.noEliteImageRecon = new System.Windows.Forms.PictureBox();
-            this.noVeteranImageRecon = new System.Windows.Forms.PictureBox();
-            this.noHardenedImageRecon = new System.Windows.Forms.PictureBox();
-            this.noTrainedImageRecon = new System.Windows.Forms.PictureBox();
-            this.eliteFieldMobility = new System.Windows.Forms.Label();
-            this.veteranFieldMobility = new System.Windows.Forms.Label();
-            this.hardenedFieldMobility = new System.Windows.Forms.Label();
-            this.trainedFieldMobility = new System.Windows.Forms.Label();
-            this.rookieFieldMobility = new System.Windows.Forms.Label();
-            this.yesEliteImageMobility = new System.Windows.Forms.PictureBox();
-            this.yesVeteranImageMobility = new System.Windows.Forms.PictureBox();
-            this.yesHardenedImageMobility = new System.Windows.Forms.PictureBox();
-            this.yesTrainedImageMobility = new System.Windows.Forms.PictureBox();
-            this.yesRookieImageMobility = new System.Windows.Forms.PictureBox();
-            this.noEliteImageMobility = new System.Windows.Forms.PictureBox();
-            this.noVeteranImageMobility = new System.Windows.Forms.PictureBox();
-            this.noHardenedImageMobility = new System.Windows.Forms.PictureBox();
-            this.noTrainedImageMobility = new System.Windows.Forms.PictureBox();
-            this.eliteFieldSurvivability = new System.Windows.Forms.Label();
-            this.veteranFieldSurvivability = new System.Windows.Forms.Label();
-            this.hardenedFieldSurvivability = new System.Windows.Forms.Label();
-            this.trainedFieldSurvivability = new System.Windows.Forms.Label();
-            this.rookieFieldSurvivability = new System.Windows.Forms.Label();
-            this.yesEliteImageSurvivability = new System.Windows.Forms.PictureBox();
-            this.yesVeteranImageSurvivability = new System.Windows.Forms.PictureBox();
-            this.yesHardenedImageSurvivability = new System.Windows.Forms.PictureBox();
-            this.yesTrainedImageSurvivability = new System.Windows.Forms.PictureBox();
-            this.yesRookieImageSurvivability = new System.Windows.Forms.PictureBox();
-            this.noEliteImageSurvivability = new System.Windows.Forms.PictureBox();
-            this.noVeteranImageSurvivability = new System.Windows.Forms.PictureBox();
-            this.noHardenedImageSurvivability = new System.Windows.Forms.PictureBox();
-            this.noTrainedImageSurvivability = new System.Windows.Forms.PictureBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.artilleryDispersionModifierLabel = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.canonFiringRateMultiplierField = new System.Windows.Forms.Label();
+            this.vehiculeFiringRateMultiplierField = new System.Windows.Forms.Label();
+            this.vehiculeDispersionMultiplierField = new System.Windows.Forms.Label();
+            this.artilleryDispersionMultiplierField = new System.Windows.Forms.Label();
+            this.infFiringRateMultiplierField = new System.Windows.Forms.Label();
+            this.hitModifierField = new System.Windows.Forms.Label();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldMobility)).BeginInit();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldRecon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureField)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldFirepower)).BeginInit();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureFieldSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardField)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabControl.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldSurvivability)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageRecon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageMobility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageSurvivability)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageRecon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageRecon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageRecon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageRecon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageRecon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageRecon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageRecon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageRecon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageRecon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageMobility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageMobility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageMobility)).BeginInit();
@@ -425,6 +406,53 @@
             ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageMobility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageMobility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageMobility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageMobility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldMobility)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageRecon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageRecon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageRecon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageRecon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageRecon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageRecon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageRecon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageRecon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageRecon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageRecon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldRecon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureField)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldFirepower)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureFieldSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardField)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabControl.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageSurvivability)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageSurvivability)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageSurvivability)).BeginInit();
@@ -434,6 +462,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageSurvivability)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageSurvivability)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageSurvivability)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageSurvivability)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldSurvivability)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -532,6 +562,176 @@
             this.tabPage5.Size = new System.Drawing.Size(381, 488);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Mobility";
+            // 
+            // eliteFieldMobility
+            // 
+            this.eliteFieldMobility.AutoSize = true;
+            this.eliteFieldMobility.BackColor = System.Drawing.Color.Transparent;
+            this.eliteFieldMobility.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.eliteFieldMobility.ForeColor = System.Drawing.Color.Chartreuse;
+            this.eliteFieldMobility.Location = new System.Drawing.Point(345, 21);
+            this.eliteFieldMobility.Name = "eliteFieldMobility";
+            this.eliteFieldMobility.Size = new System.Drawing.Size(24, 17);
+            this.eliteFieldMobility.TabIndex = 225;
+            this.eliteFieldMobility.Text = "12";
+            this.eliteFieldMobility.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.eliteFieldMobility, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // veteranFieldMobility
+            // 
+            this.veteranFieldMobility.AutoSize = true;
+            this.veteranFieldMobility.BackColor = System.Drawing.Color.Transparent;
+            this.veteranFieldMobility.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.veteranFieldMobility.ForeColor = System.Drawing.Color.Chartreuse;
+            this.veteranFieldMobility.Location = new System.Drawing.Point(295, 21);
+            this.veteranFieldMobility.Name = "veteranFieldMobility";
+            this.veteranFieldMobility.Size = new System.Drawing.Size(24, 17);
+            this.veteranFieldMobility.TabIndex = 224;
+            this.veteranFieldMobility.Text = "12";
+            this.veteranFieldMobility.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.veteranFieldMobility, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // hardenedFieldMobility
+            // 
+            this.hardenedFieldMobility.AutoSize = true;
+            this.hardenedFieldMobility.BackColor = System.Drawing.Color.Transparent;
+            this.hardenedFieldMobility.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.hardenedFieldMobility.ForeColor = System.Drawing.Color.Chartreuse;
+            this.hardenedFieldMobility.Location = new System.Drawing.Point(245, 21);
+            this.hardenedFieldMobility.Name = "hardenedFieldMobility";
+            this.hardenedFieldMobility.Size = new System.Drawing.Size(24, 17);
+            this.hardenedFieldMobility.TabIndex = 223;
+            this.hardenedFieldMobility.Text = "12";
+            this.hardenedFieldMobility.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.hardenedFieldMobility, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // trainedFieldMobility
+            // 
+            this.trainedFieldMobility.AutoSize = true;
+            this.trainedFieldMobility.BackColor = System.Drawing.Color.Transparent;
+            this.trainedFieldMobility.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.trainedFieldMobility.ForeColor = System.Drawing.Color.Chartreuse;
+            this.trainedFieldMobility.Location = new System.Drawing.Point(195, 21);
+            this.trainedFieldMobility.Name = "trainedFieldMobility";
+            this.trainedFieldMobility.Size = new System.Drawing.Size(24, 17);
+            this.trainedFieldMobility.TabIndex = 222;
+            this.trainedFieldMobility.Text = "12";
+            this.trainedFieldMobility.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.trainedFieldMobility, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // rookieFieldMobility
+            // 
+            this.rookieFieldMobility.AutoSize = true;
+            this.rookieFieldMobility.BackColor = System.Drawing.Color.Transparent;
+            this.rookieFieldMobility.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.rookieFieldMobility.ForeColor = System.Drawing.Color.Chartreuse;
+            this.rookieFieldMobility.Location = new System.Drawing.Point(145, 21);
+            this.rookieFieldMobility.Name = "rookieFieldMobility";
+            this.rookieFieldMobility.Size = new System.Drawing.Size(24, 17);
+            this.rookieFieldMobility.TabIndex = 221;
+            this.rookieFieldMobility.Text = "12";
+            this.rookieFieldMobility.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.rookieFieldMobility, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // yesEliteImageMobility
+            // 
+            this.yesEliteImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageMobility.Image")));
+            this.yesEliteImageMobility.Location = new System.Drawing.Point(322, 19);
+            this.yesEliteImageMobility.Name = "yesEliteImageMobility";
+            this.yesEliteImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.yesEliteImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesEliteImageMobility.TabIndex = 220;
+            this.yesEliteImageMobility.TabStop = false;
+            // 
+            // yesVeteranImageMobility
+            // 
+            this.yesVeteranImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageMobility.Image")));
+            this.yesVeteranImageMobility.Location = new System.Drawing.Point(272, 19);
+            this.yesVeteranImageMobility.Name = "yesVeteranImageMobility";
+            this.yesVeteranImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.yesVeteranImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesVeteranImageMobility.TabIndex = 219;
+            this.yesVeteranImageMobility.TabStop = false;
+            // 
+            // yesHardenedImageMobility
+            // 
+            this.yesHardenedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageMobility.Image")));
+            this.yesHardenedImageMobility.Location = new System.Drawing.Point(222, 19);
+            this.yesHardenedImageMobility.Name = "yesHardenedImageMobility";
+            this.yesHardenedImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.yesHardenedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesHardenedImageMobility.TabIndex = 218;
+            this.yesHardenedImageMobility.TabStop = false;
+            // 
+            // yesTrainedImageMobility
+            // 
+            this.yesTrainedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageMobility.Image")));
+            this.yesTrainedImageMobility.Location = new System.Drawing.Point(172, 19);
+            this.yesTrainedImageMobility.Name = "yesTrainedImageMobility";
+            this.yesTrainedImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.yesTrainedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesTrainedImageMobility.TabIndex = 217;
+            this.yesTrainedImageMobility.TabStop = false;
+            // 
+            // yesRookieImageMobility
+            // 
+            this.yesRookieImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageMobility.Image")));
+            this.yesRookieImageMobility.Location = new System.Drawing.Point(122, 19);
+            this.yesRookieImageMobility.Name = "yesRookieImageMobility";
+            this.yesRookieImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.yesRookieImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesRookieImageMobility.TabIndex = 216;
+            this.yesRookieImageMobility.TabStop = false;
+            // 
+            // noEliteImageMobility
+            // 
+            this.noEliteImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageMobility.Image")));
+            this.noEliteImageMobility.Location = new System.Drawing.Point(322, 19);
+            this.noEliteImageMobility.Name = "noEliteImageMobility";
+            this.noEliteImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.noEliteImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noEliteImageMobility.TabIndex = 215;
+            this.noEliteImageMobility.TabStop = false;
+            // 
+            // noVeteranImageMobility
+            // 
+            this.noVeteranImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageMobility.Image")));
+            this.noVeteranImageMobility.Location = new System.Drawing.Point(272, 19);
+            this.noVeteranImageMobility.Name = "noVeteranImageMobility";
+            this.noVeteranImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.noVeteranImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noVeteranImageMobility.TabIndex = 214;
+            this.noVeteranImageMobility.TabStop = false;
+            // 
+            // noHardenedImageMobility
+            // 
+            this.noHardenedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageMobility.Image")));
+            this.noHardenedImageMobility.Location = new System.Drawing.Point(222, 19);
+            this.noHardenedImageMobility.Name = "noHardenedImageMobility";
+            this.noHardenedImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.noHardenedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noHardenedImageMobility.TabIndex = 213;
+            this.noHardenedImageMobility.TabStop = false;
+            // 
+            // noTrainedImageMobility
+            // 
+            this.noTrainedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageMobility.Image")));
+            this.noTrainedImageMobility.Location = new System.Drawing.Point(172, 19);
+            this.noTrainedImageMobility.Name = "noTrainedImageMobility";
+            this.noTrainedImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.noTrainedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noTrainedImageMobility.TabIndex = 212;
+            this.noTrainedImageMobility.TabStop = false;
+            // 
+            // noRookieImageMobility
+            // 
+            this.noRookieImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageMobility.Image")));
+            this.noRookieImageMobility.Location = new System.Drawing.Point(122, 19);
+            this.noRookieImageMobility.Name = "noRookieImageMobility";
+            this.noRookieImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.noRookieImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noRookieImageMobility.TabIndex = 198;
+            this.noRookieImageMobility.TabStop = false;
             // 
             // nearGroundFlyingAltitudeField
             // 
@@ -1066,6 +1266,176 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Recon";
             // 
+            // eliteFieldRecon
+            // 
+            this.eliteFieldRecon.AutoSize = true;
+            this.eliteFieldRecon.BackColor = System.Drawing.Color.Transparent;
+            this.eliteFieldRecon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.eliteFieldRecon.ForeColor = System.Drawing.Color.Chartreuse;
+            this.eliteFieldRecon.Location = new System.Drawing.Point(345, 21);
+            this.eliteFieldRecon.Name = "eliteFieldRecon";
+            this.eliteFieldRecon.Size = new System.Drawing.Size(24, 17);
+            this.eliteFieldRecon.TabIndex = 225;
+            this.eliteFieldRecon.Text = "12";
+            this.eliteFieldRecon.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.eliteFieldRecon, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // veteranFieldRecon
+            // 
+            this.veteranFieldRecon.AutoSize = true;
+            this.veteranFieldRecon.BackColor = System.Drawing.Color.Transparent;
+            this.veteranFieldRecon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.veteranFieldRecon.ForeColor = System.Drawing.Color.Chartreuse;
+            this.veteranFieldRecon.Location = new System.Drawing.Point(295, 21);
+            this.veteranFieldRecon.Name = "veteranFieldRecon";
+            this.veteranFieldRecon.Size = new System.Drawing.Size(24, 17);
+            this.veteranFieldRecon.TabIndex = 224;
+            this.veteranFieldRecon.Text = "12";
+            this.veteranFieldRecon.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.veteranFieldRecon, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // hardenedFieldRecon
+            // 
+            this.hardenedFieldRecon.AutoSize = true;
+            this.hardenedFieldRecon.BackColor = System.Drawing.Color.Transparent;
+            this.hardenedFieldRecon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.hardenedFieldRecon.ForeColor = System.Drawing.Color.Chartreuse;
+            this.hardenedFieldRecon.Location = new System.Drawing.Point(245, 21);
+            this.hardenedFieldRecon.Name = "hardenedFieldRecon";
+            this.hardenedFieldRecon.Size = new System.Drawing.Size(24, 17);
+            this.hardenedFieldRecon.TabIndex = 223;
+            this.hardenedFieldRecon.Text = "12";
+            this.hardenedFieldRecon.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.hardenedFieldRecon, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // trainedFieldRecon
+            // 
+            this.trainedFieldRecon.AutoSize = true;
+            this.trainedFieldRecon.BackColor = System.Drawing.Color.Transparent;
+            this.trainedFieldRecon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.trainedFieldRecon.ForeColor = System.Drawing.Color.Chartreuse;
+            this.trainedFieldRecon.Location = new System.Drawing.Point(195, 21);
+            this.trainedFieldRecon.Name = "trainedFieldRecon";
+            this.trainedFieldRecon.Size = new System.Drawing.Size(24, 17);
+            this.trainedFieldRecon.TabIndex = 222;
+            this.trainedFieldRecon.Text = "12";
+            this.trainedFieldRecon.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.trainedFieldRecon, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // rookieFieldRecon
+            // 
+            this.rookieFieldRecon.AutoSize = true;
+            this.rookieFieldRecon.BackColor = System.Drawing.Color.Transparent;
+            this.rookieFieldRecon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.rookieFieldRecon.ForeColor = System.Drawing.Color.Chartreuse;
+            this.rookieFieldRecon.Location = new System.Drawing.Point(145, 21);
+            this.rookieFieldRecon.Name = "rookieFieldRecon";
+            this.rookieFieldRecon.Size = new System.Drawing.Size(24, 17);
+            this.rookieFieldRecon.TabIndex = 221;
+            this.rookieFieldRecon.Text = "12";
+            this.rookieFieldRecon.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.rookieFieldRecon, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // yesEliteImageRecon
+            // 
+            this.yesEliteImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageRecon.Image")));
+            this.yesEliteImageRecon.Location = new System.Drawing.Point(322, 19);
+            this.yesEliteImageRecon.Name = "yesEliteImageRecon";
+            this.yesEliteImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.yesEliteImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesEliteImageRecon.TabIndex = 220;
+            this.yesEliteImageRecon.TabStop = false;
+            // 
+            // yesVeteranImageRecon
+            // 
+            this.yesVeteranImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageRecon.Image")));
+            this.yesVeteranImageRecon.Location = new System.Drawing.Point(272, 19);
+            this.yesVeteranImageRecon.Name = "yesVeteranImageRecon";
+            this.yesVeteranImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.yesVeteranImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesVeteranImageRecon.TabIndex = 219;
+            this.yesVeteranImageRecon.TabStop = false;
+            // 
+            // yesHardenedImageRecon
+            // 
+            this.yesHardenedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageRecon.Image")));
+            this.yesHardenedImageRecon.Location = new System.Drawing.Point(222, 19);
+            this.yesHardenedImageRecon.Name = "yesHardenedImageRecon";
+            this.yesHardenedImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.yesHardenedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesHardenedImageRecon.TabIndex = 218;
+            this.yesHardenedImageRecon.TabStop = false;
+            // 
+            // yesTrainedImageRecon
+            // 
+            this.yesTrainedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageRecon.Image")));
+            this.yesTrainedImageRecon.Location = new System.Drawing.Point(172, 19);
+            this.yesTrainedImageRecon.Name = "yesTrainedImageRecon";
+            this.yesTrainedImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.yesTrainedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesTrainedImageRecon.TabIndex = 217;
+            this.yesTrainedImageRecon.TabStop = false;
+            // 
+            // yesRookieImageRecon
+            // 
+            this.yesRookieImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageRecon.Image")));
+            this.yesRookieImageRecon.Location = new System.Drawing.Point(122, 19);
+            this.yesRookieImageRecon.Name = "yesRookieImageRecon";
+            this.yesRookieImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.yesRookieImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesRookieImageRecon.TabIndex = 216;
+            this.yesRookieImageRecon.TabStop = false;
+            // 
+            // noEliteImageRecon
+            // 
+            this.noEliteImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageRecon.Image")));
+            this.noEliteImageRecon.Location = new System.Drawing.Point(322, 19);
+            this.noEliteImageRecon.Name = "noEliteImageRecon";
+            this.noEliteImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.noEliteImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noEliteImageRecon.TabIndex = 215;
+            this.noEliteImageRecon.TabStop = false;
+            // 
+            // noVeteranImageRecon
+            // 
+            this.noVeteranImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageRecon.Image")));
+            this.noVeteranImageRecon.Location = new System.Drawing.Point(272, 19);
+            this.noVeteranImageRecon.Name = "noVeteranImageRecon";
+            this.noVeteranImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.noVeteranImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noVeteranImageRecon.TabIndex = 214;
+            this.noVeteranImageRecon.TabStop = false;
+            // 
+            // noHardenedImageRecon
+            // 
+            this.noHardenedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageRecon.Image")));
+            this.noHardenedImageRecon.Location = new System.Drawing.Point(222, 19);
+            this.noHardenedImageRecon.Name = "noHardenedImageRecon";
+            this.noHardenedImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.noHardenedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noHardenedImageRecon.TabIndex = 213;
+            this.noHardenedImageRecon.TabStop = false;
+            // 
+            // noTrainedImageRecon
+            // 
+            this.noTrainedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageRecon.Image")));
+            this.noTrainedImageRecon.Location = new System.Drawing.Point(172, 19);
+            this.noTrainedImageRecon.Name = "noTrainedImageRecon";
+            this.noTrainedImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.noTrainedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noTrainedImageRecon.TabIndex = 212;
+            this.noTrainedImageRecon.TabStop = false;
+            // 
+            // noRookieImageRecon
+            // 
+            this.noRookieImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageRecon.Image")));
+            this.noRookieImageRecon.Location = new System.Drawing.Point(122, 19);
+            this.noRookieImageRecon.Name = "noRookieImageRecon";
+            this.noRookieImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.noRookieImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noRookieImageRecon.TabIndex = 198;
+            this.noRookieImageRecon.TabStop = false;
+            // 
             // specializedDetection4Field
             // 
             this.specializedDetection4Field.AutoSize = true;
@@ -1575,6 +1945,176 @@
             this.tabPage3.Size = new System.Drawing.Size(381, 488);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Firepower";
+            // 
+            // eliteFieldFirepower
+            // 
+            this.eliteFieldFirepower.AutoSize = true;
+            this.eliteFieldFirepower.BackColor = System.Drawing.Color.Transparent;
+            this.eliteFieldFirepower.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.eliteFieldFirepower.ForeColor = System.Drawing.Color.Chartreuse;
+            this.eliteFieldFirepower.Location = new System.Drawing.Point(345, 21);
+            this.eliteFieldFirepower.Name = "eliteFieldFirepower";
+            this.eliteFieldFirepower.Size = new System.Drawing.Size(24, 17);
+            this.eliteFieldFirepower.TabIndex = 225;
+            this.eliteFieldFirepower.Text = "12";
+            this.eliteFieldFirepower.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.eliteFieldFirepower, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // veteranFieldFirepower
+            // 
+            this.veteranFieldFirepower.AutoSize = true;
+            this.veteranFieldFirepower.BackColor = System.Drawing.Color.Transparent;
+            this.veteranFieldFirepower.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.veteranFieldFirepower.ForeColor = System.Drawing.Color.Chartreuse;
+            this.veteranFieldFirepower.Location = new System.Drawing.Point(295, 21);
+            this.veteranFieldFirepower.Name = "veteranFieldFirepower";
+            this.veteranFieldFirepower.Size = new System.Drawing.Size(24, 17);
+            this.veteranFieldFirepower.TabIndex = 224;
+            this.veteranFieldFirepower.Text = "12";
+            this.veteranFieldFirepower.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.veteranFieldFirepower, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // hardenedFieldFirepower
+            // 
+            this.hardenedFieldFirepower.AutoSize = true;
+            this.hardenedFieldFirepower.BackColor = System.Drawing.Color.Transparent;
+            this.hardenedFieldFirepower.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.hardenedFieldFirepower.ForeColor = System.Drawing.Color.Chartreuse;
+            this.hardenedFieldFirepower.Location = new System.Drawing.Point(245, 21);
+            this.hardenedFieldFirepower.Name = "hardenedFieldFirepower";
+            this.hardenedFieldFirepower.Size = new System.Drawing.Size(24, 17);
+            this.hardenedFieldFirepower.TabIndex = 223;
+            this.hardenedFieldFirepower.Text = "12";
+            this.hardenedFieldFirepower.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.hardenedFieldFirepower, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // trainedFieldFirepower
+            // 
+            this.trainedFieldFirepower.AutoSize = true;
+            this.trainedFieldFirepower.BackColor = System.Drawing.Color.Transparent;
+            this.trainedFieldFirepower.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.trainedFieldFirepower.ForeColor = System.Drawing.Color.Chartreuse;
+            this.trainedFieldFirepower.Location = new System.Drawing.Point(195, 21);
+            this.trainedFieldFirepower.Name = "trainedFieldFirepower";
+            this.trainedFieldFirepower.Size = new System.Drawing.Size(24, 17);
+            this.trainedFieldFirepower.TabIndex = 222;
+            this.trainedFieldFirepower.Text = "12";
+            this.trainedFieldFirepower.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.trainedFieldFirepower, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // rookieFieldFirepower
+            // 
+            this.rookieFieldFirepower.AutoSize = true;
+            this.rookieFieldFirepower.BackColor = System.Drawing.Color.Transparent;
+            this.rookieFieldFirepower.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.rookieFieldFirepower.ForeColor = System.Drawing.Color.Chartreuse;
+            this.rookieFieldFirepower.Location = new System.Drawing.Point(145, 21);
+            this.rookieFieldFirepower.Name = "rookieFieldFirepower";
+            this.rookieFieldFirepower.Size = new System.Drawing.Size(24, 17);
+            this.rookieFieldFirepower.TabIndex = 221;
+            this.rookieFieldFirepower.Text = "12";
+            this.rookieFieldFirepower.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.rookieFieldFirepower, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // yesEliteImageFirepower
+            // 
+            this.yesEliteImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageFirepower.Image")));
+            this.yesEliteImageFirepower.Location = new System.Drawing.Point(322, 19);
+            this.yesEliteImageFirepower.Name = "yesEliteImageFirepower";
+            this.yesEliteImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.yesEliteImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesEliteImageFirepower.TabIndex = 220;
+            this.yesEliteImageFirepower.TabStop = false;
+            // 
+            // yesVeteranImageFirepower
+            // 
+            this.yesVeteranImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageFirepower.Image")));
+            this.yesVeteranImageFirepower.Location = new System.Drawing.Point(272, 19);
+            this.yesVeteranImageFirepower.Name = "yesVeteranImageFirepower";
+            this.yesVeteranImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.yesVeteranImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesVeteranImageFirepower.TabIndex = 219;
+            this.yesVeteranImageFirepower.TabStop = false;
+            // 
+            // yesHardenedImageFirepower
+            // 
+            this.yesHardenedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageFirepower.Image")));
+            this.yesHardenedImageFirepower.Location = new System.Drawing.Point(222, 19);
+            this.yesHardenedImageFirepower.Name = "yesHardenedImageFirepower";
+            this.yesHardenedImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.yesHardenedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesHardenedImageFirepower.TabIndex = 218;
+            this.yesHardenedImageFirepower.TabStop = false;
+            // 
+            // yesTrainedImageFirepower
+            // 
+            this.yesTrainedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageFirepower.Image")));
+            this.yesTrainedImageFirepower.Location = new System.Drawing.Point(172, 19);
+            this.yesTrainedImageFirepower.Name = "yesTrainedImageFirepower";
+            this.yesTrainedImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.yesTrainedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesTrainedImageFirepower.TabIndex = 217;
+            this.yesTrainedImageFirepower.TabStop = false;
+            // 
+            // yesRookieImageFirepower
+            // 
+            this.yesRookieImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageFirepower.Image")));
+            this.yesRookieImageFirepower.Location = new System.Drawing.Point(122, 19);
+            this.yesRookieImageFirepower.Name = "yesRookieImageFirepower";
+            this.yesRookieImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.yesRookieImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesRookieImageFirepower.TabIndex = 216;
+            this.yesRookieImageFirepower.TabStop = false;
+            // 
+            // noEliteImageFirepower
+            // 
+            this.noEliteImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageFirepower.Image")));
+            this.noEliteImageFirepower.Location = new System.Drawing.Point(322, 19);
+            this.noEliteImageFirepower.Name = "noEliteImageFirepower";
+            this.noEliteImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.noEliteImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noEliteImageFirepower.TabIndex = 215;
+            this.noEliteImageFirepower.TabStop = false;
+            // 
+            // noVeteranImageFirepower
+            // 
+            this.noVeteranImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageFirepower.Image")));
+            this.noVeteranImageFirepower.Location = new System.Drawing.Point(272, 19);
+            this.noVeteranImageFirepower.Name = "noVeteranImageFirepower";
+            this.noVeteranImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.noVeteranImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noVeteranImageFirepower.TabIndex = 214;
+            this.noVeteranImageFirepower.TabStop = false;
+            // 
+            // noHardenedImageFirepower
+            // 
+            this.noHardenedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageFirepower.Image")));
+            this.noHardenedImageFirepower.Location = new System.Drawing.Point(222, 19);
+            this.noHardenedImageFirepower.Name = "noHardenedImageFirepower";
+            this.noHardenedImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.noHardenedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noHardenedImageFirepower.TabIndex = 213;
+            this.noHardenedImageFirepower.TabStop = false;
+            // 
+            // noTrainedImageFirepower
+            // 
+            this.noTrainedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageFirepower.Image")));
+            this.noTrainedImageFirepower.Location = new System.Drawing.Point(172, 19);
+            this.noTrainedImageFirepower.Name = "noTrainedImageFirepower";
+            this.noTrainedImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.noTrainedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noTrainedImageFirepower.TabIndex = 212;
+            this.noTrainedImageFirepower.TabStop = false;
+            // 
+            // noRookieImageFirepower
+            // 
+            this.noRookieImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageFirepower.Image")));
+            this.noRookieImageFirepower.Location = new System.Drawing.Point(122, 19);
+            this.noRookieImageFirepower.Name = "noRookieImageFirepower";
+            this.noRookieImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.noRookieImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noRookieImageFirepower.TabIndex = 198;
+            this.noRookieImageFirepower.TabStop = false;
             // 
             // lockWeaponCheckbox
             // 
@@ -2503,6 +3043,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
+            this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.eliteFieldSimple);
             this.tabPage1.Controls.Add(this.veteranFieldSimple);
             this.tabPage1.Controls.Add(this.hardenedFieldSimple);
@@ -2532,11 +3073,6 @@
             this.tabPage1.Controls.Add(this.label96);
             this.tabPage1.Controls.Add(this.label97);
             this.tabPage1.Controls.Add(this.label98);
-            this.tabPage1.Controls.Add(this.label99);
-            this.tabPage1.Controls.Add(this.planeRangeFieldSimple);
-            this.tabPage1.Controls.Add(this.label102);
-            this.tabPage1.Controls.Add(this.heloRangeFieldSimple);
-            this.tabPage1.Controls.Add(this.label104);
             this.tabPage1.Controls.Add(this.apFieldSimple);
             this.tabPage1.Controls.Add(this.suppressionFieldSimple);
             this.tabPage1.Controls.Add(this.label109);
@@ -2545,7 +3081,6 @@
             this.tabPage1.Controls.Add(this.heFieldSimple);
             this.tabPage1.Controls.Add(this.rofFieldSimple);
             this.tabPage1.Controls.Add(this.label114);
-            this.tabPage1.Controls.Add(this.groundRangeFieldSimple);
             this.tabPage1.Controls.Add(this.supplyCostFieldSimple);
             this.tabPage1.Controls.Add(this.label117);
             this.tabPage1.Controls.Add(this.label118);
@@ -2599,6 +3134,270 @@
             this.tabPage1.Size = new System.Drawing.Size(381, 488);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Simple";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label104);
+            this.groupBox2.Controls.Add(this.groundRangeFieldSimple);
+            this.groupBox2.Controls.Add(this.heloRangeFieldSimple);
+            this.groupBox2.Controls.Add(this.label102);
+            this.groupBox2.Controls.Add(this.planeRangeFieldSimple);
+            this.groupBox2.Controls.Add(this.label99);
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox2.Location = new System.Drawing.Point(172, 126);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(173, 75);
+            this.groupBox2.TabIndex = 212;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Weapon Ranges";
+            // 
+            // label104
+            // 
+            this.label104.AutoSize = true;
+            this.label104.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label104.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label104.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label104.Location = new System.Drawing.Point(10, 16);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(60, 17);
+            this.label104.TabIndex = 178;
+            this.label104.Text = "Ground:";
+            // 
+            // groundRangeFieldSimple
+            // 
+            this.groundRangeFieldSimple.AutoSize = true;
+            this.groundRangeFieldSimple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.groundRangeFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.groundRangeFieldSimple.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groundRangeFieldSimple.Location = new System.Drawing.Point(66, 16);
+            this.groundRangeFieldSimple.MinimumSize = new System.Drawing.Size(40, 0);
+            this.groundRangeFieldSimple.Name = "groundRangeFieldSimple";
+            this.groundRangeFieldSimple.Size = new System.Drawing.Size(40, 17);
+            this.groundRangeFieldSimple.TabIndex = 169;
+            this.groundRangeFieldSimple.Text = "bar";
+            this.groundRangeFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // heloRangeFieldSimple
+            // 
+            this.heloRangeFieldSimple.AutoSize = true;
+            this.heloRangeFieldSimple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.heloRangeFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.heloRangeFieldSimple.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.heloRangeFieldSimple.Location = new System.Drawing.Point(48, 35);
+            this.heloRangeFieldSimple.MinimumSize = new System.Drawing.Size(40, 0);
+            this.heloRangeFieldSimple.Name = "heloRangeFieldSimple";
+            this.heloRangeFieldSimple.Size = new System.Drawing.Size(40, 17);
+            this.heloRangeFieldSimple.TabIndex = 179;
+            this.heloRangeFieldSimple.Text = "bar";
+            this.heloRangeFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label102.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label102.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label102.Location = new System.Drawing.Point(10, 35);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(41, 17);
+            this.label102.TabIndex = 180;
+            this.label102.Text = "Helo:";
+            // 
+            // planeRangeFieldSimple
+            // 
+            this.planeRangeFieldSimple.AutoSize = true;
+            this.planeRangeFieldSimple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.planeRangeFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.planeRangeFieldSimple.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.planeRangeFieldSimple.Location = new System.Drawing.Point(57, 54);
+            this.planeRangeFieldSimple.MinimumSize = new System.Drawing.Size(40, 0);
+            this.planeRangeFieldSimple.Name = "planeRangeFieldSimple";
+            this.planeRangeFieldSimple.Size = new System.Drawing.Size(40, 17);
+            this.planeRangeFieldSimple.TabIndex = 181;
+            this.planeRangeFieldSimple.Text = "bar";
+            this.planeRangeFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label99.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label99.Location = new System.Drawing.Point(10, 54);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(48, 17);
+            this.label99.TabIndex = 182;
+            this.label99.Text = "Plane:";
+            // 
+            // eliteFieldSimple
+            // 
+            this.eliteFieldSimple.AutoSize = true;
+            this.eliteFieldSimple.BackColor = System.Drawing.Color.Transparent;
+            this.eliteFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.eliteFieldSimple.ForeColor = System.Drawing.Color.Chartreuse;
+            this.eliteFieldSimple.Location = new System.Drawing.Point(345, 21);
+            this.eliteFieldSimple.Name = "eliteFieldSimple";
+            this.eliteFieldSimple.Size = new System.Drawing.Size(24, 17);
+            this.eliteFieldSimple.TabIndex = 211;
+            this.eliteFieldSimple.Text = "12";
+            this.eliteFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.eliteFieldSimple, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // veteranFieldSimple
+            // 
+            this.veteranFieldSimple.AutoSize = true;
+            this.veteranFieldSimple.BackColor = System.Drawing.Color.Transparent;
+            this.veteranFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.veteranFieldSimple.ForeColor = System.Drawing.Color.Chartreuse;
+            this.veteranFieldSimple.Location = new System.Drawing.Point(295, 21);
+            this.veteranFieldSimple.Name = "veteranFieldSimple";
+            this.veteranFieldSimple.Size = new System.Drawing.Size(24, 17);
+            this.veteranFieldSimple.TabIndex = 210;
+            this.veteranFieldSimple.Text = "12";
+            this.veteranFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.veteranFieldSimple, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // hardenedFieldSimple
+            // 
+            this.hardenedFieldSimple.AutoSize = true;
+            this.hardenedFieldSimple.BackColor = System.Drawing.Color.Transparent;
+            this.hardenedFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.hardenedFieldSimple.ForeColor = System.Drawing.Color.Chartreuse;
+            this.hardenedFieldSimple.Location = new System.Drawing.Point(245, 21);
+            this.hardenedFieldSimple.Name = "hardenedFieldSimple";
+            this.hardenedFieldSimple.Size = new System.Drawing.Size(24, 17);
+            this.hardenedFieldSimple.TabIndex = 209;
+            this.hardenedFieldSimple.Text = "12";
+            this.hardenedFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.hardenedFieldSimple, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // trainedFieldSimple
+            // 
+            this.trainedFieldSimple.AutoSize = true;
+            this.trainedFieldSimple.BackColor = System.Drawing.Color.Transparent;
+            this.trainedFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.trainedFieldSimple.ForeColor = System.Drawing.Color.Chartreuse;
+            this.trainedFieldSimple.Location = new System.Drawing.Point(195, 21);
+            this.trainedFieldSimple.Name = "trainedFieldSimple";
+            this.trainedFieldSimple.Size = new System.Drawing.Size(24, 17);
+            this.trainedFieldSimple.TabIndex = 208;
+            this.trainedFieldSimple.Text = "12";
+            this.trainedFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.trainedFieldSimple, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // rookieFieldSimple
+            // 
+            this.rookieFieldSimple.AutoSize = true;
+            this.rookieFieldSimple.BackColor = System.Drawing.Color.Transparent;
+            this.rookieFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.rookieFieldSimple.ForeColor = System.Drawing.Color.Chartreuse;
+            this.rookieFieldSimple.Location = new System.Drawing.Point(145, 21);
+            this.rookieFieldSimple.Name = "rookieFieldSimple";
+            this.rookieFieldSimple.Size = new System.Drawing.Size(24, 17);
+            this.rookieFieldSimple.TabIndex = 207;
+            this.rookieFieldSimple.Text = "12";
+            this.rookieFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.rookieFieldSimple, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // yesEliteImageSimple
+            // 
+            this.yesEliteImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageSimple.Image")));
+            this.yesEliteImageSimple.Location = new System.Drawing.Point(322, 19);
+            this.yesEliteImageSimple.Name = "yesEliteImageSimple";
+            this.yesEliteImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.yesEliteImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesEliteImageSimple.TabIndex = 206;
+            this.yesEliteImageSimple.TabStop = false;
+            // 
+            // yesVeteranImageSimple
+            // 
+            this.yesVeteranImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageSimple.Image")));
+            this.yesVeteranImageSimple.Location = new System.Drawing.Point(272, 19);
+            this.yesVeteranImageSimple.Name = "yesVeteranImageSimple";
+            this.yesVeteranImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.yesVeteranImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesVeteranImageSimple.TabIndex = 205;
+            this.yesVeteranImageSimple.TabStop = false;
+            // 
+            // yesHardenedImageSimple
+            // 
+            this.yesHardenedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageSimple.Image")));
+            this.yesHardenedImageSimple.Location = new System.Drawing.Point(222, 19);
+            this.yesHardenedImageSimple.Name = "yesHardenedImageSimple";
+            this.yesHardenedImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.yesHardenedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesHardenedImageSimple.TabIndex = 204;
+            this.yesHardenedImageSimple.TabStop = false;
+            // 
+            // yesTrainedImageSimple
+            // 
+            this.yesTrainedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageSimple.Image")));
+            this.yesTrainedImageSimple.Location = new System.Drawing.Point(172, 19);
+            this.yesTrainedImageSimple.Name = "yesTrainedImageSimple";
+            this.yesTrainedImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.yesTrainedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesTrainedImageSimple.TabIndex = 203;
+            this.yesTrainedImageSimple.TabStop = false;
+            // 
+            // yesRookieImageSimple
+            // 
+            this.yesRookieImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageSimple.Image")));
+            this.yesRookieImageSimple.Location = new System.Drawing.Point(122, 19);
+            this.yesRookieImageSimple.Name = "yesRookieImageSimple";
+            this.yesRookieImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.yesRookieImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesRookieImageSimple.TabIndex = 202;
+            this.yesRookieImageSimple.TabStop = false;
+            // 
+            // noEliteImageSimple
+            // 
+            this.noEliteImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageSimple.Image")));
+            this.noEliteImageSimple.Location = new System.Drawing.Point(322, 19);
+            this.noEliteImageSimple.Name = "noEliteImageSimple";
+            this.noEliteImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.noEliteImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noEliteImageSimple.TabIndex = 201;
+            this.noEliteImageSimple.TabStop = false;
+            // 
+            // noVeteranImageSimple
+            // 
+            this.noVeteranImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageSimple.Image")));
+            this.noVeteranImageSimple.Location = new System.Drawing.Point(272, 19);
+            this.noVeteranImageSimple.Name = "noVeteranImageSimple";
+            this.noVeteranImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.noVeteranImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noVeteranImageSimple.TabIndex = 200;
+            this.noVeteranImageSimple.TabStop = false;
+            // 
+            // noHardenedImageSimple
+            // 
+            this.noHardenedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageSimple.Image")));
+            this.noHardenedImageSimple.Location = new System.Drawing.Point(222, 19);
+            this.noHardenedImageSimple.Name = "noHardenedImageSimple";
+            this.noHardenedImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.noHardenedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noHardenedImageSimple.TabIndex = 199;
+            this.noHardenedImageSimple.TabStop = false;
+            // 
+            // noTrainedImageSimple
+            // 
+            this.noTrainedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageSimple.Image")));
+            this.noTrainedImageSimple.Location = new System.Drawing.Point(172, 19);
+            this.noTrainedImageSimple.Name = "noTrainedImageSimple";
+            this.noTrainedImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.noTrainedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noTrainedImageSimple.TabIndex = 198;
+            this.noTrainedImageSimple.TabStop = false;
+            // 
+            // noRookieImageSimple
+            // 
+            this.noRookieImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageSimple.Image")));
+            this.noRookieImageSimple.Location = new System.Drawing.Point(122, 19);
+            this.noRookieImageSimple.Name = "noRookieImageSimple";
+            this.noRookieImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.noRookieImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noRookieImageSimple.TabIndex = 197;
+            this.noRookieImageSimple.TabStop = false;
             // 
             // lockWeaponCheckboxSimple
             // 
@@ -2789,70 +3588,6 @@
             this.label98.TabIndex = 183;
             this.label98.Text = "Salvo length:";
             // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label99.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label99.Location = new System.Drawing.Point(173, 194);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(66, 17);
-            this.label99.TabIndex = 182;
-            this.label99.Text = "vs Plane:";
-            // 
-            // planeRangeFieldSimple
-            // 
-            this.planeRangeFieldSimple.AutoSize = true;
-            this.planeRangeFieldSimple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.planeRangeFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.planeRangeFieldSimple.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.planeRangeFieldSimple.Location = new System.Drawing.Point(238, 194);
-            this.planeRangeFieldSimple.MinimumSize = new System.Drawing.Size(40, 0);
-            this.planeRangeFieldSimple.Name = "planeRangeFieldSimple";
-            this.planeRangeFieldSimple.Size = new System.Drawing.Size(40, 17);
-            this.planeRangeFieldSimple.TabIndex = 181;
-            this.planeRangeFieldSimple.Text = "bar";
-            this.planeRangeFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label102
-            // 
-            this.label102.AutoSize = true;
-            this.label102.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label102.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label102.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label102.Location = new System.Drawing.Point(173, 175);
-            this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(59, 17);
-            this.label102.TabIndex = 180;
-            this.label102.Text = "vs Helo:";
-            // 
-            // heloRangeFieldSimple
-            // 
-            this.heloRangeFieldSimple.AutoSize = true;
-            this.heloRangeFieldSimple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.heloRangeFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.heloRangeFieldSimple.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.heloRangeFieldSimple.Location = new System.Drawing.Point(229, 175);
-            this.heloRangeFieldSimple.MinimumSize = new System.Drawing.Size(40, 0);
-            this.heloRangeFieldSimple.Name = "heloRangeFieldSimple";
-            this.heloRangeFieldSimple.Size = new System.Drawing.Size(40, 17);
-            this.heloRangeFieldSimple.TabIndex = 179;
-            this.heloRangeFieldSimple.Text = "bar";
-            this.heloRangeFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label104
-            // 
-            this.label104.AutoSize = true;
-            this.label104.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label104.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label104.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label104.Location = new System.Drawing.Point(173, 156);
-            this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(54, 17);
-            this.label104.TabIndex = 178;
-            this.label104.Text = "Range:";
-            // 
             // apFieldSimple
             // 
             this.apFieldSimple.AutoSize = true;
@@ -2959,20 +3694,6 @@
             this.label114.Size = new System.Drawing.Size(91, 17);
             this.label114.TabIndex = 170;
             this.label114.Text = "Suppression:";
-            // 
-            // groundRangeFieldSimple
-            // 
-            this.groundRangeFieldSimple.AutoSize = true;
-            this.groundRangeFieldSimple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.groundRangeFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.groundRangeFieldSimple.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groundRangeFieldSimple.Location = new System.Drawing.Point(223, 156);
-            this.groundRangeFieldSimple.MinimumSize = new System.Drawing.Size(40, 0);
-            this.groundRangeFieldSimple.Name = "groundRangeFieldSimple";
-            this.groundRangeFieldSimple.Size = new System.Drawing.Size(40, 17);
-            this.groundRangeFieldSimple.TabIndex = 169;
-            this.groundRangeFieldSimple.Text = "bar";
-            this.groundRangeFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // supplyCostFieldSimple
             // 
@@ -3171,11 +3892,11 @@
             this.altitudeFieldSimple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.altitudeFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.altitudeFieldSimple.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.altitudeFieldSimple.Location = new System.Drawing.Point(325, 427);
-            this.altitudeFieldSimple.MaximumSize = new System.Drawing.Size(40, 0);
-            this.altitudeFieldSimple.MinimumSize = new System.Drawing.Size(40, 0);
+            this.altitudeFieldSimple.Location = new System.Drawing.Point(310, 427);
+            this.altitudeFieldSimple.MaximumSize = new System.Drawing.Size(55, 0);
+            this.altitudeFieldSimple.MinimumSize = new System.Drawing.Size(55, 0);
             this.altitudeFieldSimple.Name = "altitudeFieldSimple";
-            this.altitudeFieldSimple.Size = new System.Drawing.Size(40, 17);
+            this.altitudeFieldSimple.Size = new System.Drawing.Size(55, 17);
             this.altitudeFieldSimple.TabIndex = 66;
             this.altitudeFieldSimple.Text = "bar";
             this.altitudeFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3198,7 +3919,7 @@
             this.label43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label43.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label43.Location = new System.Drawing.Point(267, 427);
+            this.label43.Location = new System.Drawing.Point(252, 427);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(59, 17);
             this.label43.TabIndex = 65;
@@ -3595,6 +4316,8 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
+            this.tabPage2.Controls.Add(this.groupBox3);
+            this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Controls.Add(this.eliteFieldSurvivability);
             this.tabPage2.Controls.Add(this.veteranFieldSurvivability);
             this.tabPage2.Controls.Add(this.hardenedFieldSurvivability);
@@ -3610,14 +4333,6 @@
             this.tabPage2.Controls.Add(this.noHardenedImageSurvivability);
             this.tabPage2.Controls.Add(this.noTrainedImageSurvivability);
             this.tabPage2.Controls.Add(this.noRookieImageSurvivability);
-            this.tabPage2.Controls.Add(this.suppressDamagesEffectsField);
-            this.tabPage2.Controls.Add(this.label54);
-            this.tabPage2.Controls.Add(this.physicalDamagesEffectsField);
-            this.tabPage2.Controls.Add(this.label67);
-            this.tabPage2.Controls.Add(this.paliersPhysicalDamagesField);
-            this.tabPage2.Controls.Add(this.label65);
-            this.tabPage2.Controls.Add(this.paliersSuppressDamagesField);
-            this.tabPage2.Controls.Add(this.label63);
             this.tabPage2.Controls.Add(this.stunDamagesToGetStunnedField);
             this.tabPage2.Controls.Add(this.label61);
             this.tabPage2.Controls.Add(this.stunDamagesRegenField);
@@ -3652,83 +4367,75 @@
             this.tabPage2.TabIndex = 5;
             this.tabPage2.Text = "Survivability";
             // 
-            // suppressDamagesEffectsField
+            // groupBox3
             // 
-            this.suppressDamagesEffectsField.AutoSize = true;
-            this.suppressDamagesEffectsField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.suppressDamagesEffectsField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.suppressDamagesEffectsField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.suppressDamagesEffectsField.Location = new System.Drawing.Point(224, 251);
-            this.suppressDamagesEffectsField.MinimumSize = new System.Drawing.Size(50, 0);
-            this.suppressDamagesEffectsField.Name = "suppressDamagesEffectsField";
-            this.suppressDamagesEffectsField.Size = new System.Drawing.Size(50, 17);
-            this.suppressDamagesEffectsField.TabIndex = 80;
-            this.suppressDamagesEffectsField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.groupBox3.Controls.Add(this.hitModifierField);
+            this.groupBox3.Controls.Add(this.infFiringRateMultiplierField);
+            this.groupBox3.Controls.Add(this.artilleryDispersionMultiplierField);
+            this.groupBox3.Controls.Add(this.vehiculeDispersionMultiplierField);
+            this.groupBox3.Controls.Add(this.vehiculeFiringRateMultiplierField);
+            this.groupBox3.Controls.Add(this.canonFiringRateMultiplierField);
+            this.groupBox3.Controls.Add(this.label63);
+            this.groupBox3.Controls.Add(this.artilleryDispersionModifierLabel);
+            this.groupBox3.Controls.Add(this.label28);
+            this.groupBox3.Controls.Add(this.infAndCanonDispersionModifierLabel);
+            this.groupBox3.Controls.Add(this.infAndCanonDispersionModifierField);
+            this.groupBox3.Controls.Add(this.label29);
+            this.groupBox3.Controls.Add(this.paliersSuppressDamagesField);
+            this.groupBox3.Controls.Add(this.infDamagesMultiplierField);
+            this.groupBox3.Controls.Add(this.label83);
+            this.groupBox3.Controls.Add(this.infAndCanonSpeedModifierField);
+            this.groupBox3.Controls.Add(this.label87);
+            this.groupBox3.Controls.Add(this.label90);
+            this.groupBox3.Controls.Add(this.label92);
+            this.groupBox3.Controls.Add(this.label94);
+            this.groupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox3.Location = new System.Drawing.Point(18, 92);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(351, 114);
+            this.groupBox3.TabIndex = 237;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Effects from suppression:";
             // 
-            // label54
+            // infAndCanonDispersionModifierLabel
             // 
-            this.label54.AutoSize = true;
-            this.label54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label54.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label54.Location = new System.Drawing.Point(15, 251);
-            this.label54.MinimumSize = new System.Drawing.Size(40, 0);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(175, 17);
-            this.label54.TabIndex = 79;
-            this.label54.Text = "SuppressDamagesEffects:";
+            this.infAndCanonDispersionModifierLabel.AutoSize = true;
+            this.infAndCanonDispersionModifierLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.infAndCanonDispersionModifierLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.infAndCanonDispersionModifierLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.infAndCanonDispersionModifierLabel.Location = new System.Drawing.Point(206, 34);
+            this.infAndCanonDispersionModifierLabel.MinimumSize = new System.Drawing.Size(40, 0);
+            this.infAndCanonDispersionModifierLabel.Name = "infAndCanonDispersionModifierLabel";
+            this.infAndCanonDispersionModifierLabel.Size = new System.Drawing.Size(43, 17);
+            this.infAndCanonDispersionModifierLabel.TabIndex = 250;
+            this.infAndCanonDispersionModifierLabel.Text = "IACD:";
+            this.lockWeaponTooltip.SetToolTip(this.infAndCanonDispersionModifierLabel, "InfAndCanonDispersionModifier");
             // 
-            // physicalDamagesEffectsField
+            // infAndCanonDispersionModifierField
             // 
-            this.physicalDamagesEffectsField.AutoSize = true;
-            this.physicalDamagesEffectsField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.physicalDamagesEffectsField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.physicalDamagesEffectsField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.physicalDamagesEffectsField.Location = new System.Drawing.Point(224, 232);
-            this.physicalDamagesEffectsField.MinimumSize = new System.Drawing.Size(50, 0);
-            this.physicalDamagesEffectsField.Name = "physicalDamagesEffectsField";
-            this.physicalDamagesEffectsField.Size = new System.Drawing.Size(50, 17);
-            this.physicalDamagesEffectsField.TabIndex = 78;
-            this.physicalDamagesEffectsField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.infAndCanonDispersionModifierField.AutoSize = true;
+            this.infAndCanonDispersionModifierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.infAndCanonDispersionModifierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.infAndCanonDispersionModifierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.infAndCanonDispersionModifierField.Location = new System.Drawing.Point(244, 34);
+            this.infAndCanonDispersionModifierField.Name = "infAndCanonDispersionModifierField";
+            this.infAndCanonDispersionModifierField.Size = new System.Drawing.Size(29, 17);
+            this.infAndCanonDispersionModifierField.TabIndex = 251;
+            this.infAndCanonDispersionModifierField.Text = "bar";
+            this.infAndCanonDispersionModifierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // label67
+            // label29
             // 
-            this.label67.AutoSize = true;
-            this.label67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label67.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label67.Location = new System.Drawing.Point(15, 232);
-            this.label67.MinimumSize = new System.Drawing.Size(40, 0);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(167, 17);
-            this.label67.TabIndex = 77;
-            this.label67.Text = "PhysicalDamagesEffects:";
-            // 
-            // paliersPhysicalDamagesField
-            // 
-            this.paliersPhysicalDamagesField.AutoSize = true;
-            this.paliersPhysicalDamagesField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.paliersPhysicalDamagesField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.paliersPhysicalDamagesField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.paliersPhysicalDamagesField.Location = new System.Drawing.Point(224, 213);
-            this.paliersPhysicalDamagesField.MinimumSize = new System.Drawing.Size(50, 0);
-            this.paliersPhysicalDamagesField.Name = "paliersPhysicalDamagesField";
-            this.paliersPhysicalDamagesField.Size = new System.Drawing.Size(50, 17);
-            this.paliersPhysicalDamagesField.TabIndex = 76;
-            this.paliersPhysicalDamagesField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label65.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label65.Location = new System.Drawing.Point(15, 213);
-            this.label65.MinimumSize = new System.Drawing.Size(40, 0);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(167, 17);
-            this.label65.TabIndex = 75;
-            this.label65.Text = "PaliersPhysicalDamages:";
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label29.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label29.Location = new System.Drawing.Point(6, 16);
+            this.label29.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(100, 17);
+            this.label29.TabIndex = 237;
+            this.label29.Text = "At Thresholds:";
             // 
             // paliersSuppressDamagesField
             // 
@@ -3736,1086 +4443,286 @@
             this.paliersSuppressDamagesField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.paliersSuppressDamagesField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.paliersSuppressDamagesField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.paliersSuppressDamagesField.Location = new System.Drawing.Point(224, 194);
-            this.paliersSuppressDamagesField.MinimumSize = new System.Drawing.Size(50, 0);
+            this.paliersSuppressDamagesField.Location = new System.Drawing.Point(103, 16);
             this.paliersSuppressDamagesField.Name = "paliersSuppressDamagesField";
-            this.paliersSuppressDamagesField.Size = new System.Drawing.Size(50, 17);
-            this.paliersSuppressDamagesField.TabIndex = 74;
+            this.paliersSuppressDamagesField.Size = new System.Drawing.Size(29, 17);
+            this.paliersSuppressDamagesField.TabIndex = 238;
+            this.paliersSuppressDamagesField.Text = "bar";
             this.paliersSuppressDamagesField.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label63.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label63.Location = new System.Drawing.Point(15, 194);
-            this.label63.MinimumSize = new System.Drawing.Size(40, 0);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(175, 17);
-            this.label63.TabIndex = 73;
-            this.label63.Text = "PaliersSuppressDamages:";
-            // 
-            // stunDamagesToGetStunnedField
-            // 
-            this.stunDamagesToGetStunnedField.AutoSize = true;
-            this.stunDamagesToGetStunnedField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.stunDamagesToGetStunnedField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.stunDamagesToGetStunnedField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.stunDamagesToGetStunnedField.Location = new System.Drawing.Point(224, 175);
-            this.stunDamagesToGetStunnedField.MinimumSize = new System.Drawing.Size(50, 0);
-            this.stunDamagesToGetStunnedField.Name = "stunDamagesToGetStunnedField";
-            this.stunDamagesToGetStunnedField.Size = new System.Drawing.Size(50, 17);
-            this.stunDamagesToGetStunnedField.TabIndex = 72;
-            this.stunDamagesToGetStunnedField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label61.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label61.Location = new System.Drawing.Point(15, 175);
-            this.label61.MinimumSize = new System.Drawing.Size(40, 0);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(194, 17);
-            this.label61.TabIndex = 71;
-            this.label61.Text = "StunDamagesToGetStunned:";
-            // 
-            // stunDamagesRegenField
-            // 
-            this.stunDamagesRegenField.AutoSize = true;
-            this.stunDamagesRegenField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.stunDamagesRegenField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.stunDamagesRegenField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.stunDamagesRegenField.Location = new System.Drawing.Point(224, 156);
-            this.stunDamagesRegenField.MinimumSize = new System.Drawing.Size(50, 0);
-            this.stunDamagesRegenField.Name = "stunDamagesRegenField";
-            this.stunDamagesRegenField.Size = new System.Drawing.Size(50, 17);
-            this.stunDamagesRegenField.TabIndex = 70;
-            this.stunDamagesRegenField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label59.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label59.Location = new System.Drawing.Point(15, 156);
-            this.label59.MinimumSize = new System.Drawing.Size(40, 0);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(143, 17);
-            this.label59.TabIndex = 69;
-            this.label59.Text = "StunDamagesRegen:";
-            // 
-            // maxSuppressionDamagesField
-            // 
-            this.maxSuppressionDamagesField.AutoSize = true;
-            this.maxSuppressionDamagesField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.maxSuppressionDamagesField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.maxSuppressionDamagesField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.maxSuppressionDamagesField.Location = new System.Drawing.Point(224, 137);
-            this.maxSuppressionDamagesField.MinimumSize = new System.Drawing.Size(50, 0);
-            this.maxSuppressionDamagesField.Name = "maxSuppressionDamagesField";
-            this.maxSuppressionDamagesField.Size = new System.Drawing.Size(50, 17);
-            this.maxSuppressionDamagesField.TabIndex = 68;
-            this.maxSuppressionDamagesField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label57.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label57.Location = new System.Drawing.Point(15, 137);
-            this.label57.MinimumSize = new System.Drawing.Size(40, 0);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(176, 17);
-            this.label57.TabIndex = 67;
-            this.label57.Text = "MaxSuppressionDamages:";
-            // 
-            // frontArmorField
-            // 
-            this.frontArmorField.AutoSize = true;
-            this.frontArmorField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.frontArmorField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.frontArmorField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.frontArmorField.Location = new System.Drawing.Point(231, 315);
-            this.frontArmorField.MinimumSize = new System.Drawing.Size(50, 0);
-            this.frontArmorField.Name = "frontArmorField";
-            this.frontArmorField.Size = new System.Drawing.Size(50, 17);
-            this.frontArmorField.TabIndex = 66;
-            this.frontArmorField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // rearArmorField
-            // 
-            this.rearArmorField.AutoSize = true;
-            this.rearArmorField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.rearArmorField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.rearArmorField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.rearArmorField.Location = new System.Drawing.Point(231, 359);
-            this.rearArmorField.MinimumSize = new System.Drawing.Size(50, 0);
-            this.rearArmorField.Name = "rearArmorField";
-            this.rearArmorField.Size = new System.Drawing.Size(50, 17);
-            this.rearArmorField.TabIndex = 65;
-            this.rearArmorField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // topArmorField
-            // 
-            this.topArmorField.AutoSize = true;
-            this.topArmorField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.topArmorField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.topArmorField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.topArmorField.Location = new System.Drawing.Point(231, 381);
-            this.topArmorField.MinimumSize = new System.Drawing.Size(50, 0);
-            this.topArmorField.Name = "topArmorField";
-            this.topArmorField.Size = new System.Drawing.Size(50, 17);
-            this.topArmorField.TabIndex = 64;
-            this.topArmorField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // sideArmorField
-            // 
-            this.sideArmorField.AutoSize = true;
-            this.sideArmorField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.sideArmorField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.sideArmorField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.sideArmorField.Location = new System.Drawing.Point(231, 337);
-            this.sideArmorField.MinimumSize = new System.Drawing.Size(50, 0);
-            this.sideArmorField.Name = "sideArmorField";
-            this.sideArmorField.Size = new System.Drawing.Size(50, 17);
-            this.sideArmorField.TabIndex = 63;
-            this.sideArmorField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label48.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label48.Location = new System.Drawing.Point(191, 359);
-            this.label48.MinimumSize = new System.Drawing.Size(40, 0);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(43, 17);
-            this.label48.TabIndex = 62;
-            this.label48.Text = "Rear:";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label49.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label49.Location = new System.Drawing.Point(191, 381);
-            this.label49.MinimumSize = new System.Drawing.Size(40, 0);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(40, 17);
-            this.label49.TabIndex = 61;
-            this.label49.Text = "Top:";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label50.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label50.Location = new System.Drawing.Point(191, 337);
-            this.label50.MinimumSize = new System.Drawing.Size(40, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(40, 17);
-            this.label50.TabIndex = 60;
-            this.label50.Text = "Side:";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label51.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label51.Location = new System.Drawing.Point(191, 315);
-            this.label51.MinimumSize = new System.Drawing.Size(40, 0);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(45, 17);
-            this.label51.TabIndex = 59;
-            this.label51.Text = "Front:";
-            // 
-            // healthField
-            // 
-            this.healthField.AutoSize = true;
-            this.healthField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.healthField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.healthField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.healthField.Location = new System.Drawing.Point(69, 457);
-            this.healthField.MinimumSize = new System.Drawing.Size(50, 0);
-            this.healthField.Name = "healthField";
-            this.healthField.Size = new System.Drawing.Size(50, 17);
-            this.healthField.TabIndex = 58;
-            this.healthField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label13.Location = new System.Drawing.Point(20, 457);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(53, 17);
-            this.label13.TabIndex = 57;
-            this.label13.Text = "Health:";
-            // 
-            // ecmField
-            // 
-            this.ecmField.AutoSize = true;
-            this.ecmField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.ecmField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.ecmField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ecmField.Location = new System.Drawing.Point(199, 457);
-            this.ecmField.MinimumSize = new System.Drawing.Size(50, 0);
-            this.ecmField.Name = "ecmField";
-            this.ecmField.Size = new System.Drawing.Size(50, 17);
-            this.ecmField.TabIndex = 56;
-            this.ecmField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // sizeField
-            // 
-            this.sizeField.AutoSize = true;
-            this.sizeField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.sizeField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.sizeField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.sizeField.Location = new System.Drawing.Point(320, 457);
-            this.sizeField.MinimumSize = new System.Drawing.Size(50, 0);
-            this.sizeField.Name = "sizeField";
-            this.sizeField.Size = new System.Drawing.Size(50, 17);
-            this.sizeField.TabIndex = 55;
-            this.sizeField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(157, 457);
-            this.label6.MinimumSize = new System.Drawing.Size(42, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 17);
-            this.label6.TabIndex = 54;
-            this.label6.Text = "ECM:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(283, 457);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 17);
-            this.label8.TabIndex = 53;
-            this.label8.Text = "Size:";
-            // 
-            // suppressDamagesRegenRatioOutOfRangeField
-            // 
-            this.suppressDamagesRegenRatioOutOfRangeField.AutoSize = true;
-            this.suppressDamagesRegenRatioOutOfRangeField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.suppressDamagesRegenRatioOutOfRangeField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.suppressDamagesRegenRatioOutOfRangeField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.suppressDamagesRegenRatioOutOfRangeField.Location = new System.Drawing.Point(296, 118);
-            this.suppressDamagesRegenRatioOutOfRangeField.MinimumSize = new System.Drawing.Size(50, 0);
-            this.suppressDamagesRegenRatioOutOfRangeField.Name = "suppressDamagesRegenRatioOutOfRangeField";
-            this.suppressDamagesRegenRatioOutOfRangeField.Size = new System.Drawing.Size(50, 17);
-            this.suppressDamagesRegenRatioOutOfRangeField.TabIndex = 52;
-            this.suppressDamagesRegenRatioOutOfRangeField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label53.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label53.Location = new System.Drawing.Point(15, 118);
-            this.label53.MinimumSize = new System.Drawing.Size(40, 0);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(287, 17);
-            this.label53.TabIndex = 51;
-            this.label53.Text = "SuppressDamagesRegenRatioOutOfRange:";
-            // 
-            // suppressDamagesRegenRatioField
-            // 
-            this.suppressDamagesRegenRatioField.AutoSize = true;
-            this.suppressDamagesRegenRatioField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.suppressDamagesRegenRatioField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.suppressDamagesRegenRatioField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.suppressDamagesRegenRatioField.Location = new System.Drawing.Point(224, 99);
-            this.suppressDamagesRegenRatioField.MinimumSize = new System.Drawing.Size(50, 0);
-            this.suppressDamagesRegenRatioField.Name = "suppressDamagesRegenRatioField";
-            this.suppressDamagesRegenRatioField.Size = new System.Drawing.Size(50, 17);
-            this.suppressDamagesRegenRatioField.TabIndex = 50;
-            this.suppressDamagesRegenRatioField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label55.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label55.Location = new System.Drawing.Point(15, 99);
-            this.label55.MinimumSize = new System.Drawing.Size(40, 0);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(207, 17);
-            this.label55.TabIndex = 49;
-            this.label55.Text = "SuppressDamagesRegenRatio:";
-            // 
-            // unitCardFieldSurvivability
-            // 
-            this.unitCardFieldSurvivability.Image = ((System.Drawing.Image)(resources.GetObject("unitCardFieldSurvivability.Image")));
-            this.unitCardFieldSurvivability.Location = new System.Drawing.Point(18, 315);
-            this.unitCardFieldSurvivability.Name = "unitCardFieldSurvivability";
-            this.unitCardFieldSurvivability.Size = new System.Drawing.Size(164, 84);
-            this.unitCardFieldSurvivability.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.unitCardFieldSurvivability.TabIndex = 36;
-            this.unitCardFieldSurvivability.TabStop = false;
-            // 
-            // priceFieldSurvivability
-            // 
-            this.priceFieldSurvivability.AutoSize = true;
-            this.priceFieldSurvivability.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(22)))));
-            this.priceFieldSurvivability.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.priceFieldSurvivability.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(69)))));
-            this.priceFieldSurvivability.Location = new System.Drawing.Point(13, 55);
-            this.priceFieldSurvivability.MaximumSize = new System.Drawing.Size(60, 25);
-            this.priceFieldSurvivability.MinimumSize = new System.Drawing.Size(60, 0);
-            this.priceFieldSurvivability.Name = "priceFieldSurvivability";
-            this.priceFieldSurvivability.Size = new System.Drawing.Size(60, 25);
-            this.priceFieldSurvivability.TabIndex = 30;
-            this.priceFieldSurvivability.Text = "20";
-            this.priceFieldSurvivability.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // prototypeLabelSurvivability
-            // 
-            this.prototypeLabelSurvivability.AutoSize = true;
-            this.prototypeLabelSurvivability.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.prototypeLabelSurvivability.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.prototypeLabelSurvivability.ForeColor = System.Drawing.Color.OrangeRed;
-            this.prototypeLabelSurvivability.Location = new System.Drawing.Point(296, 63);
-            this.prototypeLabelSurvivability.Name = "prototypeLabelSurvivability";
-            this.prototypeLabelSurvivability.Size = new System.Drawing.Size(69, 17);
-            this.prototypeLabelSurvivability.TabIndex = 29;
-            this.prototypeLabelSurvivability.Text = "Prototype";
-            this.prototypeLabelSurvivability.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // nameFieldSurvivability
-            // 
-            this.nameFieldSurvivability.AutoSize = true;
-            this.nameFieldSurvivability.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(22)))));
-            this.nameFieldSurvivability.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.nameFieldSurvivability.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.nameFieldSurvivability.Location = new System.Drawing.Point(69, 55);
-            this.nameFieldSurvivability.MinimumSize = new System.Drawing.Size(296, 0);
-            this.nameFieldSurvivability.Name = "nameFieldSurvivability";
-            this.nameFieldSurvivability.Size = new System.Drawing.Size(296, 25);
-            this.nameFieldSurvivability.TabIndex = 28;
-            this.nameFieldSurvivability.Text = "Unit name will be here";
-            // 
-            // checkForUpdatesButton
-            // 
-            this.checkForUpdatesButton.Location = new System.Drawing.Point(540, 12);
-            this.checkForUpdatesButton.Name = "checkForUpdatesButton";
-            this.checkForUpdatesButton.Size = new System.Drawing.Size(75, 23);
-            this.checkForUpdatesButton.TabIndex = 6;
-            this.checkForUpdatesButton.Text = "update";
-            this.checkForUpdatesButton.UseVisualStyleBackColor = true;
-            this.checkForUpdatesButton.Click += new System.EventHandler(this.checkForUpdatesButton_Click);
-            // 
-            // noRookieImageSimple
-            // 
-            this.noRookieImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageSimple.Image")));
-            this.noRookieImageSimple.Location = new System.Drawing.Point(122, 19);
-            this.noRookieImageSimple.Name = "noRookieImageSimple";
-            this.noRookieImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.noRookieImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noRookieImageSimple.TabIndex = 197;
-            this.noRookieImageSimple.TabStop = false;
-            // 
-            // noTrainedImageSimple
-            // 
-            this.noTrainedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageSimple.Image")));
-            this.noTrainedImageSimple.Location = new System.Drawing.Point(172, 19);
-            this.noTrainedImageSimple.Name = "noTrainedImageSimple";
-            this.noTrainedImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.noTrainedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noTrainedImageSimple.TabIndex = 198;
-            this.noTrainedImageSimple.TabStop = false;
-            // 
-            // noHardenedImageSimple
-            // 
-            this.noHardenedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageSimple.Image")));
-            this.noHardenedImageSimple.Location = new System.Drawing.Point(222, 19);
-            this.noHardenedImageSimple.Name = "noHardenedImageSimple";
-            this.noHardenedImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.noHardenedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noHardenedImageSimple.TabIndex = 199;
-            this.noHardenedImageSimple.TabStop = false;
-            // 
-            // noVeteranImageSimple
-            // 
-            this.noVeteranImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageSimple.Image")));
-            this.noVeteranImageSimple.Location = new System.Drawing.Point(272, 19);
-            this.noVeteranImageSimple.Name = "noVeteranImageSimple";
-            this.noVeteranImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.noVeteranImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noVeteranImageSimple.TabIndex = 200;
-            this.noVeteranImageSimple.TabStop = false;
-            // 
-            // noEliteImageSimple
-            // 
-            this.noEliteImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageSimple.Image")));
-            this.noEliteImageSimple.Location = new System.Drawing.Point(322, 19);
-            this.noEliteImageSimple.Name = "noEliteImageSimple";
-            this.noEliteImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.noEliteImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noEliteImageSimple.TabIndex = 201;
-            this.noEliteImageSimple.TabStop = false;
-            // 
-            // yesEliteImageSimple
-            // 
-            this.yesEliteImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageSimple.Image")));
-            this.yesEliteImageSimple.Location = new System.Drawing.Point(322, 19);
-            this.yesEliteImageSimple.Name = "yesEliteImageSimple";
-            this.yesEliteImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.yesEliteImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesEliteImageSimple.TabIndex = 206;
-            this.yesEliteImageSimple.TabStop = false;
-            // 
-            // yesVeteranImageSimple
-            // 
-            this.yesVeteranImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageSimple.Image")));
-            this.yesVeteranImageSimple.Location = new System.Drawing.Point(272, 19);
-            this.yesVeteranImageSimple.Name = "yesVeteranImageSimple";
-            this.yesVeteranImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.yesVeteranImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesVeteranImageSimple.TabIndex = 205;
-            this.yesVeteranImageSimple.TabStop = false;
-            // 
-            // yesHardenedImageSimple
-            // 
-            this.yesHardenedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageSimple.Image")));
-            this.yesHardenedImageSimple.Location = new System.Drawing.Point(222, 19);
-            this.yesHardenedImageSimple.Name = "yesHardenedImageSimple";
-            this.yesHardenedImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.yesHardenedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesHardenedImageSimple.TabIndex = 204;
-            this.yesHardenedImageSimple.TabStop = false;
-            // 
-            // yesTrainedImageSimple
-            // 
-            this.yesTrainedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageSimple.Image")));
-            this.yesTrainedImageSimple.Location = new System.Drawing.Point(172, 19);
-            this.yesTrainedImageSimple.Name = "yesTrainedImageSimple";
-            this.yesTrainedImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.yesTrainedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesTrainedImageSimple.TabIndex = 203;
-            this.yesTrainedImageSimple.TabStop = false;
-            // 
-            // yesRookieImageSimple
-            // 
-            this.yesRookieImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageSimple.Image")));
-            this.yesRookieImageSimple.Location = new System.Drawing.Point(122, 19);
-            this.yesRookieImageSimple.Name = "yesRookieImageSimple";
-            this.yesRookieImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.yesRookieImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesRookieImageSimple.TabIndex = 202;
-            this.yesRookieImageSimple.TabStop = false;
-            // 
-            // rookieFieldSimple
-            // 
-            this.rookieFieldSimple.AutoSize = true;
-            this.rookieFieldSimple.BackColor = System.Drawing.Color.Transparent;
-            this.rookieFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.rookieFieldSimple.ForeColor = System.Drawing.Color.Chartreuse;
-            this.rookieFieldSimple.Location = new System.Drawing.Point(145, 21);
-            this.rookieFieldSimple.Name = "rookieFieldSimple";
-            this.rookieFieldSimple.Size = new System.Drawing.Size(24, 17);
-            this.rookieFieldSimple.TabIndex = 207;
-            this.rookieFieldSimple.Text = "12";
-            this.rookieFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.rookieFieldSimple, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // trainedFieldSimple
-            // 
-            this.trainedFieldSimple.AutoSize = true;
-            this.trainedFieldSimple.BackColor = System.Drawing.Color.Transparent;
-            this.trainedFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.trainedFieldSimple.ForeColor = System.Drawing.Color.Chartreuse;
-            this.trainedFieldSimple.Location = new System.Drawing.Point(195, 21);
-            this.trainedFieldSimple.Name = "trainedFieldSimple";
-            this.trainedFieldSimple.Size = new System.Drawing.Size(24, 17);
-            this.trainedFieldSimple.TabIndex = 208;
-            this.trainedFieldSimple.Text = "12";
-            this.trainedFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.trainedFieldSimple, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // hardenedFieldSimple
-            // 
-            this.hardenedFieldSimple.AutoSize = true;
-            this.hardenedFieldSimple.BackColor = System.Drawing.Color.Transparent;
-            this.hardenedFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.hardenedFieldSimple.ForeColor = System.Drawing.Color.Chartreuse;
-            this.hardenedFieldSimple.Location = new System.Drawing.Point(245, 21);
-            this.hardenedFieldSimple.Name = "hardenedFieldSimple";
-            this.hardenedFieldSimple.Size = new System.Drawing.Size(24, 17);
-            this.hardenedFieldSimple.TabIndex = 209;
-            this.hardenedFieldSimple.Text = "12";
-            this.hardenedFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.hardenedFieldSimple, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // veteranFieldSimple
-            // 
-            this.veteranFieldSimple.AutoSize = true;
-            this.veteranFieldSimple.BackColor = System.Drawing.Color.Transparent;
-            this.veteranFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.veteranFieldSimple.ForeColor = System.Drawing.Color.Chartreuse;
-            this.veteranFieldSimple.Location = new System.Drawing.Point(295, 21);
-            this.veteranFieldSimple.Name = "veteranFieldSimple";
-            this.veteranFieldSimple.Size = new System.Drawing.Size(24, 17);
-            this.veteranFieldSimple.TabIndex = 210;
-            this.veteranFieldSimple.Text = "12";
-            this.veteranFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.veteranFieldSimple, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // eliteFieldSimple
-            // 
-            this.eliteFieldSimple.AutoSize = true;
-            this.eliteFieldSimple.BackColor = System.Drawing.Color.Transparent;
-            this.eliteFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.eliteFieldSimple.ForeColor = System.Drawing.Color.Chartreuse;
-            this.eliteFieldSimple.Location = new System.Drawing.Point(345, 21);
-            this.eliteFieldSimple.Name = "eliteFieldSimple";
-            this.eliteFieldSimple.Size = new System.Drawing.Size(24, 17);
-            this.eliteFieldSimple.TabIndex = 211;
-            this.eliteFieldSimple.Text = "12";
-            this.eliteFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.eliteFieldSimple, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // noRookieImageFirepower
-            // 
-            this.noRookieImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageFirepower.Image")));
-            this.noRookieImageFirepower.Location = new System.Drawing.Point(122, 19);
-            this.noRookieImageFirepower.Name = "noRookieImageFirepower";
-            this.noRookieImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.noRookieImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noRookieImageFirepower.TabIndex = 198;
-            this.noRookieImageFirepower.TabStop = false;
-            // 
-            // noRookieImageRecon
-            // 
-            this.noRookieImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageRecon.Image")));
-            this.noRookieImageRecon.Location = new System.Drawing.Point(122, 19);
-            this.noRookieImageRecon.Name = "noRookieImageRecon";
-            this.noRookieImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.noRookieImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noRookieImageRecon.TabIndex = 198;
-            this.noRookieImageRecon.TabStop = false;
-            // 
-            // noRookieImageMobility
-            // 
-            this.noRookieImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageMobility.Image")));
-            this.noRookieImageMobility.Location = new System.Drawing.Point(122, 19);
-            this.noRookieImageMobility.Name = "noRookieImageMobility";
-            this.noRookieImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.noRookieImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noRookieImageMobility.TabIndex = 198;
-            this.noRookieImageMobility.TabStop = false;
-            // 
-            // noRookieImageSurvivability
-            // 
-            this.noRookieImageSurvivability.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageSurvivability.Image")));
-            this.noRookieImageSurvivability.Location = new System.Drawing.Point(122, 19);
-            this.noRookieImageSurvivability.Name = "noRookieImageSurvivability";
-            this.noRookieImageSurvivability.Size = new System.Drawing.Size(23, 23);
-            this.noRookieImageSurvivability.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noRookieImageSurvivability.TabIndex = 198;
-            this.noRookieImageSurvivability.TabStop = false;
-            // 
-            // eliteFieldFirepower
-            // 
-            this.eliteFieldFirepower.AutoSize = true;
-            this.eliteFieldFirepower.BackColor = System.Drawing.Color.Transparent;
-            this.eliteFieldFirepower.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.eliteFieldFirepower.ForeColor = System.Drawing.Color.Chartreuse;
-            this.eliteFieldFirepower.Location = new System.Drawing.Point(345, 21);
-            this.eliteFieldFirepower.Name = "eliteFieldFirepower";
-            this.eliteFieldFirepower.Size = new System.Drawing.Size(24, 17);
-            this.eliteFieldFirepower.TabIndex = 225;
-            this.eliteFieldFirepower.Text = "12";
-            this.eliteFieldFirepower.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.eliteFieldFirepower, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // veteranFieldFirepower
-            // 
-            this.veteranFieldFirepower.AutoSize = true;
-            this.veteranFieldFirepower.BackColor = System.Drawing.Color.Transparent;
-            this.veteranFieldFirepower.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.veteranFieldFirepower.ForeColor = System.Drawing.Color.Chartreuse;
-            this.veteranFieldFirepower.Location = new System.Drawing.Point(295, 21);
-            this.veteranFieldFirepower.Name = "veteranFieldFirepower";
-            this.veteranFieldFirepower.Size = new System.Drawing.Size(24, 17);
-            this.veteranFieldFirepower.TabIndex = 224;
-            this.veteranFieldFirepower.Text = "12";
-            this.veteranFieldFirepower.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.veteranFieldFirepower, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // hardenedFieldFirepower
-            // 
-            this.hardenedFieldFirepower.AutoSize = true;
-            this.hardenedFieldFirepower.BackColor = System.Drawing.Color.Transparent;
-            this.hardenedFieldFirepower.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.hardenedFieldFirepower.ForeColor = System.Drawing.Color.Chartreuse;
-            this.hardenedFieldFirepower.Location = new System.Drawing.Point(245, 21);
-            this.hardenedFieldFirepower.Name = "hardenedFieldFirepower";
-            this.hardenedFieldFirepower.Size = new System.Drawing.Size(24, 17);
-            this.hardenedFieldFirepower.TabIndex = 223;
-            this.hardenedFieldFirepower.Text = "12";
-            this.hardenedFieldFirepower.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.hardenedFieldFirepower, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // trainedFieldFirepower
-            // 
-            this.trainedFieldFirepower.AutoSize = true;
-            this.trainedFieldFirepower.BackColor = System.Drawing.Color.Transparent;
-            this.trainedFieldFirepower.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.trainedFieldFirepower.ForeColor = System.Drawing.Color.Chartreuse;
-            this.trainedFieldFirepower.Location = new System.Drawing.Point(195, 21);
-            this.trainedFieldFirepower.Name = "trainedFieldFirepower";
-            this.trainedFieldFirepower.Size = new System.Drawing.Size(24, 17);
-            this.trainedFieldFirepower.TabIndex = 222;
-            this.trainedFieldFirepower.Text = "12";
-            this.trainedFieldFirepower.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.trainedFieldFirepower, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // rookieFieldFirepower
-            // 
-            this.rookieFieldFirepower.AutoSize = true;
-            this.rookieFieldFirepower.BackColor = System.Drawing.Color.Transparent;
-            this.rookieFieldFirepower.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.rookieFieldFirepower.ForeColor = System.Drawing.Color.Chartreuse;
-            this.rookieFieldFirepower.Location = new System.Drawing.Point(145, 21);
-            this.rookieFieldFirepower.Name = "rookieFieldFirepower";
-            this.rookieFieldFirepower.Size = new System.Drawing.Size(24, 17);
-            this.rookieFieldFirepower.TabIndex = 221;
-            this.rookieFieldFirepower.Text = "12";
-            this.rookieFieldFirepower.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.rookieFieldFirepower, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // yesEliteImageFirepower
-            // 
-            this.yesEliteImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageFirepower.Image")));
-            this.yesEliteImageFirepower.Location = new System.Drawing.Point(322, 19);
-            this.yesEliteImageFirepower.Name = "yesEliteImageFirepower";
-            this.yesEliteImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.yesEliteImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesEliteImageFirepower.TabIndex = 220;
-            this.yesEliteImageFirepower.TabStop = false;
-            // 
-            // yesVeteranImageFirepower
-            // 
-            this.yesVeteranImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageFirepower.Image")));
-            this.yesVeteranImageFirepower.Location = new System.Drawing.Point(272, 19);
-            this.yesVeteranImageFirepower.Name = "yesVeteranImageFirepower";
-            this.yesVeteranImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.yesVeteranImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesVeteranImageFirepower.TabIndex = 219;
-            this.yesVeteranImageFirepower.TabStop = false;
-            // 
-            // yesHardenedImageFirepower
-            // 
-            this.yesHardenedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageFirepower.Image")));
-            this.yesHardenedImageFirepower.Location = new System.Drawing.Point(222, 19);
-            this.yesHardenedImageFirepower.Name = "yesHardenedImageFirepower";
-            this.yesHardenedImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.yesHardenedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesHardenedImageFirepower.TabIndex = 218;
-            this.yesHardenedImageFirepower.TabStop = false;
-            // 
-            // yesTrainedImageFirepower
-            // 
-            this.yesTrainedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageFirepower.Image")));
-            this.yesTrainedImageFirepower.Location = new System.Drawing.Point(172, 19);
-            this.yesTrainedImageFirepower.Name = "yesTrainedImageFirepower";
-            this.yesTrainedImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.yesTrainedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesTrainedImageFirepower.TabIndex = 217;
-            this.yesTrainedImageFirepower.TabStop = false;
-            // 
-            // yesRookieImageFirepower
-            // 
-            this.yesRookieImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageFirepower.Image")));
-            this.yesRookieImageFirepower.Location = new System.Drawing.Point(122, 19);
-            this.yesRookieImageFirepower.Name = "yesRookieImageFirepower";
-            this.yesRookieImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.yesRookieImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesRookieImageFirepower.TabIndex = 216;
-            this.yesRookieImageFirepower.TabStop = false;
-            // 
-            // noEliteImageFirepower
-            // 
-            this.noEliteImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageFirepower.Image")));
-            this.noEliteImageFirepower.Location = new System.Drawing.Point(322, 19);
-            this.noEliteImageFirepower.Name = "noEliteImageFirepower";
-            this.noEliteImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.noEliteImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noEliteImageFirepower.TabIndex = 215;
-            this.noEliteImageFirepower.TabStop = false;
-            // 
-            // noVeteranImageFirepower
-            // 
-            this.noVeteranImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageFirepower.Image")));
-            this.noVeteranImageFirepower.Location = new System.Drawing.Point(272, 19);
-            this.noVeteranImageFirepower.Name = "noVeteranImageFirepower";
-            this.noVeteranImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.noVeteranImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noVeteranImageFirepower.TabIndex = 214;
-            this.noVeteranImageFirepower.TabStop = false;
-            // 
-            // noHardenedImageFirepower
-            // 
-            this.noHardenedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageFirepower.Image")));
-            this.noHardenedImageFirepower.Location = new System.Drawing.Point(222, 19);
-            this.noHardenedImageFirepower.Name = "noHardenedImageFirepower";
-            this.noHardenedImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.noHardenedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noHardenedImageFirepower.TabIndex = 213;
-            this.noHardenedImageFirepower.TabStop = false;
-            // 
-            // noTrainedImageFirepower
-            // 
-            this.noTrainedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageFirepower.Image")));
-            this.noTrainedImageFirepower.Location = new System.Drawing.Point(172, 19);
-            this.noTrainedImageFirepower.Name = "noTrainedImageFirepower";
-            this.noTrainedImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.noTrainedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noTrainedImageFirepower.TabIndex = 212;
-            this.noTrainedImageFirepower.TabStop = false;
-            // 
-            // eliteFieldRecon
-            // 
-            this.eliteFieldRecon.AutoSize = true;
-            this.eliteFieldRecon.BackColor = System.Drawing.Color.Transparent;
-            this.eliteFieldRecon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.eliteFieldRecon.ForeColor = System.Drawing.Color.Chartreuse;
-            this.eliteFieldRecon.Location = new System.Drawing.Point(345, 21);
-            this.eliteFieldRecon.Name = "eliteFieldRecon";
-            this.eliteFieldRecon.Size = new System.Drawing.Size(24, 17);
-            this.eliteFieldRecon.TabIndex = 225;
-            this.eliteFieldRecon.Text = "12";
-            this.eliteFieldRecon.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.eliteFieldRecon, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // veteranFieldRecon
-            // 
-            this.veteranFieldRecon.AutoSize = true;
-            this.veteranFieldRecon.BackColor = System.Drawing.Color.Transparent;
-            this.veteranFieldRecon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.veteranFieldRecon.ForeColor = System.Drawing.Color.Chartreuse;
-            this.veteranFieldRecon.Location = new System.Drawing.Point(295, 21);
-            this.veteranFieldRecon.Name = "veteranFieldRecon";
-            this.veteranFieldRecon.Size = new System.Drawing.Size(24, 17);
-            this.veteranFieldRecon.TabIndex = 224;
-            this.veteranFieldRecon.Text = "12";
-            this.veteranFieldRecon.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.veteranFieldRecon, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // hardenedFieldRecon
-            // 
-            this.hardenedFieldRecon.AutoSize = true;
-            this.hardenedFieldRecon.BackColor = System.Drawing.Color.Transparent;
-            this.hardenedFieldRecon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.hardenedFieldRecon.ForeColor = System.Drawing.Color.Chartreuse;
-            this.hardenedFieldRecon.Location = new System.Drawing.Point(245, 21);
-            this.hardenedFieldRecon.Name = "hardenedFieldRecon";
-            this.hardenedFieldRecon.Size = new System.Drawing.Size(24, 17);
-            this.hardenedFieldRecon.TabIndex = 223;
-            this.hardenedFieldRecon.Text = "12";
-            this.hardenedFieldRecon.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.hardenedFieldRecon, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // trainedFieldRecon
-            // 
-            this.trainedFieldRecon.AutoSize = true;
-            this.trainedFieldRecon.BackColor = System.Drawing.Color.Transparent;
-            this.trainedFieldRecon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.trainedFieldRecon.ForeColor = System.Drawing.Color.Chartreuse;
-            this.trainedFieldRecon.Location = new System.Drawing.Point(195, 21);
-            this.trainedFieldRecon.Name = "trainedFieldRecon";
-            this.trainedFieldRecon.Size = new System.Drawing.Size(24, 17);
-            this.trainedFieldRecon.TabIndex = 222;
-            this.trainedFieldRecon.Text = "12";
-            this.trainedFieldRecon.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.trainedFieldRecon, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // rookieFieldRecon
-            // 
-            this.rookieFieldRecon.AutoSize = true;
-            this.rookieFieldRecon.BackColor = System.Drawing.Color.Transparent;
-            this.rookieFieldRecon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.rookieFieldRecon.ForeColor = System.Drawing.Color.Chartreuse;
-            this.rookieFieldRecon.Location = new System.Drawing.Point(145, 21);
-            this.rookieFieldRecon.Name = "rookieFieldRecon";
-            this.rookieFieldRecon.Size = new System.Drawing.Size(24, 17);
-            this.rookieFieldRecon.TabIndex = 221;
-            this.rookieFieldRecon.Text = "12";
-            this.rookieFieldRecon.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.rookieFieldRecon, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // yesEliteImageRecon
-            // 
-            this.yesEliteImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageRecon.Image")));
-            this.yesEliteImageRecon.Location = new System.Drawing.Point(322, 19);
-            this.yesEliteImageRecon.Name = "yesEliteImageRecon";
-            this.yesEliteImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.yesEliteImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesEliteImageRecon.TabIndex = 220;
-            this.yesEliteImageRecon.TabStop = false;
-            // 
-            // yesVeteranImageRecon
-            // 
-            this.yesVeteranImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageRecon.Image")));
-            this.yesVeteranImageRecon.Location = new System.Drawing.Point(272, 19);
-            this.yesVeteranImageRecon.Name = "yesVeteranImageRecon";
-            this.yesVeteranImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.yesVeteranImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesVeteranImageRecon.TabIndex = 219;
-            this.yesVeteranImageRecon.TabStop = false;
-            // 
-            // yesHardenedImageRecon
-            // 
-            this.yesHardenedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageRecon.Image")));
-            this.yesHardenedImageRecon.Location = new System.Drawing.Point(222, 19);
-            this.yesHardenedImageRecon.Name = "yesHardenedImageRecon";
-            this.yesHardenedImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.yesHardenedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesHardenedImageRecon.TabIndex = 218;
-            this.yesHardenedImageRecon.TabStop = false;
-            // 
-            // yesTrainedImageRecon
-            // 
-            this.yesTrainedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageRecon.Image")));
-            this.yesTrainedImageRecon.Location = new System.Drawing.Point(172, 19);
-            this.yesTrainedImageRecon.Name = "yesTrainedImageRecon";
-            this.yesTrainedImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.yesTrainedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesTrainedImageRecon.TabIndex = 217;
-            this.yesTrainedImageRecon.TabStop = false;
-            // 
-            // yesRookieImageRecon
-            // 
-            this.yesRookieImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageRecon.Image")));
-            this.yesRookieImageRecon.Location = new System.Drawing.Point(122, 19);
-            this.yesRookieImageRecon.Name = "yesRookieImageRecon";
-            this.yesRookieImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.yesRookieImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesRookieImageRecon.TabIndex = 216;
-            this.yesRookieImageRecon.TabStop = false;
-            // 
-            // noEliteImageRecon
-            // 
-            this.noEliteImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageRecon.Image")));
-            this.noEliteImageRecon.Location = new System.Drawing.Point(322, 19);
-            this.noEliteImageRecon.Name = "noEliteImageRecon";
-            this.noEliteImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.noEliteImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noEliteImageRecon.TabIndex = 215;
-            this.noEliteImageRecon.TabStop = false;
-            // 
-            // noVeteranImageRecon
-            // 
-            this.noVeteranImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageRecon.Image")));
-            this.noVeteranImageRecon.Location = new System.Drawing.Point(272, 19);
-            this.noVeteranImageRecon.Name = "noVeteranImageRecon";
-            this.noVeteranImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.noVeteranImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noVeteranImageRecon.TabIndex = 214;
-            this.noVeteranImageRecon.TabStop = false;
-            // 
-            // noHardenedImageRecon
-            // 
-            this.noHardenedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageRecon.Image")));
-            this.noHardenedImageRecon.Location = new System.Drawing.Point(222, 19);
-            this.noHardenedImageRecon.Name = "noHardenedImageRecon";
-            this.noHardenedImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.noHardenedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noHardenedImageRecon.TabIndex = 213;
-            this.noHardenedImageRecon.TabStop = false;
-            // 
-            // noTrainedImageRecon
-            // 
-            this.noTrainedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageRecon.Image")));
-            this.noTrainedImageRecon.Location = new System.Drawing.Point(172, 19);
-            this.noTrainedImageRecon.Name = "noTrainedImageRecon";
-            this.noTrainedImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.noTrainedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noTrainedImageRecon.TabIndex = 212;
-            this.noTrainedImageRecon.TabStop = false;
-            // 
-            // eliteFieldMobility
-            // 
-            this.eliteFieldMobility.AutoSize = true;
-            this.eliteFieldMobility.BackColor = System.Drawing.Color.Transparent;
-            this.eliteFieldMobility.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.eliteFieldMobility.ForeColor = System.Drawing.Color.Chartreuse;
-            this.eliteFieldMobility.Location = new System.Drawing.Point(345, 21);
-            this.eliteFieldMobility.Name = "eliteFieldMobility";
-            this.eliteFieldMobility.Size = new System.Drawing.Size(24, 17);
-            this.eliteFieldMobility.TabIndex = 225;
-            this.eliteFieldMobility.Text = "12";
-            this.eliteFieldMobility.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.eliteFieldMobility, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // veteranFieldMobility
-            // 
-            this.veteranFieldMobility.AutoSize = true;
-            this.veteranFieldMobility.BackColor = System.Drawing.Color.Transparent;
-            this.veteranFieldMobility.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.veteranFieldMobility.ForeColor = System.Drawing.Color.Chartreuse;
-            this.veteranFieldMobility.Location = new System.Drawing.Point(295, 21);
-            this.veteranFieldMobility.Name = "veteranFieldMobility";
-            this.veteranFieldMobility.Size = new System.Drawing.Size(24, 17);
-            this.veteranFieldMobility.TabIndex = 224;
-            this.veteranFieldMobility.Text = "12";
-            this.veteranFieldMobility.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.veteranFieldMobility, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // hardenedFieldMobility
-            // 
-            this.hardenedFieldMobility.AutoSize = true;
-            this.hardenedFieldMobility.BackColor = System.Drawing.Color.Transparent;
-            this.hardenedFieldMobility.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.hardenedFieldMobility.ForeColor = System.Drawing.Color.Chartreuse;
-            this.hardenedFieldMobility.Location = new System.Drawing.Point(245, 21);
-            this.hardenedFieldMobility.Name = "hardenedFieldMobility";
-            this.hardenedFieldMobility.Size = new System.Drawing.Size(24, 17);
-            this.hardenedFieldMobility.TabIndex = 223;
-            this.hardenedFieldMobility.Text = "12";
-            this.hardenedFieldMobility.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.hardenedFieldMobility, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // trainedFieldMobility
-            // 
-            this.trainedFieldMobility.AutoSize = true;
-            this.trainedFieldMobility.BackColor = System.Drawing.Color.Transparent;
-            this.trainedFieldMobility.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.trainedFieldMobility.ForeColor = System.Drawing.Color.Chartreuse;
-            this.trainedFieldMobility.Location = new System.Drawing.Point(195, 21);
-            this.trainedFieldMobility.Name = "trainedFieldMobility";
-            this.trainedFieldMobility.Size = new System.Drawing.Size(24, 17);
-            this.trainedFieldMobility.TabIndex = 222;
-            this.trainedFieldMobility.Text = "12";
-            this.trainedFieldMobility.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.trainedFieldMobility, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // rookieFieldMobility
-            // 
-            this.rookieFieldMobility.AutoSize = true;
-            this.rookieFieldMobility.BackColor = System.Drawing.Color.Transparent;
-            this.rookieFieldMobility.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.rookieFieldMobility.ForeColor = System.Drawing.Color.Chartreuse;
-            this.rookieFieldMobility.Location = new System.Drawing.Point(145, 21);
-            this.rookieFieldMobility.Name = "rookieFieldMobility";
-            this.rookieFieldMobility.Size = new System.Drawing.Size(24, 17);
-            this.rookieFieldMobility.TabIndex = 221;
-            this.rookieFieldMobility.Text = "12";
-            this.rookieFieldMobility.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.rookieFieldMobility, "This is real rof, aka how many actual hitrolls are made per minute.");
-            // 
-            // yesEliteImageMobility
-            // 
-            this.yesEliteImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageMobility.Image")));
-            this.yesEliteImageMobility.Location = new System.Drawing.Point(322, 19);
-            this.yesEliteImageMobility.Name = "yesEliteImageMobility";
-            this.yesEliteImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.yesEliteImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesEliteImageMobility.TabIndex = 220;
-            this.yesEliteImageMobility.TabStop = false;
-            // 
-            // yesVeteranImageMobility
-            // 
-            this.yesVeteranImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageMobility.Image")));
-            this.yesVeteranImageMobility.Location = new System.Drawing.Point(272, 19);
-            this.yesVeteranImageMobility.Name = "yesVeteranImageMobility";
-            this.yesVeteranImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.yesVeteranImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesVeteranImageMobility.TabIndex = 219;
-            this.yesVeteranImageMobility.TabStop = false;
-            // 
-            // yesHardenedImageMobility
-            // 
-            this.yesHardenedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageMobility.Image")));
-            this.yesHardenedImageMobility.Location = new System.Drawing.Point(222, 19);
-            this.yesHardenedImageMobility.Name = "yesHardenedImageMobility";
-            this.yesHardenedImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.yesHardenedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesHardenedImageMobility.TabIndex = 218;
-            this.yesHardenedImageMobility.TabStop = false;
-            // 
-            // yesTrainedImageMobility
-            // 
-            this.yesTrainedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageMobility.Image")));
-            this.yesTrainedImageMobility.Location = new System.Drawing.Point(172, 19);
-            this.yesTrainedImageMobility.Name = "yesTrainedImageMobility";
-            this.yesTrainedImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.yesTrainedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesTrainedImageMobility.TabIndex = 217;
-            this.yesTrainedImageMobility.TabStop = false;
-            // 
-            // yesRookieImageMobility
-            // 
-            this.yesRookieImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageMobility.Image")));
-            this.yesRookieImageMobility.Location = new System.Drawing.Point(122, 19);
-            this.yesRookieImageMobility.Name = "yesRookieImageMobility";
-            this.yesRookieImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.yesRookieImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesRookieImageMobility.TabIndex = 216;
-            this.yesRookieImageMobility.TabStop = false;
-            // 
-            // noEliteImageMobility
-            // 
-            this.noEliteImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageMobility.Image")));
-            this.noEliteImageMobility.Location = new System.Drawing.Point(322, 19);
-            this.noEliteImageMobility.Name = "noEliteImageMobility";
-            this.noEliteImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.noEliteImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noEliteImageMobility.TabIndex = 215;
-            this.noEliteImageMobility.TabStop = false;
-            // 
-            // noVeteranImageMobility
-            // 
-            this.noVeteranImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageMobility.Image")));
-            this.noVeteranImageMobility.Location = new System.Drawing.Point(272, 19);
-            this.noVeteranImageMobility.Name = "noVeteranImageMobility";
-            this.noVeteranImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.noVeteranImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noVeteranImageMobility.TabIndex = 214;
-            this.noVeteranImageMobility.TabStop = false;
-            // 
-            // noHardenedImageMobility
-            // 
-            this.noHardenedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageMobility.Image")));
-            this.noHardenedImageMobility.Location = new System.Drawing.Point(222, 19);
-            this.noHardenedImageMobility.Name = "noHardenedImageMobility";
-            this.noHardenedImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.noHardenedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noHardenedImageMobility.TabIndex = 213;
-            this.noHardenedImageMobility.TabStop = false;
-            // 
-            // noTrainedImageMobility
-            // 
-            this.noTrainedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageMobility.Image")));
-            this.noTrainedImageMobility.Location = new System.Drawing.Point(172, 19);
-            this.noTrainedImageMobility.Name = "noTrainedImageMobility";
-            this.noTrainedImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.noTrainedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noTrainedImageMobility.TabIndex = 212;
-            this.noTrainedImageMobility.TabStop = false;
+            // infDamagesMultiplierField
+            // 
+            this.infDamagesMultiplierField.AutoSize = true;
+            this.infDamagesMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.infDamagesMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.infDamagesMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.infDamagesMultiplierField.Location = new System.Drawing.Point(283, 53);
+            this.infDamagesMultiplierField.Name = "infDamagesMultiplierField";
+            this.infDamagesMultiplierField.Size = new System.Drawing.Size(29, 17);
+            this.infDamagesMultiplierField.TabIndex = 247;
+            this.infDamagesMultiplierField.Text = "bar";
+            this.infDamagesMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label83.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label83.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label83.Location = new System.Drawing.Point(206, 16);
+            this.label83.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(42, 17);
+            this.label83.TabIndex = 240;
+            this.label83.Text = "IACS:";
+            this.lockWeaponTooltip.SetToolTip(this.label83, "InfAndCanonSpeedModifier");
+            // 
+            // infAndCanonSpeedModifierField
+            // 
+            this.infAndCanonSpeedModifierField.AutoSize = true;
+            this.infAndCanonSpeedModifierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.infAndCanonSpeedModifierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.infAndCanonSpeedModifierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.infAndCanonSpeedModifierField.Location = new System.Drawing.Point(244, 16);
+            this.infAndCanonSpeedModifierField.Name = "infAndCanonSpeedModifierField";
+            this.infAndCanonSpeedModifierField.Size = new System.Drawing.Size(29, 17);
+            this.infAndCanonSpeedModifierField.TabIndex = 245;
+            this.infAndCanonSpeedModifierField.Text = "bar";
+            this.infAndCanonSpeedModifierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label87.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label87.Location = new System.Drawing.Point(7, 34);
+            this.label87.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(81, 17);
+            this.label87.TabIndex = 241;
+            this.label87.Text = "InfFireRate:";
+            this.lockWeaponTooltip.SetToolTip(this.label87, "InfFiringRate");
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label90.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label90.Location = new System.Drawing.Point(7, 52);
+            this.label90.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(107, 17);
+            this.label90.TabIndex = 244;
+            this.label90.Text = "CanonFireRate:";
+            this.lockWeaponTooltip.SetToolTip(this.label90, "CanonFiringRateMultiplier");
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label92.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label92.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label92.Location = new System.Drawing.Point(206, 53);
+            this.label92.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(80, 17);
+            this.label92.TabIndex = 242;
+            this.label92.Text = "InfDamage:";
+            this.lockWeaponTooltip.SetToolTip(this.label92, "InfDamagesMultiplier");
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label94.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label94.Location = new System.Drawing.Point(6, 70);
+            this.label94.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(59, 17);
+            this.label94.TabIndex = 243;
+            this.label94.Text = "VehRof:";
+            this.lockWeaponTooltip.SetToolTip(this.label94, "VehiculeFiringRateMultiplier");
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.turretRotationSpeedField);
+            this.groupBox1.Controls.Add(this.label65);
+            this.groupBox1.Controls.Add(this.chassisRotationSpeedField);
+            this.groupBox1.Controls.Add(this.paliersPhysicalDamagesField);
+            this.groupBox1.Controls.Add(this.vehiculeSpeedField);
+            this.groupBox1.Controls.Add(this.vehiculeFiringRateField);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.cannonFiringRateMultiplierField);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Controls.Add(this.label26);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.label24);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox1.Location = new System.Drawing.Point(18, 212);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(351, 89);
+            this.groupBox1.TabIndex = 236;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Effects from damage:";
+            // 
+            // turretRotationSpeedField
+            // 
+            this.turretRotationSpeedField.AutoSize = true;
+            this.turretRotationSpeedField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.turretRotationSpeedField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.turretRotationSpeedField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.turretRotationSpeedField.Location = new System.Drawing.Point(148, 52);
+            this.turretRotationSpeedField.Name = "turretRotationSpeedField";
+            this.turretRotationSpeedField.Size = new System.Drawing.Size(29, 17);
+            this.turretRotationSpeedField.TabIndex = 249;
+            this.turretRotationSpeedField.Text = "bar";
+            this.turretRotationSpeedField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label65.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label65.Location = new System.Drawing.Point(6, 16);
+            this.label65.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(100, 17);
+            this.label65.TabIndex = 237;
+            this.label65.Text = "At Thresholds:";
+            // 
+            // chassisRotationSpeedField
+            // 
+            this.chassisRotationSpeedField.AutoSize = true;
+            this.chassisRotationSpeedField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.chassisRotationSpeedField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.chassisRotationSpeedField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.chassisRotationSpeedField.Location = new System.Drawing.Point(156, 70);
+            this.chassisRotationSpeedField.Name = "chassisRotationSpeedField";
+            this.chassisRotationSpeedField.Size = new System.Drawing.Size(29, 17);
+            this.chassisRotationSpeedField.TabIndex = 248;
+            this.chassisRotationSpeedField.Text = "bar";
+            this.chassisRotationSpeedField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // paliersPhysicalDamagesField
+            // 
+            this.paliersPhysicalDamagesField.AutoSize = true;
+            this.paliersPhysicalDamagesField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.paliersPhysicalDamagesField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.paliersPhysicalDamagesField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.paliersPhysicalDamagesField.Location = new System.Drawing.Point(103, 16);
+            this.paliersPhysicalDamagesField.Name = "paliersPhysicalDamagesField";
+            this.paliersPhysicalDamagesField.Size = new System.Drawing.Size(29, 17);
+            this.paliersPhysicalDamagesField.TabIndex = 238;
+            this.paliersPhysicalDamagesField.Text = "bar";
+            this.paliersPhysicalDamagesField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // vehiculeSpeedField
+            // 
+            this.vehiculeSpeedField.AutoSize = true;
+            this.vehiculeSpeedField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.vehiculeSpeedField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.vehiculeSpeedField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.vehiculeSpeedField.Location = new System.Drawing.Point(91, 34);
+            this.vehiculeSpeedField.Name = "vehiculeSpeedField";
+            this.vehiculeSpeedField.Size = new System.Drawing.Size(29, 17);
+            this.vehiculeSpeedField.TabIndex = 247;
+            this.vehiculeSpeedField.Text = "bar";
+            this.vehiculeSpeedField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // vehiculeFiringRateField
+            // 
+            this.vehiculeFiringRateField.AutoSize = true;
+            this.vehiculeFiringRateField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.vehiculeFiringRateField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.vehiculeFiringRateField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.vehiculeFiringRateField.Location = new System.Drawing.Point(296, 34);
+            this.vehiculeFiringRateField.Name = "vehiculeFiringRateField";
+            this.vehiculeFiringRateField.Size = new System.Drawing.Size(29, 17);
+            this.vehiculeFiringRateField.TabIndex = 246;
+            this.vehiculeFiringRateField.Text = "bar";
+            this.vehiculeFiringRateField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(171, 16);
+            this.label3.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(126, 17);
+            this.label3.TabIndex = 240;
+            this.label3.Text = "CannonFiringRate:";
+            // 
+            // cannonFiringRateMultiplierField
+            // 
+            this.cannonFiringRateMultiplierField.AutoSize = true;
+            this.cannonFiringRateMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.cannonFiringRateMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.cannonFiringRateMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.cannonFiringRateMultiplierField.Location = new System.Drawing.Point(296, 16);
+            this.cannonFiringRateMultiplierField.Name = "cannonFiringRateMultiplierField";
+            this.cannonFiringRateMultiplierField.Size = new System.Drawing.Size(29, 17);
+            this.cannonFiringRateMultiplierField.TabIndex = 245;
+            this.cannonFiringRateMultiplierField.Text = "bar";
+            this.cannonFiringRateMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label20.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label20.Location = new System.Drawing.Point(171, 34);
+            this.label20.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(131, 17);
+            this.label20.TabIndex = 241;
+            this.label20.Text = "VehiculeFiringRate:";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label26.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label26.Location = new System.Drawing.Point(7, 52);
+            this.label26.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(145, 17);
+            this.label26.TabIndex = 244;
+            this.label26.Text = "TurretRotationSpeed:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label22.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label22.Location = new System.Drawing.Point(7, 34);
+            this.label22.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(87, 17);
+            this.label22.TabIndex = 242;
+            this.label22.Text = "MoveSpeed:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label24.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label24.Location = new System.Drawing.Point(6, 70);
+            this.label24.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(155, 17);
+            this.label24.TabIndex = 243;
+            this.label24.Text = "ChassisRotationSpeed:";
             // 
             // eliteFieldSurvivability
             // 
@@ -4977,6 +4884,510 @@
             this.noTrainedImageSurvivability.TabIndex = 212;
             this.noTrainedImageSurvivability.TabStop = false;
             // 
+            // noRookieImageSurvivability
+            // 
+            this.noRookieImageSurvivability.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageSurvivability.Image")));
+            this.noRookieImageSurvivability.Location = new System.Drawing.Point(122, 19);
+            this.noRookieImageSurvivability.Name = "noRookieImageSurvivability";
+            this.noRookieImageSurvivability.Size = new System.Drawing.Size(23, 23);
+            this.noRookieImageSurvivability.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noRookieImageSurvivability.TabIndex = 198;
+            this.noRookieImageSurvivability.TabStop = false;
+            // 
+            // stunDamagesToGetStunnedField
+            // 
+            this.stunDamagesToGetStunnedField.AutoSize = true;
+            this.stunDamagesToGetStunnedField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.stunDamagesToGetStunnedField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.stunDamagesToGetStunnedField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.stunDamagesToGetStunnedField.Location = new System.Drawing.Point(209, 442);
+            this.stunDamagesToGetStunnedField.Name = "stunDamagesToGetStunnedField";
+            this.stunDamagesToGetStunnedField.Size = new System.Drawing.Size(29, 17);
+            this.stunDamagesToGetStunnedField.TabIndex = 72;
+            this.stunDamagesToGetStunnedField.Text = "bar";
+            this.stunDamagesToGetStunnedField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label61.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label61.Location = new System.Drawing.Point(15, 442);
+            this.label61.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(194, 17);
+            this.label61.TabIndex = 71;
+            this.label61.Text = "StunDamagesToGetStunned:";
+            // 
+            // stunDamagesRegenField
+            // 
+            this.stunDamagesRegenField.AutoSize = true;
+            this.stunDamagesRegenField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.stunDamagesRegenField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.stunDamagesRegenField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.stunDamagesRegenField.Location = new System.Drawing.Point(322, 423);
+            this.stunDamagesRegenField.Name = "stunDamagesRegenField";
+            this.stunDamagesRegenField.Size = new System.Drawing.Size(29, 17);
+            this.stunDamagesRegenField.TabIndex = 70;
+            this.stunDamagesRegenField.Text = "bar";
+            this.stunDamagesRegenField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label59.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label59.Location = new System.Drawing.Point(179, 423);
+            this.label59.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(143, 17);
+            this.label59.TabIndex = 69;
+            this.label59.Text = "StunDamagesRegen:";
+            this.lockWeaponTooltip.SetToolTip(this.label59, "StunDamagesRegen");
+            // 
+            // maxSuppressionDamagesField
+            // 
+            this.maxSuppressionDamagesField.AutoSize = true;
+            this.maxSuppressionDamagesField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.maxSuppressionDamagesField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.maxSuppressionDamagesField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.maxSuppressionDamagesField.Location = new System.Drawing.Point(131, 423);
+            this.maxSuppressionDamagesField.Name = "maxSuppressionDamagesField";
+            this.maxSuppressionDamagesField.Size = new System.Drawing.Size(29, 17);
+            this.maxSuppressionDamagesField.TabIndex = 68;
+            this.maxSuppressionDamagesField.Text = "bar";
+            this.maxSuppressionDamagesField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label57.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label57.Location = new System.Drawing.Point(15, 423);
+            this.label57.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(116, 17);
+            this.label57.TabIndex = 67;
+            this.label57.Text = "MaxSuppression:";
+            this.lockWeaponTooltip.SetToolTip(this.label57, "MaxSuppressionDamages");
+            // 
+            // frontArmorField
+            // 
+            this.frontArmorField.AutoSize = true;
+            this.frontArmorField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.frontArmorField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.frontArmorField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.frontArmorField.Location = new System.Drawing.Point(231, 315);
+            this.frontArmorField.Name = "frontArmorField";
+            this.frontArmorField.Size = new System.Drawing.Size(29, 17);
+            this.frontArmorField.TabIndex = 66;
+            this.frontArmorField.Text = "bar";
+            this.frontArmorField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // rearArmorField
+            // 
+            this.rearArmorField.AutoSize = true;
+            this.rearArmorField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.rearArmorField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.rearArmorField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.rearArmorField.Location = new System.Drawing.Point(231, 359);
+            this.rearArmorField.Name = "rearArmorField";
+            this.rearArmorField.Size = new System.Drawing.Size(29, 17);
+            this.rearArmorField.TabIndex = 65;
+            this.rearArmorField.Text = "bar";
+            this.rearArmorField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // topArmorField
+            // 
+            this.topArmorField.AutoSize = true;
+            this.topArmorField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.topArmorField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.topArmorField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.topArmorField.Location = new System.Drawing.Point(231, 381);
+            this.topArmorField.Name = "topArmorField";
+            this.topArmorField.Size = new System.Drawing.Size(29, 17);
+            this.topArmorField.TabIndex = 64;
+            this.topArmorField.Text = "bar";
+            this.topArmorField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sideArmorField
+            // 
+            this.sideArmorField.AutoSize = true;
+            this.sideArmorField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.sideArmorField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.sideArmorField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.sideArmorField.Location = new System.Drawing.Point(231, 337);
+            this.sideArmorField.Name = "sideArmorField";
+            this.sideArmorField.Size = new System.Drawing.Size(29, 17);
+            this.sideArmorField.TabIndex = 63;
+            this.sideArmorField.Text = "bar";
+            this.sideArmorField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label48.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label48.Location = new System.Drawing.Point(191, 359);
+            this.label48.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(43, 17);
+            this.label48.TabIndex = 62;
+            this.label48.Text = "Rear:";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label49.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label49.Location = new System.Drawing.Point(191, 381);
+            this.label49.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(40, 17);
+            this.label49.TabIndex = 61;
+            this.label49.Text = "Top:";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label50.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label50.Location = new System.Drawing.Point(191, 337);
+            this.label50.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(40, 17);
+            this.label50.TabIndex = 60;
+            this.label50.Text = "Side:";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label51.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label51.Location = new System.Drawing.Point(191, 315);
+            this.label51.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(45, 17);
+            this.label51.TabIndex = 59;
+            this.label51.Text = "Front:";
+            // 
+            // healthField
+            // 
+            this.healthField.AutoSize = true;
+            this.healthField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.healthField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.healthField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.healthField.Location = new System.Drawing.Point(69, 461);
+            this.healthField.Name = "healthField";
+            this.healthField.Size = new System.Drawing.Size(29, 17);
+            this.healthField.TabIndex = 58;
+            this.healthField.Text = "bar";
+            this.healthField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label13.Location = new System.Drawing.Point(20, 461);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(53, 17);
+            this.label13.TabIndex = 57;
+            this.label13.Text = "Health:";
+            // 
+            // ecmField
+            // 
+            this.ecmField.AutoSize = true;
+            this.ecmField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.ecmField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.ecmField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.ecmField.Location = new System.Drawing.Point(199, 461);
+            this.ecmField.Name = "ecmField";
+            this.ecmField.Size = new System.Drawing.Size(29, 17);
+            this.ecmField.TabIndex = 56;
+            this.ecmField.Text = "bar";
+            this.ecmField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // sizeField
+            // 
+            this.sizeField.AutoSize = true;
+            this.sizeField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.sizeField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.sizeField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.sizeField.Location = new System.Drawing.Point(320, 461);
+            this.sizeField.Name = "sizeField";
+            this.sizeField.Size = new System.Drawing.Size(29, 17);
+            this.sizeField.TabIndex = 55;
+            this.sizeField.Text = "bar";
+            this.sizeField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label6.Location = new System.Drawing.Point(157, 461);
+            this.label6.MinimumSize = new System.Drawing.Size(42, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 17);
+            this.label6.TabIndex = 54;
+            this.label6.Text = "ECM:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label8.Location = new System.Drawing.Point(283, 461);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(39, 17);
+            this.label8.TabIndex = 53;
+            this.label8.Text = "Size:";
+            // 
+            // suppressDamagesRegenRatioOutOfRangeField
+            // 
+            this.suppressDamagesRegenRatioOutOfRangeField.AutoSize = true;
+            this.suppressDamagesRegenRatioOutOfRangeField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.suppressDamagesRegenRatioOutOfRangeField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.suppressDamagesRegenRatioOutOfRangeField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.suppressDamagesRegenRatioOutOfRangeField.Location = new System.Drawing.Point(287, 404);
+            this.suppressDamagesRegenRatioOutOfRangeField.Name = "suppressDamagesRegenRatioOutOfRangeField";
+            this.suppressDamagesRegenRatioOutOfRangeField.Size = new System.Drawing.Size(29, 17);
+            this.suppressDamagesRegenRatioOutOfRangeField.TabIndex = 52;
+            this.suppressDamagesRegenRatioOutOfRangeField.Text = "bar";
+            this.suppressDamagesRegenRatioOutOfRangeField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label53.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label53.Location = new System.Drawing.Point(198, 404);
+            this.label53.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(92, 17);
+            this.label53.TabIndex = 51;
+            this.label53.Text = "OutOfRange:";
+            this.lockWeaponTooltip.SetToolTip(this.label53, "SuppressDamagesRegenRatioOutOfRange");
+            // 
+            // suppressDamagesRegenRatioField
+            // 
+            this.suppressDamagesRegenRatioField.AutoSize = true;
+            this.suppressDamagesRegenRatioField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.suppressDamagesRegenRatioField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.suppressDamagesRegenRatioField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.suppressDamagesRegenRatioField.Location = new System.Drawing.Point(156, 404);
+            this.suppressDamagesRegenRatioField.Name = "suppressDamagesRegenRatioField";
+            this.suppressDamagesRegenRatioField.Size = new System.Drawing.Size(29, 17);
+            this.suppressDamagesRegenRatioField.TabIndex = 50;
+            this.suppressDamagesRegenRatioField.Text = "bar";
+            this.suppressDamagesRegenRatioField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label55.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label55.Location = new System.Drawing.Point(15, 404);
+            this.label55.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(147, 17);
+            this.label55.TabIndex = 49;
+            this.label55.Text = "SuppressRegenRatio:";
+            this.lockWeaponTooltip.SetToolTip(this.label55, "SuppressDamagesRegenRatio");
+            // 
+            // unitCardFieldSurvivability
+            // 
+            this.unitCardFieldSurvivability.Image = ((System.Drawing.Image)(resources.GetObject("unitCardFieldSurvivability.Image")));
+            this.unitCardFieldSurvivability.Location = new System.Drawing.Point(18, 315);
+            this.unitCardFieldSurvivability.Name = "unitCardFieldSurvivability";
+            this.unitCardFieldSurvivability.Size = new System.Drawing.Size(164, 84);
+            this.unitCardFieldSurvivability.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.unitCardFieldSurvivability.TabIndex = 36;
+            this.unitCardFieldSurvivability.TabStop = false;
+            // 
+            // priceFieldSurvivability
+            // 
+            this.priceFieldSurvivability.AutoSize = true;
+            this.priceFieldSurvivability.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(22)))));
+            this.priceFieldSurvivability.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.priceFieldSurvivability.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(69)))));
+            this.priceFieldSurvivability.Location = new System.Drawing.Point(13, 55);
+            this.priceFieldSurvivability.MaximumSize = new System.Drawing.Size(60, 25);
+            this.priceFieldSurvivability.MinimumSize = new System.Drawing.Size(60, 0);
+            this.priceFieldSurvivability.Name = "priceFieldSurvivability";
+            this.priceFieldSurvivability.Size = new System.Drawing.Size(60, 25);
+            this.priceFieldSurvivability.TabIndex = 30;
+            this.priceFieldSurvivability.Text = "20";
+            this.priceFieldSurvivability.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // prototypeLabelSurvivability
+            // 
+            this.prototypeLabelSurvivability.AutoSize = true;
+            this.prototypeLabelSurvivability.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.prototypeLabelSurvivability.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.prototypeLabelSurvivability.ForeColor = System.Drawing.Color.OrangeRed;
+            this.prototypeLabelSurvivability.Location = new System.Drawing.Point(296, 63);
+            this.prototypeLabelSurvivability.Name = "prototypeLabelSurvivability";
+            this.prototypeLabelSurvivability.Size = new System.Drawing.Size(69, 17);
+            this.prototypeLabelSurvivability.TabIndex = 29;
+            this.prototypeLabelSurvivability.Text = "Prototype";
+            this.prototypeLabelSurvivability.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // nameFieldSurvivability
+            // 
+            this.nameFieldSurvivability.AutoSize = true;
+            this.nameFieldSurvivability.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(22)))));
+            this.nameFieldSurvivability.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.nameFieldSurvivability.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.nameFieldSurvivability.Location = new System.Drawing.Point(69, 55);
+            this.nameFieldSurvivability.MinimumSize = new System.Drawing.Size(296, 0);
+            this.nameFieldSurvivability.Name = "nameFieldSurvivability";
+            this.nameFieldSurvivability.Size = new System.Drawing.Size(296, 25);
+            this.nameFieldSurvivability.TabIndex = 28;
+            this.nameFieldSurvivability.Text = "Unit name will be here";
+            // 
+            // checkForUpdatesButton
+            // 
+            this.checkForUpdatesButton.Location = new System.Drawing.Point(540, 12);
+            this.checkForUpdatesButton.Name = "checkForUpdatesButton";
+            this.checkForUpdatesButton.Size = new System.Drawing.Size(75, 23);
+            this.checkForUpdatesButton.TabIndex = 6;
+            this.checkForUpdatesButton.Text = "update";
+            this.checkForUpdatesButton.UseVisualStyleBackColor = true;
+            this.checkForUpdatesButton.Click += new System.EventHandler(this.checkForUpdatesButton_Click);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label28.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label28.Location = new System.Drawing.Point(6, 88);
+            this.label28.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(65, 17);
+            this.label28.TabIndex = 252;
+            this.label28.Text = "VehDisp:";
+            this.lockWeaponTooltip.SetToolTip(this.label28, "VehiculeDispersionModifier");
+            // 
+            // artilleryDispersionModifierLabel
+            // 
+            this.artilleryDispersionModifierLabel.AutoSize = true;
+            this.artilleryDispersionModifierLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.artilleryDispersionModifierLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.artilleryDispersionModifierLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.artilleryDispersionModifierLabel.Location = new System.Drawing.Point(197, 70);
+            this.artilleryDispersionModifierLabel.MinimumSize = new System.Drawing.Size(40, 0);
+            this.artilleryDispersionModifierLabel.Name = "artilleryDispersionModifierLabel";
+            this.artilleryDispersionModifierLabel.Size = new System.Drawing.Size(85, 17);
+            this.artilleryDispersionModifierLabel.TabIndex = 253;
+            this.artilleryDispersionModifierLabel.Text = "ArtyDispers:";
+            this.lockWeaponTooltip.SetToolTip(this.artilleryDispersionModifierLabel, "ArtilleryDispersionModifier");
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label63.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label63.Location = new System.Drawing.Point(175, 88);
+            this.label63.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(40, 17);
+            this.label63.TabIndex = 254;
+            this.label63.Text = "Hit:";
+            // 
+            // canonFiringRateMultiplierField
+            // 
+            this.canonFiringRateMultiplierField.AutoSize = true;
+            this.canonFiringRateMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.canonFiringRateMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.canonFiringRateMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.canonFiringRateMultiplierField.Location = new System.Drawing.Point(110, 52);
+            this.canonFiringRateMultiplierField.Name = "canonFiringRateMultiplierField";
+            this.canonFiringRateMultiplierField.Size = new System.Drawing.Size(29, 17);
+            this.canonFiringRateMultiplierField.TabIndex = 255;
+            this.canonFiringRateMultiplierField.Text = "bar";
+            this.canonFiringRateMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // vehiculeFiringRateMultiplierField
+            // 
+            this.vehiculeFiringRateMultiplierField.AutoSize = true;
+            this.vehiculeFiringRateMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.vehiculeFiringRateMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.vehiculeFiringRateMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.vehiculeFiringRateMultiplierField.Location = new System.Drawing.Point(64, 70);
+            this.vehiculeFiringRateMultiplierField.Name = "vehiculeFiringRateMultiplierField";
+            this.vehiculeFiringRateMultiplierField.Size = new System.Drawing.Size(29, 17);
+            this.vehiculeFiringRateMultiplierField.TabIndex = 256;
+            this.vehiculeFiringRateMultiplierField.Text = "bar";
+            this.vehiculeFiringRateMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // vehiculeDispersionMultiplierField
+            // 
+            this.vehiculeDispersionMultiplierField.AutoSize = true;
+            this.vehiculeDispersionMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.vehiculeDispersionMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.vehiculeDispersionMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.vehiculeDispersionMultiplierField.Location = new System.Drawing.Point(71, 88);
+            this.vehiculeDispersionMultiplierField.Name = "vehiculeDispersionMultiplierField";
+            this.vehiculeDispersionMultiplierField.Size = new System.Drawing.Size(29, 17);
+            this.vehiculeDispersionMultiplierField.TabIndex = 257;
+            this.vehiculeDispersionMultiplierField.Text = "bar";
+            this.vehiculeDispersionMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // artilleryDispersionMultiplierField
+            // 
+            this.artilleryDispersionMultiplierField.AutoSize = true;
+            this.artilleryDispersionMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.artilleryDispersionMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.artilleryDispersionMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.artilleryDispersionMultiplierField.Location = new System.Drawing.Point(281, 70);
+            this.artilleryDispersionMultiplierField.Name = "artilleryDispersionMultiplierField";
+            this.artilleryDispersionMultiplierField.Size = new System.Drawing.Size(29, 17);
+            this.artilleryDispersionMultiplierField.TabIndex = 258;
+            this.artilleryDispersionMultiplierField.Text = "bar";
+            this.artilleryDispersionMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // infFiringRateMultiplierField
+            // 
+            this.infFiringRateMultiplierField.AutoSize = true;
+            this.infFiringRateMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.infFiringRateMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.infFiringRateMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.infFiringRateMultiplierField.Location = new System.Drawing.Point(87, 34);
+            this.infFiringRateMultiplierField.Name = "infFiringRateMultiplierField";
+            this.infFiringRateMultiplierField.Size = new System.Drawing.Size(29, 17);
+            this.infFiringRateMultiplierField.TabIndex = 259;
+            this.infFiringRateMultiplierField.Text = "bar";
+            this.infFiringRateMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // hitModifierField
+            // 
+            this.hitModifierField.AutoSize = true;
+            this.hitModifierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.hitModifierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.hitModifierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.hitModifierField.Location = new System.Drawing.Point(203, 88);
+            this.hitModifierField.Name = "hitModifierField";
+            this.hitModifierField.Size = new System.Drawing.Size(29, 17);
+            this.hitModifierField.TabIndex = 260;
+            this.hitModifierField.Text = "bar";
+            this.hitModifierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4993,56 +5404,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldMobility)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldRecon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureField)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldFirepower)).EndInit();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureFieldSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardField)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabControl.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldSurvivability)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageRecon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageMobility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageSurvivability)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageRecon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageRecon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageRecon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageRecon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageRecon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageRecon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageRecon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageRecon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageRecon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageMobility)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageMobility)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageMobility)).EndInit();
@@ -5052,6 +5413,60 @@
             ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageMobility)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageMobility)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageMobility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageMobility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldMobility)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageRecon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageRecon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageRecon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageRecon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageRecon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageRecon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageRecon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageRecon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageRecon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageRecon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldRecon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureField)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldFirepower)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureFieldSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardField)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabControl.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageSurvivability)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageSurvivability)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageSurvivability)).EndInit();
@@ -5061,6 +5476,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageSurvivability)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageSurvivability)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageSurvivability)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageSurvivability)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldSurvivability)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5202,20 +5619,12 @@
         private System.Windows.Forms.Label priceFieldSurvivability;
         private System.Windows.Forms.Label prototypeLabelSurvivability;
         private System.Windows.Forms.Label nameFieldSurvivability;
-        private System.Windows.Forms.Label physicalDamagesEffectsField;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label paliersPhysicalDamagesField;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label paliersSuppressDamagesField;
-        private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label stunDamagesToGetStunnedField;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label stunDamagesRegenField;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label maxSuppressionDamagesField;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label suppressDamagesEffectsField;
-        private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label supplyCostField;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label106;
@@ -5407,6 +5816,41 @@
         private System.Windows.Forms.PictureBox noHardenedImageSurvivability;
         private System.Windows.Forms.PictureBox noTrainedImageSurvivability;
         private System.Windows.Forms.PictureBox noRookieImageSurvivability;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label turretRotationSpeedField;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label chassisRotationSpeedField;
+        private System.Windows.Forms.Label paliersPhysicalDamagesField;
+        private System.Windows.Forms.Label vehiculeSpeedField;
+        private System.Windows.Forms.Label vehiculeFiringRateField;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label cannonFiringRateMultiplierField;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label paliersSuppressDamagesField;
+        private System.Windows.Forms.Label infDamagesMultiplierField;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label infAndCanonSpeedModifierField;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.Label infAndCanonDispersionModifierLabel;
+        private System.Windows.Forms.Label infAndCanonDispersionModifierField;
+        private System.Windows.Forms.Label hitModifierField;
+        private System.Windows.Forms.Label infFiringRateMultiplierField;
+        private System.Windows.Forms.Label artilleryDispersionMultiplierField;
+        private System.Windows.Forms.Label vehiculeDispersionMultiplierField;
+        private System.Windows.Forms.Label vehiculeFiringRateMultiplierField;
+        private System.Windows.Forms.Label canonFiringRateMultiplierField;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label artilleryDispersionModifierLabel;
+        private System.Windows.Forms.Label label28;
     }
 }
 

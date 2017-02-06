@@ -1379,10 +1379,15 @@ namespace Armory {
             return "idk";
         }
         public string getSuppressDamagesRegenRatio() {
-            // TODO
-            NdfValueWrapper val;
-            if (queryTarget.TryGetValueFromQuery<NdfValueWrapper>("Modules.Damage.Default.CommonDamageDescriptor.SuppressDamagesRegenRatio", out val)) {
-                String result = val.ToString();
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.SuppressDamagesRegenRatio", out val)) {
+                String result = "soon!";
+                //foreach (CollectionItemValueHolder item in val.InnerList) {
+                //    NDF
+                //    result += ((NdfFloat_2)item.Value).Value.ToString() + "|";
+                //}
+
+                //String result = linearizeList(val);
 
                 return result;
             }
@@ -1390,10 +1395,9 @@ namespace Armory {
             return "idk";
         }
         public string getPaliersSuppressDamages() {
-            // TODO
-            NdfValueWrapper val;
-            if (queryTarget.TryGetValueFromQuery<NdfValueWrapper>("Modules.Damage.Default.CommonDamageDescriptor.PaliersSuppressDamages", out val)) {
-                String result = val.ToString();
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.PaliersSuppressDamages", out val)) {
+                String result = linearizeList(val);
 
                 return result;
             }
@@ -1401,32 +1405,254 @@ namespace Armory {
             return "idk";
         }
         public string getPaliersPhysicalDamages() {
-            // TODO
-            NdfValueWrapper val;
-            if (queryTarget.TryGetValueFromQuery<NdfValueWrapper>("Modules.Damage.Default.CommonDamageDescriptor.PaliersPhysicalDamages", out val)) {
-                String result = val.ToString();
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.PaliersPhysicalDamages", out val)) {
+                String result = linearizeList(val);
+
+                return result;
+            }
+
+            return "idk";
+        }        
+        public string getPhysicalDamagesVehiculeChassisRotationSpeedModifier() {
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.PhysicalDamagesEffects", out val)) {
+                String result = "";
+                foreach (CollectionItemValueHolder item in val.InnerList) {
+                    if (result != "") {
+                        result += "|";
+                    }
+
+                    result += ((NdfObjectReference)item.Value).Instance.GetValueOfProperty("VehiculeChassisRotationSpeedModifier").ToString();
+                }
 
                 return result;
             }
 
             return "idk";
         }
-        public string getPhysicalDamagesEffects() {
-            // TODO
-            NdfValueWrapper val;
-            if (queryTarget.TryGetValueFromQuery<NdfValueWrapper>("Modules.Damage.Default.CommonDamageDescriptor.PhysicalDamagesEffects", out val)) {
-                String result = val.ToString();
+        public string getPhysicalDamagesVehiculeTurretRotationSpeedModifier() {
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.PhysicalDamagesEffects", out val)) {
+                String result = "";
+                foreach (CollectionItemValueHolder item in val.InnerList) {
+                    if (result != "") {
+                        result += "|";
+                    }
+
+                    result += ((NdfObjectReference)item.Value).Instance.GetValueOfProperty("VehiculeTurretRotationSpeedModifier").ToString();
+                }
 
                 return result;
             }
 
             return "idk";
         }
-        public string getSuppressDamagesEffects() {
-            // TODO
-            NdfValueWrapper val;
-            if (queryTarget.TryGetValueFromQuery<NdfValueWrapper>("Modules.Damage.Default.CommonDamageDescriptor.SuppressDamagesEffects", out val)) {
-                String result = val.ToString();
+        public string getPhysicalDamagesVehiculeFiringRateMultiplier() {
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.PhysicalDamagesEffects", out val)) {
+                String result = "";
+                foreach (CollectionItemValueHolder item in val.InnerList) {
+                    if (result != "") {
+                        result += "|";
+                    }
+
+                    result += ((NdfObjectReference)item.Value).Instance.GetValueOfProperty("VehiculeFiringRateMultiplier").ToString();
+                }
+
+                return result;
+            }
+
+            return "idk";
+        }
+        public string getPhysicalDamagesVehiculeSpeedModifier() {
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.PhysicalDamagesEffects", out val)) {
+                String result = "";
+                foreach (CollectionItemValueHolder item in val.InnerList) {
+                    if (result != "") {
+                        result += "|";
+                    }
+
+                    result += ((NdfObjectReference)item.Value).Instance.GetValueOfProperty("VehiculeSpeedModifier").ToString();
+                }
+
+                return result;
+            }
+
+            return "idk";
+        }
+        public string getPhysicalDamagesCannonFiringRateMultiplier() {
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.PhysicalDamagesEffects", out val)) {
+                String result = "";
+                foreach (CollectionItemValueHolder item in val.InnerList) {
+                    if (result != "") {
+                        result += "|";
+                    }
+
+                    result += ((NdfObjectReference)item.Value).Instance.GetValueOfProperty("CanonFiringRateMultiplier").ToString();
+                }
+
+                return result;
+            }
+
+            return "idk";
+        }
+
+        public string getSuppressDamagesInfAndCanonSpeedModifier() {
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.SuppressDamagesEffects", out val)) {
+                String result = "";
+                foreach (CollectionItemValueHolder item in val.InnerList) {
+                    if (result != "") {
+                        result += "|";
+                    }
+
+                    result += ((NdfObjectReference)item.Value).Instance.GetValueOfProperty("InfAndCanonSpeedModifier").ToString();
+                }
+
+                return result;
+            }
+
+            return "idk";
+        }
+        public string getSuppressDamagesInfAndCanonDispersionModifier() {
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.SuppressDamagesEffects", out val)) {
+                String result = "";
+                foreach (CollectionItemValueHolder item in val.InnerList) {
+                    if (result != "") {
+                        result += "|";
+                    }
+
+                    String s = "idk";
+                    NdfPropertyValue v = null;
+                    if (((NdfObjectReference)item.Value).Instance.TryGetProperty("InfAndCanonDispersionMultiplier", out v)) {
+                        s = v.Value.ToString();
+                    } 
+
+                    result += s;
+                }
+
+                return result;
+            }
+
+            return "idk";
+        }
+        public string getSuppressDamagesInfDamagesMultiplier() {
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.SuppressDamagesEffects", out val)) {
+                String result = "";
+                foreach (CollectionItemValueHolder item in val.InnerList) {
+                    if (result != "") {
+                        result += "|";
+                    }
+
+                    result += ((NdfObjectReference)item.Value).Instance.GetValueOfProperty("InfDamagesMultiplier").ToString();
+                }
+
+                return result;
+            }
+
+            return "idk";
+        }
+        public string getSuppressDamagesInfFiringRateMultiplier() {
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.SuppressDamagesEffects", out val)) {
+                String result = "";
+                foreach (CollectionItemValueHolder item in val.InnerList) {
+                    if (result != "") {
+                        result += "|";
+                    }
+
+                    result += ((NdfObjectReference)item.Value).Instance.GetValueOfProperty("InfFiringRateMultiplier").ToString();
+                }
+
+                return result;
+            }
+
+            return "idk";
+        }
+        public string getSuppressDamagesCanonFiringRateMultiplier() {
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.SuppressDamagesEffects", out val)) {
+                String result = "";
+                foreach (CollectionItemValueHolder item in val.InnerList) {
+                    if (result != "") {
+                        result += "|";
+                    }
+
+                    result += ((NdfObjectReference)item.Value).Instance.GetValueOfProperty("CanonFiringRateMultiplier").ToString();
+                }
+
+                return result;
+            }
+
+            return "idk";
+        }
+        public string getSuppressDamagesVehiculeFiringRateMultiplier() {
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.SuppressDamagesEffects", out val)) {
+                String result = "";
+                foreach (CollectionItemValueHolder item in val.InnerList) {
+                    if (result != "") {
+                        result += "|";
+                    }
+
+                    result += ((NdfObjectReference)item.Value).Instance.GetValueOfProperty("VehiculeFiringRateMultiplier").ToString();
+                }
+
+                return result;
+            }
+
+            return "idk";
+        }
+        public string getSuppressDamagesVehiculeDispersionMultiplier() {
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.SuppressDamagesEffects", out val)) {
+                String result = "";
+                foreach (CollectionItemValueHolder item in val.InnerList) {
+                    if (result != "") {
+                        result += "|";
+                    }
+
+                    result += ((NdfObjectReference)item.Value).Instance.GetValueOfProperty("VehiculeDispersionMultiplier").ToString();
+                }
+
+                return result;
+            }
+
+            return "idk";
+        }
+        public string getSuppressDamagesArtilleryDispersionMultiplier() {
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.SuppressDamagesEffects", out val)) {
+                String result = "";
+                foreach (CollectionItemValueHolder item in val.InnerList) {
+                    if (result != "") {
+                        result += "|";
+                    }
+
+                    result += ((NdfObjectReference)item.Value).Instance.GetValueOfProperty("ArtilleryDispersionMultiplier").ToString();
+                }
+
+                return result;
+            }
+
+            return "idk";
+        }
+        public string getSuppressDamagesHitModifier() {
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("Modules.Damage.Default.CommonDamageDescriptor.SuppressDamagesEffects", out val)) {
+                String result = "";
+                foreach (CollectionItemValueHolder item in val.InnerList) {
+                    if (result != "") {
+                        result += "|";
+                    }
+
+                    result += ((NdfObjectReference)item.Value).Instance.GetValueOfProperty("HitModifier").ToString();
+                }
 
                 return result;
             }

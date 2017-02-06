@@ -97,8 +97,7 @@ namespace Armory
                 bool hasHardened = availability[2] != "0";
                 bool hasVeteran = availability[3] != "0";
                 bool hasElite = availability[4] != "0";
-
-                // if (tryGetRookie(out rookieInt)) maybe?
+                
                 if (hasRookie) {
                     noRookieImageFirepower.Hide();
                     noRookieImageSimple.Hide();
@@ -315,12 +314,27 @@ namespace Armory
                 stunDamagesToGetStunnedField.Text = unitDatabase.getStunDamagesToGetStunned();
                 suppressDamagesRegenRatioField.Text = unitDatabase.getSuppressDamagesRegenRatio();
                 suppressDamagesRegenRatioOutOfRangeField.Text = unitDatabase.getSuppressDamagesRegenRatioOutOfRange();
-                paliersSuppressDamagesField.Text = unitDatabase.getPaliersSuppressDamages();
-                paliersPhysicalDamagesField.Text = unitDatabase.getPaliersPhysicalDamages();
-                physicalDamagesEffectsField.Text = unitDatabase.getPhysicalDamagesEffects();
-                suppressDamagesEffectsField.Text = unitDatabase.getSuppressDamagesEffects();
 
-                // END firepower controls -----------
+                // suppression effects
+                paliersSuppressDamagesField.Text = unitDatabase.getPaliersSuppressDamages();
+                infAndCanonSpeedModifierField.Text = unitDatabase.getSuppressDamagesInfAndCanonSpeedModifier();
+                infAndCanonDispersionModifierField.Text = unitDatabase.getSuppressDamagesInfAndCanonDispersionModifier();
+                infDamagesMultiplierField.Text = unitDatabase.getSuppressDamagesInfDamagesMultiplier();
+                infFiringRateMultiplierField.Text = unitDatabase.getSuppressDamagesInfFiringRateMultiplier();
+                canonFiringRateMultiplierField.Text = unitDatabase.getSuppressDamagesCanonFiringRateMultiplier();
+                vehiculeFiringRateMultiplierField.Text = unitDatabase.getSuppressDamagesVehiculeFiringRateMultiplier();
+                vehiculeDispersionMultiplierField.Text = unitDatabase.getSuppressDamagesVehiculeDispersionMultiplier();
+                artilleryDispersionMultiplierField.Text = unitDatabase.getSuppressDamagesArtilleryDispersionMultiplier();
+                hitModifierField.Text = unitDatabase.getSuppressDamagesHitModifier();
+
+                // physical damage effects
+                paliersPhysicalDamagesField.Text = unitDatabase.getPaliersPhysicalDamages();
+                cannonFiringRateMultiplierField.Text = unitDatabase.getPhysicalDamagesCannonFiringRateMultiplier();
+                vehiculeSpeedField.Text = unitDatabase.getPhysicalDamagesVehiculeSpeedModifier();
+                vehiculeFiringRateField.Text = unitDatabase.getPhysicalDamagesVehiculeFiringRateMultiplier();
+                chassisRotationSpeedField.Text = unitDatabase.getPhysicalDamagesVehiculeChassisRotationSpeedModifier();
+                turretRotationSpeedField.Text = unitDatabase.getPhysicalDamagesVehiculeTurretRotationSpeedModifier();
+                // END Survivability controls -----------
                 #endregion
 
                 // Controls from Recon tab ----------
