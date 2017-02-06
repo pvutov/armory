@@ -240,7 +240,7 @@ namespace Armory {
         public string lockWeapon() {
             lockedWeapon = currentWeapon;
 
-            return lockedWeapon.getTurretIndex().ToString() 
+            return lockedWeapon.getTurretIndex().ToString()
                 + ":" + lockedWeapon.getWeaponIndex().ToString();
         }
 
@@ -315,6 +315,36 @@ namespace Armory {
             }
 
             return "idk";
+        }
+
+        /// <summary>
+        /// Extract the values from an ndf list into an "|"-delimited string
+        /// </summary>
+        /// <param name="list"></param>
+        /// <returns></returns>
+        private String linearizeList(NdfCollection list) {
+            String result = "";
+
+            foreach (CollectionItemValueHolder item in list.InnerList) {
+                if (result != "") {
+                    result += "|";
+                }
+
+                result += item.Value.ToString();
+            }
+
+            return result;
+        }
+
+        public String[] getMaxDeployableAmount() {
+
+            NdfCollection val;
+            if (queryTarget.TryGetValueFromQuery<NdfCollection>("MaxDeployableAmount", out val)) {
+
+                return linearizeList(val).Split('|');
+            }
+
+            return null;
         }
 
         public String getSize() {

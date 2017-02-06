@@ -3271,7 +3271,7 @@
             this.topArmorFieldSimple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.topArmorFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.topArmorFieldSimple.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.topArmorFieldSimple.Location = new System.Drawing.Point(231, 378);
+            this.topArmorFieldSimple.Location = new System.Drawing.Point(229, 378);
             this.topArmorFieldSimple.Name = "topArmorFieldSimple";
             this.topArmorFieldSimple.Size = new System.Drawing.Size(29, 17);
             this.topArmorFieldSimple.TabIndex = 32;
@@ -3311,7 +3311,7 @@
             this.ecmFieldSimple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.ecmFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.ecmFieldSimple.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ecmFieldSimple.Location = new System.Drawing.Point(246, 380);
+            this.ecmFieldSimple.Location = new System.Drawing.Point(240, 406);
             this.ecmFieldSimple.Name = "ecmFieldSimple";
             this.ecmFieldSimple.Size = new System.Drawing.Size(29, 17);
             this.ecmFieldSimple.TabIndex = 29;
@@ -3393,7 +3393,7 @@
             this.ecmLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.ecmLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.ecmLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ecmLabel.Location = new System.Drawing.Point(204, 380);
+            this.ecmLabel.Location = new System.Drawing.Point(203, 406);
             this.ecmLabel.MinimumSize = new System.Drawing.Size(42, 0);
             this.ecmLabel.Name = "ecmLabel";
             this.ecmLabel.Size = new System.Drawing.Size(42, 17);
@@ -3866,7 +3866,7 @@
             this.topArmorField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.topArmorField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.topArmorField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.topArmorField.Location = new System.Drawing.Point(231, 382);
+            this.topArmorField.Location = new System.Drawing.Point(231, 381);
             this.topArmorField.MinimumSize = new System.Drawing.Size(50, 0);
             this.topArmorField.Name = "topArmorField";
             this.topArmorField.Size = new System.Drawing.Size(50, 17);

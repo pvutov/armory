@@ -89,6 +89,215 @@ namespace Armory
                 unitCardFieldMobility.Image = unitCardField.Image;
                 unitCardFieldSurvivability.Image = unitCardField.Image;
 
+                #region
+                // Availability:
+                String[] availability = unitDatabase.getMaxDeployableAmount();
+                bool hasRookie = availability[0] != "0";
+                bool hasTrained = availability[1] != "0";
+                bool hasHardened = availability[2] != "0";
+                bool hasVeteran = availability[3] != "0";
+                bool hasElite = availability[4] != "0";
+
+                // if (tryGetRookie(out rookieInt)) maybe?
+                if (hasRookie) {
+                    noRookieImageFirepower.Hide();
+                    noRookieImageSimple.Hide();
+                    noRookieImageRecon.Hide();
+                    noRookieImageMobility.Hide();
+                    noRookieImageSurvivability.Hide();
+
+                    yesRookieImageFirepower.Show();
+                    yesRookieImageSimple.Show();
+                    yesRookieImageRecon.Show();
+                    yesRookieImageMobility.Show();
+                    yesRookieImageSurvivability.Show();
+
+                    rookieFieldFirepower.Text = availability[0];
+                    rookieFieldSimple.Text = rookieFieldFirepower.Text;
+                    rookieFieldRecon.Text = rookieFieldFirepower.Text;
+                    rookieFieldMobility.Text = rookieFieldFirepower.Text;
+                    rookieFieldSurvivability.Text = rookieFieldFirepower.Text;
+                }
+                else {
+                    noRookieImageFirepower.Show();
+                    noRookieImageSimple.Show();
+                    noRookieImageRecon.Show();
+                    noRookieImageMobility.Show();
+                    noRookieImageSurvivability.Show();
+
+                    yesRookieImageFirepower.Hide();
+                    yesRookieImageSimple.Hide();
+                    yesRookieImageRecon.Hide();
+                    yesRookieImageMobility.Hide();
+                    yesRookieImageSurvivability.Hide();
+
+                    rookieFieldFirepower.Text = "";
+                    rookieFieldSimple.Text = rookieFieldFirepower.Text;
+                    rookieFieldRecon.Text = rookieFieldFirepower.Text;
+                    rookieFieldMobility.Text = rookieFieldFirepower.Text;
+                    rookieFieldSurvivability.Text = rookieFieldFirepower.Text;
+                }
+                if (hasTrained) {
+                    noTrainedImageFirepower.Hide();
+                    noTrainedImageSimple.Hide();
+                    noTrainedImageRecon.Hide();
+                    noTrainedImageMobility.Hide();
+                    noTrainedImageSurvivability.Hide();
+
+                    yesTrainedImageFirepower.Show();
+                    yesTrainedImageSimple.Show();
+                    yesTrainedImageRecon.Show();
+                    yesTrainedImageMobility.Show();
+                    yesTrainedImageSurvivability.Show();
+
+                    trainedFieldFirepower.Text = availability[1];
+                    trainedFieldSimple.Text = trainedFieldFirepower.Text;
+                    trainedFieldRecon.Text = trainedFieldFirepower.Text;
+                    trainedFieldMobility.Text = trainedFieldFirepower.Text;
+                    trainedFieldSurvivability.Text = trainedFieldFirepower.Text;
+                }
+                else {
+                    noTrainedImageFirepower.Show();
+                    noTrainedImageSimple.Show();
+                    noTrainedImageRecon.Show();
+                    noTrainedImageMobility.Show();
+                    noTrainedImageSurvivability.Show();
+
+                    yesTrainedImageFirepower.Hide();
+                    yesTrainedImageSimple.Hide();
+                    yesTrainedImageRecon.Hide();
+                    yesTrainedImageMobility.Hide();
+                    yesTrainedImageSurvivability.Hide();
+
+                    trainedFieldFirepower.Text = "";
+                    trainedFieldSimple.Text = trainedFieldFirepower.Text;
+                    trainedFieldRecon.Text = trainedFieldFirepower.Text;
+                    trainedFieldMobility.Text = trainedFieldFirepower.Text;
+                    trainedFieldSurvivability.Text = trainedFieldFirepower.Text;
+
+                }
+                if (hasHardened) {
+                    noHardenedImageFirepower.Hide();
+                    noHardenedImageSimple.Hide();
+                    noHardenedImageRecon.Hide();
+                    noHardenedImageMobility.Hide();
+                    noHardenedImageSurvivability.Hide();
+
+                    yesHardenedImageFirepower.Show();
+                    yesHardenedImageSimple.Show();
+                    yesHardenedImageRecon.Show();
+                    yesHardenedImageMobility.Show();
+                    yesHardenedImageSurvivability.Show();
+
+                    hardenedFieldFirepower.Text = availability[2];
+                    hardenedFieldSimple.Text = hardenedFieldFirepower.Text;
+                    hardenedFieldRecon.Text = hardenedFieldFirepower.Text;
+                    hardenedFieldMobility.Text = hardenedFieldFirepower.Text;
+                    hardenedFieldSurvivability.Text = hardenedFieldFirepower.Text;
+
+                }
+                else {
+                    noHardenedImageFirepower.Show();
+                    noHardenedImageSimple.Show();
+                    noHardenedImageRecon.Show();
+                    noHardenedImageMobility.Show();
+                    noHardenedImageSurvivability.Show();
+
+                    yesHardenedImageFirepower.Hide();
+                    yesHardenedImageSimple.Hide();
+                    yesHardenedImageRecon.Hide();
+                    yesHardenedImageMobility.Hide();
+                    yesHardenedImageSurvivability.Hide();
+
+                    hardenedFieldFirepower.Text = "";
+                    hardenedFieldSimple.Text = hardenedFieldFirepower.Text;
+                    hardenedFieldRecon.Text = hardenedFieldFirepower.Text;
+                    hardenedFieldMobility.Text = hardenedFieldFirepower.Text;
+                    hardenedFieldSurvivability.Text = hardenedFieldFirepower.Text;
+
+                }
+                if (hasVeteran) {
+                    noVeteranImageFirepower.Hide();
+                    noVeteranImageSimple.Hide();
+                    noVeteranImageRecon.Hide();
+                    noVeteranImageMobility.Hide();
+                    noVeteranImageSurvivability.Hide();
+
+                    yesVeteranImageFirepower.Show();
+                    yesVeteranImageSimple.Show();
+                    yesVeteranImageRecon.Show();
+                    yesVeteranImageMobility.Show();
+                    yesVeteranImageSurvivability.Show();
+
+                    veteranFieldFirepower.Text = availability[3];
+                    veteranFieldSimple.Text = veteranFieldFirepower.Text;
+                    veteranFieldRecon.Text = veteranFieldFirepower.Text;
+                    veteranFieldMobility.Text = veteranFieldFirepower.Text;
+                    veteranFieldSurvivability.Text = veteranFieldFirepower.Text;
+
+                }
+                else {
+                    noVeteranImageFirepower.Show();
+                    noVeteranImageSimple.Show();
+                    noVeteranImageRecon.Show();
+                    noVeteranImageMobility.Show();
+                    noVeteranImageSurvivability.Show();
+
+                    yesVeteranImageFirepower.Hide();
+                    yesVeteranImageSimple.Hide();
+                    yesVeteranImageRecon.Hide();
+                    yesVeteranImageMobility.Hide();
+                    yesVeteranImageSurvivability.Hide();
+
+                    veteranFieldFirepower.Text = "";
+                    veteranFieldSimple.Text = veteranFieldFirepower.Text;
+                    veteranFieldRecon.Text = veteranFieldFirepower.Text;
+                    veteranFieldMobility.Text = veteranFieldFirepower.Text;
+                    veteranFieldSurvivability.Text = veteranFieldFirepower.Text;
+
+                }
+                if (hasElite) {
+                    noEliteImageFirepower.Hide();
+                    noEliteImageSimple.Hide();
+                    noEliteImageRecon.Hide();
+                    noEliteImageMobility.Hide();
+                    noEliteImageSurvivability.Hide();
+
+                    yesEliteImageFirepower.Show();
+                    yesEliteImageSimple.Show();
+                    yesEliteImageRecon.Show();
+                    yesEliteImageMobility.Show();
+                    yesEliteImageSurvivability.Show();
+
+                    eliteFieldFirepower.Text = availability[4];
+                    eliteFieldSimple.Text = eliteFieldFirepower.Text;
+                    eliteFieldRecon.Text = eliteFieldFirepower.Text;
+                    eliteFieldMobility.Text = eliteFieldFirepower.Text;
+                    eliteFieldSurvivability.Text = eliteFieldFirepower.Text;
+
+                }
+                else {
+                    noEliteImageFirepower.Show();
+                    noRookieImageSimple.Show();
+                    noRookieImageRecon.Show();
+                    noRookieImageMobility.Show();
+                    noRookieImageSurvivability.Show();
+
+                    yesEliteImageFirepower.Hide();
+                    yesEliteImageSimple.Hide();
+                    yesEliteImageRecon.Hide();
+                    yesEliteImageMobility.Hide();
+                    yesEliteImageSurvivability.Hide();
+
+                    eliteFieldFirepower.Text = "";
+                    eliteFieldSimple.Text = eliteFieldFirepower.Text;
+                    eliteFieldRecon.Text = eliteFieldFirepower.Text;
+                    eliteFieldMobility.Text = eliteFieldFirepower.Text;
+                    eliteFieldSurvivability.Text = eliteFieldFirepower.Text;
+
+                }
+                #endregion
+
                 // END common controls --------------
                 #endregion
 
