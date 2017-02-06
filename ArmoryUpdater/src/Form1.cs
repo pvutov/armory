@@ -11,9 +11,6 @@ namespace Updater {
         public Form1(String armoryDir, String patchNotes) {
             InitializeComponent();
             this.armoryDir = armoryDir;
-            if (armoryDir.Last() != '\\') {
-                this.armoryDir += '\\';
-            }
             changeListLabel.Text = patchNotes.Replace(@"\r\n", Environment.NewLine);
         }
 
@@ -26,7 +23,7 @@ namespace Updater {
             foreach (String f in Directory.GetFiles(Path.GetDirectoryName(thisFile))) {
                 if (f != thisFile) {
                     try {
-                        File.Copy(f, armoryDir + Path.GetFileName(f), true);
+                        File.Copy(f, Path.Combine(armoryDir, Path.GetFileName(f)), true);
                     }
                     catch (IOException) {
                         Program.warning("Could not write to file " + f 
@@ -35,8 +32,8 @@ namespace Updater {
                 }
             }
 
-            if (File.Exists(armoryDir + "Armory.exe")) {
-                Process.Start(armoryDir + "Armory.exe");
+            if (File.Exists(Path.Combine(armoryDir, "Armory.exe"))) {
+                Process.Start(Path.Combine(armoryDir, "Armory.exe"));
             }
             Application.Exit();
         }
