@@ -89,8 +89,8 @@ namespace Armory
                 unitCardFieldMobility.Image = unitCardField.Image;
                 unitCardFieldSurvivability.Image = unitCardField.Image;
 
-                #region
                 // Availability:
+                #region
                 String[] availability = unitDatabase.getMaxDeployableAmount();
                 bool hasRookie = availability[0] != "0";
                 bool hasTrained = availability[1] != "0";
@@ -277,10 +277,10 @@ namespace Armory
                 }
                 else {
                     noEliteImageFirepower.Show();
-                    noRookieImageSimple.Show();
-                    noRookieImageRecon.Show();
-                    noRookieImageMobility.Show();
-                    noRookieImageSurvivability.Show();
+                    noEliteImageSimple.Show();
+                    noEliteImageRecon.Show();
+                    noEliteImageMobility.Show();
+                    noEliteImageSurvivability.Show();
 
                     yesEliteImageFirepower.Hide();
                     yesEliteImageSimple.Hide();
