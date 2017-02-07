@@ -512,7 +512,7 @@ namespace Armory
         }
 
         private void checkForUpdatesButton_Click(object sender, EventArgs e) {
-            Updater updater = new Armory.Updater();
+            Updater updater = new Updater();
 
             if (updater.updateAvailable()) {
                 // update

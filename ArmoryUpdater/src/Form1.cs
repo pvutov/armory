@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 
@@ -25,9 +24,9 @@ namespace Updater {
                     try {
                         File.Copy(f, Path.Combine(armoryDir, Path.GetFileName(f)), true);
                     }
-                    catch (IOException) {
-                        Program.warning("Could not write to file " + f 
-                            + "\nMaybe it is in use?" );
+                    catch (IOException ex) {
+                        Program.warning("Could not write to file " + Path.Combine(armoryDir, Path.GetFileName(f))
+                            + "\nMaybe it is in use?\n" + ex.ToString());
                     }
                 }
             }

@@ -28,8 +28,8 @@ namespace Updater {
         ///  Display a warning string in cases of unexpected behavior.
         /// </summary>
         public static void warning(String warningText) {
-            MessageBox.Show(warningText + Program.CONTACT_STRING + "\nSuppress further warnings?", "Warning",
-                        MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            MessageBox.Show(warningText + Program.CONTACT_STRING, "Warning",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

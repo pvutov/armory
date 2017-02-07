@@ -33,8 +33,8 @@ namespace Armory {
             downloadUrl = getStringJsonField("browser_download_url", responseJson);
 
             DirectoryInfo di = Directory.CreateDirectory(Path.GetTempPath() + "armory");
-            downloadDir = Path.GetTempPath() + "armory\\";
-            zipPath = downloadDir + "armoryUpdate.zip";
+            downloadDir = Path.Combine(Path.GetTempPath(), "armory");
+            zipPath = Path.Combine(downloadDir, "armoryUpdate.zip");
 
             // make sure download dir is empty
             foreach (FileInfo file in di.GetFiles()) {
@@ -83,18 +83,18 @@ namespace Armory {
                 wc.DownloadFileCompleted += delegate (object sender, System.ComponentModel.AsyncCompletedEventArgs e) {
                     System.IO.Compression.ZipFile.ExtractToDirectory(zipPath, downloadDir);
                     File.Delete(zipPath);
-                    String updaterDir = downloadDir + "Updater.exe";
+                    String updaterDir = Path.Combine(downloadDir, "Updater.exe");
                     try {
-                        Process.Start(updaterDir, 
+                        Process.Start(updaterDir, "\"" +
                             Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) 
-                            + " " + patchNotes);
+                            + "\" " + patchNotes);
                     }
                     catch (System.ComponentModel.Win32Exception w) {
                         Program.warning(updaterDir + " not found." + w.Message + w.ErrorCode.ToString() + w.NativeErrorCode.ToString());
                     }
                 };
 
-                wc.DownloadFileAsync(new System.Uri(downloadUrl), zipPath);
+                wc.DownloadFileAsync(new Uri(downloadUrl), zipPath);
             }
         }
     }
