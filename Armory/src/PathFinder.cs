@@ -127,9 +127,10 @@ namespace Armory {
 
                 // Find newest .dat files
                 string searchDir = Path.Combine(wargameDir, "Data", "WARGAME", "PC");
-                ndf = findNewest("NDF_Win.dat", searchDir);
-                zz = findNewest("ZZ_Win.dat", searchDir);
-                zz4 = findNewest("ZZ_4.dat", searchDir);
+                ndf = findNewest("NDF_Win.dat", searchDir, false);
+                zz = findNewest("ZZ_Win.dat", searchDir, false);
+                // checkSize is a hacky fast fix for the random 8kb zz_4..
+                zz4 = findNewest("ZZ_4.dat", searchDir, true);
 
                 // Save dirs for next time
                 if (File.Exists(ndf)) {
@@ -162,7 +163,7 @@ namespace Armory {
         /// <param name="filename"></param>
         /// <param name="searchDir"></param>
         /// <returns></returns>
-        private String findNewest(String filename, String searchDir) {
+        private String findNewest(String filename, String searchDir, bool checkSize) {
             // TODO
             string result = null;
             DirectoryInfo di = new DirectoryInfo(searchDir);
@@ -170,7 +171,7 @@ namespace Armory {
             // Order from biggest number, which usually means most recent patch
             var ordered = di.GetDirectories().OrderByDescending(x => x.Name);
             foreach (DirectoryInfo innerDi in ordered) {
-                if (tryFindNewestRecursive(filename, innerDi, out result)) {
+                if (tryFindNewestRecursive(filename, innerDi, checkSize, out result)) {
                     return result;
                 }
             }
@@ -181,20 +182,23 @@ namespace Armory {
             return result;
         }
 
-        private bool tryFindNewestRecursive(String filename, DirectoryInfo di, out string result) {
+        private bool tryFindNewestRecursive(String filename, DirectoryInfo di, bool checkSize, out string result) {
             result = null;
             string possibleFilePath = Path.Combine(di.FullName, filename);
 
             // If a file is found, we're done.
             if (File.Exists(possibleFilePath)) {
-                result = possibleFilePath;
-                return true;
+                long length = new FileInfo(possibleFilePath).Length;
+                if (length > 10000 || !checkSize) {
+                    result = possibleFilePath;
+                    return true;
+                }
             }
 
             // If a file doesn't exist in this directory, recurse on subdirs:
             var ordered = di.GetDirectories().OrderByDescending(x => x.Name);
             foreach (DirectoryInfo innerDi in ordered) {
-                if (tryFindNewestRecursive(filename, innerDi, out result)) {
+                if (tryFindNewestRecursive(filename, innerDi, checkSize, out result)) {
                     return true;
                 }
             }

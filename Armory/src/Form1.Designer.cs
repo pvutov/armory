@@ -4417,7 +4417,7 @@
             this.infAndCanonDispersionModifierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.infAndCanonDispersionModifierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.infAndCanonDispersionModifierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.infAndCanonDispersionModifierField.Location = new System.Drawing.Point(244, 34);
+            this.infAndCanonDispersionModifierField.Location = new System.Drawing.Point(245, 34);
             this.infAndCanonDispersionModifierField.Name = "infAndCanonDispersionModifierField";
             this.infAndCanonDispersionModifierField.Size = new System.Drawing.Size(29, 17);
             this.infAndCanonDispersionModifierField.TabIndex = 251;
@@ -4456,7 +4456,7 @@
             this.infDamagesMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.infDamagesMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.infDamagesMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.infDamagesMultiplierField.Location = new System.Drawing.Point(283, 53);
+            this.infDamagesMultiplierField.Location = new System.Drawing.Point(281, 53);
             this.infDamagesMultiplierField.Name = "infDamagesMultiplierField";
             this.infDamagesMultiplierField.Size = new System.Drawing.Size(29, 17);
             this.infDamagesMultiplierField.TabIndex = 247;
@@ -4483,7 +4483,7 @@
             this.infAndCanonSpeedModifierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.infAndCanonSpeedModifierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.infAndCanonSpeedModifierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.infAndCanonSpeedModifierField.Location = new System.Drawing.Point(244, 16);
+            this.infAndCanonSpeedModifierField.Location = new System.Drawing.Point(245, 16);
             this.infAndCanonSpeedModifierField.Name = "infAndCanonSpeedModifierField";
             this.infAndCanonSpeedModifierField.Size = new System.Drawing.Size(29, 17);
             this.infAndCanonSpeedModifierField.TabIndex = 245;
@@ -4734,7 +4734,7 @@
             this.eliteFieldSurvivability.Name = "eliteFieldSurvivability";
             this.eliteFieldSurvivability.Size = new System.Drawing.Size(24, 17);
             this.eliteFieldSurvivability.TabIndex = 225;
-            this.eliteFieldSurvivability.Text = "12";
+            this.eliteFieldSurvivability.Text = "ba";
             this.eliteFieldSurvivability.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lockWeaponTooltip.SetToolTip(this.eliteFieldSurvivability, "This is real rof, aka how many actual hitrolls are made per minute.");
             // 
@@ -4748,7 +4748,7 @@
             this.veteranFieldSurvivability.Name = "veteranFieldSurvivability";
             this.veteranFieldSurvivability.Size = new System.Drawing.Size(24, 17);
             this.veteranFieldSurvivability.TabIndex = 224;
-            this.veteranFieldSurvivability.Text = "12";
+            this.veteranFieldSurvivability.Text = "ba";
             this.veteranFieldSurvivability.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lockWeaponTooltip.SetToolTip(this.veteranFieldSurvivability, "This is real rof, aka how many actual hitrolls are made per minute.");
             // 
@@ -4762,7 +4762,7 @@
             this.hardenedFieldSurvivability.Name = "hardenedFieldSurvivability";
             this.hardenedFieldSurvivability.Size = new System.Drawing.Size(24, 17);
             this.hardenedFieldSurvivability.TabIndex = 223;
-            this.hardenedFieldSurvivability.Text = "12";
+            this.hardenedFieldSurvivability.Text = "ba";
             this.hardenedFieldSurvivability.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lockWeaponTooltip.SetToolTip(this.hardenedFieldSurvivability, "This is real rof, aka how many actual hitrolls are made per minute.");
             // 
@@ -4776,7 +4776,7 @@
             this.trainedFieldSurvivability.Name = "trainedFieldSurvivability";
             this.trainedFieldSurvivability.Size = new System.Drawing.Size(24, 17);
             this.trainedFieldSurvivability.TabIndex = 222;
-            this.trainedFieldSurvivability.Text = "12";
+            this.trainedFieldSurvivability.Text = "ba";
             this.trainedFieldSurvivability.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lockWeaponTooltip.SetToolTip(this.trainedFieldSurvivability, "This is real rof, aka how many actual hitrolls are made per minute.");
             // 
@@ -4790,7 +4790,7 @@
             this.rookieFieldSurvivability.Name = "rookieFieldSurvivability";
             this.rookieFieldSurvivability.Size = new System.Drawing.Size(24, 17);
             this.rookieFieldSurvivability.TabIndex = 221;
-            this.rookieFieldSurvivability.Text = "12";
+            this.rookieFieldSurvivability.Text = "ba";
             this.rookieFieldSurvivability.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lockWeaponTooltip.SetToolTip(this.rookieFieldSurvivability, "This is real rof, aka how many actual hitrolls are made per minute.");
             // 
