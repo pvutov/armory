@@ -42,7 +42,7 @@ namespace Armory {
             }
         }
 
-        public bool checkForUpdates() {
+        public bool updateAvailable() {
             Version currentVer = Assembly.GetEntryAssembly().GetName().Version;
             Version latestVer;
             try {

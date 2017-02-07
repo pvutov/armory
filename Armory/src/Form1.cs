@@ -514,7 +514,7 @@ namespace Armory
         private void checkForUpdatesButton_Click(object sender, EventArgs e) {
             Updater updater = new Armory.Updater();
 
-            if (updater.checkForUpdates()) {
+            if (updater.updateAvailable()) {
                 // update
                 ProgressBar progressBar = new ProgressBar();
                 progressBar.Name = "downloadProgressBar";
