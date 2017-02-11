@@ -22,7 +22,6 @@ namespace Armory {
         private String zz4;
 
         public PathFinder() {
-            //AppDomain.CurrentDomain.BaseDirectory
             if (DEBUG) {
                 ndf = NDF_PATH_DEBUG;
                 zz = ZZ_PATH_DEBUG;
@@ -52,7 +51,7 @@ namespace Armory {
                     ndf = line.Substring("ndf:".Length);
 
                     if (!ndfRead) {
-                        if (System.IO.File.Exists(ndf)) {
+                        if (File.Exists(ndf)) {
                             ndfRead = true;
                         }
                     }
