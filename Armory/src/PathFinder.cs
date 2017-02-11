@@ -42,7 +42,14 @@ namespace Armory {
             bool zzRead = false;
             bool zz4Read = false;
 
-            string[] lines = File.ReadAllLines(ini_path);
+            string[] lines = null;
+            try {
+                lines = File.ReadAllLines(ini_path);
+            } catch (Exception e) {
+                Program.warning("Exception when reading settings.ini: " + e.ToString());
+                return false;
+            }
+
             foreach (string line in lines) {
                 if (line.StartsWith("ndf:")) {
                     ndf = line.Substring("ndf:".Length);
