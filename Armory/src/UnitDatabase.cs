@@ -608,6 +608,10 @@ namespace Armory {
             if (currentWeaponHandle != null) if (currentWeaponHandle.TryGetValueFromQuery<NdfValueWrapper>("PhysicalDamages", out val)) {
                     String result = val.ToString();
 
+                    string ap = getAP();
+                    if (result == "1" && ap != "idk" && ap != "-") {
+                        result = "-";
+                    }
                     return result;
                 }
 
