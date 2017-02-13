@@ -56,7 +56,15 @@ namespace Armory {
                 Application.Exit();
                 Environment.Exit(0);
             }
-            TradManager dict = dataManager2.ReadDictionary(UNITES_DIC);
+
+            TradManager dict = null;
+            try {
+                dict = dataManager2.ReadDictionary(UNITES_DIC);
+            } catch (Exception) {
+                warning("Failed reading ZZ_Win.dat. May have selected an incomplete one - try pointing settings.ini to a complete ZZ_Win.dat file.");
+                Application.Exit();
+                Environment.Exit(0);
+            }
 
             // unit icons
             EdataManager zz4File = new EdataManager(paths.getZz4Path());
@@ -69,9 +77,17 @@ namespace Armory {
                 Application.Exit();
                 Environment.Exit(0);
             }
-            EdataManager iconPackage = zz4File.ReadPackage(ICON_PACKAGE);
 
-            UnitDatabase unitDatabase = new UnitDatabase(unitInstances, dict, iconPackage, PACT_ICONS_DIRPREFIX, NATO_ICONS_DIRPREFIX);
+            EdataManager iconPackage = null;
+            try {
+                iconPackage = zz4File.ReadPackage(ICON_PACKAGE);
+            } catch (Exception) {
+                warning("Failed reading ZZ_4.dat. May have selected an incomplete one - try pointing settings.ini to a complete ZZ_4.dat file.");
+                Application.Exit();
+                Environment.Exit(0);
+            }
+
+    UnitDatabase unitDatabase = new UnitDatabase(unitInstances, dict, iconPackage, PACT_ICONS_DIRPREFIX, NATO_ICONS_DIRPREFIX);
             
             Application.Run(new Form1(unitDatabase));
         }

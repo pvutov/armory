@@ -131,8 +131,8 @@ namespace Armory {
                 // Find newest .dat files
                 string searchDir = Path.Combine(wargameDir, "Data", "WARGAME", "PC");
                 ndf = findNewest("NDF_Win.dat", searchDir, false);
-                zz = findNewest("ZZ_Win.dat", searchDir, false);
-                // checkSize is a hacky fast fix for the random 8kb zz_4..
+                // checkSize is a hacky fast fix for the random 8kb zz/zz_4..
+                zz = findNewest("ZZ_Win.dat", searchDir, true);
                 zz4 = findNewest("ZZ_4.dat", searchDir, true);
 
                 // Save dirs for next time
