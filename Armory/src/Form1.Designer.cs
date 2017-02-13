@@ -315,9 +315,18 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groundOpticsLabel = new System.Windows.Forms.Label();
             this.nameFieldSimple = new System.Windows.Forms.Label();
-            this.tabControl = new System.Windows.Forms.TabControl();
+            this.unitInfoTabControl = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.hitModifierField = new System.Windows.Forms.Label();
+            this.infFiringRateMultiplierField = new System.Windows.Forms.Label();
+            this.artilleryDispersionMultiplierField = new System.Windows.Forms.Label();
+            this.vehiculeDispersionMultiplierField = new System.Windows.Forms.Label();
+            this.vehiculeFiringRateMultiplierField = new System.Windows.Forms.Label();
+            this.canonFiringRateMultiplierField = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.artilleryDispersionModifierLabel = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.infAndCanonDispersionModifierLabel = new System.Windows.Forms.Label();
             this.infAndCanonDispersionModifierField = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -387,15 +396,6 @@
             this.nameFieldSurvivability = new System.Windows.Forms.Label();
             this.lockWeaponTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.checkForUpdatesButton = new System.Windows.Forms.Button();
-            this.label28 = new System.Windows.Forms.Label();
-            this.artilleryDispersionModifierLabel = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.canonFiringRateMultiplierField = new System.Windows.Forms.Label();
-            this.vehiculeFiringRateMultiplierField = new System.Windows.Forms.Label();
-            this.vehiculeDispersionMultiplierField = new System.Windows.Forms.Label();
-            this.artilleryDispersionMultiplierField = new System.Windows.Forms.Label();
-            this.infFiringRateMultiplierField = new System.Windows.Forms.Label();
-            this.hitModifierField = new System.Windows.Forms.Label();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageMobility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageMobility)).BeginInit();
@@ -449,7 +449,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.weaponPictureFieldSimple)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitCardField)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabControl.SuspendLayout();
+            this.unitInfoTabControl.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -468,6 +468,8 @@
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(70, 12);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(145, 20);
@@ -476,6 +478,8 @@
             // 
             // listBox1
             // 
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(230, 12);
             this.listBox1.Name = "listBox1";
@@ -485,6 +489,9 @@
             // 
             // listBox2
             // 
+            this.listBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Location = new System.Drawing.Point(3, 38);
             this.listBox2.Name = "listBox2";
@@ -559,7 +566,7 @@
             this.tabPage5.Controls.Add(this.nameFieldMobility);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(381, 488);
+            this.tabPage5.Size = new System.Drawing.Size(329, 282);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Mobility";
             // 
@@ -1262,7 +1269,7 @@
             this.tabPage4.Controls.Add(this.groundOpticsLabel2);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(381, 488);
+            this.tabPage4.Size = new System.Drawing.Size(329, 282);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Recon";
             // 
@@ -1942,7 +1949,7 @@
             this.tabPage3.Controls.Add(this.nameFieldFirepower);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(381, 488);
+            this.tabPage3.Size = new System.Drawing.Size(329, 282);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Firepower";
             // 
@@ -3131,7 +3138,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(381, 488);
+            this.tabPage1.Size = new System.Drawing.Size(381, 495);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Simple";
             // 
@@ -4299,19 +4306,20 @@
             this.nameFieldSimple.TabIndex = 0;
             this.nameFieldSimple.Text = "Unit name will be here";
             // 
-            // tabControl
+            // unitInfoTabControl
             // 
-            this.tabControl.Controls.Add(this.tabPage1);
-            this.tabControl.Controls.Add(this.tabPage3);
-            this.tabControl.Controls.Add(this.tabPage4);
-            this.tabControl.Controls.Add(this.tabPage5);
-            this.tabControl.Controls.Add(this.tabPage2);
-            this.tabControl.ItemSize = new System.Drawing.Size(43, 18);
-            this.tabControl.Location = new System.Drawing.Point(230, 87);
-            this.tabControl.Name = "tabControl";
-            this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(389, 514);
-            this.tabControl.TabIndex = 5;
+            this.unitInfoTabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.unitInfoTabControl.Controls.Add(this.tabPage1);
+            this.unitInfoTabControl.Controls.Add(this.tabPage3);
+            this.unitInfoTabControl.Controls.Add(this.tabPage4);
+            this.unitInfoTabControl.Controls.Add(this.tabPage5);
+            this.unitInfoTabControl.Controls.Add(this.tabPage2);
+            this.unitInfoTabControl.ItemSize = new System.Drawing.Size(43, 18);
+            this.unitInfoTabControl.Location = new System.Drawing.Point(230, 87);
+            this.unitInfoTabControl.Name = "unitInfoTabControl";
+            this.unitInfoTabControl.SelectedIndex = 0;
+            this.unitInfoTabControl.Size = new System.Drawing.Size(389, 521);
+            this.unitInfoTabControl.TabIndex = 5;
             // 
             // tabPage2
             // 
@@ -4363,7 +4371,7 @@
             this.tabPage2.Controls.Add(this.nameFieldSurvivability);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(381, 488);
+            this.tabPage2.Size = new System.Drawing.Size(329, 282);
             this.tabPage2.TabIndex = 5;
             this.tabPage2.Text = "Survivability";
             // 
@@ -4396,6 +4404,125 @@
             this.groupBox3.TabIndex = 237;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Effects from suppression:";
+            // 
+            // hitModifierField
+            // 
+            this.hitModifierField.AutoSize = true;
+            this.hitModifierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.hitModifierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.hitModifierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.hitModifierField.Location = new System.Drawing.Point(203, 88);
+            this.hitModifierField.Name = "hitModifierField";
+            this.hitModifierField.Size = new System.Drawing.Size(29, 17);
+            this.hitModifierField.TabIndex = 260;
+            this.hitModifierField.Text = "bar";
+            this.hitModifierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // infFiringRateMultiplierField
+            // 
+            this.infFiringRateMultiplierField.AutoSize = true;
+            this.infFiringRateMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.infFiringRateMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.infFiringRateMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.infFiringRateMultiplierField.Location = new System.Drawing.Point(87, 34);
+            this.infFiringRateMultiplierField.Name = "infFiringRateMultiplierField";
+            this.infFiringRateMultiplierField.Size = new System.Drawing.Size(29, 17);
+            this.infFiringRateMultiplierField.TabIndex = 259;
+            this.infFiringRateMultiplierField.Text = "bar";
+            this.infFiringRateMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // artilleryDispersionMultiplierField
+            // 
+            this.artilleryDispersionMultiplierField.AutoSize = true;
+            this.artilleryDispersionMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.artilleryDispersionMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.artilleryDispersionMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.artilleryDispersionMultiplierField.Location = new System.Drawing.Point(281, 70);
+            this.artilleryDispersionMultiplierField.Name = "artilleryDispersionMultiplierField";
+            this.artilleryDispersionMultiplierField.Size = new System.Drawing.Size(29, 17);
+            this.artilleryDispersionMultiplierField.TabIndex = 258;
+            this.artilleryDispersionMultiplierField.Text = "bar";
+            this.artilleryDispersionMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // vehiculeDispersionMultiplierField
+            // 
+            this.vehiculeDispersionMultiplierField.AutoSize = true;
+            this.vehiculeDispersionMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.vehiculeDispersionMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.vehiculeDispersionMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.vehiculeDispersionMultiplierField.Location = new System.Drawing.Point(71, 88);
+            this.vehiculeDispersionMultiplierField.Name = "vehiculeDispersionMultiplierField";
+            this.vehiculeDispersionMultiplierField.Size = new System.Drawing.Size(29, 17);
+            this.vehiculeDispersionMultiplierField.TabIndex = 257;
+            this.vehiculeDispersionMultiplierField.Text = "bar";
+            this.vehiculeDispersionMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // vehiculeFiringRateMultiplierField
+            // 
+            this.vehiculeFiringRateMultiplierField.AutoSize = true;
+            this.vehiculeFiringRateMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.vehiculeFiringRateMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.vehiculeFiringRateMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.vehiculeFiringRateMultiplierField.Location = new System.Drawing.Point(64, 70);
+            this.vehiculeFiringRateMultiplierField.Name = "vehiculeFiringRateMultiplierField";
+            this.vehiculeFiringRateMultiplierField.Size = new System.Drawing.Size(29, 17);
+            this.vehiculeFiringRateMultiplierField.TabIndex = 256;
+            this.vehiculeFiringRateMultiplierField.Text = "bar";
+            this.vehiculeFiringRateMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // canonFiringRateMultiplierField
+            // 
+            this.canonFiringRateMultiplierField.AutoSize = true;
+            this.canonFiringRateMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.canonFiringRateMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.canonFiringRateMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.canonFiringRateMultiplierField.Location = new System.Drawing.Point(110, 52);
+            this.canonFiringRateMultiplierField.Name = "canonFiringRateMultiplierField";
+            this.canonFiringRateMultiplierField.Size = new System.Drawing.Size(29, 17);
+            this.canonFiringRateMultiplierField.TabIndex = 255;
+            this.canonFiringRateMultiplierField.Text = "bar";
+            this.canonFiringRateMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label63.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label63.Location = new System.Drawing.Point(175, 88);
+            this.label63.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(40, 17);
+            this.label63.TabIndex = 254;
+            this.label63.Text = "Hit:";
+            // 
+            // artilleryDispersionModifierLabel
+            // 
+            this.artilleryDispersionModifierLabel.AutoSize = true;
+            this.artilleryDispersionModifierLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.artilleryDispersionModifierLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.artilleryDispersionModifierLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.artilleryDispersionModifierLabel.Location = new System.Drawing.Point(197, 70);
+            this.artilleryDispersionModifierLabel.MinimumSize = new System.Drawing.Size(40, 0);
+            this.artilleryDispersionModifierLabel.Name = "artilleryDispersionModifierLabel";
+            this.artilleryDispersionModifierLabel.Size = new System.Drawing.Size(85, 17);
+            this.artilleryDispersionModifierLabel.TabIndex = 253;
+            this.artilleryDispersionModifierLabel.Text = "ArtyDispers:";
+            this.lockWeaponTooltip.SetToolTip(this.artilleryDispersionModifierLabel, "ArtilleryDispersionModifier");
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label28.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label28.Location = new System.Drawing.Point(6, 88);
+            this.label28.MinimumSize = new System.Drawing.Size(40, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(65, 17);
+            this.label28.TabIndex = 252;
+            this.label28.Text = "VehDisp:";
+            this.lockWeaponTooltip.SetToolTip(this.label28, "VehiculeDispersionModifier");
             // 
             // infAndCanonDispersionModifierLabel
             // 
@@ -5261,6 +5388,7 @@
             // 
             // checkForUpdatesButton
             // 
+            this.checkForUpdatesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkForUpdatesButton.Location = new System.Drawing.Point(540, 12);
             this.checkForUpdatesButton.Name = "checkForUpdatesButton";
             this.checkForUpdatesButton.Size = new System.Drawing.Size(75, 23);
@@ -5269,132 +5397,13 @@
             this.checkForUpdatesButton.UseVisualStyleBackColor = true;
             this.checkForUpdatesButton.Click += new System.EventHandler(this.checkForUpdatesButton_Click);
             // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label28.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label28.Location = new System.Drawing.Point(6, 88);
-            this.label28.MinimumSize = new System.Drawing.Size(40, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(65, 17);
-            this.label28.TabIndex = 252;
-            this.label28.Text = "VehDisp:";
-            this.lockWeaponTooltip.SetToolTip(this.label28, "VehiculeDispersionModifier");
-            // 
-            // artilleryDispersionModifierLabel
-            // 
-            this.artilleryDispersionModifierLabel.AutoSize = true;
-            this.artilleryDispersionModifierLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.artilleryDispersionModifierLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.artilleryDispersionModifierLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.artilleryDispersionModifierLabel.Location = new System.Drawing.Point(197, 70);
-            this.artilleryDispersionModifierLabel.MinimumSize = new System.Drawing.Size(40, 0);
-            this.artilleryDispersionModifierLabel.Name = "artilleryDispersionModifierLabel";
-            this.artilleryDispersionModifierLabel.Size = new System.Drawing.Size(85, 17);
-            this.artilleryDispersionModifierLabel.TabIndex = 253;
-            this.artilleryDispersionModifierLabel.Text = "ArtyDispers:";
-            this.lockWeaponTooltip.SetToolTip(this.artilleryDispersionModifierLabel, "ArtilleryDispersionModifier");
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label63.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label63.Location = new System.Drawing.Point(175, 88);
-            this.label63.MinimumSize = new System.Drawing.Size(40, 0);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(40, 17);
-            this.label63.TabIndex = 254;
-            this.label63.Text = "Hit:";
-            // 
-            // canonFiringRateMultiplierField
-            // 
-            this.canonFiringRateMultiplierField.AutoSize = true;
-            this.canonFiringRateMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.canonFiringRateMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.canonFiringRateMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.canonFiringRateMultiplierField.Location = new System.Drawing.Point(110, 52);
-            this.canonFiringRateMultiplierField.Name = "canonFiringRateMultiplierField";
-            this.canonFiringRateMultiplierField.Size = new System.Drawing.Size(29, 17);
-            this.canonFiringRateMultiplierField.TabIndex = 255;
-            this.canonFiringRateMultiplierField.Text = "bar";
-            this.canonFiringRateMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // vehiculeFiringRateMultiplierField
-            // 
-            this.vehiculeFiringRateMultiplierField.AutoSize = true;
-            this.vehiculeFiringRateMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.vehiculeFiringRateMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.vehiculeFiringRateMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.vehiculeFiringRateMultiplierField.Location = new System.Drawing.Point(64, 70);
-            this.vehiculeFiringRateMultiplierField.Name = "vehiculeFiringRateMultiplierField";
-            this.vehiculeFiringRateMultiplierField.Size = new System.Drawing.Size(29, 17);
-            this.vehiculeFiringRateMultiplierField.TabIndex = 256;
-            this.vehiculeFiringRateMultiplierField.Text = "bar";
-            this.vehiculeFiringRateMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // vehiculeDispersionMultiplierField
-            // 
-            this.vehiculeDispersionMultiplierField.AutoSize = true;
-            this.vehiculeDispersionMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.vehiculeDispersionMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.vehiculeDispersionMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.vehiculeDispersionMultiplierField.Location = new System.Drawing.Point(71, 88);
-            this.vehiculeDispersionMultiplierField.Name = "vehiculeDispersionMultiplierField";
-            this.vehiculeDispersionMultiplierField.Size = new System.Drawing.Size(29, 17);
-            this.vehiculeDispersionMultiplierField.TabIndex = 257;
-            this.vehiculeDispersionMultiplierField.Text = "bar";
-            this.vehiculeDispersionMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // artilleryDispersionMultiplierField
-            // 
-            this.artilleryDispersionMultiplierField.AutoSize = true;
-            this.artilleryDispersionMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.artilleryDispersionMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.artilleryDispersionMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.artilleryDispersionMultiplierField.Location = new System.Drawing.Point(281, 70);
-            this.artilleryDispersionMultiplierField.Name = "artilleryDispersionMultiplierField";
-            this.artilleryDispersionMultiplierField.Size = new System.Drawing.Size(29, 17);
-            this.artilleryDispersionMultiplierField.TabIndex = 258;
-            this.artilleryDispersionMultiplierField.Text = "bar";
-            this.artilleryDispersionMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // infFiringRateMultiplierField
-            // 
-            this.infFiringRateMultiplierField.AutoSize = true;
-            this.infFiringRateMultiplierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.infFiringRateMultiplierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.infFiringRateMultiplierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.infFiringRateMultiplierField.Location = new System.Drawing.Point(87, 34);
-            this.infFiringRateMultiplierField.Name = "infFiringRateMultiplierField";
-            this.infFiringRateMultiplierField.Size = new System.Drawing.Size(29, 17);
-            this.infFiringRateMultiplierField.TabIndex = 259;
-            this.infFiringRateMultiplierField.Text = "bar";
-            this.infFiringRateMultiplierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // hitModifierField
-            // 
-            this.hitModifierField.AutoSize = true;
-            this.hitModifierField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.hitModifierField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.hitModifierField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.hitModifierField.Location = new System.Drawing.Point(203, 88);
-            this.hitModifierField.Name = "hitModifierField";
-            this.hitModifierField.Size = new System.Drawing.Size(29, 17);
-            this.hitModifierField.TabIndex = 260;
-            this.hitModifierField.Text = "bar";
-            this.hitModifierField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(631, 620);
+            this.ClientSize = new System.Drawing.Size(631, 608);
             this.Controls.Add(this.checkForUpdatesButton);
-            this.Controls.Add(this.tabControl);
+            this.Controls.Add(this.unitInfoTabControl);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
@@ -5460,7 +5469,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.weaponPictureFieldSimple)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitCardField)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabControl.ResumeLayout(false);
+            this.unitInfoTabControl.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -5595,7 +5604,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label groundOpticsLabel;
         private System.Windows.Forms.Label nameFieldSimple;
-        private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.TabControl unitInfoTabControl;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label frontArmorField;
         private System.Windows.Forms.Label rearArmorField;
