@@ -23,6 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.changeListLabel = new System.Windows.Forms.Label();
             this.updateButton = new System.Windows.Forms.Button();
@@ -83,6 +84,7 @@
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.changeListLabel);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Armory Updater";
             this.ResumeLayout(false);
