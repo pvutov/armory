@@ -1416,9 +1416,6 @@
         WwqYab2kA1a6oDhK+AAx9383kH1ZAgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="lockWeaponTooltip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>16, 17</value>
-  </metadata>
   <data name="unitCardFieldFirepower.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAKQAAABUCAIAAACDRQsPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -2729,6 +2726,9 @@
         RK5CYII=
 </value>
   </data>
+  <metadata name="lockWeaponTooltip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>16, 17</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>47</value>
   </metadata>

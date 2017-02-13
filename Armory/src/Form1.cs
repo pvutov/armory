@@ -565,5 +565,11 @@ namespace Armory
 
 
         }
+
+        private void cloneButton_Click(object sender, EventArgs e) {
+            Form1 f = new Form1(unitDatabase.clone());
+            f.checkForUpdatesButton.Hide();
+            f.Show();
+        }
     }
 }

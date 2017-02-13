@@ -102,7 +102,7 @@ namespace Armory {
                                 // Add to pact or nato unit list; using the Nationalite field, which seems to consitently be null for blue units, but is suspicious
                                 NdfPropertyValue nationalite;
                                 if (unitInstance.TryGetProperty("Nationalite", out nationalite)) {
-                                    if (nationalite.Value is IrisZoomDataApi.Model.Ndfbin.Types.AllTypes.NdfNull) {
+                                    if (nationalite.Value is NdfNull) {
                                         natoUnits.Add(unitNameString);
                                     }
                                     else {
@@ -135,6 +135,29 @@ namespace Armory {
             countryList.Insert(0, "PACT");
             countryList.Insert(0, "NATO");
             countryList.Insert(0, "All");
+        }
+
+        /// <summary>
+        /// UnitDatabase can only be used by one window because of stateful fields like currentWeapon.
+        /// <para/>Yet, the dictionaries and data objects in it are too big to be directly copied.
+        /// <para/>This constructor is meant to replicate the provided UnitDatabase, copying all references except for stateful, window-specific variables.
+        /// </summary>
+        /// <param name="father"></param>
+        private UnitDatabase(UnitDatabase father) {
+            aliasToUnitObject = father.aliasToUnitObject;
+            allUnits = father.allUnits;
+            countryList = father.countryList;
+            countryToUnitAlias = father.countryToUnitAlias;
+            dictionary = father.dictionary;
+            natoPrefix = father.natoPrefix;
+            natoUnits = father.natoUnits;
+            pactPrefix = father.pactPrefix;
+            pactUnits = father.pactUnits;
+            unitCards = father.unitCards;
+        }
+
+        public UnitDatabase clone() {
+            return new UnitDatabase(this);
         }
 
         /// <summary>

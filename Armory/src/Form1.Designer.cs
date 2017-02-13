@@ -396,6 +396,7 @@
             this.nameFieldSurvivability = new System.Windows.Forms.Label();
             this.lockWeaponTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.checkForUpdatesButton = new System.Windows.Forms.Button();
+            this.cloneButton = new System.Windows.Forms.Button();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageMobility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageMobility)).BeginInit();
@@ -4056,11 +4057,11 @@
             this.sizeFieldSimple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.sizeFieldSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.sizeFieldSimple.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.sizeFieldSimple.Location = new System.Drawing.Point(325, 406);
-            this.sizeFieldSimple.MaximumSize = new System.Drawing.Size(40, 0);
-            this.sizeFieldSimple.MinimumSize = new System.Drawing.Size(40, 0);
+            this.sizeFieldSimple.Location = new System.Drawing.Point(315, 406);
+            this.sizeFieldSimple.MaximumSize = new System.Drawing.Size(50, 0);
+            this.sizeFieldSimple.MinimumSize = new System.Drawing.Size(50, 0);
             this.sizeFieldSimple.Name = "sizeFieldSimple";
-            this.sizeFieldSimple.Size = new System.Drawing.Size(40, 17);
+            this.sizeFieldSimple.Size = new System.Drawing.Size(50, 17);
             this.sizeFieldSimple.TabIndex = 28;
             this.sizeFieldSimple.Text = "bar";
             this.sizeFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -4163,7 +4164,7 @@
             this.sizeLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.sizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.sizeLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.sizeLabel.Location = new System.Drawing.Point(288, 406);
+            this.sizeLabel.Location = new System.Drawing.Point(281, 406);
             this.sizeLabel.Name = "sizeLabel";
             this.sizeLabel.Size = new System.Drawing.Size(39, 17);
             this.sizeLabel.TabIndex = 18;
@@ -5401,11 +5402,23 @@
             this.checkForUpdatesButton.UseVisualStyleBackColor = true;
             this.checkForUpdatesButton.Click += new System.EventHandler(this.checkForUpdatesButton_Click);
             // 
+            // cloneButton
+            // 
+            this.cloneButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cloneButton.Location = new System.Drawing.Point(540, 80);
+            this.cloneButton.Name = "cloneButton";
+            this.cloneButton.Size = new System.Drawing.Size(75, 23);
+            this.cloneButton.TabIndex = 7;
+            this.cloneButton.Text = "clone";
+            this.cloneButton.UseVisualStyleBackColor = true;
+            this.cloneButton.Click += new System.EventHandler(this.cloneButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 608);
+            this.Controls.Add(this.cloneButton);
             this.Controls.Add(this.checkForUpdatesButton);
             this.Controls.Add(this.unitInfoTabControl);
             this.Controls.Add(this.label2);
@@ -5864,6 +5877,7 @@
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label artilleryDispersionModifierLabel;
         private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Button cloneButton;
     }
 }
 
