@@ -566,7 +566,7 @@
             this.tabPage5.Controls.Add(this.nameFieldMobility);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(381, 495);
+            this.tabPage5.Size = new System.Drawing.Size(329, 282);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Mobility";
             // 
@@ -1269,7 +1269,7 @@
             this.tabPage4.Controls.Add(this.groundOpticsLabel2);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(381, 495);
+            this.tabPage4.Size = new System.Drawing.Size(329, 282);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Recon";
             // 
@@ -1949,7 +1949,7 @@
             this.tabPage3.Controls.Add(this.nameFieldFirepower);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(381, 495);
+            this.tabPage3.Size = new System.Drawing.Size(329, 282);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Firepower";
             // 
@@ -2781,7 +2781,6 @@
             this.heLabel.Size = new System.Drawing.Size(31, 17);
             this.heLabel.TabIndex = 87;
             this.heLabel.Text = "HE:";
-            this.lockWeaponTooltip.SetToolTip(this.heLabel, "PhysicalDamages");
             // 
             // heField
             // 
@@ -2796,7 +2795,6 @@
             this.heField.TabIndex = 82;
             this.heField.Text = "bar";
             this.heField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.heField, "PhysicalDamages");
             // 
             // label85
             // 
@@ -3662,7 +3660,6 @@
             this.label111.Size = new System.Drawing.Size(31, 17);
             this.label111.TabIndex = 173;
             this.label111.Text = "HE:";
-            this.lockWeaponTooltip.SetToolTip(this.label111, "PhysicalDamages");
             // 
             // heFieldSimple
             // 
@@ -3677,7 +3674,6 @@
             this.heFieldSimple.TabIndex = 172;
             this.heFieldSimple.Text = "bar";
             this.heFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.heFieldSimple, "PhysicalDamages");
             // 
             // rofFieldSimple
             // 
@@ -4375,7 +4371,7 @@
             this.tabPage2.Controls.Add(this.nameFieldSurvivability);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(381, 495);
+            this.tabPage2.Size = new System.Drawing.Size(329, 282);
             this.tabPage2.TabIndex = 5;
             this.tabPage2.Text = "Survivability";
             // 
