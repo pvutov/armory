@@ -23,6 +23,7 @@ namespace Updater {
                 if (f != thisFile) {
                     try {
                         File.Copy(f, Path.Combine(armoryDir, Path.GetFileName(f)), true);
+                        File.Delete(f);
                     }
                     catch (IOException ex) {
                         Program.warning("Could not write to file " + Path.Combine(armoryDir, Path.GetFileName(f))
