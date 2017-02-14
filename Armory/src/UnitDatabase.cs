@@ -30,6 +30,7 @@ namespace Armory {
         //---------------- --------------------- ----------------
 
         private List<String> countryList;
+        private Dictionary<String, List<String>> unitsByFactory;
 
         private TradManager dictionary;
 
@@ -69,6 +70,7 @@ namespace Armory {
 
                         else {
                             NdfPropertyValue countryName;
+                            NdfPropertyValue factory;
 
                             // Add unit under its name under its country
                             if (unitInstance.TryGetProperty("MotherCountry", out countryName)) {
@@ -117,6 +119,21 @@ namespace Armory {
                             else {
                                 Program.warning("Skipped unit because no mother country: " + unitName + ".");
                             }
+
+                            //// Add unit name under corresponding factory
+                            //if (unitInstance.TryGetProperty("Factory", out factory)) {
+                            //    List<String> factoryContents;
+                            //    if (unitsByFactory.TryGetValue(factory.Value.ToString(), out factoryContents)) {
+
+                            //    }
+                            //    // If factory doesn't exist yet, add it
+                            //    else {
+                            //        factoryContents = new List<String>();
+                            //        factoryContents.Add(unitNameString);
+                            //        countryToUnitAlias.Add(factory.Value.ToString(), factoryContents);
+                            //    }
+
+                            //}
                         }
                     }
                 }
@@ -154,6 +171,7 @@ namespace Armory {
             pactPrefix = father.pactPrefix;
             pactUnits = father.pactUnits;
             unitCards = father.unitCards;
+            unitsByFactory = father.unitsByFactory;
         }
 
         public UnitDatabase clone() {

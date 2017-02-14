@@ -27,7 +27,7 @@ namespace Armory
                 try {
                     return Regex.IsMatch(s, textBox1.Text, RegexOptions.IgnoreCase);
                 }
-                catch (System.ArgumentException) {
+                catch (ArgumentException) {
                    return Regex.IsMatch(s, Regex.Escape(textBox1.Text), RegexOptions.IgnoreCase);
                 }
             });
@@ -88,6 +88,40 @@ namespace Armory
                 unitCardFieldRecon.Image = unitCardField.Image;
                 unitCardFieldMobility.Image = unitCardField.Image;
                 unitCardFieldSurvivability.Image = unitCardField.Image;
+
+                // Flag:
+                #region
+                Bitmap img = null;
+                switch (selectedUnit.Substring(0,3)) {
+                    case "ANZ": img = Properties.Resources.ANZAC; break;
+                    case "CAN": img = Properties.Resources.CAN; break;
+                    case "CHI": img = Properties.Resources.PRC; break;
+                    case "DAN": img = Properties.Resources.DEN; break;
+                    case "FIN": img = Properties.Resources.FIN; break;
+                    case "FR ": img = Properties.Resources.FRA; break;
+                    case "HOL": img = Properties.Resources.NED; break;
+                    case "ISR": img = Properties.Resources.ISR; break;
+                    case "JAP": img = Properties.Resources.JAP; break;
+                    case "NK ": img = Properties.Resources.DPRK; break;
+                    case "NOR": img = Properties.Resources.NOR; break;
+                    case "POL": img = Properties.Resources.POL; break;
+                    case "RDA": img = Properties.Resources.DDR; break;
+                    case "RFA": img = Properties.Resources.BRD; break;
+                    case "ROK": img = Properties.Resources.ROK; break;
+                    case "SWE": img = Properties.Resources.SWE; break;
+                    case "TCH": img = Properties.Resources.CZS; break;
+                    case "UK ": img = Properties.Resources.UK; break;
+                    case "URS": img = Properties.Resources.USSR; break;
+                    case "US ": img = Properties.Resources.USA; break;
+                    case "YUG": img = Properties.Resources.YU; break;
+                    default: break;
+                }
+                flagSimple.Image = img;
+                flagFirepower.Image = flagSimple.Image;
+                flagRecon.Image = flagSimple.Image;
+                flagMobility.Image = flagSimple.Image;
+                flagSurvivability.Image = flagSimple.Image;
+                #endregion
 
                 // Availability:
                 #region
@@ -525,8 +559,8 @@ namespace Armory
                 container.Location = checkForUpdatesButton.Location;
                 container.Controls.Add(progressBar);
 
-                this.Controls.Remove(checkForUpdatesButton);
-                this.Controls.Add(container);
+                panelTopRight.Controls.Remove(checkForUpdatesButton);
+                panelTopRight.Controls.Add(container);
 
                 updater.applyUpdate((int val) => { progressBar.Value = val; });
 
@@ -535,8 +569,8 @@ namespace Armory
                 t.Interval = 10000;
                 t.Tick += (s, _) => {
                     if (progressBar.Value == progressBar.Maximum) {
-                        this.Controls.Remove(container);
-                        this.Controls.Add(checkForUpdatesButton);
+                        panelTopRight.Controls.Remove(container);
+                        panelTopRight.Controls.Add(checkForUpdatesButton);
                         t.Stop();
                     }
                 };
@@ -551,13 +585,13 @@ namespace Armory
                 updateMessageLabel.MaximumSize = new Size(checkForUpdatesButton.Size.Width, 0);
                 updateMessageLabel.AutoSize = true;
 
-                this.Controls.Remove(checkForUpdatesButton);
-                this.Controls.Add(updateMessageLabel);
+                panelTopRight.Controls.Remove(checkForUpdatesButton);
+                panelTopRight.Controls.Add(updateMessageLabel);
 
                 var t = new Timer();
                 t.Interval = 4000; 
                 t.Tick += (s, _) => {
-                    this.Controls.Remove(updateMessageLabel);
+                    panelTopRight.Controls.Remove(updateMessageLabel);
                     t.Stop();
                 };
                 t.Start();
