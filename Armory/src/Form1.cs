@@ -23,7 +23,7 @@ namespace Armory
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e) {
-            List<String> filteredUnits = currentUnits.FindAll(delegate (string s) {
+            List<String> filteredUnits = currentUnits.FindAll(s => {
                 try {
                     return Regex.IsMatch(s, textBox1.Text, RegexOptions.IgnoreCase);
                 }
@@ -36,7 +36,6 @@ namespace Armory
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e) {
             String selectedFaction = listBox1.GetItemText(listBox1.SelectedItem);
-
             currentUnits = unitDatabase.getUnitList(selectedFaction);
             listBox2.DataSource = currentUnits;
         }
