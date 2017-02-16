@@ -486,20 +486,19 @@
             // 
             this.unitSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.unitSearch.Location = new System.Drawing.Point(70, 12);
+            this.unitSearch.Location = new System.Drawing.Point(79, 159);
             this.unitSearch.Name = "unitSearch";
-            this.unitSearch.Size = new System.Drawing.Size(145, 20);
+            this.unitSearch.Size = new System.Drawing.Size(136, 20);
             this.unitSearch.TabIndex = 0;
             this.unitSearch.TextChanged += new System.EventHandler(this.unitSearch_TextChanged);
             // 
             // countrySelect
             // 
-            this.countrySelect.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.countrySelect.Dock = System.Windows.Forms.DockStyle.Left;
             this.countrySelect.FormattingEnabled = true;
-            this.countrySelect.Location = new System.Drawing.Point(3, 3);
+            this.countrySelect.Location = new System.Drawing.Point(0, 0);
             this.countrySelect.Name = "countrySelect";
-            this.countrySelect.Size = new System.Drawing.Size(125, 56);
+            this.countrySelect.Size = new System.Drawing.Size(80, 141);
             this.countrySelect.TabIndex = 1;
             this.countrySelect.SelectedIndexChanged += new System.EventHandler(this.countrySelect_SelectedIndexChanged);
             // 
@@ -509,16 +508,16 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.unitList.FormattingEnabled = true;
-            this.unitList.Location = new System.Drawing.Point(3, 38);
+            this.unitList.Location = new System.Drawing.Point(3, 185);
             this.unitList.Name = "unitList";
-            this.unitList.Size = new System.Drawing.Size(212, 563);
+            this.unitList.Size = new System.Drawing.Size(212, 381);
             this.unitList.TabIndex = 2;
             this.unitList.SelectedIndexChanged += new System.EventHandler(this.unitList_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(0, 15);
+            this.label2.Location = new System.Drawing.Point(9, 162);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 4;
@@ -4379,7 +4378,7 @@
             this.unitInfoTabControl.Controls.Add(this.tabPage5);
             this.unitInfoTabControl.Controls.Add(this.tabPage2);
             this.unitInfoTabControl.ItemSize = new System.Drawing.Size(43, 18);
-            this.unitInfoTabControl.Location = new System.Drawing.Point(230, 87);
+            this.unitInfoTabControl.Location = new System.Drawing.Point(230, 46);
             this.unitInfoTabControl.Name = "unitInfoTabControl";
             this.unitInfoTabControl.SelectedIndex = 0;
             this.unitInfoTabControl.Size = new System.Drawing.Size(389, 521);
@@ -5475,7 +5474,7 @@
             // cloneButton
             // 
             this.cloneButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cloneButton.Location = new System.Drawing.Point(6, 71);
+            this.cloneButton.Location = new System.Drawing.Point(6, 30);
             this.cloneButton.Name = "cloneButton";
             this.cloneButton.Size = new System.Drawing.Size(75, 23);
             this.cloneButton.TabIndex = 7;
@@ -5491,41 +5490,40 @@
             this.panelTopRight.Controls.Add(this.cloneButton);
             this.panelTopRight.Location = new System.Drawing.Point(535, 12);
             this.panelTopRight.Name = "panelTopRight";
-            this.panelTopRight.Size = new System.Drawing.Size(84, 95);
+            this.panelTopRight.Size = new System.Drawing.Size(84, 54);
             this.panelTopRight.TabIndex = 8;
             // 
             // categorySelect
             // 
-            this.categorySelect.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.categorySelect.Dock = System.Windows.Forms.DockStyle.Fill;
             this.categorySelect.FormattingEnabled = true;
-            this.categorySelect.Location = new System.Drawing.Point(140, 3);
+            this.categorySelect.Location = new System.Drawing.Point(80, 0);
             this.categorySelect.Name = "categorySelect";
-            this.categorySelect.Size = new System.Drawing.Size(128, 56);
+            this.categorySelect.Size = new System.Drawing.Size(123, 141);
             this.categorySelect.TabIndex = 9;
             this.categorySelect.SelectedIndexChanged += new System.EventHandler(this.categorySelect_SelectedIndexChanged);
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.categorySelect);
             this.panel1.Controls.Add(this.countrySelect);
-            this.panel1.Location = new System.Drawing.Point(232, 12);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(271, 69);
+            this.panel1.Size = new System.Drawing.Size(203, 141);
             this.panel1.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(631, 608);
+            this.ClientSize = new System.Drawing.Size(631, 567);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelTopRight);
+            this.Controls.Add(this.unitList);
             this.Controls.Add(this.unitInfoTabControl);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.unitList);
             this.Controls.Add(this.unitSearch);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
