@@ -8,11 +8,16 @@ namespace Armory {
         private String _factory;
         private NdfObject _ndfHandle;
 
-        public Unit(String country, String name, String factory, NdfObject ndfHandle) {
+        public Unit(String country, String name, NdfObject ndfHandle) {
             _qualifiedName = country + " - " + name;
             _name = name;
-            _factory = factory;
             _ndfHandle = ndfHandle;
+
+            // Get factory
+            NdfPropertyValue factory;
+            if (ndfHandle.TryGetProperty("Factory", out factory)) {
+                _factory = factory.Value.ToString();
+            }
         }
 
         /// <summary>

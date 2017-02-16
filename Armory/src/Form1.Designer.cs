@@ -30,11 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.unitSearch = new System.Windows.Forms.TextBox();
+            this.countrySelect = new System.Windows.Forms.ListBox();
+            this.unitList = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.flagMobility = new System.Windows.Forms.PictureBox();
             this.eliteFieldMobility = new System.Windows.Forms.Label();
             this.veteranFieldMobility = new System.Windows.Forms.Label();
             this.hardenedFieldMobility = new System.Windows.Forms.Label();
@@ -77,7 +78,19 @@
             this.priceFieldMobility = new System.Windows.Forms.Label();
             this.prototypeLabelMobility = new System.Windows.Forms.Label();
             this.nameFieldMobility = new System.Windows.Forms.Label();
+            this.yesEliteImageMobility = new System.Windows.Forms.PictureBox();
+            this.yesVeteranImageMobility = new System.Windows.Forms.PictureBox();
+            this.yesHardenedImageMobility = new System.Windows.Forms.PictureBox();
+            this.yesTrainedImageMobility = new System.Windows.Forms.PictureBox();
+            this.yesRookieImageMobility = new System.Windows.Forms.PictureBox();
+            this.noEliteImageMobility = new System.Windows.Forms.PictureBox();
+            this.noVeteranImageMobility = new System.Windows.Forms.PictureBox();
+            this.noHardenedImageMobility = new System.Windows.Forms.PictureBox();
+            this.noTrainedImageMobility = new System.Windows.Forms.PictureBox();
+            this.noRookieImageMobility = new System.Windows.Forms.PictureBox();
+            this.unitCardFieldMobility = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.flagRecon = new System.Windows.Forms.PictureBox();
             this.eliteFieldRecon = new System.Windows.Forms.Label();
             this.veteranFieldRecon = new System.Windows.Forms.Label();
             this.hardenedFieldRecon = new System.Windows.Forms.Label();
@@ -114,7 +127,20 @@
             this.airOpticsField = new System.Windows.Forms.Label();
             this.airOpticsLabel2 = new System.Windows.Forms.Label();
             this.groundOpticsLabel2 = new System.Windows.Forms.Label();
+            this.yesEliteImageRecon = new System.Windows.Forms.PictureBox();
+            this.yesVeteranImageRecon = new System.Windows.Forms.PictureBox();
+            this.yesHardenedImageRecon = new System.Windows.Forms.PictureBox();
+            this.yesTrainedImageRecon = new System.Windows.Forms.PictureBox();
+            this.yesRookieImageRecon = new System.Windows.Forms.PictureBox();
+            this.noEliteImageRecon = new System.Windows.Forms.PictureBox();
+            this.noVeteranImageRecon = new System.Windows.Forms.PictureBox();
+            this.noHardenedImageRecon = new System.Windows.Forms.PictureBox();
+            this.noTrainedImageRecon = new System.Windows.Forms.PictureBox();
+            this.noRookieImageRecon = new System.Windows.Forms.PictureBox();
+            this.unitCardFieldRecon = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.flagFirepower = new System.Windows.Forms.PictureBox();
             this.eliteFieldFirepower = new System.Windows.Forms.Label();
             this.veteranFieldFirepower = new System.Windows.Forms.Label();
             this.hardenedFieldFirepower = new System.Windows.Forms.Label();
@@ -188,7 +214,20 @@
             this.priceFieldFirepower = new System.Windows.Forms.Label();
             this.prototypeLabelFirepower = new System.Windows.Forms.Label();
             this.nameFieldFirepower = new System.Windows.Forms.Label();
+            this.yesEliteImageFirepower = new System.Windows.Forms.PictureBox();
+            this.yesVeteranImageFirepower = new System.Windows.Forms.PictureBox();
+            this.yesHardenedImageFirepower = new System.Windows.Forms.PictureBox();
+            this.yesTrainedImageFirepower = new System.Windows.Forms.PictureBox();
+            this.yesRookieImageFirepower = new System.Windows.Forms.PictureBox();
+            this.noEliteImageFirepower = new System.Windows.Forms.PictureBox();
+            this.noVeteranImageFirepower = new System.Windows.Forms.PictureBox();
+            this.noHardenedImageFirepower = new System.Windows.Forms.PictureBox();
+            this.noTrainedImageFirepower = new System.Windows.Forms.PictureBox();
+            this.noRookieImageFirepower = new System.Windows.Forms.PictureBox();
+            this.weaponPictureField = new System.Windows.Forms.PictureBox();
+            this.unitCardFieldFirepower = new System.Windows.Forms.PictureBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.flagSimple = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label104 = new System.Windows.Forms.Label();
             this.groundRangeFieldSimple = new System.Windows.Forms.Label();
@@ -201,6 +240,16 @@
             this.hardenedFieldSimple = new System.Windows.Forms.Label();
             this.trainedFieldSimple = new System.Windows.Forms.Label();
             this.rookieFieldSimple = new System.Windows.Forms.Label();
+            this.yesEliteImageSimple = new System.Windows.Forms.PictureBox();
+            this.yesVeteranImageSimple = new System.Windows.Forms.PictureBox();
+            this.yesHardenedImageSimple = new System.Windows.Forms.PictureBox();
+            this.yesTrainedImageSimple = new System.Windows.Forms.PictureBox();
+            this.yesRookieImageSimple = new System.Windows.Forms.PictureBox();
+            this.noEliteImageSimple = new System.Windows.Forms.PictureBox();
+            this.noVeteranImageSimple = new System.Windows.Forms.PictureBox();
+            this.noHardenedImageSimple = new System.Windows.Forms.PictureBox();
+            this.noTrainedImageSimple = new System.Windows.Forms.PictureBox();
+            this.noRookieImageSimple = new System.Windows.Forms.PictureBox();
             this.lockWeaponCheckboxSimple = new System.Windows.Forms.CheckBox();
             this.aimTimeFieldSimple = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
@@ -228,6 +277,7 @@
             this.label118 = new System.Windows.Forms.Label();
             this.ammoFieldSimple = new System.Windows.Forms.Label();
             this.label120 = new System.Windows.Forms.Label();
+            this.weaponPictureFieldSimple = new System.Windows.Forms.PictureBox();
             this.weaponDropdownSimple = new System.Windows.Forms.ComboBox();
             this.turretFieldSimple = new System.Windows.Forms.Label();
             this.stabilizerFieldSimple = new System.Windows.Forms.Label();
@@ -242,6 +292,7 @@
             this.label43 = new System.Windows.Forms.Label();
             this.autonomyFieldSimple = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.unitCardField = new System.Windows.Forms.PictureBox();
             this.frontArmorFieldSimple = new System.Windows.Forms.Label();
             this.rearArmorFieldSimple = new System.Windows.Forms.Label();
             this.topArmorFieldSimple = new System.Windows.Forms.Label();
@@ -265,10 +316,12 @@
             this.groundOpticsFieldSimple = new System.Windows.Forms.Label();
             this.airOpticsFieldSimple = new System.Windows.Forms.Label();
             this.airOpticsLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groundOpticsLabel = new System.Windows.Forms.Label();
             this.nameFieldSimple = new System.Windows.Forms.Label();
             this.unitInfoTabControl = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.flagSurvivability = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.hitModifierField = new System.Windows.Forms.Label();
             this.infFiringRateMultiplierField = new System.Windows.Forms.Label();
@@ -335,62 +388,6 @@
             this.priceFieldSurvivability = new System.Windows.Forms.Label();
             this.prototypeLabelSurvivability = new System.Windows.Forms.Label();
             this.nameFieldSurvivability = new System.Windows.Forms.Label();
-            this.lockWeaponTooltip = new System.Windows.Forms.ToolTip(this.components);
-            this.checkForUpdatesButton = new System.Windows.Forms.Button();
-            this.cloneButton = new System.Windows.Forms.Button();
-            this.flagSimple = new System.Windows.Forms.PictureBox();
-            this.yesEliteImageSimple = new System.Windows.Forms.PictureBox();
-            this.yesVeteranImageSimple = new System.Windows.Forms.PictureBox();
-            this.yesHardenedImageSimple = new System.Windows.Forms.PictureBox();
-            this.yesTrainedImageSimple = new System.Windows.Forms.PictureBox();
-            this.yesRookieImageSimple = new System.Windows.Forms.PictureBox();
-            this.noEliteImageSimple = new System.Windows.Forms.PictureBox();
-            this.noVeteranImageSimple = new System.Windows.Forms.PictureBox();
-            this.noHardenedImageSimple = new System.Windows.Forms.PictureBox();
-            this.noTrainedImageSimple = new System.Windows.Forms.PictureBox();
-            this.noRookieImageSimple = new System.Windows.Forms.PictureBox();
-            this.weaponPictureFieldSimple = new System.Windows.Forms.PictureBox();
-            this.unitCardField = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.flagFirepower = new System.Windows.Forms.PictureBox();
-            this.yesEliteImageFirepower = new System.Windows.Forms.PictureBox();
-            this.yesVeteranImageFirepower = new System.Windows.Forms.PictureBox();
-            this.yesHardenedImageFirepower = new System.Windows.Forms.PictureBox();
-            this.yesTrainedImageFirepower = new System.Windows.Forms.PictureBox();
-            this.yesRookieImageFirepower = new System.Windows.Forms.PictureBox();
-            this.noEliteImageFirepower = new System.Windows.Forms.PictureBox();
-            this.noVeteranImageFirepower = new System.Windows.Forms.PictureBox();
-            this.noHardenedImageFirepower = new System.Windows.Forms.PictureBox();
-            this.noTrainedImageFirepower = new System.Windows.Forms.PictureBox();
-            this.noRookieImageFirepower = new System.Windows.Forms.PictureBox();
-            this.weaponPictureField = new System.Windows.Forms.PictureBox();
-            this.unitCardFieldFirepower = new System.Windows.Forms.PictureBox();
-            this.flagRecon = new System.Windows.Forms.PictureBox();
-            this.yesEliteImageRecon = new System.Windows.Forms.PictureBox();
-            this.yesVeteranImageRecon = new System.Windows.Forms.PictureBox();
-            this.yesHardenedImageRecon = new System.Windows.Forms.PictureBox();
-            this.yesTrainedImageRecon = new System.Windows.Forms.PictureBox();
-            this.yesRookieImageRecon = new System.Windows.Forms.PictureBox();
-            this.noEliteImageRecon = new System.Windows.Forms.PictureBox();
-            this.noVeteranImageRecon = new System.Windows.Forms.PictureBox();
-            this.noHardenedImageRecon = new System.Windows.Forms.PictureBox();
-            this.noTrainedImageRecon = new System.Windows.Forms.PictureBox();
-            this.noRookieImageRecon = new System.Windows.Forms.PictureBox();
-            this.unitCardFieldRecon = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.flagMobility = new System.Windows.Forms.PictureBox();
-            this.yesEliteImageMobility = new System.Windows.Forms.PictureBox();
-            this.yesVeteranImageMobility = new System.Windows.Forms.PictureBox();
-            this.yesHardenedImageMobility = new System.Windows.Forms.PictureBox();
-            this.yesTrainedImageMobility = new System.Windows.Forms.PictureBox();
-            this.yesRookieImageMobility = new System.Windows.Forms.PictureBox();
-            this.noEliteImageMobility = new System.Windows.Forms.PictureBox();
-            this.noVeteranImageMobility = new System.Windows.Forms.PictureBox();
-            this.noHardenedImageMobility = new System.Windows.Forms.PictureBox();
-            this.noTrainedImageMobility = new System.Windows.Forms.PictureBox();
-            this.noRookieImageMobility = new System.Windows.Forms.PictureBox();
-            this.unitCardFieldMobility = new System.Windows.Forms.PictureBox();
-            this.flagSurvivability = new System.Windows.Forms.PictureBox();
             this.yesEliteImageSurvivability = new System.Windows.Forms.PictureBox();
             this.yesVeteranImageSurvivability = new System.Windows.Forms.PictureBox();
             this.yesHardenedImageSurvivability = new System.Windows.Forms.PictureBox();
@@ -402,45 +399,26 @@
             this.noTrainedImageSurvivability = new System.Windows.Forms.PictureBox();
             this.noRookieImageSurvivability = new System.Windows.Forms.PictureBox();
             this.unitCardFieldSurvivability = new System.Windows.Forms.PictureBox();
+            this.lockWeaponTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.checkForUpdatesButton = new System.Windows.Forms.Button();
+            this.cloneButton = new System.Windows.Forms.Button();
             this.panelTopRight = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.categorySelect = new System.Windows.Forms.ListBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flagMobility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageMobility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageMobility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageMobility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageMobility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageMobility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageMobility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageMobility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageMobility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageMobility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageMobility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldMobility)).BeginInit();
             this.tabPage4.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.unitInfoTabControl.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.flagSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureFieldSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardField)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flagFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageFirepower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureField)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldFirepower)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagRecon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageRecon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageRecon)).BeginInit();
@@ -454,19 +432,41 @@
             ((System.ComponentModel.ISupportInitialize)(this.noRookieImageRecon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldRecon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flagMobility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageMobility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageMobility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageMobility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageMobility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageMobility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageMobility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageMobility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageMobility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageMobility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageMobility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldMobility)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flagFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageFirepower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureField)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldFirepower)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flagSimple)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureFieldSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardField)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.unitInfoTabControl.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flagSurvivability)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageSurvivability)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageSurvivability)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageSurvivability)).BeginInit();
@@ -479,40 +479,41 @@
             ((System.ComponentModel.ISupportInitialize)(this.noRookieImageSurvivability)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldSurvivability)).BeginInit();
             this.panelTopRight.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // unitSearch
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.unitSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(70, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(145, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.unitSearch.Location = new System.Drawing.Point(70, 12);
+            this.unitSearch.Name = "unitSearch";
+            this.unitSearch.Size = new System.Drawing.Size(145, 20);
+            this.unitSearch.TabIndex = 0;
+            this.unitSearch.TextChanged += new System.EventHandler(this.unitSearch_TextChanged);
             // 
-            // listBox1
+            // countrySelect
             // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.countrySelect.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(230, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 69);
-            this.listBox1.TabIndex = 1;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.countrySelect.FormattingEnabled = true;
+            this.countrySelect.Location = new System.Drawing.Point(3, 3);
+            this.countrySelect.Name = "countrySelect";
+            this.countrySelect.Size = new System.Drawing.Size(125, 56);
+            this.countrySelect.TabIndex = 1;
+            this.countrySelect.SelectedIndexChanged += new System.EventHandler(this.countrySelect_SelectedIndexChanged);
             // 
-            // listBox2
+            // unitList
             // 
-            this.listBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.unitList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(3, 38);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(212, 563);
-            this.listBox2.TabIndex = 2;
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            this.unitList.FormattingEnabled = true;
+            this.unitList.Location = new System.Drawing.Point(3, 38);
+            this.unitList.Name = "unitList";
+            this.unitList.Size = new System.Drawing.Size(212, 563);
+            this.unitList.TabIndex = 2;
+            this.unitList.SelectedIndexChanged += new System.EventHandler(this.unitList_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -585,6 +586,16 @@
             this.tabPage5.Size = new System.Drawing.Size(381, 495);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Mobility";
+            // 
+            // flagMobility
+            // 
+            this.flagMobility.Image = global::Armory.Properties.Resources.USSR;
+            this.flagMobility.Location = new System.Drawing.Point(18, 12);
+            this.flagMobility.Name = "flagMobility";
+            this.flagMobility.Size = new System.Drawing.Size(60, 30);
+            this.flagMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagMobility.TabIndex = 226;
+            this.flagMobility.TabStop = false;
             // 
             // eliteFieldMobility
             // 
@@ -1122,6 +1133,116 @@
             this.nameFieldMobility.TabIndex = 34;
             this.nameFieldMobility.Text = "Unit name will be here";
             // 
+            // yesEliteImageMobility
+            // 
+            this.yesEliteImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageMobility.Image")));
+            this.yesEliteImageMobility.Location = new System.Drawing.Point(322, 19);
+            this.yesEliteImageMobility.Name = "yesEliteImageMobility";
+            this.yesEliteImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.yesEliteImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesEliteImageMobility.TabIndex = 220;
+            this.yesEliteImageMobility.TabStop = false;
+            // 
+            // yesVeteranImageMobility
+            // 
+            this.yesVeteranImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageMobility.Image")));
+            this.yesVeteranImageMobility.Location = new System.Drawing.Point(272, 19);
+            this.yesVeteranImageMobility.Name = "yesVeteranImageMobility";
+            this.yesVeteranImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.yesVeteranImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesVeteranImageMobility.TabIndex = 219;
+            this.yesVeteranImageMobility.TabStop = false;
+            // 
+            // yesHardenedImageMobility
+            // 
+            this.yesHardenedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageMobility.Image")));
+            this.yesHardenedImageMobility.Location = new System.Drawing.Point(222, 19);
+            this.yesHardenedImageMobility.Name = "yesHardenedImageMobility";
+            this.yesHardenedImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.yesHardenedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesHardenedImageMobility.TabIndex = 218;
+            this.yesHardenedImageMobility.TabStop = false;
+            // 
+            // yesTrainedImageMobility
+            // 
+            this.yesTrainedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageMobility.Image")));
+            this.yesTrainedImageMobility.Location = new System.Drawing.Point(172, 19);
+            this.yesTrainedImageMobility.Name = "yesTrainedImageMobility";
+            this.yesTrainedImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.yesTrainedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesTrainedImageMobility.TabIndex = 217;
+            this.yesTrainedImageMobility.TabStop = false;
+            // 
+            // yesRookieImageMobility
+            // 
+            this.yesRookieImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageMobility.Image")));
+            this.yesRookieImageMobility.Location = new System.Drawing.Point(122, 19);
+            this.yesRookieImageMobility.Name = "yesRookieImageMobility";
+            this.yesRookieImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.yesRookieImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesRookieImageMobility.TabIndex = 216;
+            this.yesRookieImageMobility.TabStop = false;
+            // 
+            // noEliteImageMobility
+            // 
+            this.noEliteImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageMobility.Image")));
+            this.noEliteImageMobility.Location = new System.Drawing.Point(322, 19);
+            this.noEliteImageMobility.Name = "noEliteImageMobility";
+            this.noEliteImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.noEliteImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noEliteImageMobility.TabIndex = 215;
+            this.noEliteImageMobility.TabStop = false;
+            // 
+            // noVeteranImageMobility
+            // 
+            this.noVeteranImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageMobility.Image")));
+            this.noVeteranImageMobility.Location = new System.Drawing.Point(272, 19);
+            this.noVeteranImageMobility.Name = "noVeteranImageMobility";
+            this.noVeteranImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.noVeteranImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noVeteranImageMobility.TabIndex = 214;
+            this.noVeteranImageMobility.TabStop = false;
+            // 
+            // noHardenedImageMobility
+            // 
+            this.noHardenedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageMobility.Image")));
+            this.noHardenedImageMobility.Location = new System.Drawing.Point(222, 19);
+            this.noHardenedImageMobility.Name = "noHardenedImageMobility";
+            this.noHardenedImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.noHardenedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noHardenedImageMobility.TabIndex = 213;
+            this.noHardenedImageMobility.TabStop = false;
+            // 
+            // noTrainedImageMobility
+            // 
+            this.noTrainedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageMobility.Image")));
+            this.noTrainedImageMobility.Location = new System.Drawing.Point(172, 19);
+            this.noTrainedImageMobility.Name = "noTrainedImageMobility";
+            this.noTrainedImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.noTrainedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noTrainedImageMobility.TabIndex = 212;
+            this.noTrainedImageMobility.TabStop = false;
+            // 
+            // noRookieImageMobility
+            // 
+            this.noRookieImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageMobility.Image")));
+            this.noRookieImageMobility.Location = new System.Drawing.Point(122, 19);
+            this.noRookieImageMobility.Name = "noRookieImageMobility";
+            this.noRookieImageMobility.Size = new System.Drawing.Size(23, 23);
+            this.noRookieImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noRookieImageMobility.TabIndex = 198;
+            this.noRookieImageMobility.TabStop = false;
+            // 
+            // unitCardFieldMobility
+            // 
+            this.unitCardFieldMobility.Image = ((System.Drawing.Image)(resources.GetObject("unitCardFieldMobility.Image")));
+            this.unitCardFieldMobility.Location = new System.Drawing.Point(18, 315);
+            this.unitCardFieldMobility.Name = "unitCardFieldMobility";
+            this.unitCardFieldMobility.Size = new System.Drawing.Size(164, 84);
+            this.unitCardFieldMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.unitCardFieldMobility.TabIndex = 69;
+            this.unitCardFieldMobility.TabStop = false;
+            // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
@@ -1179,6 +1300,16 @@
             this.tabPage4.Size = new System.Drawing.Size(381, 495);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Recon";
+            // 
+            // flagRecon
+            // 
+            this.flagRecon.Image = global::Armory.Properties.Resources.USSR;
+            this.flagRecon.Location = new System.Drawing.Point(18, 12);
+            this.flagRecon.Name = "flagRecon";
+            this.flagRecon.Size = new System.Drawing.Size(60, 30);
+            this.flagRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagRecon.TabIndex = 226;
+            this.flagRecon.TabStop = false;
             // 
             // eliteFieldRecon
             // 
@@ -1647,6 +1778,125 @@
             this.groundOpticsLabel2.TabIndex = 16;
             this.groundOpticsLabel2.Text = "Ground Optics:";
             // 
+            // yesEliteImageRecon
+            // 
+            this.yesEliteImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageRecon.Image")));
+            this.yesEliteImageRecon.Location = new System.Drawing.Point(322, 19);
+            this.yesEliteImageRecon.Name = "yesEliteImageRecon";
+            this.yesEliteImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.yesEliteImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesEliteImageRecon.TabIndex = 220;
+            this.yesEliteImageRecon.TabStop = false;
+            // 
+            // yesVeteranImageRecon
+            // 
+            this.yesVeteranImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageRecon.Image")));
+            this.yesVeteranImageRecon.Location = new System.Drawing.Point(272, 19);
+            this.yesVeteranImageRecon.Name = "yesVeteranImageRecon";
+            this.yesVeteranImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.yesVeteranImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesVeteranImageRecon.TabIndex = 219;
+            this.yesVeteranImageRecon.TabStop = false;
+            // 
+            // yesHardenedImageRecon
+            // 
+            this.yesHardenedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageRecon.Image")));
+            this.yesHardenedImageRecon.Location = new System.Drawing.Point(222, 19);
+            this.yesHardenedImageRecon.Name = "yesHardenedImageRecon";
+            this.yesHardenedImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.yesHardenedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesHardenedImageRecon.TabIndex = 218;
+            this.yesHardenedImageRecon.TabStop = false;
+            // 
+            // yesTrainedImageRecon
+            // 
+            this.yesTrainedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageRecon.Image")));
+            this.yesTrainedImageRecon.Location = new System.Drawing.Point(172, 19);
+            this.yesTrainedImageRecon.Name = "yesTrainedImageRecon";
+            this.yesTrainedImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.yesTrainedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesTrainedImageRecon.TabIndex = 217;
+            this.yesTrainedImageRecon.TabStop = false;
+            // 
+            // yesRookieImageRecon
+            // 
+            this.yesRookieImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageRecon.Image")));
+            this.yesRookieImageRecon.Location = new System.Drawing.Point(122, 19);
+            this.yesRookieImageRecon.Name = "yesRookieImageRecon";
+            this.yesRookieImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.yesRookieImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesRookieImageRecon.TabIndex = 216;
+            this.yesRookieImageRecon.TabStop = false;
+            // 
+            // noEliteImageRecon
+            // 
+            this.noEliteImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageRecon.Image")));
+            this.noEliteImageRecon.Location = new System.Drawing.Point(322, 19);
+            this.noEliteImageRecon.Name = "noEliteImageRecon";
+            this.noEliteImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.noEliteImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noEliteImageRecon.TabIndex = 215;
+            this.noEliteImageRecon.TabStop = false;
+            // 
+            // noVeteranImageRecon
+            // 
+            this.noVeteranImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageRecon.Image")));
+            this.noVeteranImageRecon.Location = new System.Drawing.Point(272, 19);
+            this.noVeteranImageRecon.Name = "noVeteranImageRecon";
+            this.noVeteranImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.noVeteranImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noVeteranImageRecon.TabIndex = 214;
+            this.noVeteranImageRecon.TabStop = false;
+            // 
+            // noHardenedImageRecon
+            // 
+            this.noHardenedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageRecon.Image")));
+            this.noHardenedImageRecon.Location = new System.Drawing.Point(222, 19);
+            this.noHardenedImageRecon.Name = "noHardenedImageRecon";
+            this.noHardenedImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.noHardenedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noHardenedImageRecon.TabIndex = 213;
+            this.noHardenedImageRecon.TabStop = false;
+            // 
+            // noTrainedImageRecon
+            // 
+            this.noTrainedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageRecon.Image")));
+            this.noTrainedImageRecon.Location = new System.Drawing.Point(172, 19);
+            this.noTrainedImageRecon.Name = "noTrainedImageRecon";
+            this.noTrainedImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.noTrainedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noTrainedImageRecon.TabIndex = 212;
+            this.noTrainedImageRecon.TabStop = false;
+            // 
+            // noRookieImageRecon
+            // 
+            this.noRookieImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageRecon.Image")));
+            this.noRookieImageRecon.Location = new System.Drawing.Point(122, 19);
+            this.noRookieImageRecon.Name = "noRookieImageRecon";
+            this.noRookieImageRecon.Size = new System.Drawing.Size(23, 23);
+            this.noRookieImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noRookieImageRecon.TabIndex = 198;
+            this.noRookieImageRecon.TabStop = false;
+            // 
+            // unitCardFieldRecon
+            // 
+            this.unitCardFieldRecon.Image = ((System.Drawing.Image)(resources.GetObject("unitCardFieldRecon.Image")));
+            this.unitCardFieldRecon.Location = new System.Drawing.Point(18, 315);
+            this.unitCardFieldRecon.Name = "unitCardFieldRecon";
+            this.unitCardFieldRecon.Size = new System.Drawing.Size(164, 84);
+            this.unitCardFieldRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.unitCardFieldRecon.TabIndex = 58;
+            this.unitCardFieldRecon.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(171, 95);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(31, 24);
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
+            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
@@ -1741,6 +1991,16 @@
             this.tabPage3.Size = new System.Drawing.Size(381, 495);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Firepower";
+            // 
+            // flagFirepower
+            // 
+            this.flagFirepower.Image = global::Armory.Properties.Resources.YU;
+            this.flagFirepower.Location = new System.Drawing.Point(18, 12);
+            this.flagFirepower.Name = "flagFirepower";
+            this.flagFirepower.Size = new System.Drawing.Size(60, 30);
+            this.flagFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagFirepower.TabIndex = 226;
+            this.flagFirepower.TabStop = false;
             // 
             // eliteFieldFirepower
             // 
@@ -2719,6 +2979,125 @@
             this.nameFieldFirepower.TabIndex = 28;
             this.nameFieldFirepower.Text = "Unit name will be here";
             // 
+            // yesEliteImageFirepower
+            // 
+            this.yesEliteImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageFirepower.Image")));
+            this.yesEliteImageFirepower.Location = new System.Drawing.Point(322, 19);
+            this.yesEliteImageFirepower.Name = "yesEliteImageFirepower";
+            this.yesEliteImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.yesEliteImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesEliteImageFirepower.TabIndex = 220;
+            this.yesEliteImageFirepower.TabStop = false;
+            // 
+            // yesVeteranImageFirepower
+            // 
+            this.yesVeteranImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageFirepower.Image")));
+            this.yesVeteranImageFirepower.Location = new System.Drawing.Point(272, 19);
+            this.yesVeteranImageFirepower.Name = "yesVeteranImageFirepower";
+            this.yesVeteranImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.yesVeteranImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesVeteranImageFirepower.TabIndex = 219;
+            this.yesVeteranImageFirepower.TabStop = false;
+            // 
+            // yesHardenedImageFirepower
+            // 
+            this.yesHardenedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageFirepower.Image")));
+            this.yesHardenedImageFirepower.Location = new System.Drawing.Point(222, 19);
+            this.yesHardenedImageFirepower.Name = "yesHardenedImageFirepower";
+            this.yesHardenedImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.yesHardenedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesHardenedImageFirepower.TabIndex = 218;
+            this.yesHardenedImageFirepower.TabStop = false;
+            // 
+            // yesTrainedImageFirepower
+            // 
+            this.yesTrainedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageFirepower.Image")));
+            this.yesTrainedImageFirepower.Location = new System.Drawing.Point(172, 19);
+            this.yesTrainedImageFirepower.Name = "yesTrainedImageFirepower";
+            this.yesTrainedImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.yesTrainedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesTrainedImageFirepower.TabIndex = 217;
+            this.yesTrainedImageFirepower.TabStop = false;
+            // 
+            // yesRookieImageFirepower
+            // 
+            this.yesRookieImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageFirepower.Image")));
+            this.yesRookieImageFirepower.Location = new System.Drawing.Point(122, 19);
+            this.yesRookieImageFirepower.Name = "yesRookieImageFirepower";
+            this.yesRookieImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.yesRookieImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesRookieImageFirepower.TabIndex = 216;
+            this.yesRookieImageFirepower.TabStop = false;
+            // 
+            // noEliteImageFirepower
+            // 
+            this.noEliteImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageFirepower.Image")));
+            this.noEliteImageFirepower.Location = new System.Drawing.Point(322, 19);
+            this.noEliteImageFirepower.Name = "noEliteImageFirepower";
+            this.noEliteImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.noEliteImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noEliteImageFirepower.TabIndex = 215;
+            this.noEliteImageFirepower.TabStop = false;
+            // 
+            // noVeteranImageFirepower
+            // 
+            this.noVeteranImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageFirepower.Image")));
+            this.noVeteranImageFirepower.Location = new System.Drawing.Point(272, 19);
+            this.noVeteranImageFirepower.Name = "noVeteranImageFirepower";
+            this.noVeteranImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.noVeteranImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noVeteranImageFirepower.TabIndex = 214;
+            this.noVeteranImageFirepower.TabStop = false;
+            // 
+            // noHardenedImageFirepower
+            // 
+            this.noHardenedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageFirepower.Image")));
+            this.noHardenedImageFirepower.Location = new System.Drawing.Point(222, 19);
+            this.noHardenedImageFirepower.Name = "noHardenedImageFirepower";
+            this.noHardenedImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.noHardenedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noHardenedImageFirepower.TabIndex = 213;
+            this.noHardenedImageFirepower.TabStop = false;
+            // 
+            // noTrainedImageFirepower
+            // 
+            this.noTrainedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageFirepower.Image")));
+            this.noTrainedImageFirepower.Location = new System.Drawing.Point(172, 19);
+            this.noTrainedImageFirepower.Name = "noTrainedImageFirepower";
+            this.noTrainedImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.noTrainedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noTrainedImageFirepower.TabIndex = 212;
+            this.noTrainedImageFirepower.TabStop = false;
+            // 
+            // noRookieImageFirepower
+            // 
+            this.noRookieImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageFirepower.Image")));
+            this.noRookieImageFirepower.Location = new System.Drawing.Point(122, 19);
+            this.noRookieImageFirepower.Name = "noRookieImageFirepower";
+            this.noRookieImageFirepower.Size = new System.Drawing.Size(23, 23);
+            this.noRookieImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noRookieImageFirepower.TabIndex = 198;
+            this.noRookieImageFirepower.TabStop = false;
+            // 
+            // weaponPictureField
+            // 
+            this.weaponPictureField.Location = new System.Drawing.Point(16, 83);
+            this.weaponPictureField.Name = "weaponPictureField";
+            this.weaponPictureField.Size = new System.Drawing.Size(100, 50);
+            this.weaponPictureField.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.weaponPictureField.TabIndex = 154;
+            this.weaponPictureField.TabStop = false;
+            // 
+            // unitCardFieldFirepower
+            // 
+            this.unitCardFieldFirepower.Image = ((System.Drawing.Image)(resources.GetObject("unitCardFieldFirepower.Image")));
+            this.unitCardFieldFirepower.Location = new System.Drawing.Point(18, 315);
+            this.unitCardFieldFirepower.Name = "unitCardFieldFirepower";
+            this.unitCardFieldFirepower.Size = new System.Drawing.Size(164, 84);
+            this.unitCardFieldFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.unitCardFieldFirepower.TabIndex = 36;
+            this.unitCardFieldFirepower.TabStop = false;
+            // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
@@ -2814,6 +3193,16 @@
             this.tabPage1.Size = new System.Drawing.Size(381, 495);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Simple";
+            // 
+            // flagSimple
+            // 
+            this.flagSimple.Image = global::Armory.Properties.Resources.USSR;
+            this.flagSimple.Location = new System.Drawing.Point(18, 12);
+            this.flagSimple.Name = "flagSimple";
+            this.flagSimple.Size = new System.Drawing.Size(60, 30);
+            this.flagSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagSimple.TabIndex = 8;
+            this.flagSimple.TabStop = false;
             // 
             // groupBox2
             // 
@@ -2978,6 +3367,106 @@
             this.rookieFieldSimple.Text = "12";
             this.rookieFieldSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lockWeaponTooltip.SetToolTip(this.rookieFieldSimple, "This is real rof, aka how many actual hitrolls are made per minute.");
+            // 
+            // yesEliteImageSimple
+            // 
+            this.yesEliteImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageSimple.Image")));
+            this.yesEliteImageSimple.Location = new System.Drawing.Point(322, 19);
+            this.yesEliteImageSimple.Name = "yesEliteImageSimple";
+            this.yesEliteImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.yesEliteImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesEliteImageSimple.TabIndex = 206;
+            this.yesEliteImageSimple.TabStop = false;
+            // 
+            // yesVeteranImageSimple
+            // 
+            this.yesVeteranImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageSimple.Image")));
+            this.yesVeteranImageSimple.Location = new System.Drawing.Point(272, 19);
+            this.yesVeteranImageSimple.Name = "yesVeteranImageSimple";
+            this.yesVeteranImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.yesVeteranImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesVeteranImageSimple.TabIndex = 205;
+            this.yesVeteranImageSimple.TabStop = false;
+            // 
+            // yesHardenedImageSimple
+            // 
+            this.yesHardenedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageSimple.Image")));
+            this.yesHardenedImageSimple.Location = new System.Drawing.Point(222, 19);
+            this.yesHardenedImageSimple.Name = "yesHardenedImageSimple";
+            this.yesHardenedImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.yesHardenedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesHardenedImageSimple.TabIndex = 204;
+            this.yesHardenedImageSimple.TabStop = false;
+            // 
+            // yesTrainedImageSimple
+            // 
+            this.yesTrainedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageSimple.Image")));
+            this.yesTrainedImageSimple.Location = new System.Drawing.Point(172, 19);
+            this.yesTrainedImageSimple.Name = "yesTrainedImageSimple";
+            this.yesTrainedImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.yesTrainedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesTrainedImageSimple.TabIndex = 203;
+            this.yesTrainedImageSimple.TabStop = false;
+            // 
+            // yesRookieImageSimple
+            // 
+            this.yesRookieImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageSimple.Image")));
+            this.yesRookieImageSimple.Location = new System.Drawing.Point(122, 19);
+            this.yesRookieImageSimple.Name = "yesRookieImageSimple";
+            this.yesRookieImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.yesRookieImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yesRookieImageSimple.TabIndex = 202;
+            this.yesRookieImageSimple.TabStop = false;
+            // 
+            // noEliteImageSimple
+            // 
+            this.noEliteImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageSimple.Image")));
+            this.noEliteImageSimple.Location = new System.Drawing.Point(322, 19);
+            this.noEliteImageSimple.Name = "noEliteImageSimple";
+            this.noEliteImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.noEliteImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noEliteImageSimple.TabIndex = 201;
+            this.noEliteImageSimple.TabStop = false;
+            // 
+            // noVeteranImageSimple
+            // 
+            this.noVeteranImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageSimple.Image")));
+            this.noVeteranImageSimple.Location = new System.Drawing.Point(272, 19);
+            this.noVeteranImageSimple.Name = "noVeteranImageSimple";
+            this.noVeteranImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.noVeteranImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noVeteranImageSimple.TabIndex = 200;
+            this.noVeteranImageSimple.TabStop = false;
+            // 
+            // noHardenedImageSimple
+            // 
+            this.noHardenedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageSimple.Image")));
+            this.noHardenedImageSimple.Location = new System.Drawing.Point(222, 19);
+            this.noHardenedImageSimple.Name = "noHardenedImageSimple";
+            this.noHardenedImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.noHardenedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noHardenedImageSimple.TabIndex = 199;
+            this.noHardenedImageSimple.TabStop = false;
+            // 
+            // noTrainedImageSimple
+            // 
+            this.noTrainedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageSimple.Image")));
+            this.noTrainedImageSimple.Location = new System.Drawing.Point(172, 19);
+            this.noTrainedImageSimple.Name = "noTrainedImageSimple";
+            this.noTrainedImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.noTrainedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noTrainedImageSimple.TabIndex = 198;
+            this.noTrainedImageSimple.TabStop = false;
+            // 
+            // noRookieImageSimple
+            // 
+            this.noRookieImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageSimple.Image")));
+            this.noRookieImageSimple.Location = new System.Drawing.Point(122, 19);
+            this.noRookieImageSimple.Name = "noRookieImageSimple";
+            this.noRookieImageSimple.Size = new System.Drawing.Size(23, 23);
+            this.noRookieImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.noRookieImageSimple.TabIndex = 197;
+            this.noRookieImageSimple.TabStop = false;
             // 
             // lockWeaponCheckboxSimple
             // 
@@ -3345,6 +3834,15 @@
             this.label120.TabIndex = 164;
             this.label120.Text = "Ammo:";
             // 
+            // weaponPictureFieldSimple
+            // 
+            this.weaponPictureFieldSimple.Location = new System.Drawing.Point(16, 83);
+            this.weaponPictureFieldSimple.Name = "weaponPictureFieldSimple";
+            this.weaponPictureFieldSimple.Size = new System.Drawing.Size(100, 50);
+            this.weaponPictureFieldSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.weaponPictureFieldSimple.TabIndex = 163;
+            this.weaponPictureFieldSimple.TabStop = false;
+            // 
             // weaponDropdownSimple
             // 
             this.weaponDropdownSimple.FormattingEnabled = true;
@@ -3522,6 +4020,16 @@
             this.label7.Size = new System.Drawing.Size(75, 17);
             this.label7.TabIndex = 55;
             this.label7.Text = "Autonomy:";
+            // 
+            // unitCardField
+            // 
+            this.unitCardField.Image = ((System.Drawing.Image)(resources.GetObject("unitCardField.Image")));
+            this.unitCardField.Location = new System.Drawing.Point(18, 315);
+            this.unitCardField.Name = "unitCardField";
+            this.unitCardField.Size = new System.Drawing.Size(164, 84);
+            this.unitCardField.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.unitCardField.TabIndex = 35;
+            this.unitCardField.TabStop = false;
             // 
             // frontArmorFieldSimple
             // 
@@ -3827,6 +4335,15 @@
             this.airOpticsLabel.TabIndex = 8;
             this.airOpticsLabel.Text = "Air Optics:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(172, 446);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 24);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // groundOpticsLabel
             // 
             this.groundOpticsLabel.AutoSize = true;
@@ -3922,6 +4439,16 @@
             this.tabPage2.Size = new System.Drawing.Size(381, 495);
             this.tabPage2.TabIndex = 5;
             this.tabPage2.Text = "Survivability";
+            // 
+            // flagSurvivability
+            // 
+            this.flagSurvivability.Image = global::Armory.Properties.Resources.USSR;
+            this.flagSurvivability.Location = new System.Drawing.Point(18, 12);
+            this.flagSurvivability.Name = "flagSurvivability";
+            this.flagSurvivability.Size = new System.Drawing.Size(60, 30);
+            this.flagSurvivability.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.flagSurvivability.TabIndex = 238;
+            this.flagSurvivability.TabStop = false;
             // 
             // groupBox3
             // 
@@ -4824,554 +5351,6 @@
             this.nameFieldSurvivability.TabIndex = 28;
             this.nameFieldSurvivability.Text = "Unit name will be here";
             // 
-            // checkForUpdatesButton
-            // 
-            this.checkForUpdatesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkForUpdatesButton.Location = new System.Drawing.Point(6, 3);
-            this.checkForUpdatesButton.Name = "checkForUpdatesButton";
-            this.checkForUpdatesButton.Size = new System.Drawing.Size(75, 23);
-            this.checkForUpdatesButton.TabIndex = 6;
-            this.checkForUpdatesButton.Text = "update";
-            this.checkForUpdatesButton.UseVisualStyleBackColor = true;
-            this.checkForUpdatesButton.Click += new System.EventHandler(this.checkForUpdatesButton_Click);
-            // 
-            // cloneButton
-            // 
-            this.cloneButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cloneButton.Location = new System.Drawing.Point(6, 71);
-            this.cloneButton.Name = "cloneButton";
-            this.cloneButton.Size = new System.Drawing.Size(75, 23);
-            this.cloneButton.TabIndex = 7;
-            this.cloneButton.Text = "clone";
-            this.cloneButton.UseVisualStyleBackColor = true;
-            this.cloneButton.Click += new System.EventHandler(this.cloneButton_Click);
-            // 
-            // flagSimple
-            // 
-            this.flagSimple.Image = global::Armory.Properties.Resources.USSR;
-            this.flagSimple.Location = new System.Drawing.Point(18, 12);
-            this.flagSimple.Name = "flagSimple";
-            this.flagSimple.Size = new System.Drawing.Size(60, 30);
-            this.flagSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.flagSimple.TabIndex = 8;
-            this.flagSimple.TabStop = false;
-            // 
-            // yesEliteImageSimple
-            // 
-            this.yesEliteImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageSimple.Image")));
-            this.yesEliteImageSimple.Location = new System.Drawing.Point(322, 19);
-            this.yesEliteImageSimple.Name = "yesEliteImageSimple";
-            this.yesEliteImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.yesEliteImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesEliteImageSimple.TabIndex = 206;
-            this.yesEliteImageSimple.TabStop = false;
-            // 
-            // yesVeteranImageSimple
-            // 
-            this.yesVeteranImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageSimple.Image")));
-            this.yesVeteranImageSimple.Location = new System.Drawing.Point(272, 19);
-            this.yesVeteranImageSimple.Name = "yesVeteranImageSimple";
-            this.yesVeteranImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.yesVeteranImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesVeteranImageSimple.TabIndex = 205;
-            this.yesVeteranImageSimple.TabStop = false;
-            // 
-            // yesHardenedImageSimple
-            // 
-            this.yesHardenedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageSimple.Image")));
-            this.yesHardenedImageSimple.Location = new System.Drawing.Point(222, 19);
-            this.yesHardenedImageSimple.Name = "yesHardenedImageSimple";
-            this.yesHardenedImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.yesHardenedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesHardenedImageSimple.TabIndex = 204;
-            this.yesHardenedImageSimple.TabStop = false;
-            // 
-            // yesTrainedImageSimple
-            // 
-            this.yesTrainedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageSimple.Image")));
-            this.yesTrainedImageSimple.Location = new System.Drawing.Point(172, 19);
-            this.yesTrainedImageSimple.Name = "yesTrainedImageSimple";
-            this.yesTrainedImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.yesTrainedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesTrainedImageSimple.TabIndex = 203;
-            this.yesTrainedImageSimple.TabStop = false;
-            // 
-            // yesRookieImageSimple
-            // 
-            this.yesRookieImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageSimple.Image")));
-            this.yesRookieImageSimple.Location = new System.Drawing.Point(122, 19);
-            this.yesRookieImageSimple.Name = "yesRookieImageSimple";
-            this.yesRookieImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.yesRookieImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesRookieImageSimple.TabIndex = 202;
-            this.yesRookieImageSimple.TabStop = false;
-            // 
-            // noEliteImageSimple
-            // 
-            this.noEliteImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageSimple.Image")));
-            this.noEliteImageSimple.Location = new System.Drawing.Point(322, 19);
-            this.noEliteImageSimple.Name = "noEliteImageSimple";
-            this.noEliteImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.noEliteImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noEliteImageSimple.TabIndex = 201;
-            this.noEliteImageSimple.TabStop = false;
-            // 
-            // noVeteranImageSimple
-            // 
-            this.noVeteranImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageSimple.Image")));
-            this.noVeteranImageSimple.Location = new System.Drawing.Point(272, 19);
-            this.noVeteranImageSimple.Name = "noVeteranImageSimple";
-            this.noVeteranImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.noVeteranImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noVeteranImageSimple.TabIndex = 200;
-            this.noVeteranImageSimple.TabStop = false;
-            // 
-            // noHardenedImageSimple
-            // 
-            this.noHardenedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageSimple.Image")));
-            this.noHardenedImageSimple.Location = new System.Drawing.Point(222, 19);
-            this.noHardenedImageSimple.Name = "noHardenedImageSimple";
-            this.noHardenedImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.noHardenedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noHardenedImageSimple.TabIndex = 199;
-            this.noHardenedImageSimple.TabStop = false;
-            // 
-            // noTrainedImageSimple
-            // 
-            this.noTrainedImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageSimple.Image")));
-            this.noTrainedImageSimple.Location = new System.Drawing.Point(172, 19);
-            this.noTrainedImageSimple.Name = "noTrainedImageSimple";
-            this.noTrainedImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.noTrainedImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noTrainedImageSimple.TabIndex = 198;
-            this.noTrainedImageSimple.TabStop = false;
-            // 
-            // noRookieImageSimple
-            // 
-            this.noRookieImageSimple.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageSimple.Image")));
-            this.noRookieImageSimple.Location = new System.Drawing.Point(122, 19);
-            this.noRookieImageSimple.Name = "noRookieImageSimple";
-            this.noRookieImageSimple.Size = new System.Drawing.Size(23, 23);
-            this.noRookieImageSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noRookieImageSimple.TabIndex = 197;
-            this.noRookieImageSimple.TabStop = false;
-            // 
-            // weaponPictureFieldSimple
-            // 
-            this.weaponPictureFieldSimple.Location = new System.Drawing.Point(16, 83);
-            this.weaponPictureFieldSimple.Name = "weaponPictureFieldSimple";
-            this.weaponPictureFieldSimple.Size = new System.Drawing.Size(100, 50);
-            this.weaponPictureFieldSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.weaponPictureFieldSimple.TabIndex = 163;
-            this.weaponPictureFieldSimple.TabStop = false;
-            // 
-            // unitCardField
-            // 
-            this.unitCardField.Image = ((System.Drawing.Image)(resources.GetObject("unitCardField.Image")));
-            this.unitCardField.Location = new System.Drawing.Point(18, 315);
-            this.unitCardField.Name = "unitCardField";
-            this.unitCardField.Size = new System.Drawing.Size(164, 84);
-            this.unitCardField.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.unitCardField.TabIndex = 35;
-            this.unitCardField.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(172, 446);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 24);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
-            // flagFirepower
-            // 
-            this.flagFirepower.Image = global::Armory.Properties.Resources.YU;
-            this.flagFirepower.Location = new System.Drawing.Point(18, 12);
-            this.flagFirepower.Name = "flagFirepower";
-            this.flagFirepower.Size = new System.Drawing.Size(60, 30);
-            this.flagFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.flagFirepower.TabIndex = 226;
-            this.flagFirepower.TabStop = false;
-            // 
-            // yesEliteImageFirepower
-            // 
-            this.yesEliteImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageFirepower.Image")));
-            this.yesEliteImageFirepower.Location = new System.Drawing.Point(322, 19);
-            this.yesEliteImageFirepower.Name = "yesEliteImageFirepower";
-            this.yesEliteImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.yesEliteImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesEliteImageFirepower.TabIndex = 220;
-            this.yesEliteImageFirepower.TabStop = false;
-            // 
-            // yesVeteranImageFirepower
-            // 
-            this.yesVeteranImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageFirepower.Image")));
-            this.yesVeteranImageFirepower.Location = new System.Drawing.Point(272, 19);
-            this.yesVeteranImageFirepower.Name = "yesVeteranImageFirepower";
-            this.yesVeteranImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.yesVeteranImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesVeteranImageFirepower.TabIndex = 219;
-            this.yesVeteranImageFirepower.TabStop = false;
-            // 
-            // yesHardenedImageFirepower
-            // 
-            this.yesHardenedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageFirepower.Image")));
-            this.yesHardenedImageFirepower.Location = new System.Drawing.Point(222, 19);
-            this.yesHardenedImageFirepower.Name = "yesHardenedImageFirepower";
-            this.yesHardenedImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.yesHardenedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesHardenedImageFirepower.TabIndex = 218;
-            this.yesHardenedImageFirepower.TabStop = false;
-            // 
-            // yesTrainedImageFirepower
-            // 
-            this.yesTrainedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageFirepower.Image")));
-            this.yesTrainedImageFirepower.Location = new System.Drawing.Point(172, 19);
-            this.yesTrainedImageFirepower.Name = "yesTrainedImageFirepower";
-            this.yesTrainedImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.yesTrainedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesTrainedImageFirepower.TabIndex = 217;
-            this.yesTrainedImageFirepower.TabStop = false;
-            // 
-            // yesRookieImageFirepower
-            // 
-            this.yesRookieImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageFirepower.Image")));
-            this.yesRookieImageFirepower.Location = new System.Drawing.Point(122, 19);
-            this.yesRookieImageFirepower.Name = "yesRookieImageFirepower";
-            this.yesRookieImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.yesRookieImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesRookieImageFirepower.TabIndex = 216;
-            this.yesRookieImageFirepower.TabStop = false;
-            // 
-            // noEliteImageFirepower
-            // 
-            this.noEliteImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageFirepower.Image")));
-            this.noEliteImageFirepower.Location = new System.Drawing.Point(322, 19);
-            this.noEliteImageFirepower.Name = "noEliteImageFirepower";
-            this.noEliteImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.noEliteImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noEliteImageFirepower.TabIndex = 215;
-            this.noEliteImageFirepower.TabStop = false;
-            // 
-            // noVeteranImageFirepower
-            // 
-            this.noVeteranImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageFirepower.Image")));
-            this.noVeteranImageFirepower.Location = new System.Drawing.Point(272, 19);
-            this.noVeteranImageFirepower.Name = "noVeteranImageFirepower";
-            this.noVeteranImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.noVeteranImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noVeteranImageFirepower.TabIndex = 214;
-            this.noVeteranImageFirepower.TabStop = false;
-            // 
-            // noHardenedImageFirepower
-            // 
-            this.noHardenedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageFirepower.Image")));
-            this.noHardenedImageFirepower.Location = new System.Drawing.Point(222, 19);
-            this.noHardenedImageFirepower.Name = "noHardenedImageFirepower";
-            this.noHardenedImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.noHardenedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noHardenedImageFirepower.TabIndex = 213;
-            this.noHardenedImageFirepower.TabStop = false;
-            // 
-            // noTrainedImageFirepower
-            // 
-            this.noTrainedImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageFirepower.Image")));
-            this.noTrainedImageFirepower.Location = new System.Drawing.Point(172, 19);
-            this.noTrainedImageFirepower.Name = "noTrainedImageFirepower";
-            this.noTrainedImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.noTrainedImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noTrainedImageFirepower.TabIndex = 212;
-            this.noTrainedImageFirepower.TabStop = false;
-            // 
-            // noRookieImageFirepower
-            // 
-            this.noRookieImageFirepower.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageFirepower.Image")));
-            this.noRookieImageFirepower.Location = new System.Drawing.Point(122, 19);
-            this.noRookieImageFirepower.Name = "noRookieImageFirepower";
-            this.noRookieImageFirepower.Size = new System.Drawing.Size(23, 23);
-            this.noRookieImageFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noRookieImageFirepower.TabIndex = 198;
-            this.noRookieImageFirepower.TabStop = false;
-            // 
-            // weaponPictureField
-            // 
-            this.weaponPictureField.Location = new System.Drawing.Point(16, 83);
-            this.weaponPictureField.Name = "weaponPictureField";
-            this.weaponPictureField.Size = new System.Drawing.Size(100, 50);
-            this.weaponPictureField.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.weaponPictureField.TabIndex = 154;
-            this.weaponPictureField.TabStop = false;
-            // 
-            // unitCardFieldFirepower
-            // 
-            this.unitCardFieldFirepower.Image = ((System.Drawing.Image)(resources.GetObject("unitCardFieldFirepower.Image")));
-            this.unitCardFieldFirepower.Location = new System.Drawing.Point(18, 315);
-            this.unitCardFieldFirepower.Name = "unitCardFieldFirepower";
-            this.unitCardFieldFirepower.Size = new System.Drawing.Size(164, 84);
-            this.unitCardFieldFirepower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.unitCardFieldFirepower.TabIndex = 36;
-            this.unitCardFieldFirepower.TabStop = false;
-            // 
-            // flagRecon
-            // 
-            this.flagRecon.Image = global::Armory.Properties.Resources.USSR;
-            this.flagRecon.Location = new System.Drawing.Point(18, 12);
-            this.flagRecon.Name = "flagRecon";
-            this.flagRecon.Size = new System.Drawing.Size(60, 30);
-            this.flagRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.flagRecon.TabIndex = 226;
-            this.flagRecon.TabStop = false;
-            // 
-            // yesEliteImageRecon
-            // 
-            this.yesEliteImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageRecon.Image")));
-            this.yesEliteImageRecon.Location = new System.Drawing.Point(322, 19);
-            this.yesEliteImageRecon.Name = "yesEliteImageRecon";
-            this.yesEliteImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.yesEliteImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesEliteImageRecon.TabIndex = 220;
-            this.yesEliteImageRecon.TabStop = false;
-            // 
-            // yesVeteranImageRecon
-            // 
-            this.yesVeteranImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageRecon.Image")));
-            this.yesVeteranImageRecon.Location = new System.Drawing.Point(272, 19);
-            this.yesVeteranImageRecon.Name = "yesVeteranImageRecon";
-            this.yesVeteranImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.yesVeteranImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesVeteranImageRecon.TabIndex = 219;
-            this.yesVeteranImageRecon.TabStop = false;
-            // 
-            // yesHardenedImageRecon
-            // 
-            this.yesHardenedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageRecon.Image")));
-            this.yesHardenedImageRecon.Location = new System.Drawing.Point(222, 19);
-            this.yesHardenedImageRecon.Name = "yesHardenedImageRecon";
-            this.yesHardenedImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.yesHardenedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesHardenedImageRecon.TabIndex = 218;
-            this.yesHardenedImageRecon.TabStop = false;
-            // 
-            // yesTrainedImageRecon
-            // 
-            this.yesTrainedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageRecon.Image")));
-            this.yesTrainedImageRecon.Location = new System.Drawing.Point(172, 19);
-            this.yesTrainedImageRecon.Name = "yesTrainedImageRecon";
-            this.yesTrainedImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.yesTrainedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesTrainedImageRecon.TabIndex = 217;
-            this.yesTrainedImageRecon.TabStop = false;
-            // 
-            // yesRookieImageRecon
-            // 
-            this.yesRookieImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageRecon.Image")));
-            this.yesRookieImageRecon.Location = new System.Drawing.Point(122, 19);
-            this.yesRookieImageRecon.Name = "yesRookieImageRecon";
-            this.yesRookieImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.yesRookieImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesRookieImageRecon.TabIndex = 216;
-            this.yesRookieImageRecon.TabStop = false;
-            // 
-            // noEliteImageRecon
-            // 
-            this.noEliteImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageRecon.Image")));
-            this.noEliteImageRecon.Location = new System.Drawing.Point(322, 19);
-            this.noEliteImageRecon.Name = "noEliteImageRecon";
-            this.noEliteImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.noEliteImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noEliteImageRecon.TabIndex = 215;
-            this.noEliteImageRecon.TabStop = false;
-            // 
-            // noVeteranImageRecon
-            // 
-            this.noVeteranImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageRecon.Image")));
-            this.noVeteranImageRecon.Location = new System.Drawing.Point(272, 19);
-            this.noVeteranImageRecon.Name = "noVeteranImageRecon";
-            this.noVeteranImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.noVeteranImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noVeteranImageRecon.TabIndex = 214;
-            this.noVeteranImageRecon.TabStop = false;
-            // 
-            // noHardenedImageRecon
-            // 
-            this.noHardenedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageRecon.Image")));
-            this.noHardenedImageRecon.Location = new System.Drawing.Point(222, 19);
-            this.noHardenedImageRecon.Name = "noHardenedImageRecon";
-            this.noHardenedImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.noHardenedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noHardenedImageRecon.TabIndex = 213;
-            this.noHardenedImageRecon.TabStop = false;
-            // 
-            // noTrainedImageRecon
-            // 
-            this.noTrainedImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageRecon.Image")));
-            this.noTrainedImageRecon.Location = new System.Drawing.Point(172, 19);
-            this.noTrainedImageRecon.Name = "noTrainedImageRecon";
-            this.noTrainedImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.noTrainedImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noTrainedImageRecon.TabIndex = 212;
-            this.noTrainedImageRecon.TabStop = false;
-            // 
-            // noRookieImageRecon
-            // 
-            this.noRookieImageRecon.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageRecon.Image")));
-            this.noRookieImageRecon.Location = new System.Drawing.Point(122, 19);
-            this.noRookieImageRecon.Name = "noRookieImageRecon";
-            this.noRookieImageRecon.Size = new System.Drawing.Size(23, 23);
-            this.noRookieImageRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noRookieImageRecon.TabIndex = 198;
-            this.noRookieImageRecon.TabStop = false;
-            // 
-            // unitCardFieldRecon
-            // 
-            this.unitCardFieldRecon.Image = ((System.Drawing.Image)(resources.GetObject("unitCardFieldRecon.Image")));
-            this.unitCardFieldRecon.Location = new System.Drawing.Point(18, 315);
-            this.unitCardFieldRecon.Name = "unitCardFieldRecon";
-            this.unitCardFieldRecon.Size = new System.Drawing.Size(164, 84);
-            this.unitCardFieldRecon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.unitCardFieldRecon.TabIndex = 58;
-            this.unitCardFieldRecon.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(171, 95);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 24);
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
-            // 
-            // flagMobility
-            // 
-            this.flagMobility.Image = global::Armory.Properties.Resources.USSR;
-            this.flagMobility.Location = new System.Drawing.Point(18, 12);
-            this.flagMobility.Name = "flagMobility";
-            this.flagMobility.Size = new System.Drawing.Size(60, 30);
-            this.flagMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.flagMobility.TabIndex = 226;
-            this.flagMobility.TabStop = false;
-            // 
-            // yesEliteImageMobility
-            // 
-            this.yesEliteImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageMobility.Image")));
-            this.yesEliteImageMobility.Location = new System.Drawing.Point(322, 19);
-            this.yesEliteImageMobility.Name = "yesEliteImageMobility";
-            this.yesEliteImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.yesEliteImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesEliteImageMobility.TabIndex = 220;
-            this.yesEliteImageMobility.TabStop = false;
-            // 
-            // yesVeteranImageMobility
-            // 
-            this.yesVeteranImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesVeteranImageMobility.Image")));
-            this.yesVeteranImageMobility.Location = new System.Drawing.Point(272, 19);
-            this.yesVeteranImageMobility.Name = "yesVeteranImageMobility";
-            this.yesVeteranImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.yesVeteranImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesVeteranImageMobility.TabIndex = 219;
-            this.yesVeteranImageMobility.TabStop = false;
-            // 
-            // yesHardenedImageMobility
-            // 
-            this.yesHardenedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesHardenedImageMobility.Image")));
-            this.yesHardenedImageMobility.Location = new System.Drawing.Point(222, 19);
-            this.yesHardenedImageMobility.Name = "yesHardenedImageMobility";
-            this.yesHardenedImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.yesHardenedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesHardenedImageMobility.TabIndex = 218;
-            this.yesHardenedImageMobility.TabStop = false;
-            // 
-            // yesTrainedImageMobility
-            // 
-            this.yesTrainedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesTrainedImageMobility.Image")));
-            this.yesTrainedImageMobility.Location = new System.Drawing.Point(172, 19);
-            this.yesTrainedImageMobility.Name = "yesTrainedImageMobility";
-            this.yesTrainedImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.yesTrainedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesTrainedImageMobility.TabIndex = 217;
-            this.yesTrainedImageMobility.TabStop = false;
-            // 
-            // yesRookieImageMobility
-            // 
-            this.yesRookieImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("yesRookieImageMobility.Image")));
-            this.yesRookieImageMobility.Location = new System.Drawing.Point(122, 19);
-            this.yesRookieImageMobility.Name = "yesRookieImageMobility";
-            this.yesRookieImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.yesRookieImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.yesRookieImageMobility.TabIndex = 216;
-            this.yesRookieImageMobility.TabStop = false;
-            // 
-            // noEliteImageMobility
-            // 
-            this.noEliteImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noEliteImageMobility.Image")));
-            this.noEliteImageMobility.Location = new System.Drawing.Point(322, 19);
-            this.noEliteImageMobility.Name = "noEliteImageMobility";
-            this.noEliteImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.noEliteImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noEliteImageMobility.TabIndex = 215;
-            this.noEliteImageMobility.TabStop = false;
-            // 
-            // noVeteranImageMobility
-            // 
-            this.noVeteranImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noVeteranImageMobility.Image")));
-            this.noVeteranImageMobility.Location = new System.Drawing.Point(272, 19);
-            this.noVeteranImageMobility.Name = "noVeteranImageMobility";
-            this.noVeteranImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.noVeteranImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noVeteranImageMobility.TabIndex = 214;
-            this.noVeteranImageMobility.TabStop = false;
-            // 
-            // noHardenedImageMobility
-            // 
-            this.noHardenedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noHardenedImageMobility.Image")));
-            this.noHardenedImageMobility.Location = new System.Drawing.Point(222, 19);
-            this.noHardenedImageMobility.Name = "noHardenedImageMobility";
-            this.noHardenedImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.noHardenedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noHardenedImageMobility.TabIndex = 213;
-            this.noHardenedImageMobility.TabStop = false;
-            // 
-            // noTrainedImageMobility
-            // 
-            this.noTrainedImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noTrainedImageMobility.Image")));
-            this.noTrainedImageMobility.Location = new System.Drawing.Point(172, 19);
-            this.noTrainedImageMobility.Name = "noTrainedImageMobility";
-            this.noTrainedImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.noTrainedImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noTrainedImageMobility.TabIndex = 212;
-            this.noTrainedImageMobility.TabStop = false;
-            // 
-            // noRookieImageMobility
-            // 
-            this.noRookieImageMobility.Image = ((System.Drawing.Image)(resources.GetObject("noRookieImageMobility.Image")));
-            this.noRookieImageMobility.Location = new System.Drawing.Point(122, 19);
-            this.noRookieImageMobility.Name = "noRookieImageMobility";
-            this.noRookieImageMobility.Size = new System.Drawing.Size(23, 23);
-            this.noRookieImageMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.noRookieImageMobility.TabIndex = 198;
-            this.noRookieImageMobility.TabStop = false;
-            // 
-            // unitCardFieldMobility
-            // 
-            this.unitCardFieldMobility.Image = ((System.Drawing.Image)(resources.GetObject("unitCardFieldMobility.Image")));
-            this.unitCardFieldMobility.Location = new System.Drawing.Point(18, 315);
-            this.unitCardFieldMobility.Name = "unitCardFieldMobility";
-            this.unitCardFieldMobility.Size = new System.Drawing.Size(164, 84);
-            this.unitCardFieldMobility.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.unitCardFieldMobility.TabIndex = 69;
-            this.unitCardFieldMobility.TabStop = false;
-            // 
-            // flagSurvivability
-            // 
-            this.flagSurvivability.Image = global::Armory.Properties.Resources.USSR;
-            this.flagSurvivability.Location = new System.Drawing.Point(18, 12);
-            this.flagSurvivability.Name = "flagSurvivability";
-            this.flagSurvivability.Size = new System.Drawing.Size(60, 30);
-            this.flagSurvivability.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.flagSurvivability.TabIndex = 238;
-            this.flagSurvivability.TabStop = false;
-            // 
             // yesEliteImageSurvivability
             // 
             this.yesEliteImageSurvivability.Image = ((System.Drawing.Image)(resources.GetObject("yesEliteImageSurvivability.Image")));
@@ -5482,6 +5461,28 @@
             this.unitCardFieldSurvivability.TabIndex = 36;
             this.unitCardFieldSurvivability.TabStop = false;
             // 
+            // checkForUpdatesButton
+            // 
+            this.checkForUpdatesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkForUpdatesButton.Location = new System.Drawing.Point(6, 3);
+            this.checkForUpdatesButton.Name = "checkForUpdatesButton";
+            this.checkForUpdatesButton.Size = new System.Drawing.Size(75, 23);
+            this.checkForUpdatesButton.TabIndex = 6;
+            this.checkForUpdatesButton.Text = "update";
+            this.checkForUpdatesButton.UseVisualStyleBackColor = true;
+            this.checkForUpdatesButton.Click += new System.EventHandler(this.checkForUpdatesButton_Click);
+            // 
+            // cloneButton
+            // 
+            this.cloneButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cloneButton.Location = new System.Drawing.Point(6, 71);
+            this.cloneButton.Name = "cloneButton";
+            this.cloneButton.Size = new System.Drawing.Size(75, 23);
+            this.cloneButton.TabIndex = 7;
+            this.cloneButton.Text = "clone";
+            this.cloneButton.UseVisualStyleBackColor = true;
+            this.cloneButton.Click += new System.EventHandler(this.cloneButton_Click);
+            // 
             // panelTopRight
             // 
             this.panelTopRight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -5493,87 +5494,59 @@
             this.panelTopRight.Size = new System.Drawing.Size(84, 95);
             this.panelTopRight.TabIndex = 8;
             // 
-            // checkBox1
+            // categorySelect
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(371, 15);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(38, 17);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "13";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.categorySelect.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(371, 38);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(145, 20);
-            this.textBox2.TabIndex = 10;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.categorySelect.FormattingEnabled = true;
+            this.categorySelect.Location = new System.Drawing.Point(140, 3);
+            this.categorySelect.Name = "categorySelect";
+            this.categorySelect.Size = new System.Drawing.Size(128, 56);
+            this.categorySelect.TabIndex = 9;
+            this.categorySelect.SelectedIndexChanged += new System.EventHandler(this.categorySelect_SelectedIndexChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.categorySelect);
+            this.panel1.Controls.Add(this.countrySelect);
+            this.panel1.Location = new System.Drawing.Point(232, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(271, 69);
+            this.panel1.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 608);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelTopRight);
             this.Controls.Add(this.unitInfoTabControl);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.unitList);
+            this.Controls.Add(this.unitSearch);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "WRD Armory";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flagMobility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageMobility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageMobility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageMobility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageMobility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageMobility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageMobility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageMobility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageMobility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageMobility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageMobility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldMobility)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.unitInfoTabControl.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.flagSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureFieldSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardField)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flagFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageFirepower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureField)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldFirepower)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flagRecon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageRecon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageRecon)).EndInit();
@@ -5587,19 +5560,47 @@
             ((System.ComponentModel.ISupportInitialize)(this.noRookieImageRecon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldRecon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flagMobility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageMobility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageMobility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageMobility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageMobility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageMobility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageMobility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageMobility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageMobility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageMobility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageMobility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldMobility)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flagFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageFirepower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureField)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldFirepower)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flagSimple)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesTrainedImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yesRookieImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noEliteImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noVeteranImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noHardenedImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noTrainedImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noRookieImageSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponPictureFieldSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitCardField)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.unitInfoTabControl.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flagSurvivability)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageSurvivability)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesVeteranImageSurvivability)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesHardenedImageSurvivability)).EndInit();
@@ -5612,6 +5613,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.noRookieImageSurvivability)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldSurvivability)).EndInit();
             this.panelTopRight.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5619,9 +5621,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.TextBox unitSearch;
+        private System.Windows.Forms.ListBox countrySelect;
+        private System.Windows.Forms.ListBox unitList;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Label nearGroundFlyingAltitudeField;
@@ -5992,8 +5994,8 @@
         private System.Windows.Forms.PictureBox flagFirepower;
         private System.Windows.Forms.PictureBox flagSurvivability;
         private System.Windows.Forms.Panel panelTopRight;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ListBox categorySelect;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

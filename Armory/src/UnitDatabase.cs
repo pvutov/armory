@@ -30,8 +30,7 @@ namespace Armory {
         //---------------- --------------------- ----------------
 
         private List<String> countryList;
-        private Dictionary<String, List<String>> unitsByFactory = new Dictionary<String, List<String>>();
-
+        
         private TradManager dictionary;
 
         private EdataManager unitCards;
@@ -75,7 +74,7 @@ namespace Armory {
                             if (unitInstance.TryGetProperty("MotherCountry", out countryName)) {
                                 String countryNameString = countryName.Value.ToString(); // TODO: error case if value is of type NdfNull
 
-                                Unit unit = new Unit(countryNameString, unitName, null, unitInstance);
+                                Unit unit = new Unit(countryNameString, unitName, unitInstance);
                                 String unitNameString = unit.qualifiedName;
 
                                 List<String> countryContents;
@@ -114,21 +113,6 @@ namespace Armory {
                                 }
                                 else {
                                     Program.warning("No nationalite, so omitted from nato/pact list : " + unitNameString + ".");
-                                }
-                                
-                                // Add unit name under corresponding factory
-                                NdfPropertyValue factory;
-                                if (unitInstance.TryGetProperty("Factory", out factory)) {
-                                    List<String> factoryContents;
-                                    if (unitsByFactory.TryGetValue(factory.Value.ToString(), out factoryContents)) {
-                                        factoryContents.Add(unitNameString);
-                                    }
-                                    // If factory doesn't exist yet, add it
-                                    else {
-                                        factoryContents = new List<String>();
-                                        factoryContents.Add(unitNameString);
-                                        unitsByFactory.Add(factory.Value.ToString(), factoryContents);
-                                    }
                                 }
                             }
 
@@ -172,7 +156,6 @@ namespace Armory {
             pactPrefix = father.pactPrefix;
             pactUnits = father.pactUnits;
             unitCards = father.unitCards;
-            unitsByFactory = father.unitsByFactory;
         }
 
         public UnitDatabase clone() {

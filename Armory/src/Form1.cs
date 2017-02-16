@@ -15,38 +15,47 @@ namespace Armory
             this.unitDatabase = unitDatabase;
             InitializeComponent();
 
-            listBox1.DataSource = unitDatabase.getAllCountries();
+            countrySelect.DataSource = unitDatabase.getAllCountries();
+
+            categorySelect.DataSource = new List<String>(new String[] { "6", "13", "14" });
         }
 
         private void Form1_Load(object sender, EventArgs e) {
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e) {
+        private void unitSearch_TextChanged(object sender, EventArgs e) {
+            filterUnitList();
+        }
+
+        private void countrySelect_SelectedIndexChanged(object sender, EventArgs e) {
+            filterUnitList();
+        }
+
+        private void categorySelect_SelectedIndexChanged(object sender, EventArgs e) {
+            filterUnitList();
+        }
+
+        private void filterUnitList() {
+            String selectedFaction = countrySelect.GetItemText(countrySelect.SelectedItem);
+            currentUnits = unitDatabase.getUnitList(selectedFaction);
+
+
+
             List<String> filteredUnits = currentUnits.FindAll(s => {
                 try {
-                    return Regex.IsMatch(s, textBox1.Text, RegexOptions.IgnoreCase);
+                    return Regex.IsMatch(s, unitSearch.Text, RegexOptions.IgnoreCase);
                 }
                 catch (ArgumentException) {
-                   return Regex.IsMatch(s, Regex.Escape(textBox1.Text), RegexOptions.IgnoreCase);
+                    return Regex.IsMatch(s, Regex.Escape(unitSearch.Text), RegexOptions.IgnoreCase);
                 }
             });
-            listBox2.DataSource = filteredUnits;
+            unitList.DataSource = filteredUnits;
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e) {
-            String selectedFaction = listBox1.GetItemText(listBox1.SelectedItem);
-            currentUnits = unitDatabase.getUnitList(selectedFaction);
-            listBox2.DataSource = currentUnits;
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e) {
-            listBox1_SelectedIndexChanged(sender, e);
-        }
-
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e) {
+        private void unitList_SelectedIndexChanged(object sender, EventArgs e) {
             weaponDropdown.SelectedItem = null;
-            String selectedUnit = listBox2.GetItemText(listBox2.SelectedItem);
+            String selectedUnit = unitList.GetItemText(unitList.SelectedItem);
             if (unitDatabase.setQueryTarget(selectedUnit)) {
                 
                 weaponDropdown.DataSource = unitDatabase.getWeapons();
