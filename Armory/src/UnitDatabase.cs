@@ -28,8 +28,12 @@ namespace Armory {
         private Dictionary<String, List<Unit>> countryToUnitAlias = new Dictionary<String, List<Unit>>();
 
         //---------------- --------------------- ----------------
-
+        
         private List<String> countryList;
+        private HashSet<String> _categorySet = new HashSet<String>();
+        public HashSet<String> categories {
+            get { return _categorySet; }
+        }
         
         private TradManager dictionary;
 
@@ -75,25 +79,26 @@ namespace Armory {
                                 String countryNameString = countryName.Value.ToString(); // TODO: error case if value is of type NdfNull
 
                                 Unit unit = new Unit(countryNameString, unitName, unitInstance);
-                                String unitNameString = unit.qualifiedName;
+
+                                _categorySet.Add(unit.category);
 
                                 List<Unit> countryContents;
                                 if (countryToUnitAlias.TryGetValue(countryNameString, out countryContents)) {
 
                                     // If there are duplicate units within the same country, pad the names of the duplicates
-                                    while (aliasToUnitObject.ContainsKey(unitNameString)) {
+                                    while (aliasToUnitObject.ContainsKey(unit.qualifiedName)) {
                                         // TODO: Notify user when this happens
-                                        Console.WriteLine("padded unit because duplicate name: " + unitNameString);
-                                        unitNameString += "*";
+                                        Console.WriteLine("padded unit because duplicate name: " + unit.qualifiedName);
+                                        unit.qualifiedName += "*";
                                     }
 
                                     countryContents.Add(unit);
-                                    aliasToUnitObject.Add(unitNameString, unit);
+                                    aliasToUnitObject.Add(unit.qualifiedName, unit);
                                 }
 
                                 // If country doesn't exist yet, add it
                                 else {
-                                    aliasToUnitObject.Add(unitNameString, unit);
+                                    aliasToUnitObject.Add(unit.qualifiedName, unit);
                                     countryContents = new List<Unit>();
                                     countryContents.Add(unit);
                                     countryToUnitAlias.Add(countryNameString, countryContents);
@@ -112,7 +117,7 @@ namespace Armory {
                                     }
                                 }
                                 else {
-                                    Program.warning("No nationalite, so omitted from nato/pact list : " + unitNameString + ".");
+                                    Program.warning("No nationalite, so omitted from nato/pact list : " + unit.qualifiedName + ".");
                                 }
                             }
 
@@ -156,6 +161,7 @@ namespace Armory {
             pactPrefix = father.pactPrefix;
             pactUnits = father.pactUnits;
             unitCards = father.unitCards;
+            _categorySet = father._categorySet;
         }
 
         public UnitDatabase clone() {

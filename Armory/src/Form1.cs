@@ -9,6 +9,7 @@ namespace Armory
     public partial class Form1 : Form {
         private UnitDatabase unitDatabase;
         private List<Unit> currentUnits;
+        private readonly String ALL = "All";
 
 
         public Form1(UnitDatabase unitDatabase) {
@@ -17,7 +18,10 @@ namespace Armory
 
             countrySelect.DataSource = unitDatabase.getAllCountries();
 
-            categorySelect.DataSource = new List<String>(new String[] { "6", "13", "14" });
+            List<String> categories = new List<String>(unitDatabase.categories);
+            categories.Sort();
+            categories.Insert(0, ALL);
+            categorySelect.DataSource = categories;
         }
 
         private void Form1_Load(object sender, EventArgs e) {
@@ -40,7 +44,11 @@ namespace Armory
             String selectedFaction = countrySelect.GetItemText(countrySelect.SelectedItem);
             currentUnits = unitDatabase.getUnitList(selectedFaction);
 
-
+            String category = categorySelect.GetItemText(categorySelect.SelectedItem);
+            if (category != ALL)
+            currentUnits = currentUnits.FindAll(unit => {
+                return unit.category == category;
+            });
 
             List<Unit> filteredUnits = currentUnits.FindAll(unit => {
                 try {

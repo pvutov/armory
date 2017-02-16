@@ -13,10 +13,22 @@ namespace Armory {
             _name = name;
             _ndfHandle = ndfHandle;
 
-            // Get factory
+            // Get which tab the unit is in
             NdfPropertyValue factory;
             if (ndfHandle.TryGetProperty("Factory", out factory)) {
-                _factory = factory.Value.ToString();
+                String factoryString = factory.Value.ToString();
+                switch (factoryString) {
+                    case "3": _factory = "Logistic"; break;
+                    case "6": _factory = "Infantry"; break;
+                    case "7": _factory = "Plane"; break;
+                    case "8": _factory = "Vehicle"; break;
+                    case "9": _factory = "Tank"; break;
+                    case "10": _factory = "Recon"; break;
+                    case "11": _factory = "Helo"; break;
+                    case "12": _factory = "Wasted dev time"; break;
+                    case "13": _factory = "Support"; break;
+                    default:  _factory = factoryString; break;
+                }
             }
         }
 
@@ -35,6 +47,7 @@ namespace Armory {
         /// <returns></returns>
         public String qualifiedName {
             get { return _qualifiedName; }
+            set { _qualifiedName = value; }
         }
 
         /// <summary>
