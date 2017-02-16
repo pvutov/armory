@@ -20,12 +20,12 @@ namespace Armory {
         // -------------- For getting unit name lists ------------
 
         // All units:
-        private List<String> allUnits = new List<String>();
+        private List<Unit> allUnits = new List<Unit>();
         // By faction:
-        private List<String> natoUnits = new List<String>();
-        private List<String> pactUnits = new List<String>();
+        private List<Unit> natoUnits = new List<Unit>();
+        private List<Unit> pactUnits = new List<Unit>();
         // By country:
-        private Dictionary<String, List<String>> countryToUnitAlias = new Dictionary<String, List<String>>();
+        private Dictionary<String, List<Unit>> countryToUnitAlias = new Dictionary<String, List<Unit>>();
 
         //---------------- --------------------- ----------------
 
@@ -77,7 +77,7 @@ namespace Armory {
                                 Unit unit = new Unit(countryNameString, unitName, unitInstance);
                                 String unitNameString = unit.qualifiedName;
 
-                                List<String> countryContents;
+                                List<Unit> countryContents;
                                 if (countryToUnitAlias.TryGetValue(countryNameString, out countryContents)) {
 
                                     // If there are duplicate units within the same country, pad the names of the duplicates
@@ -87,28 +87,28 @@ namespace Armory {
                                         unitNameString += "*";
                                     }
 
-                                    countryContents.Add(unitNameString);
+                                    countryContents.Add(unit);
                                     aliasToUnitObject.Add(unitNameString, unit);
                                 }
 
                                 // If country doesn't exist yet, add it
                                 else {
                                     aliasToUnitObject.Add(unitNameString, unit);
-                                    countryContents = new List<String>();
-                                    countryContents.Add(unitNameString);
+                                    countryContents = new List<Unit>();
+                                    countryContents.Add(unit);
                                     countryToUnitAlias.Add(countryNameString, countryContents);
                                 }
 
-                                allUnits.Add(unitNameString);
+                                allUnits.Add(unit);
 
                                 // Add to pact or nato unit list; using the Nationalite field, which seems to consitently be null for blue units, but is suspicious
                                 NdfPropertyValue nationalite;
                                 if (unitInstance.TryGetProperty("Nationalite", out nationalite)) {
                                     if (nationalite.Value is NdfNull) {
-                                        natoUnits.Add(unitNameString);
+                                        natoUnits.Add(unit);
                                     }
                                     else {
-                                        pactUnits.Add(unitNameString);
+                                        pactUnits.Add(unit);
                                     }
                                 }
                                 else {
@@ -175,8 +175,8 @@ namespace Armory {
         /// </summary>
         /// <param name="faction">Some faction, either a country name or one of the PACT/NATO/All constants.</param>
         /// <returns>A list of units.</returns>
-        public List<String> getUnitList(String faction) {
-            List<String> units;
+        public List<Unit> getUnitList(String faction) {
+            List<Unit> units;
 
             switch (faction) {
                 case "All": return allUnits;

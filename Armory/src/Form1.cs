@@ -8,7 +8,7 @@ namespace Armory
 {
     public partial class Form1 : Form {
         private UnitDatabase unitDatabase;
-        private List<String> currentUnits;
+        private List<Unit> currentUnits;
 
 
         public Form1(UnitDatabase unitDatabase) {
@@ -42,12 +42,12 @@ namespace Armory
 
 
 
-            List<String> filteredUnits = currentUnits.FindAll(s => {
+            List<Unit> filteredUnits = currentUnits.FindAll(unit => {
                 try {
-                    return Regex.IsMatch(s, unitSearch.Text, RegexOptions.IgnoreCase);
+                    return Regex.IsMatch(unit.qualifiedName, unitSearch.Text, RegexOptions.IgnoreCase);
                 }
                 catch (ArgumentException) {
-                    return Regex.IsMatch(s, Regex.Escape(unitSearch.Text), RegexOptions.IgnoreCase);
+                    return Regex.IsMatch(unit.qualifiedName, Regex.Escape(unitSearch.Text), RegexOptions.IgnoreCase);
                 }
             });
             unitList.DataSource = filteredUnits;

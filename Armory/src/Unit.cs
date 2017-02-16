@@ -2,7 +2,7 @@
 using System;
 
 namespace Armory {
-    class Unit {
+    public class Unit : IComparable<Unit> {
         private String _qualifiedName;
         private String _name;
         private String _factory;
@@ -59,6 +59,14 @@ namespace Armory {
             } else {
                 return false;
             }
+        }
+
+        public override string ToString() {
+            return qualifiedName;
+        }
+
+        public int CompareTo(Unit other) {
+            return qualifiedName.CompareTo(other.qualifiedName);
         }
     }
 }
