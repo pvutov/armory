@@ -40,6 +40,10 @@ namespace Armory
             listBox2.DataSource = currentUnits;
         }
 
+        private void textBox2_TextChanged(object sender, EventArgs e) {
+            listBox1_SelectedIndexChanged(sender, e);
+        }
+
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e) {
             weaponDropdown.SelectedItem = null;
             String selectedUnit = listBox2.GetItemText(listBox2.SelectedItem);

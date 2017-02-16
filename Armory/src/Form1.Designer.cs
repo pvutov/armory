@@ -403,6 +403,8 @@
             this.noRookieImageSurvivability = new System.Windows.Forms.PictureBox();
             this.unitCardFieldSurvivability = new System.Windows.Forms.PictureBox();
             this.panelTopRight = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -5491,11 +5493,33 @@
             this.panelTopRight.Size = new System.Drawing.Size(84, 95);
             this.panelTopRight.TabIndex = 8;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(371, 15);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(38, 17);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "13";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.Location = new System.Drawing.Point(371, 38);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(145, 20);
+            this.textBox2.TabIndex = 10;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 608);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.panelTopRight);
             this.Controls.Add(this.unitInfoTabControl);
             this.Controls.Add(this.label2);
@@ -5968,6 +5992,8 @@
         private System.Windows.Forms.PictureBox flagFirepower;
         private System.Windows.Forms.PictureBox flagSurvivability;
         private System.Windows.Forms.Panel panelTopRight;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

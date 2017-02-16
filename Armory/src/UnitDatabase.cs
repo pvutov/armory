@@ -15,7 +15,7 @@ namespace Armory {
         /// <summary>
         /// Unit handles are queried by unit alias.
         /// </summary>
-        private Dictionary<String, NdfObject> aliasToUnitObject = new Dictionary<String, NdfObject>();
+        private Dictionary<String, Unit> aliasToUnitObject = new Dictionary<String, Unit>();
 
         // -------------- For getting unit name lists ------------
 
@@ -30,7 +30,7 @@ namespace Armory {
         //---------------- --------------------- ----------------
 
         private List<String> countryList;
-        private Dictionary<String, List<String>> unitsByFactory;
+        private Dictionary<String, List<String>> unitsByFactory = new Dictionary<String, List<String>>();
 
         private TradManager dictionary;
 
@@ -70,12 +70,13 @@ namespace Armory {
 
                         else {
                             NdfPropertyValue countryName;
-                            NdfPropertyValue factory;
 
                             // Add unit under its name under its country
                             if (unitInstance.TryGetProperty("MotherCountry", out countryName)) {
                                 String countryNameString = countryName.Value.ToString(); // TODO: error case if value is of type NdfNull
-                                String unitNameString = countryNameString + " - " + unitName;
+
+                                Unit unit = new Unit(countryNameString, unitName, null, unitInstance);
+                                String unitNameString = unit.qualifiedName;
 
                                 List<String> countryContents;
                                 if (countryToUnitAlias.TryGetValue(countryNameString, out countryContents)) {
@@ -88,12 +89,12 @@ namespace Armory {
                                     }
 
                                     countryContents.Add(unitNameString);
-                                    aliasToUnitObject.Add(unitNameString, unitInstance);
+                                    aliasToUnitObject.Add(unitNameString, unit);
                                 }
 
                                 // If country doesn't exist yet, add it
                                 else {
-                                    aliasToUnitObject.Add(unitNameString, unitInstance);
+                                    aliasToUnitObject.Add(unitNameString, unit);
                                     countryContents = new List<String>();
                                     countryContents.Add(unitNameString);
                                     countryToUnitAlias.Add(countryNameString, countryContents);
@@ -114,26 +115,26 @@ namespace Armory {
                                 else {
                                     Program.warning("No nationalite, so omitted from nato/pact list : " + unitNameString + ".");
                                 }
+                                
+                                // Add unit name under corresponding factory
+                                NdfPropertyValue factory;
+                                if (unitInstance.TryGetProperty("Factory", out factory)) {
+                                    List<String> factoryContents;
+                                    if (unitsByFactory.TryGetValue(factory.Value.ToString(), out factoryContents)) {
+                                        factoryContents.Add(unitNameString);
+                                    }
+                                    // If factory doesn't exist yet, add it
+                                    else {
+                                        factoryContents = new List<String>();
+                                        factoryContents.Add(unitNameString);
+                                        unitsByFactory.Add(factory.Value.ToString(), factoryContents);
+                                    }
+                                }
                             }
 
                             else {
                                 Program.warning("Skipped unit because no mother country: " + unitName + ".");
                             }
-
-                            //// Add unit name under corresponding factory
-                            //if (unitInstance.TryGetProperty("Factory", out factory)) {
-                            //    List<String> factoryContents;
-                            //    if (unitsByFactory.TryGetValue(factory.Value.ToString(), out factoryContents)) {
-
-                            //    }
-                            //    // If factory doesn't exist yet, add it
-                            //    else {
-                            //        factoryContents = new List<String>();
-                            //        factoryContents.Add(unitNameString);
-                            //        countryToUnitAlias.Add(factory.Value.ToString(), factoryContents);
-                            //    }
-
-                            //}
                         }
                     }
                 }
@@ -216,7 +217,11 @@ namespace Armory {
         /// <param name="name"> The unit the database will be answering questions about. </param>
         /// <returns> True if succeeded, false if target not found. </returns>
         public bool setQueryTarget(String name) {
-            bool result = aliasToUnitObject.TryGetValue(name, out queryTarget);
+            Unit tmpUnit;
+            bool result = aliasToUnitObject.TryGetValue(name, out tmpUnit);
+            if (result) {
+                queryTarget = tmpUnit.handle;
+            }
 
             // Create a list of all weapons and the turrets they belong to
             weapons = new List<Weapon>();
