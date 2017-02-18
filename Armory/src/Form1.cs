@@ -10,9 +10,10 @@ namespace Armory
         private UnitDatabase unitDatabase;
         private List<Unit> currentUnits;
         private readonly String ALL = "All";
+        private bool autoUpdate;
 
 
-        public Form1(UnitDatabase unitDatabase) {
+        public Form1(UnitDatabase unitDatabase, bool checkUpdates) {
             this.unitDatabase = unitDatabase;
             InitializeComponent();
 
@@ -22,10 +23,13 @@ namespace Armory
             categories.Sort();
             categories.Insert(0, ALL);
             categorySelect.DataSource = categories;
+            autoUpdate = checkUpdates;
         }
 
         private void Form1_Load(object sender, EventArgs e) {
-
+            if (autoUpdate) {
+                checkForUpdatesButton.PerformClick();
+            }
         }
 
         private void unitSearch_TextChanged(object sender, EventArgs e) {
@@ -621,7 +625,7 @@ namespace Armory
         }
 
         private void cloneButton_Click(object sender, EventArgs e) {
-            Form1 f = new Form1(unitDatabase.clone());
+            Form1 f = new Form1(unitDatabase.clone(), false);
             f.checkForUpdatesButton.Hide();
             f.Show();
         }

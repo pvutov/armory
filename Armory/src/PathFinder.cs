@@ -17,6 +17,10 @@ namespace Armory {
         private String ndf;
         private String zz;
         private String zz4;
+        private bool _autoUpdate;
+        public bool autoUpdate {
+            get { return _autoUpdate; }
+        }
 
         public PathFinder() {
             if (DEBUG) {
@@ -51,6 +55,10 @@ namespace Armory {
             }
 
             foreach (string line in lines) {
+                if (line == "autoupdate:true") {
+                    _autoUpdate = true;
+                }
+
                 if (line.StartsWith("ndf:")) {
                     ndf = line.Substring("ndf:".Length);
 
@@ -139,7 +147,7 @@ namespace Armory {
                 if (File.Exists(ndf)) {
                     if (File.Exists(zz)) {
                         if (File.Exists(zz4)) {
-                            string[] lines = { "ndf:" + ndf, "zz:" + zz, "zz4:" + zz4 };
+                            string[] lines = { "ndf:" + ndf, "zz:" + zz, "zz4:" + zz4, "autoupdate:true"};
                             File.WriteAllLines(ini_path, lines);
                             return;
                         }

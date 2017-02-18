@@ -89,7 +89,7 @@ namespace Armory {
 
             UnitDatabase unitDatabase = new UnitDatabase(unitInstances, dict, iconPackage, PACT_ICONS_DIRPREFIX, NATO_ICONS_DIRPREFIX);
             
-            Application.Run(new Form1(unitDatabase));
+            Application.Run(new Form1(unitDatabase, paths.autoUpdate));
         }
 
         /// <summary>
