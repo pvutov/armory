@@ -147,7 +147,9 @@ namespace Armory {
                 if (File.Exists(ndf)) {
                     if (File.Exists(zz)) {
                         if (File.Exists(zz4)) {
-                            string[] lines = { "ndf:" + ndf, "zz:" + zz, "zz4:" + zz4, "autoupdate:true"};
+                            string[] lines = { "ndf:" + ndf, "zz:" + zz, "zz4:" + zz4,
+                                // Don't set _autoUpdate the first run, but enable for the future.
+                                "autoupdate:true" };
                             File.WriteAllLines(ini_path, lines);
                             return;
                         }
