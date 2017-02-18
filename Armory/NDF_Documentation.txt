@@ -41,3 +41,5 @@ accuracies | --------------------- | converted from fractionals to percentages (
 shot reload | ...TempsEntreDeuxTirs | if salvo length = 1, output '-' instead of real value
 
 HE is displayed as "-" if HE=1 and AP is not "-" or "idk"
+
+The unit category [Infantry/Plane/Recon etc] is chosen based on the number stored in the Factory field.
