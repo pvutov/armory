@@ -1,4 +1,6 @@
-﻿For the update code to correctly handle a release, it must follow a format:
+This is for developers who want to publish an update for Armory and have commit access to the appropriate repo.
+ 
+ For the update code to correctly handle a release, the release must follow a format:
 -Tag in the form of Major.Minor.Revision.Build
  Revision and build are optional, there is NO "v." prefix
  Valid Examples: 1.0.2.0, 0.2, 3.3.0.0
