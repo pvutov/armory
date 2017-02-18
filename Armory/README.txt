@@ -1,6 +1,4 @@
-﻿This program is an honest attempt to expose the "hidden" WRD armory values in a user-friendly way.
-
-I'll be very happy if I get a pull request.
+﻿This program is an honest attempt to expose the "hidden" WRD armory values in a user-friendly way. Pull requests are welcome.
 
 ------------------------------------------------
 
