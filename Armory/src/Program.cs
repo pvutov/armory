@@ -22,6 +22,14 @@ namespace Armory {
 
         [STAThread]
         static void Main() {
+            // Print all uncaught exceptions.
+            AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(
+                delegate (Object sender, UnhandledExceptionEventArgs e) {
+                    warning(e.ExceptionObject.ToString());
+                }
+            );
+
+            // Free resources before exiting.
             AppDomain.CurrentDomain.ProcessExit += new EventHandler(cleanup);
 
             Application.EnableVisualStyles();
