@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Armory", "Armory\Armory.csproj", "{A7C3F04D-8A8E-4BEC-B8B9-6165DD2EFD4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Updater", "ArmoryUpdater\Updater.csproj", "{4AB27001-992E-4926-A31A-2BE4C83CE280}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7C3F04D-8A8E-4BEC-B8B9-6165DD2EFD4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C3F04D-8A8E-4BEC-B8B9-6165DD2EFD4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7C3F04D-8A8E-4BEC-B8B9-6165DD2EFD4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7C3F04D-8A8E-4BEC-B8B9-6165DD2EFD4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AB27001-992E-4926-A31A-2BE4C83CE280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB27001-992E-4926-A31A-2BE4C83CE280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB27001-992E-4926-A31A-2BE4C83CE280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB27001-992E-4926-A31A-2BE4C83CE280}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
