@@ -63,6 +63,9 @@ namespace Armory {
 
             try {
                 result = json.Substring(json.IndexOf(formattedFieldName) + formattedFieldName.Length);
+                // Convert escaped double quotes into single quotes
+                // Still error prone, should move to a json parsing library
+                result = result.Replace("\\\"", "'");
 
                 result = result.Split('"')[1];
             }
