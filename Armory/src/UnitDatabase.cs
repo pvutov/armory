@@ -1125,9 +1125,8 @@ namespace Armory {
 
         public String getAntigroundSpottingCapWhileFlying() {
 
-            NdfMapList val;
-            if (queryTarget.TryGetValueFromQuery<NdfMapList>("Modules.ScannerConfiguration.Default.PorteeVisionTBA", out val)) {
-                //val.GetMap("4")
+            NdfValueWrapper val;
+            if (queryTarget.TryGetValueFromQuery<NdfValueWrapper>("Modules.ScannerConfiguration.Default.PorteeVisionTBA", out val)) {
                 String result = val.ToString();
                 int resultInt;
                 if (int.TryParse(result, out resultInt)) {
