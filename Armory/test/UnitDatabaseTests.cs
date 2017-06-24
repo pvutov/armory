@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using IrisZoomDataApi;
 using IrisZoomDataApi.Model.Ndfbin;
@@ -13,7 +10,7 @@ namespace Armory.test {
         private const String NDF_PATH = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\510061340\NDF_Win.dat";
         private const String ZZ_PATH = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\510060540\510061340\ZZ_Win.dat";
         private const String ZZ4_PATH = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\510060540\510061340\ZZ_4.dat";
-
+        
         const string EVERYTHING_NDFBIN = @"pc\ndf\patchable\gfx\everything.ndfbin";
         const string UNITES_DIC = @"pc\localisation\us\localisation\unites.dic";
         const string ICON_PACKAGE = @"pc\texture\pack\commoninterface.ppk";
@@ -45,5 +42,8 @@ namespace Armory.test {
             CollectionAssert.AllItemsAreUnique(countries);
             Assert.IsTrue(countries.Count > 0);
         }
+
+
+        
     }
 }
