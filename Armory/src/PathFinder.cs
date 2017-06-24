@@ -74,12 +74,18 @@ namespace Armory {
                     writeIni();
                 }
             }
+            
+            String defaultNdfVersion = "";
 
             // Index game versions
             foreach (DirectoryInfo versionFolder in new DirectoryInfo(wrd).GetDirectories()) {
                 String altNdf = Path.Combine(versionFolder.FullName, "NDF_Win.dat");
                 if (File.Exists(altNdf)) {
                     versionToNdf.Add(versionFolder.Name, altNdf);
+
+                    if (altNdf == ndf) {
+                        defaultNdfVersion = versionFolder.Name;
+                    }
                 }
             }
             versionToNdf.Add("default", ndf);
@@ -90,6 +96,11 @@ namespace Armory {
                 ndf = makeLocalCopy(ndf);
                 zz = makeLocalCopy(zz);
                 zz4 = makeLocalCopy(zz4);
+                
+                // edit the path of the copied ndf in the version index too
+                if (!defaultNdfVersion.Equals("")) {
+                    versionToNdf[defaultNdfVersion] = ndf;
+                }
             }
         }
 
@@ -299,7 +310,7 @@ namespace Armory {
             // skip copying if same length
             if (File.Exists(localPath)) {
                 if (new FileInfo(source).Length == new FileInfo(localPath).Length)
-                    return source;
+                    return localPath;
             }
 
             File.Copy(source, localPath, true);
