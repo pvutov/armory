@@ -2629,7 +2629,7 @@
             this.tagsLabel.TabIndex = 55;
             this.tagsLabel.Text = "tags will be here";
             this.tagsLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.tagsLabel, "[INDIR] = indirect");
+            this.lockWeaponTooltip.SetToolTip(this.tagsLabel, "[INDIR] = indirect, [AUTO]/[BRST] = salvo length > 1 aka autoloader");
             // 
             // apField
             // 
@@ -3932,7 +3932,7 @@
             this.tagsLabelSimple.TabIndex = 155;
             this.tagsLabelSimple.Text = "tags will be here";
             this.tagsLabelSimple.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lockWeaponTooltip.SetToolTip(this.tagsLabelSimple, "[INDIR] = indirect");
+            this.lockWeaponTooltip.SetToolTip(this.tagsLabelSimple, "[INDIR] = indirect, [AUTO]/[BRST] = salvo length > 1 aka autoloader");
             // 
             // label80
             // 

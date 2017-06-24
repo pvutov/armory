@@ -472,8 +472,21 @@ namespace Armory {
             return result;
         }
 
-
         public String getAmmo() {
+            return getAmmo(false);
+        }
+
+        /// <summary>
+        /// Gets the real number of hitrolls a weapon can do without rearming.
+        /// </summary>
+        /// <param name="addSuffix">Instead of returning a pure number, add a unit of measurement behind it as well.</param>
+        /// <returns></returns>
+        public String getAmmo(bool addSuffix) {
+            String suffix = "";
+            if (addSuffix) {
+                suffix = " shots";
+            }
+
             if (currentWeapon != null && currentWeaponHandle != null) {
                 NdfValueWrapper val;
                 string salvesIndex;
@@ -487,7 +500,7 @@ namespace Armory {
                 if (queryTarget.TryGetValueFromQuery("Modules.WeaponManager.Default.Salves[" + salvesIndex + "]", out val)) {
                     string salvos = val.ToString();
 
-                    return multiplyStrings(salvos, getSalvoLength()) + " shots";
+                    return multiplyStrings(salvos, getSalvoLength()) + suffix;
                 }
             }
 
@@ -747,6 +760,18 @@ namespace Armory {
             // INDIR
             if (getTirIndirect() == "True") {
                 result += "[INDIR]";
+            }
+
+            int salvoLength, ammoCount;
+            if (int.TryParse(getSalvoLength(), out salvoLength)
+                && salvoLength > 1) {                
+
+                if (int.TryParse(getAmmo(false), out ammoCount) && ammoCount > salvoLength) {
+                    result += "[BRST]";
+                }
+                else {
+                    result += "[AUTO]";
+                }
             }
 
             return result;

@@ -100,6 +100,7 @@
     <Compile Include="src\Updater.cs" />
     <Compile Include="src\Utility.cs" />
     <Compile Include="src\Weapon.cs" />
+    <Compile Include="test\PathFinderTests.cs" />
     <Compile Include="test\UnitDatabaseTests.cs" />
     <EmbeddedResource Include="src\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
