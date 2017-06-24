@@ -182,11 +182,6 @@
             this.label44 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.noiseField = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.planeRangeField = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.heloRangeField = new System.Windows.Forms.Label();
-            this.label88 = new System.Windows.Forms.Label();
             this.tagsLabel = new System.Windows.Forms.Label();
             this.apField = new System.Windows.Forms.Label();
             this.suppressionField = new System.Windows.Forms.Label();
@@ -205,7 +200,6 @@
             this.label77 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
-            this.groundRangeField = new System.Windows.Forms.Label();
             this.supplyCostField = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.apLabel = new System.Windows.Forms.Label();
@@ -405,6 +399,13 @@
             this.panelTopRight = new System.Windows.Forms.Panel();
             this.categorySelect = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.groundRangeField = new System.Windows.Forms.Label();
+            this.heloRangeField = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.planeRangeField = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flagMobility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yesEliteImageMobility)).BeginInit();
@@ -480,6 +481,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldSurvivability)).BeginInit();
             this.panelTopRight.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // unitSearch
@@ -1899,6 +1901,7 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
+            this.tabPage3.Controls.Add(this.groupBox4);
             this.tabPage3.Controls.Add(this.flagFirepower);
             this.tabPage3.Controls.Add(this.eliteFieldFirepower);
             this.tabPage3.Controls.Add(this.veteranFieldFirepower);
@@ -1941,11 +1944,6 @@
             this.tabPage3.Controls.Add(this.label44);
             this.tabPage3.Controls.Add(this.label42);
             this.tabPage3.Controls.Add(this.noiseField);
-            this.tabPage3.Controls.Add(this.label52);
-            this.tabPage3.Controls.Add(this.planeRangeField);
-            this.tabPage3.Controls.Add(this.label60);
-            this.tabPage3.Controls.Add(this.heloRangeField);
-            this.tabPage3.Controls.Add(this.label88);
             this.tabPage3.Controls.Add(this.tagsLabel);
             this.tabPage3.Controls.Add(this.apField);
             this.tabPage3.Controls.Add(this.suppressionField);
@@ -1964,7 +1962,6 @@
             this.tabPage3.Controls.Add(this.label77);
             this.tabPage3.Controls.Add(this.label75);
             this.tabPage3.Controls.Add(this.label73);
-            this.tabPage3.Controls.Add(this.groundRangeField);
             this.tabPage3.Controls.Add(this.supplyCostField);
             this.tabPage3.Controls.Add(this.label56);
             this.tabPage3.Controls.Add(this.apLabel);
@@ -2545,77 +2542,13 @@
             this.noiseField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.noiseField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.noiseField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.noiseField.Location = new System.Drawing.Point(317, 383);
+            this.noiseField.Location = new System.Drawing.Point(56, 404);
             this.noiseField.MinimumSize = new System.Drawing.Size(40, 0);
             this.noiseField.Name = "noiseField";
             this.noiseField.Size = new System.Drawing.Size(40, 17);
             this.noiseField.TabIndex = 119;
             this.noiseField.Text = "bar";
             this.noiseField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label52.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label52.Location = new System.Drawing.Point(188, 353);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(66, 17);
-            this.label52.TabIndex = 118;
-            this.label52.Text = "vs Plane:";
-            // 
-            // planeRangeField
-            // 
-            this.planeRangeField.AutoSize = true;
-            this.planeRangeField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.planeRangeField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.planeRangeField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.planeRangeField.Location = new System.Drawing.Point(253, 353);
-            this.planeRangeField.MinimumSize = new System.Drawing.Size(40, 0);
-            this.planeRangeField.Name = "planeRangeField";
-            this.planeRangeField.Size = new System.Drawing.Size(40, 17);
-            this.planeRangeField.TabIndex = 117;
-            this.planeRangeField.Text = "bar";
-            this.planeRangeField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label60.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label60.Location = new System.Drawing.Point(188, 334);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(59, 17);
-            this.label60.TabIndex = 116;
-            this.label60.Text = "vs Helo:";
-            // 
-            // heloRangeField
-            // 
-            this.heloRangeField.AutoSize = true;
-            this.heloRangeField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.heloRangeField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.heloRangeField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.heloRangeField.Location = new System.Drawing.Point(244, 334);
-            this.heloRangeField.MinimumSize = new System.Drawing.Size(40, 0);
-            this.heloRangeField.Name = "heloRangeField";
-            this.heloRangeField.Size = new System.Drawing.Size(40, 17);
-            this.heloRangeField.TabIndex = 115;
-            this.heloRangeField.Text = "bar";
-            this.heloRangeField.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label88.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label88.Location = new System.Drawing.Point(188, 315);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(54, 17);
-            this.label88.TabIndex = 114;
-            this.label88.Text = "Range:";
             // 
             // tagsLabel
             // 
@@ -2690,7 +2623,7 @@
             this.label100.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label100.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label100.Location = new System.Drawing.Point(274, 383);
+            this.label100.Location = new System.Drawing.Point(13, 404);
             this.label100.MinimumSize = new System.Drawing.Size(10, 0);
             this.label100.Name = "label100";
             this.label100.Size = new System.Drawing.Size(48, 17);
@@ -2856,20 +2789,6 @@
             this.label73.Size = new System.Drawing.Size(115, 17);
             this.label73.TabIndex = 65;
             this.label73.Text = "AngleDispersion:";
-            // 
-            // groundRangeField
-            // 
-            this.groundRangeField.AutoSize = true;
-            this.groundRangeField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
-            this.groundRangeField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.groundRangeField.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groundRangeField.Location = new System.Drawing.Point(238, 315);
-            this.groundRangeField.MinimumSize = new System.Drawing.Size(40, 0);
-            this.groundRangeField.Name = "groundRangeField";
-            this.groundRangeField.Size = new System.Drawing.Size(40, 17);
-            this.groundRangeField.TabIndex = 58;
-            this.groundRangeField.Text = "bar";
-            this.groundRangeField.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // supplyCostField
             // 
@@ -5517,6 +5436,100 @@
             this.panel1.Size = new System.Drawing.Size(203, 141);
             this.panel1.TabIndex = 10;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label54);
+            this.groupBox4.Controls.Add(this.groundRangeField);
+            this.groupBox4.Controls.Add(this.heloRangeField);
+            this.groupBox4.Controls.Add(this.label82);
+            this.groupBox4.Controls.Add(this.planeRangeField);
+            this.groupBox4.Controls.Add(this.label95);
+            this.groupBox4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox4.Location = new System.Drawing.Point(184, 315);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(173, 75);
+            this.groupBox4.TabIndex = 227;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Weapon Ranges";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label54.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label54.Location = new System.Drawing.Point(10, 16);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(60, 17);
+            this.label54.TabIndex = 178;
+            this.label54.Text = "Ground:";
+            // 
+            // groundRangeField
+            // 
+            this.groundRangeField.AutoSize = true;
+            this.groundRangeField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.groundRangeField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.groundRangeField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groundRangeField.Location = new System.Drawing.Point(66, 16);
+            this.groundRangeField.MinimumSize = new System.Drawing.Size(40, 0);
+            this.groundRangeField.Name = "groundRangeField";
+            this.groundRangeField.Size = new System.Drawing.Size(40, 17);
+            this.groundRangeField.TabIndex = 169;
+            this.groundRangeField.Text = "bar";
+            this.groundRangeField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // heloRangeField
+            // 
+            this.heloRangeField.AutoSize = true;
+            this.heloRangeField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.heloRangeField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.heloRangeField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.heloRangeField.Location = new System.Drawing.Point(48, 35);
+            this.heloRangeField.MinimumSize = new System.Drawing.Size(40, 0);
+            this.heloRangeField.Name = "heloRangeField";
+            this.heloRangeField.Size = new System.Drawing.Size(40, 17);
+            this.heloRangeField.TabIndex = 179;
+            this.heloRangeField.Text = "bar";
+            this.heloRangeField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label82.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label82.Location = new System.Drawing.Point(10, 35);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(41, 17);
+            this.label82.TabIndex = 180;
+            this.label82.Text = "Helo:";
+            // 
+            // planeRangeField
+            // 
+            this.planeRangeField.AutoSize = true;
+            this.planeRangeField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.planeRangeField.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.planeRangeField.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.planeRangeField.Location = new System.Drawing.Point(57, 54);
+            this.planeRangeField.MinimumSize = new System.Drawing.Size(40, 0);
+            this.planeRangeField.Name = "planeRangeField";
+            this.planeRangeField.Size = new System.Drawing.Size(40, 17);
+            this.planeRangeField.TabIndex = 181;
+            this.planeRangeField.Text = "bar";
+            this.planeRangeField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label95.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label95.Location = new System.Drawing.Point(10, 54);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(48, 17);
+            this.label95.TabIndex = 182;
+            this.label95.Text = "Plane:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5615,6 +5628,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.unitCardFieldSurvivability)).EndInit();
             this.panelTopRight.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5779,15 +5794,9 @@
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.Label groundRangeField;
         private System.Windows.Forms.Label suppressionField;
         private System.Windows.Forms.Label apField;
         private System.Windows.Forms.Label tagsLabel;
-        private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label planeRangeField;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label heloRangeField;
         private System.Windows.Forms.Label noiseField;
         private System.Windows.Forms.Label salvoReloadField;
         private System.Windows.Forms.Label shotReloadField;
@@ -5997,6 +6006,13 @@
         private System.Windows.Forms.Panel panelTopRight;
         private System.Windows.Forms.ListBox categorySelect;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label groundRangeField;
+        private System.Windows.Forms.Label heloRangeField;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label planeRangeField;
+        private System.Windows.Forms.Label label95;
     }
 }
 
