@@ -18,6 +18,7 @@ namespace Armory {
         private String zz;
         private String zz4;
         private bool _autoUpdate;
+        private bool _localCopies = true;
         public bool autoUpdate {
             get { return _autoUpdate; }
         }
@@ -30,7 +31,7 @@ namespace Armory {
             }
             else {
                 if (File.Exists(ini_path) && tryReadIni()) {
-                    return;
+                    // do nothing
                 }
                 else {
                     // No ini or bad  ini, have to search for wargame files:
@@ -48,15 +49,23 @@ namespace Armory {
 
                         findWargameDataFiles(wargameDir);
 
-                        // Ugly, but foundPathsExist() will overwrite the error
+                        // Ugly, but filesExist() will overwrite the error
                         // from the sanity check above, if used directly as 
                         // the loop condition
-                        notDone = !foundPathsExist(ref error);
+                        notDone = !filesExist(ref error);
                     } while (notDone);
 
                     // Make a new ini and save the found file paths
                     writeIni();
                 }
+            }
+
+            // WRD locks NDF when running, by using a local copy we can 
+            // run both programs in parallel.
+            if (_localCopies) {
+                ndf = makeLocalCopy(ndf);
+                zz = makeLocalCopy(zz);
+                zz4 = makeLocalCopy(zz4);
             }
         }
 
@@ -76,6 +85,10 @@ namespace Armory {
             foreach (string line in lines) {
                 if (line == "autoupdate:true") {
                     _autoUpdate = true;
+                }
+
+                if (line == "localCopies:false") {
+                    _localCopies = false;
                 }
 
                 if (line.StartsWith("ndf:")) {
@@ -156,7 +169,7 @@ namespace Armory {
             zz4 = findNewest("ZZ_4.dat", searchDir, true);
         }
 
-        private bool foundPathsExist(ref String error) {
+        private bool filesExist(ref String error) {
             if (File.Exists(ndf)) {
                 if (File.Exists(zz)) {
                     if (File.Exists(zz4)) {
@@ -180,7 +193,9 @@ namespace Armory {
         private void writeIni() {
             string[] lines = { "ndf:" + ndf, "zz:" + zz, "zz4:" + zz4,
                 // Don't set _autoUpdate the first run, but enable for the future.
-                "autoupdate:true" };
+                "autoupdate:true",
+                // Local copies are enabled by default, but include in the file so SSD users can find and edit it easier
+                "localCopies:true" };
             File.WriteAllLines(ini_path, lines);
             return;
         }
@@ -232,6 +247,22 @@ namespace Armory {
             }
 
             return false;
+        }
+
+        private String makeLocalCopy(String source) {
+            String copiesFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "local_copies");
+            Directory.CreateDirectory(copiesFolder);
+            String localPath = Path.Combine(copiesFolder, Path.GetFileName(source));
+
+            // acceptably risky heuristic comparison, 
+            // skip copying if same length
+            if (File.Exists(localPath)) {
+                if (new FileInfo(source).Length == new FileInfo(localPath).Length)
+                    return source;
+            }
+
+            File.Copy(source, localPath, true);
+            return localPath;
         }
 
         public String getNdfPath() {
