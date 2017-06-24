@@ -13,7 +13,6 @@ namespace Armory.test {
         private const String NDF_PATH = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\510061340\NDF_Win.dat";
         private const String ZZ_PATH = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\510060540\510061340\ZZ_Win.dat";
         private const String ZZ4_PATH = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\510060540\510061340\ZZ_4.dat";
-        private const String Wargame_PATH = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\";
 
         const string EVERYTHING_NDFBIN = @"pc\ndf\patchable\gfx\everything.ndfbin";
         const string UNITES_DIC = @"pc\localisation\us\localisation\unites.dic";
@@ -45,23 +44,6 @@ namespace Armory.test {
             List<String> countries = unitDatabase.getAllCountries();
             CollectionAssert.AllItemsAreUnique(countries);
             Assert.IsTrue(countries.Count > 0);
-        }
-
-
-        [TestMethod]
-        public void testPathFinder() {
-            /**
-             * A working settings.ini causes PathFinder to skip a lot of its logic
-             * and may thus obscure bugs. I once introduced a bug in the algo
-             * for finding NDF_Win.dat and didn't notice it until release.
-             * This is a regression test for that case.
-             */
-            PathFinder p = new PathFinder();
-            // needed to test private methods
-            PrivateObject pathFinder = new PrivateObject(p);
-            pathFinder.Invoke("findWargameDataFiles", new Object[]{ Wargame_PATH });
-            bool pathsExist = (bool) pathFinder.Invoke("foundPathsExist", new Object[] { "" });
-            Assert.IsTrue(pathsExist);
         }
     }
 }

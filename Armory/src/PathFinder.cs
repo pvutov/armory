@@ -29,33 +29,14 @@ namespace Armory {
                 zz4 = ZZ4_PATH_DEBUG;
             }
             else {
-                if (File.Exists(ini_path) && tryReadIni()) {
-                    return;
+                if (File.Exists(ini_path)) {
+                    if (!tryReadIni()) {
+                        askUserForWargameDir();
+                    }
+                    else return;
                 }
                 else {
-                    // No ini or bad  ini, have to search for wargame files:
-                    String error = "";
-                    bool notDone = true;
-                    do {
-                        String wargameDir = askUserForWargameDir(error);
-
-                        // sanity check: is the user-provided dir correct?
-                        String exe = Path.Combine(wargameDir, "Wargame3.exe");
-                        if (!File.Exists(exe)) {
-                            error = "Wargame exe " + exe + " not found. \n";
-                            continue;
-                        }
-
-                        findWargameDataFiles(wargameDir);
-
-                        // Ugly, but foundPathsExist() will overwrite the error
-                        // from the sanity check above, if used directly as 
-                        // the loop condition
-                        notDone = !foundPathsExist(ref error);
-                    } while (notDone);
-
-                    // Make a new ini and save the found file paths
-                    writeIni();
+                    askUserForWargameDir();
                 }
             }
         }
@@ -127,8 +108,12 @@ namespace Armory {
 
             return false;
         }
-        
-        private String askUserForWargameDir(string error) {
+
+        private void askUserForWargameDir() {
+            askUserForWargameDir("");
+        }
+
+        private void askUserForWargameDir(string error) {
             DialogResult res;
             string wargameDir;
             using (FolderBrowserDialog fbd = new FolderBrowserDialog()) { 
@@ -143,46 +128,46 @@ namespace Armory {
                 Application.Exit();
                 Environment.Exit(0);
             }
-
-            return wargameDir;
-        }
-
-        private void findWargameDataFiles(string wargameDir) {
-            // Find newest .dat files
-            string searchDir = Path.Combine(wargameDir, "Data", "WARGAME", "PC");
-            ndf = findNewest("NDF_Win.dat", searchDir, false);
-            // checkSize (the bool arg) is a hacky fast fix for the random 8kb zz/zz_4..
-            zz = findNewest("ZZ_Win.dat", searchDir, true);
-            zz4 = findNewest("ZZ_4.dat", searchDir, true);
-        }
-
-        private bool foundPathsExist(ref String error) {
-            if (File.Exists(ndf)) {
-                if (File.Exists(zz)) {
-                    if (File.Exists(zz4)) {
-                        return true;
-                    }
-                    
-                    error = zz4 + " not found. \n";
-                    return false;
+            else {
+                // sanity check: was the provided dir correct?
+                String exe = Path.Combine(wargameDir, "Wargame3.exe");
+                if (!File.Exists(exe)) {
+                    askUserForWargameDir(exe + " not found. \n");
+                    return;
                 }
 
-                error = zz + " not found. \n";
-                return false;
+                // Find newest .dat files
+                string searchDir = Path.Combine(wargameDir, "Data", "WARGAME", "PC");
+                ndf = findNewest("NDF_Win.dat", searchDir, false);
+                // checkSize is a hacky fast fix for the random 8kb zz/zz_4..
+                zz = findNewest("ZZ_Win.dat", searchDir, true);
+                zz4 = findNewest("ZZ_4.dat", searchDir, true);
+
+                // Save dirs for next time
+                if (File.Exists(ndf)) {
+                    if (File.Exists(zz)) {
+                        if (File.Exists(zz4)) {
+                            string[] lines = { "ndf:" + ndf, "zz:" + zz, "zz4:" + zz4,
+                                // Don't set _autoUpdate the first run, but enable for the future.
+                                "autoupdate:true" };
+                            File.WriteAllLines(ini_path, lines);
+                            return;
+                        }
+
+                        // Files not found, try again..
+                        askUserForWargameDir(zz4 + " not found. \n");
+                        return;
+                    }
+
+                    // Files not found, try again..
+                    askUserForWargameDir(zz + " not found. \n");
+                    return;
+                }
+
+                // Files not found, try again..
+                askUserForWargameDir(ndf + " not found. \n");
+                return;
             }
-
-            error = ndf + " not found. \n";
-            return false;
-        }
-
-        // When the paths to wargame data files have been found, it helps
-        // to save them and avoid searching in future runs.
-        private void writeIni() {
-            string[] lines = { "ndf:" + ndf, "zz:" + zz, "zz4:" + zz4,
-                // Don't set _autoUpdate the first run, but enable for the future.
-                "autoupdate:true" };
-            File.WriteAllLines(ini_path, lines);
-            return;
         }
 
         /// <summary>
