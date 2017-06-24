@@ -13,7 +13,7 @@ namespace Armory.test {
              * for finding NDF_Win.dat and didn't notice it until release.
              * This is a regression test for that case.
              */
-            PathFinder p = new PathFinder();
+            PathFinder p = PathFinder.getPathFinder();
             // needed to test private methods
             PrivateObject pathFinder = new PrivateObject(p);
             pathFinder.Invoke("findWargameDataFiles", new Object[] { Wargame_PATH });

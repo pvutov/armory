@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
@@ -12,22 +13,36 @@ namespace Armory {
         private const String NDF_PATH_DEBUG = @"E:\workspaceC\Armory\wrd_data\510061340\NDF_Win.dat";
         private const String ZZ_PATH_DEBUG = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\510060540\510061340\ZZ_Win.dat";
         private const String ZZ4_PATH_DEBUG = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\510060540\510061340\ZZ_4.dat";
-
+        private const String WRD_PATH_DEBUG = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\";
+        
         private String ini_path = AppDomain.CurrentDomain.BaseDirectory + "settings.ini";        
         private String ndf;
         private String zz;
         private String zz4;
+        private String wrd;
+        private Dictionary<String, String> versionToNdf = new Dictionary<String, String>();
+        
         private bool _autoUpdate;
-        private bool _localCopies = true;
         public bool autoUpdate {
             get { return _autoUpdate; }
         }
+        private bool _localCopies = true;
 
-        public PathFinder() {
+        private static PathFinder singleton;
+
+        public static PathFinder getPathFinder() {
+            if (singleton == null) {
+                singleton = new PathFinder();
+            }
+            return singleton;
+        }
+
+        private PathFinder() {
             if (DEBUG) {
                 ndf = NDF_PATH_DEBUG;
                 zz = ZZ_PATH_DEBUG;
                 zz4 = ZZ4_PATH_DEBUG;
+                wrd = WRD_PATH_DEBUG;
             }
             else {
                 if (File.Exists(ini_path) && tryReadIni()) {
@@ -60,6 +75,15 @@ namespace Armory {
                 }
             }
 
+            // Index game versions
+            foreach (DirectoryInfo versionFolder in new DirectoryInfo(wrd).GetDirectories()) {
+                String altNdf = Path.Combine(versionFolder.FullName, "NDF_Win.dat");
+                if (File.Exists(altNdf)) {
+                    versionToNdf.Add(versionFolder.Name, altNdf);
+                }
+            }
+            versionToNdf.Add("default", ndf);
+
             // WRD locks NDF when running, by using a local copy we can 
             // run both programs in parallel.
             if (_localCopies) {
@@ -73,6 +97,7 @@ namespace Armory {
             bool ndfRead = false;
             bool zzRead = false;
             bool zz4Read = false;
+            bool wrdRead = false;
 
             string[] lines = null;
             try {
@@ -132,9 +157,23 @@ namespace Armory {
                         return false;
                     }
                 }
+
+                else if (line.StartsWith("wrd:")) {
+                    wrd = line.Substring("wrd:".Length);
+
+                    if (!wrdRead) {
+                        if (Directory.Exists(wrd)) {
+                            wrdRead = true;
+                        }
+                    }
+                    // multiple valid paths provided for the same file
+                    else {
+                        return false;
+                    }
+                }
             }
 
-            if (ndfRead && zzRead && zz4Read) {
+            if (ndfRead && zzRead && zz4Read && wrdRead) {
                 return true;
             }
 
@@ -161,12 +200,14 @@ namespace Armory {
         }
 
         private void findWargameDataFiles(string wargameDir) {
+            // find wrd version depot
+            wrd = Path.Combine(wargameDir, "Data", "WARGAME", "PC");
+
             // Find newest .dat files
-            string searchDir = Path.Combine(wargameDir, "Data", "WARGAME", "PC");
-            ndf = findNewest("NDF_Win.dat", searchDir, false);
+            ndf = findNewest("NDF_Win.dat", wrd, false);
             // checkSize (the bool arg) is a hacky fast fix for the random 8kb zz/zz_4..
-            zz = findNewest("ZZ_Win.dat", searchDir, true);
-            zz4 = findNewest("ZZ_4.dat", searchDir, true);
+            zz = findNewest("ZZ_Win.dat", wrd, true);
+            zz4 = findNewest("ZZ_4.dat", wrd, true);
         }
 
         private bool filesExist(ref String error) {
@@ -191,7 +232,7 @@ namespace Armory {
         // When the paths to wargame data files have been found, it helps
         // to save them and avoid searching in future runs.
         private void writeIni() {
-            string[] lines = { "ndf:" + ndf, "zz:" + zz, "zz4:" + zz4,
+            string[] lines = { "ndf:" + ndf, "zz:" + zz, "zz4:" + zz4, "wrd:" + wrd,
                 // Don't set _autoUpdate the first run, but enable for the future.
                 "autoupdate:true",
                 // Local copies are enabled by default, but include in the file so SSD users can find and edit it easier
@@ -268,11 +309,25 @@ namespace Armory {
         public String getNdfPath() {
             return ndf;
         }
+        public String getNdfPath(String version) {
+            String result = ndf;
+            if (versionToNdf.TryGetValue(version, out result)) {
+                return result;
+            }
+            Program.warning("Couldn't find the ndf to a recorded version."
+                + "This should be impossible; reporting it will be appreciated." );
+            return ndf;
+        }
         public String getZzPath() {
             return zz;
         }
         public String getZz4Path() {
             return zz4;
+        }
+        public List<String> getVersionsDesc() {
+            List<String> versions = versionToNdf.Keys.ToList();
+            versions.Sort((a, b) => b.CompareTo(a));
+            return versions;
         }
     }
 }

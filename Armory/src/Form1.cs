@@ -7,15 +7,18 @@ using System.Text.RegularExpressions;
 namespace Armory
 {
     public partial class Form1 : Form {
-        private UnitDatabase unitDatabase;
+        public UnitDatabase unitDatabase { get; private set; }
         private List<Unit> currentUnits;
         private readonly String ALL = "All";
         private bool autoUpdate;
 
+        public Form1(String version, List<String> versions, bool checkUpdates) {
+            this.unitDatabase = UnitDatabasePool.getUnitDatabasePool().getUnitDatabase(this, version);
 
-        public Form1(UnitDatabase unitDatabase, bool checkUpdates) {
-            this.unitDatabase = unitDatabase;
             InitializeComponent();
+            
+            versionDropdown.DataSource = versions;
+            versionDropdown.SelectedItem = version;
 
             countrySelect.DataSource = unitDatabase.getAllCountries();
 
@@ -465,6 +468,10 @@ namespace Armory
         }
 
         private void weaponDropdown_SelectedIndexChanged(object sender, EventArgs e) {
+            if (weaponDropdown.SelectedItem == null) {
+                return;
+            }
+
             unitDatabase.setCurrentWeapon((Weapon)weaponDropdown.SelectedItem);
             customQueryOutputField.Text = unitDatabase.doCustomQuery(customQueryInput.Text);
             
@@ -625,9 +632,13 @@ namespace Armory
         }
 
         private void cloneButton_Click(object sender, EventArgs e) {
-            Form1 f = new Form1(unitDatabase.clone(), false);
+            Form1 f = new Form1(versionDropdown.GetItemText(versionDropdown.SelectedItem), (List<String>) versionDropdown.DataSource, false);
             f.checkForUpdatesButton.Hide();
             f.Show();
+        }
+
+        private void versionDropdown_SelectedIndexChanged(object sender, EventArgs e) {
+            unitDatabase = UnitDatabasePool.getUnitDatabasePool().getUnitDatabase(this, versionDropdown.GetItemText(versionDropdown.SelectedItem));
         }
     }
 }
