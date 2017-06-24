@@ -516,7 +516,6 @@
             this.unitList.Name = "unitList";
             this.unitList.Size = new System.Drawing.Size(212, 381);
             this.unitList.TabIndex = 2;
-            this.unitList.SelectedIndexChanged += new System.EventHandler(this.unitList_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -1508,7 +1507,6 @@
             this.customQueryInput.Name = "customQueryInput";
             this.customQueryInput.Size = new System.Drawing.Size(350, 20);
             this.customQueryInput.TabIndex = 53;
-            this.customQueryInput.TextChanged += new System.EventHandler(this.customQueryInput_TextChanged);
             // 
             // label1
             // 
@@ -2211,7 +2209,6 @@
             this.weaponDropdown.Name = "weaponDropdown";
             this.weaponDropdown.Size = new System.Drawing.Size(121, 21);
             this.weaponDropdown.TabIndex = 153;
-            this.weaponDropdown.SelectedIndexChanged += new System.EventHandler(this.weaponDropdown_SelectedIndexChanged);
             // 
             // turretField
             // 
@@ -3867,7 +3864,6 @@
             this.weaponDropdownSimple.Name = "weaponDropdownSimple";
             this.weaponDropdownSimple.Size = new System.Drawing.Size(121, 21);
             this.weaponDropdownSimple.TabIndex = 162;
-            this.weaponDropdownSimple.SelectedIndexChanged += new System.EventHandler(this.weaponDropdownSimple_SelectedIndexChanged);
             // 
             // turretFieldSimple
             // 

@@ -27,6 +27,12 @@ namespace Armory
             categories.Insert(0, ALL);
             categorySelect.DataSource = categories;
             autoUpdate = checkUpdates;
+
+            // Manually register these handlers beause their execution order is important
+            unitList.SelectedIndexChanged += unitList_SelectedIndexChanged;
+            weaponDropdownSimple.SelectedIndexChanged += weaponDropdownSimple_SelectedIndexChanged;
+            weaponDropdown.SelectedIndexChanged += weaponDropdown_SelectedIndexChanged;
+            customQueryInput.TextChanged += customQueryInput_TextChanged;
         }
 
         private void Form1_Load(object sender, EventArgs e) {
@@ -69,10 +75,11 @@ namespace Armory
         }
 
         private void unitList_SelectedIndexChanged(object sender, EventArgs e) {
-            weaponDropdown.SelectedItem = null;
             String selectedUnit = unitList.GetItemText(unitList.SelectedItem);
             if (unitDatabase.setQueryTarget(selectedUnit)) {
-                
+
+                weaponDropdown.SelectedItem = null;
+
                 weaponDropdown.DataSource = unitDatabase.getWeapons();
                 weaponDropdownSimple.DataSource = weaponDropdown.DataSource;
 
@@ -469,7 +476,7 @@ namespace Armory
 
         private void weaponDropdown_SelectedIndexChanged(object sender, EventArgs e) {
             if (weaponDropdown.SelectedItem == null) {
-                return;
+                //return;
             }
 
             unitDatabase.setCurrentWeapon((Weapon)weaponDropdown.SelectedItem);
