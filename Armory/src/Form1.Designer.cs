@@ -2201,6 +2201,7 @@
             this.puissanceField.TabIndex = 146;
             this.puissanceField.Text = "bar";
             this.puissanceField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.puissanceField, "if anyone knows what this does, please inform me");
             // 
             // tirReflexeField
             // 
@@ -2442,6 +2443,7 @@
             this.heSplashField.TabIndex = 127;
             this.heSplashField.Text = "bar";
             this.heSplashField.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.heSplashField, "Damage splash");
             // 
             // label64
             // 
@@ -2762,6 +2764,7 @@
             this.suppressionSplashRadius.TabIndex = 76;
             this.suppressionSplashRadius.Text = "bar";
             this.suppressionSplashRadius.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lockWeaponTooltip.SetToolTip(this.suppressionSplashRadius, "Suppression splash");
             // 
             // label81
             // 
