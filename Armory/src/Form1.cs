@@ -83,7 +83,7 @@ namespace Armory
                 weaponDropdown.DataSource = unitDatabase.getWeapons();
                 weaponDropdownSimple.DataSource = weaponDropdown.DataSource;
 
-                Weapon lockedWeapon = unitDatabase.tryGetLockIndexedWeapon();
+                Weapon lockedWeapon = unitDatabase.getLockIndexedWeapon();
                 if (lockedWeapon != null) {
                     weaponDropdown.SelectedItem = lockedWeapon;
                 }

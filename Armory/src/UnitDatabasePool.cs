@@ -85,8 +85,8 @@ namespace Armory {
                 
                 UnitDatabase database = new UnitDatabase(unitInstances, dict, iconPackage, PACT_ICONS_DIRPREFIX, NATO_ICONS_DIRPREFIX);
                 // Transfer weapon lock
-                if (caller.unitDatabase != null && caller.unitDatabase.tryGetLockIndexedWeapon() != null) {
-                    database.setCurrentWeapon(caller.unitDatabase.tryGetLockIndexedWeapon());
+                if (caller.unitDatabase != null && caller.unitDatabase.getLockIndexedWeapon() != null) {
+                    database.setCurrentWeapon(caller.unitDatabase.getLockIndexedWeapon());
                     database.lockWeapon();
                 }
 

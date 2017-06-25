@@ -250,7 +250,7 @@ namespace Armory {
         /// <summary>
         /// Try to get the weapon in the position indexed by the lock slot checkbox.
         /// </summary>
-        public Weapon tryGetLockIndexedWeapon() {
+        public Weapon getLockIndexedWeapon() {
             if (lockedWeapon != null) {
                 int turret = lockedWeapon.getTurretIndex();
                 int slot = lockedWeapon.getWeaponIndex();
