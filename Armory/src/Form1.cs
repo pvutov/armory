@@ -12,13 +12,13 @@ namespace Armory
         private readonly String ALL = "All";
         private bool autoUpdate;
 
-        public Form1(String version, List<String> versions, bool checkUpdates) {
-            this.unitDatabase = UnitDatabasePool.getUnitDatabasePool().getUnitDatabase(this, version);
+        public Form1(String defaultGameVersion, List<String> gameVersions, bool checkUpdates) {
+            this.unitDatabase = UnitDatabasePool.getUnitDatabasePool().getUnitDatabase(this, defaultGameVersion);
 
             InitializeComponent();
             
-            versionDropdown.DataSource = versions;
-            versionDropdown.SelectedItem = version;
+            versionDropdown.DataSource = gameVersions;
+            versionDropdown.SelectedItem = defaultGameVersion;
 
             countrySelect.DataSource = unitDatabase.getAllCountries();
 

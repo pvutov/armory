@@ -28,7 +28,8 @@ namespace Armory {
             Application.SetCompatibleTextRenderingDefault(false);
 
             PathFinder paths = PathFinder.getPathFinder();
-            Application.Run(new Form1("default", paths.getVersionsDesc(), paths.autoUpdate));
+            List<String> gameVersions = paths.getVersionsDesc();
+            Application.Run(new Form1(gameVersions[0], gameVersions, paths.autoUpdate));
         }
 
         /// <summary>
