@@ -13,7 +13,7 @@ namespace Armory
         private bool autoUpdate;
 
         public Form1(String defaultGameVersion, List<String> gameVersions, bool checkUpdates) {
-            this.unitDatabase = UnitDatabasePool.getUnitDatabasePool().getUnitDatabase(this, defaultGameVersion);
+            unitDatabase = UnitDatabasePool.getUnitDatabasePool().getUnitDatabase(this, defaultGameVersion);
 
             InitializeComponent();
             
@@ -475,10 +475,6 @@ namespace Armory
         }
 
         private void weaponDropdown_SelectedIndexChanged(object sender, EventArgs e) {
-            if (weaponDropdown.SelectedItem == null) {
-                //return;
-            }
-
             unitDatabase.setCurrentWeapon((Weapon)weaponDropdown.SelectedItem);
             customQueryOutputField.Text = unitDatabase.doCustomQuery(customQueryInput.Text);
             
