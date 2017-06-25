@@ -29,7 +29,7 @@ namespace Armory {
 
             PathFinder paths = PathFinder.getPathFinder();
             List<String> gameVersions = paths.getVersionsDesc();
-            Application.Run(new Form1(gameVersions[0], gameVersions, paths.autoUpdate));
+            Application.Run(new Form1(PathFinder.DEFAULT_GAME_VERSION, gameVersions, paths.autoUpdate));
         }
 
         /// <summary>

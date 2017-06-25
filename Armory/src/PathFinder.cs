@@ -14,7 +14,8 @@ namespace Armory {
         private const String ZZ_PATH_DEBUG = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\510060540\510061340\ZZ_Win.dat";
         private const String ZZ4_PATH_DEBUG = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\510060540\510061340\ZZ_4.dat";
         private const String WRD_PATH_DEBUG = @"G:\SteamLibrary\SteamApps\common\Wargame Red Dragon\Data\WARGAME\PC\";
-        
+        public const String DEFAULT_GAME_VERSION = "default";
+
         private String ini_path = AppDomain.CurrentDomain.BaseDirectory + "settings.ini";        
         private String ndf;
         private String zz;
@@ -88,7 +89,7 @@ namespace Armory {
                     }
                 }
             }
-            versionToNdf.Add("default", ndf);
+            versionToNdf.Add(DEFAULT_GAME_VERSION, ndf);
 
             // WRD locks NDF when running, by using a local copy we can 
             // run both programs in parallel.
