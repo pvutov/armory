@@ -5530,6 +5530,7 @@
             // 
             // versionDropdown
             // 
+            this.versionDropdown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.versionDropdown.Location = new System.Drawing.Point(340, 15);
             this.versionDropdown.Name = "versionDropdown";
             this.versionDropdown.Size = new System.Drawing.Size(89, 21);
@@ -5538,6 +5539,7 @@
             // 
             // label52
             // 
+            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label52.AutoSize = true;
             this.label52.Location = new System.Drawing.Point(231, 18);
             this.label52.Name = "label52";
