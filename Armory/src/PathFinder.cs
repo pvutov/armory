@@ -89,7 +89,6 @@ namespace Armory {
                     }
                 }
             }
-            versionToNdf.Add(DEFAULT_GAME_VERSION, ndf);
 
             // WRD locks NDF when running, by using a local copy we can 
             // run both programs in parallel.
@@ -103,6 +102,8 @@ namespace Armory {
                     versionToNdf[defaultNdfVersion] = ndf;
                 }
             }
+
+            versionToNdf.Add(DEFAULT_GAME_VERSION, ndf);
         }
 
         private bool tryReadIni() {
