@@ -16,6 +16,10 @@ namespace Armory {
 
 
         public Updater() {
+            // Override the .NET 4.5 defaults since github does not support them: 
+            // https://developer.github.com/changes/2018-02-01-weak-crypto-removal-notice/
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+            
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(API_URL);
 
             // specify API version to use for stability
